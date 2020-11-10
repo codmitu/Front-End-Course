@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichim Gelu</title>
+
+    <!-- function to display 2 types of pages  -->
+    <script>
+        function show(shown, hidden) {
+            document.getElementById(shown).style.display = 'block';
+            document.getElementById(hidden).style.display = 'none';
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="html">
+        <a  onclick="return show('frontend','html');"><button>Extra-work</button></a>
+        
+        <!-- BLOG DESIGN PAGE -->
+        <h2>Blog design:</h2>
+
+        <center>
+            <table width=500px style="font-family: 'Vollkorn', serif" >
+                <tr style="font-size: smaller;">
+                    <td>Jeremy's Blog</td>
+                    <td style="float: right;">ARCHIVE</td>
+                    <td style="float: right;">ABOUT&nbsp;&nbsp;&nbsp;</td>
+                    <td style="float: right;">HOME&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr>
+                        <h3>Rules for Autocomplete</h3>
+                        <small><i>Posted on March 19, 2019</i></small>
+                        <p>
+                            Autocompleting text with known values seems like an easy problem to solve, but so so so 
+                            many UIs get it wrong. I see this frequently enough that, rather than complain about them
+                            individually, I thought I'd just write down the set of rules they often break.
+                        </p>
+                        <p>
+                            There may be cases where some of these rules aren't the best thing to do, but there 
+                            should be a good reason for breaking one of these rules (for example, some of these rules 
+                            don't apply if a field must be filled with a value from a fixed set, like the list ofUS states).
+                            Following these rules should always result in at very least a same experience:
+                            <ul>
+                                <li>
+                                    Exact matches always come first. If the user types in an option exactly,
+                                    other options must always go below the one matching what they typed.
+                                </li>
+                                <li>
+                                    Besides exact matches, prefix matches come first, If I type "Fr" I want "Fresno"
+                                    not "San Francisco".
+                                </li>
+                                <li>
+                                    After prefix matches, it can fall back to substring matches. Starting with substring
+                                    matches would almost always be the wrong thing to do since users start typing words
+                                    at the beginning not somwhere in the middle.
+                                </li>
+                                <li>
+                                    if there are no substring matches, it can optionally fall back to subsequence matching.
+                                    This is only useful in some cases.
+                                </li>
+                                <li>
+                                    If there are no subsequence/substring matches, it can optionally fall back to 
+                                    approximate matches. This is rarely necessary to provide.
+                                </li>
+                                <li>
+                                    Matches should be sorted alphabetically
+                                </li>
+                                <li>
+                                    When one option is the prefix of another, put the <i>shortest one first.</i>
+                                </li>
+                                <li>The matching should probably be case insensitive unless there are two options
+                                    that differ only by case. In that case (put intended), prefer the one that more 
+                                    closely matches the user's input.
+                                </li>
+                                <li>The action to make use of the selection (e.g. to search the term)must be a different key
+                                    than the action to accept the first suggestion <i>unless</i> you have to do something 
+                                    first to start using autocomplete suggestion (e.g. hit the down arrow). The user should
+                                    never have to take extra steps to <i>not</i> use autocomplete.
+                                </li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    
+    
+    
+    
+    
+    <div id="frontend" style="display:none">
+        <a  onclick="return show('html','frontend');"><button>Blog design</button></a>
+        
+        <!-- EXTRA WORK PAGE -->
+        <h2>Extra-work:</h2>
+        
+        
+        <center>
+            <p>
+                <table width=750px style="background-color: rgb(255, 255, 240); padding: 50px">
+                    <tr>
+                        <td></td>
+                        <td rowspan="10" style="background-color: lightgrey;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul type="none">
+                                <li><h3> Rottweiler </h3></li>
+                                <li style="color: rgb(78, 78, 252)"><h3> Beagle </h3></li>
+                                <li><h3> Poodle </h3></li>
+                                <li><h3> German&nbsp;shepherd </h3></li>
+                            </ul>
+                        </td>
+                            <td rowspan="10" >
+                                <center>
+                                    <img src="https://i.ibb.co/cCBqCSM/Circle-cropped-1.png" />
+                                </center>
+                                <table>
+                                    <tr>
+                                        <td><h2> Beagle </h2></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b> Weight: </b></td>
+                                        <td> 10-11kg </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b> Coat </b></td>
+                                        <td> Short haired, hard coat of medium length. </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b> Color </b></td>
+                                        <td> Many colors </td></tr>
+                                    <tr>
+                                        <td colspan="10"><p> The beagle is a breed of small hound that is similar in 
+                                                appearance to the much larger foxhound. The beagle is a scent hound, 
+                                                developed primarily for hunting hare (beagling). Possessing a great sense 
+                                                of smell and superior tracking instincts, the beagle is the primary breed 
+                                                used as detection dogs for prohibited agricultural imports and foodstuffs 
+                                                in quarantine around the world. The beagle is intelligent. It is a popular 
+                                                pet due to its size, good temper, and a lack of inherited health problems. </p>
+                                        </td>                               
+                                    </tr>
+                                </table>
+                            </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="10" ></td>  
+                    </tr>
+                </table>
+            </p>
+        </center> 
+    </div>
+    
+</body>
+
+</html>
