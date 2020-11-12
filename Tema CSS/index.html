@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichim Gelu CSS homework</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    <!-- \\\\\\\\\\\\\  Tema este de la linia 71 la 129  //////////// -->
+    <header>
+        <div class="logo"><img src="fashionlogo.png" alt="Fashion Days logo" title="Magazin Online de Haine" /></div>
+        <div class="gender-category">
+            <span>FEMEI</span>
+            <span>BARBATI</span>
+            <span>FETE</span>
+            <span>BAIETI</span>
+        </div>
+        <div class="user-tab">
+            <div class="search">
+                <input type="text" placeholder="Cauta..." id="find" />
+                <label for="find">
+                    <span class="iconify" data-icon="carbon:search" data-inline="true" id="icon-search"></span>
+                </label>
+            </div>
+            <span class="iconify" data-icon="bi:person" data-inline="true"></span>
+            <span class="iconify" data-icon="clarity:bubble-exclamation-line"></span>
+            <span class="iconify" data-icon="bytesize:heart"></span>
+            <span class="iconify" data-icon="bytesize:bag"></span>
+        </div>
+    </header>
+    <div class="nav">
+        <span>IMBRACAMINTE</span>
+        <span>INCALTAMINTE</span>
+        <span>GENTI SI ACCESORII</span>
+        <span>SPORT</span>
+        <span>PREMIUM</span>
+        <span>BEAUTY</span>
+        <span>HOME</span>
+        <span>OUTLET</span>
+        <span>BRANDURI</span>
+        <span>
+            <a href="">DONEAZA! E de #bunsimt</a>
+        </span>
+        <div id="navbar"></div>
+    </div>
+    <section class="info-bar">
+        <span>
+            <span class="iconify" data-icon="ps:truck"></span>
+            LIVRARE GRATUITA PESTE 199DE LEI*
+        </span>
+        <span>
+            <span class="iconify" data-icon="mdi:locker-multiple"></span>
+            RETUR IN EASYBOX
+        </span>
+        <span><span class="iconify" data-icon="carbon:reset-alt"></span>
+            30 DE ZILE RETUR GRATUIT
+        </span>
+        <span><span class="iconify" data-icon="mdi:cart-check"></span>
+            VERIFICARE COLET LA LIVRARE
+        </span>
+    </section>
+    <section class="ad">
+        <img src="ad.jpg" />
+    </section>
+
+    <!--\\\\\\\\\\\\ TEMA /////////////-->
+    <section id="content">
+        
+        <div class="article">
+            <img src="sample1.jpg" />
+            <h3>Colanti Albi</h3>
+            <div class="rating-fav">
+                <div class="rating">
+                    <span class="iconify star" data-icon="heroicons-solid:star"></span>
+                    <span>5.0</span>
+                </div>
+                <div class="fav">
+                    <span class="iconify heart-grey" data-icon="bi:suit-heart-fill"></span>
+                    <span>11</span>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div class="btn">
+                <button class="btn-cart">CART</button>
+                <button class="btn-view">VIEW</button>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="sample2.jpg" />
+            <h3>Sacou cu Patratele</h3>
+            <div class="rating-fav">
+                <div class="rating">
+                    <span class="iconify star" data-icon="heroicons-solid:star"></span>
+                    <span>5.0</span>
+                </div>
+                <div class="fav">
+                    <span class="iconify heart" data-icon="bi:suit-heart-fill"></span>
+                    <span>15</span>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div class="btn">
+                <button class="btn-cart">CART</button>
+                <button class="btn-view">VIEW</button>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="sample3.jpg" />
+            <h3>Pulover Bej din Lana</h3>
+            <div class="rating-fav">
+                <div class="rating">
+                    <span class="iconify star" data-icon="heroicons-solid:star"></span>
+                    <span>5.0</span>
+                </div>
+                <div class="fav">
+                    <span class="iconify heart-grey" data-icon="bi:suit-heart-fill"></span>
+                    <span>25</span>
+                </div>
+            </div>
+            <p>Fugiat delectus alias, facilis vero aliquid laudantium officiis.</p>
+            <div class="btn">
+                <button class="btn-cart">CART</button>
+                <button class="btn-view">VIEW</button>
+            </div>
+        </div>
+
+    </section>
+    <!--\\\\\\\\\\\\\ TEMA^ /////////////-->
+    
+
+    <section class="product-view">
+        <div id="product-view-bar"></div> 
+        <h2>PRODUSE VIZUALIZATE RECENT</h2>
+        <a onclick="return show('offbtn', 'onbtn');">
+            <span class="iconify" data-icon="openmoji:toggle-button-state-b" id="onbtn"></span>
+        </a>
+        <a onclick="return show('onbtn', 'offbtn');">
+            <span class="iconify" data-icon="openmoji:toggle-button" id="offbtn"></span>
+        </a>
+        <p>Activeaza aceasta functie pentru a putea vedea lista cu produse vizualizate recent.</p>
+    </section>
+    <script>
+        function show(shown, hidden) {
+            document.getElementById(shown).style.display = 'inline';
+            document.getElementById(hidden).style.display = 'none';
+            return false;
+        }
+    </script>
+</body>
+
+</html>
