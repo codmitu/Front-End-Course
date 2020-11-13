@@ -252,7 +252,7 @@ h3{
 .product-view{
     width: 100%;
     height: 290px;
-    margin: 50px 0px 0px 0px;
+    margin: 50px auto 0px auto;
     background-color: rgb(231, 231, 231);
 }
 h2{
@@ -293,4 +293,77 @@ h2{
     z-index: -1;
     transform: scaleX(2);
 }
-
+.newsletter{
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    height: 290px;
+    grid-column-gap: 5px;
+    color: white;
+    background-color: black;
+    /* border: 1px solid black; */
+}
+.newsletter h3{
+    font-size: 25px;
+    text-align: left;
+    padding: 40px 0 0 5px;
+    font-weight: bolder;
+}
+.newsletter p{
+    font-size: 20px;
+    padding: 0 0 0 5px;
+}
+.email{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+}
+.confirm{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;  
+}
+.confirm input{
+    margin-right: 5px;
+}
+.captcha {
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+}
+.captcha-checkbox{
+    height: 100%;
+    width: 200px;
+    display: inline-flex;
+    align-items: center;
+}
+.captcha-checkbox input{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.not-robot{
+    text-align: left;
+    font-size: 15px;
+}
+.captcha div{
+    float: right;
+    padding-right: 10px;
+}
+.captcha .iconify{
+    font-size: 40px;
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+}
+.captcha p{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 100;
+}
