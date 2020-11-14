@@ -300,7 +300,6 @@ h2{
     grid-column-gap: 5px;
     color: white;
     background-color: black;
-    /* border: 1px solid black; */
 }
 .newsletter h3{
     font-size: 25px;
@@ -329,6 +328,7 @@ h2{
 }
 .confirm input{
     margin-right: 5px;
+    cursor: pointer;
 }
 .captcha {
     width: 300px;
@@ -339,13 +339,13 @@ h2{
 }
 .captcha-checkbox{
     height: 100%;
-    width: 200px;
+    /* width: 200px; */
     display: inline-flex;
     align-items: center;
 }
 .captcha-checkbox input{
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     margin: 10px;
 }
 .not-robot{
@@ -354,7 +354,6 @@ h2{
 }
 .captcha div{
     float: right;
-    padding-right: 10px;
 }
 .captcha .iconify{
     font-size: 40px;
@@ -366,4 +365,81 @@ h2{
     text-align: center;
     font-size: 10px;
     font-weight: 100;
+    padding-right: 10px;
+}
+.newsletter-text{
+    font-size: 12px;
+    text-align: center;
+    padding: 40px 0px 0px 10px;
+
+}
+#buttons{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+#buttons button{
+    background-color: rgb(219, 61, 61);
+    color: white;
+    width: 48.5%;
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+#support{
+    width: 100%;
+    height: 380px;
+    background-color: black;
+    border-top: 1px solid rgb(78, 78, 78);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#support p,pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    font-weight: 400;  
+    line-height: 16px;  
+}
+#support p{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.social-media-icons .iconify{
+    font-size: 30px;
+    color: white;
+    background-color: grey;
+    margin: 4px 3px;
+    cursor: pointer;
+
+}
+.social-media-icons{
+    width: 150px;
+    margin-left: -2px;
+}
+[data-icon*=facebook]:hover{
+    background-color: rgb(78, 94, 156);
+}
+[data-icon*=twitter]:hover{
+    background-color: rgb(70, 211, 216);
+}
+[data-icon*=pinterest]:hover{
+    background-color: rgb(207, 34, 34);
+}
+[data-icon*=youtube]:hover{
+    background-color: rgb(207, 34, 34);
+}
+[data-icon*=instagram]:hover{
+    background-color: rgb(243, 146, 0);
+}
+#payment-delivery{
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    border-top: 1px solid  rgb(78, 78, 78);
 }
