@@ -128,6 +128,9 @@ textarea:focus, input:focus, button:focus{
     margin: 15px 0px;
     cursor: pointer;
 }
+
+
+
     /*\\\\\\\\\\\\ Tema /////////////*/
 #content{
     display: inline-flex;
@@ -291,7 +294,7 @@ h2{
     background-color: rgb(231, 231, 231);
     position: absolute;
     z-index: -1;
-    transform: scaleX(2);
+    left: 0;
 }
 .newsletter{
     display: grid;
@@ -371,7 +374,6 @@ h2{
     font-size: 12px;
     text-align: center;
     padding: 40px 0px 0px 10px;
-
 }
 #buttons{
     width: 100%;
@@ -402,8 +404,6 @@ h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(150, 150, 150);
     font-size: 12px;
-    font-weight: 400;  
-    line-height: 16px;  
 }
 #support p{
     margin-top: 40px;
@@ -416,7 +416,6 @@ h2{
     background-color: grey;
     margin: 4px 3px;
     cursor: pointer;
-
 }
 .social-media-icons{
     width: 150px;
@@ -442,4 +441,64 @@ h2{
     height: 200px;
     width: 100%;
     border-top: 1px solid  rgb(78, 78, 78);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+#payment-delivery p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+#disclaimer{
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    border-top: 1px solid  rgb(78, 78, 78);
+    color: rgb(150, 150, 150);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#disclaimer div{
+    display: flex;
+    align-items: center;
+}
+#disclaimer p{
+    display: inline;
+    font-size: 12px;
+}
+#disclaimer .iconify{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    border-left: 1px solid  rgb(78, 78, 78);
+}
+#disclaimer .iconify[data-icon*="truck"]{
+    border: none;
+}
+#copyright{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: rgb(150, 150, 150);
+    border-top: 1px solid  rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.black-background-bottom{
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 1100px;
+    float: left;
+    left: 0;
+}
+footer img{
+    padding-top: 40px;
+    margin-bottom: -20px;
 }
