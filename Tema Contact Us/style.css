@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
     background-color: rgb(240, 240, 240);
     height: 200px;
@@ -10,7 +11,7 @@ header{
     display: flex;
 }
 #head{
-    width: 1200px;
+    min-width: 1200px;
     margin: auto;
     height: 100%;
     display: flex;
@@ -30,6 +31,11 @@ header{
     color: rgb(158, 158, 158);
     position: absolute;
     margin-top: -20px;
+}
+section{
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
 }
 form{
     background-color: rgb(240, 240, 240);
@@ -83,7 +89,6 @@ footer{
     width: 400px;
     margin: auto;
     font-family: sans-serif;
-    display: block;
 }
 footer div{
     display: flex;
