@@ -167,14 +167,14 @@ article{
     width: 310px;
     background-color: rgb(235, 235, 235);
     display: grid;
-    grid-template-rows: 11% 30% 49% 10%;
+    grid-template-rows: 12% 28% 49% 10%;
 }
 article span{
-    text-align: justify;
+    margin: 10px 30px;
+    /* text-align: justify; */
     font-size: 22px;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Times New Roman', Times, serif;
-    padding: 10px;
     border-bottom: 1px dashed rgb(187, 187, 253);
 }
 article>div{
