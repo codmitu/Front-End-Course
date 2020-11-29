@@ -277,27 +277,29 @@ str += addCode("palindrom", ["asdfsa"], false);
 		addHeader(e);
 	}
 }
-	function addCode(fct, params, result){
-		return `
-			if (typeof ${fct} ==="function") {
-				try{
-					addCheck('${fct}',${fct},${JSON.stringify(params)},${JSON.stringify(result)});
-				}catch(e){
-					addHeader(e)
-				}
-			} else {
-				addHeader("Nu exista functia ${fct}")
+
+
+function addCode(fct, params, result){
+	return `
+		if (typeof ${fct} ==="function") {
+			try{
+				addCheck('${fct}',${fct},${JSON.stringify(params)},${JSON.stringify(result)});
+			}catch(e){
+				addHeader(e)
 			}
-		`
-	}
+		} else {
+			addHeader("Nu exista functia ${fct}")
+		}
+	`
+}
 
-	function addHeader(str) {
-		result.innerHTML += `<h1>${str}</h1>`;
-	}
+function addHeader(str) {
+	result.innerHTML += `<h1>${str}</h1>`;
+}
 
-	function addCheck(fctName, fct, params, expectedValue) {
-		let paramsStr = JSON.stringify(params);
-		paramsStr = paramsStr.substring(1, paramsStr.length - 1);
-		let val = fct.apply(null, params);
-		result.innerHTML += `<div class="${val === expectedValue}">${fctName}(${paramsStr}) => ${JSON.stringify(val)} expected ${JSON.stringify(expectedValue)}</div>`;
-	}
+function addCheck(fctName, fct, params, expectedValue) {
+	let paramsStr = JSON.stringify(params);
+	paramsStr = paramsStr.substring(1, paramsStr.length - 1);
+	let val = fct.apply(null, params);
+	result.innerHTML += `<div class="${val === expectedValue}">${fctName}(${paramsStr}) => ${JSON.stringify(val)} expected ${JSON.stringify(expectedValue)}</div>`;
+}
