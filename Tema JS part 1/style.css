@@ -92,7 +92,8 @@ textarea{
     font-size: 17px;
     word-spacing: 2px;
     overflow: hidden;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Castoro', serif;
+    line-height: 20px;
     padding: 5px 11px;
     box-shadow: 0px 0px 10px 7px rgb(255, 255, 255);
     border: none;

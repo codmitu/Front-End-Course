@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Tema 1</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 class="title">Valideaza tema 1 JS</h1>
@@ -110,15 +111,15 @@ function prim(a) {
         <textarea id="code7" >
 function sumaPrime(a) {
     let sum = 0, x = 0;
-    function checkPrime(i){
-        for (let k = 2; k < i ; k++){
+    function checkPrime(i) {
+        for (let k = 2; k < i ; k++) {
             if (i % k === 0){
                 return false;
             }
         }
         return true;
     }
-    for (let i = 2; x < a; i++){
+    for (let i = 2; x < a; i++) {
         if (checkPrime(i)){
             sum += i;
             x++;
@@ -139,7 +140,7 @@ function invers(numar) {
     for (let i = a.length - 1; i >= 0; i--) {
         b += a[i];
     }  
-    return b*1;
+    return b * 1;
 }
         </textarea>
         <button onclick="validate8()">Verifica</button>
