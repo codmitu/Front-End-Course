@@ -103,6 +103,9 @@ textarea{
     linear-gradient(to right, rgba(202, 202, 202, 0.342) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(201, 201, 201, 0.281) 1px, transparent 1px);
 }
+#code7{
+    height: 400px;
+}
 button{
     width: 100px;
     height: 30px;
