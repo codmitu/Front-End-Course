@@ -113,14 +113,14 @@ function sumaPrime(a) {
     let sum = 0, x = 0;
     function checkPrime(i) {
         for (let k = 2; k < i ; k++) {
-            if (i % k === 0){
+            if (i % k === 0) {
                 return false;
             }
         }
         return true;
     }
     for (let i = 2; x < a; i++) {
-        if (checkPrime(i)){
+        if (checkPrime(i)) {
             sum += i;
             x++;
         }
@@ -240,7 +240,7 @@ function hasDuplicates(a) {
     <section>
         <p>Ex 14: produsPozitive</p>
         <textarea id="code14" >
-function produsPozitive(a){
+function produsPozitive(a) {
     let prod = 1;
     for (let i = 0; i < a.length; i++) {
         if (a[i] > 0) {
