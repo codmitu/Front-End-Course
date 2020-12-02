@@ -21,19 +21,25 @@ let result = document.querySelector("#result");
 function validate() {
 	let str = code.value;
 	result.innerHTML="";
-	str += `addHeader("Ex 1: Equals")`;
-	str += addCode("equals", [1, 1], true);
-	str += addCode("equals", [1, 2], false);
-	str += addCode("equals", [2, 1], false);
-	str += addCode("equals", [2, 2], true);
-	str += addCode("equals", [2, "2"], false);
-	try{
+str += `addHeader("Ex 1: Equals")`;
+str += addCode("equals", [1, 1], true);
+str += addCode("equals", [1, 2], false);
+str += addCode("equals", [2, 1], false);
+str += addCode("equals", [2, 2], true);
+str += addCode("equals", [2, "2"], false);
+try{
 		let f = new Function('"use strict";' + (str));
 		f.apply({});
 	}catch(e){
 		addHeader(e);
 	}
 }
+function copy() {
+	let copy = document.getElementById("code");
+	copy.select();
+	document.execCommand("copy");
+}
+
 
 function validate2() {
 	let str = code2.value;
@@ -46,11 +52,16 @@ str += addCode("compare", ["a", "A"], 1);
 str += addCode("compare", ["aasd", "asd"], -1);
 str += addCode("compare", ["10","2"], -1);
 try{
-		let f = new Function('"use strict";' + (str));
+	let f = new Function('"use strict";' + (str));
 		f.apply({});
 	}catch(e){
 		addHeader(e);
 	}
+}
+function copy2() {
+	let copy = document.getElementById("code2");
+	copy.select();
+	document.execCommand("copy");
 }
 
 function validate3() {
@@ -65,10 +76,15 @@ str += addCode("max", ["aasd", "asd"], "asd");
 str += addCode("max", ["10","2"], "2");
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy3() {
+	let copy = document.getElementById("code3");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -84,10 +100,15 @@ str += addCode("min", ["aasd", "asd"], "aasd");
 str += addCode("min", ["10","2"], "10");
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy4() {
+	let copy = document.getElementById("code4");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -100,10 +121,15 @@ str += addCode("suma", [5], 15);
 str += addCode("suma", [7], 28);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy5() {
+	let copy = document.getElementById("code5");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -119,10 +145,15 @@ str += addCode("prim", [89], true);
 str += addCode("prim", [91], false);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy6() {
+	let copy = document.getElementById("code6");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -136,10 +167,15 @@ str += addCode("sumaPrime", [7], 58);
 str += addCode("sumaPrime", [12], 197);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy7() {
+	let copy = document.getElementById("code7");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -153,10 +189,15 @@ str += addCode("invers", [80], 8);
 str += addCode("invers", [123456], 654321);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy8() {
+	let copy = document.getElementById("code8");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -170,10 +211,15 @@ str += addCode("produsImpare", [4], 105);
 str += addCode("produsImpare", [10], 654729075);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy9() {
+	let copy = document.getElementById("code9");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -188,10 +234,15 @@ str += addCode("contains", [[1,2,3,4,5], 3], true);
 str += addCode("contains", [[1,2,3,4,5], 6], false);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy10() {
+	let copy = document.getElementById("code10");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -204,10 +255,15 @@ str += addCode("maxArray", [[5,4,5]], 5);
 str += addCode("maxArray", [[-1,-2,-3]], -1);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy11() {
+	let copy = document.getElementById("code11");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -220,10 +276,15 @@ str += addCode("sumMinMax", [[5,4,5]], 9);
 str += addCode("sumMinMax", [[-1,-2,-3]], -4);
 try{
 	let f = new Function('"use strict";' + (str));
-	f.apply({});
-}catch(e){
-	addHeader(e);
+		f.apply({});
+	}catch(e){
+		addHeader(e);
+	}
 }
+function copy12() {
+	let copy = document.getElementById("code12");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -234,6 +295,7 @@ str += `addHeader("Ex 13: hasDuplicates");`;
 str += addCode("hasDuplicates", [[1,2,3,4,5]], false);
 str += addCode("hasDuplicates", [[5,4,5]], true);
 str += addCode("hasDuplicates", [[-1,-2,-3]], false);
+str += addCode("hasDuplicates", [[-1,-2,-3,-3]], true);
 str += addCode("hasDuplicates", [["asd","asd","asd"]], true);
 	try{
 		let f = new Function('"use strict";' + (str));
@@ -241,6 +303,11 @@ str += addCode("hasDuplicates", [["asd","asd","asd"]], true);
 	}catch(e){
 		addHeader(e);
 	}
+}
+function copy13() {
+	let copy = document.getElementById("code13");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
@@ -259,6 +326,11 @@ str += addCode("produsPozitive", [[5,4,-5,-100]], 20);
 		addHeader(e);
 	}
 }
+function copy14() {
+	let copy = document.getElementById("code14");
+	copy.select();
+	document.execCommand("copy");
+}
 
 
 function validate15() {
@@ -276,6 +348,11 @@ str += addCode("palindrom", ["asdfsa"], false);
 	}catch(e){
 		addHeader(e);
 	}
+}
+function copy15() {
+	let copy = document.getElementById("code15");
+	copy.select();
+	document.execCommand("copy");
 }
 
 
