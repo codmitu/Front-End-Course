@@ -44,13 +44,14 @@ function copy() {
 function validate2() {
 	let str = code2.value;
 	result.innerHTML="";
-str += `addHeader("Ex 2: compare");`;
-str += addCode("compare", [1, 2], -1);
-str += addCode("compare", [2, 2], 0);
-str += addCode("compare", [3,1], 1);
-str += addCode("compare", ["a", "A"], 1);
-str += addCode("compare", ["aasd", "asd"], -1);
-str += addCode("compare", ["10","2"], -1);
+	str += `addHeader("Ex 2: compare");`;
+	str += addCode("compare", [1, 2], -1);
+	str += addCode("compare", [2, 2], 0);
+	str += addCode("compare", [3,1], 1);
+	str += addCode("compare", [10,2], 1);
+	str += addCode("compare", ["a", "A"], 1);
+	str += addCode("compare", ["aasd", "asd"], -1);
+	str += addCode("compare", ["10","2"], -1);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -67,13 +68,13 @@ function copy2() {
 function validate3() {
 	let str = code3.value;
 	result.innerHTML="";
-str += `addHeader("Ex 3: max");`;
-str += addCode("max", [1, 2], 2);
-str += addCode("max", [2, 2], 2);
-str += addCode("max", [3,1], 3);
-str += addCode("max", ["a", "A"], "a");
-str += addCode("max", ["aasd", "asd"], "asd");
-str += addCode("max", ["10","2"], "2");
+	str += `addHeader("Ex 3: max");`;
+	str += addCode("max", [1, 2], 2);
+	str += addCode("max", [2, 2], 2);
+	str += addCode("max", [3,1], 3);
+	str += addCode("max", ["a", "A"], "a");
+	str += addCode("max", ["aasd", "asd"], "asd");
+	str += addCode("max", ["10","2"], "2");
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -91,13 +92,13 @@ function copy3() {
 function validate4() {
 	let str = code4.value;
 	result.innerHTML="";
-str += `addHeader("Ex 4: min");`;
-str += addCode("min", [1, 2], 1);
-str += addCode("min", [2, 2], 2);
-str += addCode("min", [3,1], 1);
-str += addCode("min", ["a", "A"], "A");
-str += addCode("min", ["aasd", "asd"], "aasd");
-str += addCode("min", ["10","2"], "10");
+	str += `addHeader("Ex 4: min");`;
+	str += addCode("min", [1, 2], 1);
+	str += addCode("min", [2, 2], 2);
+	str += addCode("min", [3,1], 1);
+	str += addCode("min", ["a", "A"], "A");
+	str += addCode("min", ["aasd", "asd"], "aasd");
+	str += addCode("min", ["10","2"], "10");
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -115,10 +116,12 @@ function copy4() {
 function validate5() {
 	let str = code5.value;
 	result.innerHTML="";
-str += `addHeader("Ex 5: suma");`;
-str += addCode("suma", [3], 6);
-str += addCode("suma", [5], 15);
-str += addCode("suma", [7], 28);
+	str += `addHeader("Ex 5: suma");`;
+	str += addCode("suma", [0], 0);
+	str += addCode("suma", [1], 1);
+	str += addCode("suma", [3], 6);
+	str += addCode("suma", [5], 15);
+	str += addCode("suma", [7], 28);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -136,13 +139,13 @@ function copy5() {
 function validate6() {
 	let str = code6.value;
 	result.innerHTML="";
-str += `addHeader("Ex 6: prim");`;
-str += addCode("prim", [3], true);
-str += addCode("prim", [5], true);
-str += addCode("prim", [7], true);
-str += addCode("prim", [12], false);
-str += addCode("prim", [89], true);
-str += addCode("prim", [91], false);
+	str += `addHeader("Ex 6: prim");`;
+	str += addCode("prim", [3], true);
+	str += addCode("prim", [5], true);
+	str += addCode("prim", [7], true);
+	str += addCode("prim", [12], false);
+	str += addCode("prim", [89], true);
+	str += addCode("prim", [91], false);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -160,11 +163,13 @@ function copy6() {
 function validate7() {
 	let str = code7.value;
 	result.innerHTML="";
-str += `addHeader("Ex 7: sumaPrime");`;
-str += addCode("sumaPrime", [3], 10);
-str += addCode("sumaPrime", [5], 28);
-str += addCode("sumaPrime", [7], 58);
-str += addCode("sumaPrime", [12], 197);
+	str += `addHeader("Ex 7: sumaPrime");`;
+	str += addCode("sumaPrime", [1], 2);
+	str += addCode("sumaPrime", [2], 5);
+	str += addCode("sumaPrime", [3], 10);
+	str += addCode("sumaPrime", [5], 28);
+	str += addCode("sumaPrime", [7], 58);
+	str += addCode("sumaPrime", [12], 197);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -182,11 +187,11 @@ function copy7() {
 function validate8() {
 	let str = code8.value;
 	result.innerHTML="";
-str += `addHeader("Ex 8: invers");`;
-str += addCode("invers", [123], 321);
-str += addCode("invers", [100], 1);
-str += addCode("invers", [80], 8);
-str += addCode("invers", [123456], 654321);
+	str += `addHeader("Ex 8: invers");`;
+	str += addCode("invers", [123], 321);
+	str += addCode("invers", [100], 1);
+	str += addCode("invers", [80], 8);
+	str += addCode("invers", [123456], 654321);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -204,11 +209,11 @@ function copy8() {
 function validate9() {
 	let str = code9.value;
 	result.innerHTML="";
-str += `addHeader("Ex 9: produsImpare");`;
-str += addCode("produsImpare", [2], 3);
-str += addCode("produsImpare", [3], 15);
-str += addCode("produsImpare", [4], 105);
-str += addCode("produsImpare", [10], 654729075);
+	str += `addHeader("Ex 9: produsImpare");`;
+	str += addCode("produsImpare", [2], 3);
+	str += addCode("produsImpare", [3], 15);
+	str += addCode("produsImpare", [4], 105);
+	str += addCode("produsImpare", [10], 654729075);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -226,12 +231,12 @@ function copy9() {
 function validate10() {
 	let str = code10.value;
 	result.innerHTML="";
-str += `addHeader("Ex 10: contains");`;
-str += addCode("contains", [[1,2,3,4,5], 5], true);
-str += addCode("contains", [[1,2,3,4,5], 1], true);
-str += addCode("contains", [[1,2,3,4,5], 2], true);
-str += addCode("contains", [[1,2,3,4,5], 3], true);
-str += addCode("contains", [[1,2,3,4,5], 6], false);
+	str += `addHeader("Ex 10: contains");`;
+	str += addCode("contains", [[1,2,3,4,5], 5], true);
+	str += addCode("contains", [[1,2,3,4,5], 1], true);
+	str += addCode("contains", [[1,2,3,4,5], 2], true);
+	str += addCode("contains", [[1,2,3,4,5], 3], true);
+	str += addCode("contains", [[1,2,3,4,5], 6], false);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -249,10 +254,11 @@ function copy10() {
 function validate11() {
 	let str = code11.value;
 	result.innerHTML="";
-str += `addHeader("Ex 11: maxArray");`;
-str += addCode("maxArray", [[1,2,3,4,5]], 5);
-str += addCode("maxArray", [[5,4,5]], 5);
-str += addCode("maxArray", [[-1,-2,-3]], -1);
+	str += `addHeader("Ex 11: maxArray");`;
+	str += addCode("maxArray", [[1,2,3,4,5]], 5);
+	str += addCode("maxArray", [[5,4,5]], 5);
+	str += addCode("maxArray", [[-1,-2,-3]], -1);
+	str += addCode("maxArray", [["aas","asa","bbb","bbbb"]], "bbbb");
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -270,10 +276,10 @@ function copy11() {
 function validate12() {
 	let str = code12.value;
 	result.innerHTML="";
-str += `addHeader("Ex 12: sumMinMax");`;
-str += addCode("sumMinMax", [[1,2,3,4,5]], 6);
-str += addCode("sumMinMax", [[5,4,5]], 9);
-str += addCode("sumMinMax", [[-1,-2,-3]], -4);
+	str += `addHeader("Ex 12: sumMinMax");`;
+	str += addCode("sumMinMax", [[1,2,3,4,5]], 6);
+	str += addCode("sumMinMax", [[5,4,5]], 9);
+	str += addCode("sumMinMax", [[-1,-2,-3]], -4);
 try{
 	let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -291,12 +297,12 @@ function copy12() {
 function validate13() {
 	let str = code13.value;
 	result.innerHTML="";
-str += `addHeader("Ex 13: hasDuplicates");`;
-str += addCode("hasDuplicates", [[1,2,3,4,5]], false);
-str += addCode("hasDuplicates", [[5,4,5]], true);
-str += addCode("hasDuplicates", [[-1,-2,-3]], false);
-str += addCode("hasDuplicates", [[-1,-2,-3,-3]], true);
-str += addCode("hasDuplicates", [["asd","asd","asd"]], true);
+	str += `addHeader("Ex 13: hasDuplicates");`;
+	str += addCode("hasDuplicates", [[1,2,3,4,5]], false);
+	str += addCode("hasDuplicates", [[5,4,5]], true);
+	str += addCode("hasDuplicates", [[-1,-2,-3]], false);
+	str += addCode("hasDuplicates", [[-1,-2,-3,-3]], true);
+	str += addCode("hasDuplicates", [["asd","asd","asd"]], true);
 	try{
 		let f = new Function('"use strict";' + (str));
 		f.apply({});
@@ -314,11 +320,11 @@ function copy13() {
 function validate14() {
 	let str = code14.value;
 	result.innerHTML="";
-str += `addHeader("Ex 14: produsPozitive");`;
-str += addCode("produsPozitive", [[1,2,3,4,5]], 120);
-str += addCode("produsPozitive", [[5,4,5]], 100);
-str += addCode("produsPozitive", [[-1,-2,-3]], 1);
-str += addCode("produsPozitive", [[5,4,-5,-100]], 20);
+	str += `addHeader("Ex 14: produsPozitive");`;
+	str += addCode("produsPozitive", [[1,2,3,4,5]], 120);
+	str += addCode("produsPozitive", [[5,4,5]], 100);
+	str += addCode("produsPozitive", [[-1,-2,-3]], 1);
+	str += addCode("produsPozitive", [[5,4,-5,-100]], 20);
 	try{
 		let f = new Function('"use strict";' + (str));
 		f.apply({});
