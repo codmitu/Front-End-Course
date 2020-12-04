@@ -106,7 +106,7 @@ textarea{
     height: 380px;
 }
 button{
-    width: 100px;
+    width: 80px;
     height: 30px;
     float: right;
     margin-left: 10px;
@@ -128,4 +128,7 @@ button:hover{
 }
 button:active{
     transform: scale(1);
+}
+.copy{
+    color: rgb(255, 83, 226);
 }
