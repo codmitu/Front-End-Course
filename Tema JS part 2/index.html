@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ichim Gelu JS part 2</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        
+</head>
+<body onload="myFunction()">
+
+    <!-- Audio -->
+    <audio id="windSound" autoplay loop>
+        <source src="wind.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Snowing animation div-->
+    <div id="snow"></div>
+
+    <!-- 15 tests -->
+    <section id="test">
+        <a style="opacity: 0"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 1: getDigits</p>
+            <textarea id="code" class="chenar">
+function getDigits(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 0 && str[i] <= 9) {
+            result += str[i];
+        }
+    }
+    return result;
+}
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a onclick="show('test2', 'test');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test2">
+        <a  onclick="show('test', 'test2');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 2: getLetters</p>
+            <textarea id="code2" class="chenar">
+function getLetters(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
+            result += str[i];
+        }
+    }
+    return result;
+}
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate2()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy2()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test3', 'test2');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test3">
+        <a  onclick="show('test2', 'test3');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 3: getFirst5Letters</p>
+            <textarea id="code3" class="chenar">
+function getFirst5Letters(str) {
+    let result = "",
+        counter = 0;
+    for (let i = 0; counter < 5; i++) {
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
+            result += str[i];
+            counter++;
+        }
+    }
+    return result;
+}
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate3()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy3()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test4', 'test3');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test4">
+        <a  onclick="show('test3', 'test4');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 4: concatenate</p>
+            <textarea id="code4" >
+function concatenate(arr) {
+    let str = "";
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i];
+    }
+    return str;
+}
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate4()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy4()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test5', 'test4');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test5">
+        <a  onclick="show('test4', 'test5');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 5: getAllDigits</p>
+            <textarea id="code5" >
+function getAllDigits(arr) {
+    let str = "", 
+        result = "";
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i];
+    }
+    for (let j = 0; j < str.length; j++) {
+        if (str[j] >= 0 && str[j] <= 9) {
+            result += str[j];
+        }
+    }
+    return result;
+}
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate5()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy5()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test6', 'test5');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test6">
+        <a  onclick="show('test5', 'test6');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 6: invertAllStrings</p>
+            <textarea id="code6" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate6()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy6()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test7', 'test6');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test7">
+        <a  onclick="show('test6', 'test7');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 7: factorial</p>
+            <textarea id="code7" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate7()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy7()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test8', 'test7');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test8">
+        <a  onclick="show('test7', 'test8');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 8: cmmdc</p>
+            <textarea id="code8" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate8()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy8()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test9', 'test8');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test9">
+        <a  onclick="show('test8', 'test9');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 9: cmmmc</p>
+            <textarea id="code9" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate9()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy9()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test10', 'test9');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test10">
+        <a  onclick="show('test9', 'test10');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 10: divizori</p>
+            <textarea id="code10" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate10()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy10()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test11', 'test10');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test11">
+        <a  onclick="show('test10', 'test11');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 11: palindrom</p>
+            <textarea id="code11" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate11()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy11()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test12', 'test11');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test12">
+        <a  onclick="show('test11', 'test12');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 12: sort</p>
+            <textarea id="code12" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy12()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test13', 'test12');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test13">
+        <a  onclick="show('test12', 'test13');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 13: sortAscDesc</p>
+            <textarea id="code12" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy12()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test14', 'test13');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test14">
+        <a  onclick="show('test13', 'test14');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 14: binarySearch</p>
+            <textarea id="code12" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy12()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  onclick="show('test15', 'test14');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+
+    <section id="test15">
+        <a  onclick="show('test14', 'test15');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
+        <div class="content">
+            <p>Ex 15: countBinarySearch</p>
+            <textarea id="code12" >
+
+            </textarea>
+            <div class="buttons">
+                <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy12()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+            </div>
+        </div>
+        <a  style="opacity: 0"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
+    </section>
+    
+    <section class="res">
+        <div id="result">
+        
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <script src="validator.js"></script>
+</body>
+</html>
