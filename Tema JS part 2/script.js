@@ -1,7 +1,7 @@
 // Functie volum pt sunet
 function myFunction() {
     var x = document.getElementById("windSound");
-    x.volume = 0.15;
+    x.volume = 0.05;
 }
 
 // Functie pt ninsoare
