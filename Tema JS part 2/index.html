@@ -5,17 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ichim Gelu JS part 2</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         
 </head>
 <body onload="myFunction()">
-
     <!-- Audio -->
-    <audio id="windSound" autoplay loop controls style="display: none">
+    <audio id="windSound"  loop controls autoplay>
         <source src="wind.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
+    <script>
+        // Functie volum pt sunet
+function myFunction() {
+    var x = document.getElementById("windSound").volume = 0.05;
+}
+    </script>
 
     <!-- Snowing animation div-->
     <div id="snow"></div>
@@ -294,14 +298,9 @@ function getAllDigits(arr) {
         <div id="result">
         
         </div>
-    </section>
+    </section> 
     
-    
-    
-    
-    
-    
-    
+    <script src="script.js"></script>
     <script src="validator.js"></script>
 </body>
 </html>
