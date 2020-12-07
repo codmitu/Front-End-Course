@@ -14,6 +14,8 @@
         <source src="wind.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
+
+
     <script>
         // Functie volum pt sunet
 function myFunction() {
@@ -24,12 +26,13 @@ function myFunction() {
     <!-- Snowing animation div-->
     <div id="snow"></div>
 
+
     <!-- 15 tests -->
     <section id="test">
         <a style="opacity: 0"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 1: getDigits</p>
-            <textarea id="code" class="chenar">
+            <textarea id="code">
 function getDigits(str) {
     let result = "";
     for (let i = 0; i < str.length; i++) {
@@ -52,12 +55,13 @@ function getDigits(str) {
         <a  onclick="show('test', 'test2');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 2: getLetters</p>
-            <textarea id="code2" class="chenar">
+            <textarea id="code2">
 function getLetters(str) {
     let result = "";
     for (let i = 0; i < str.length; i++) {
-        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
-            result += str[i];
+        if ((str[i] >= 'a' && str[i] <= 'z') || 
+            (str[i] >= 'A' && str[i] <= 'Z')) {
+                result += str[i];
         }
     }
     return result;
@@ -75,14 +79,15 @@ function getLetters(str) {
         <a  onclick="show('test2', 'test3');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 3: getFirst5Letters</p>
-            <textarea id="code3" class="chenar">
+            <textarea id="code3">
 function getFirst5Letters(str) {
     let result = "",
         counter = 0;
     for (let i = 0; counter < 5; i++) {
-        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
-            result += str[i];
-            counter++;
+        if ((str[i] >= 'a' && str[i] <= 'z') || 
+            (str[i] >= 'A' && str[i] <= 'Z')) {
+                result += str[i];
+                counter++;
         }
     }
     return result;
@@ -100,7 +105,7 @@ function getFirst5Letters(str) {
         <a  onclick="show('test3', 'test4');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 4: concatenate</p>
-            <textarea id="code4" >
+            <textarea id="code4">
 function concatenate(arr) {
     let str = "";
     for (let i = 0; i < arr.length; i++) {
@@ -121,7 +126,7 @@ function concatenate(arr) {
         <a  onclick="show('test4', 'test5');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 5: getAllDigits</p>
-            <textarea id="code5" >
+            <textarea id="code5">
 function getAllDigits(arr) {
     let str = "", 
         result = "";
@@ -149,7 +154,17 @@ function getAllDigits(arr) {
         <div class="content">
             <p>Ex 6: invertAllStrings</p>
             <textarea id="code6" >
-
+function invertAllStrings(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        let str = "";
+        for (let j = arr[i].length - 1; j >= 0; j--) {
+            str += arr[i][j];
+        }
+        newArr.push(str);
+    }
+    return newArr;
+}
             </textarea>
             <div class="buttons">
                 <button onclick="validate6()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
@@ -164,7 +179,16 @@ function getAllDigits(arr) {
         <div class="content">
             <p>Ex 7: factorial</p>
             <textarea id="code7" >
-
+function factorial(num) {
+    let prod = 1;
+    for (let i = 1; i <= num; i++) {
+        prod *= i;
+    }
+    if (num === 0) {
+        return 1;
+    }
+    return prod;
+}
             </textarea>
             <div class="buttons">
                 <button onclick="validate7()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
@@ -179,7 +203,24 @@ function getAllDigits(arr) {
         <div class="content">
             <p>Ex 8: cmmdc</p>
             <textarea id="code8" >
-
+function cmmdc(num1, num2) {
+    let min,
+        max;
+    if (num1 > num2) {
+        min = num2;
+        max = num1;
+    } else {
+        min = num1;
+        max = num2;
+    }
+    let i = min;
+    while (min > 0) {
+        if (max % i === 0 && min % i === 0 ) {
+            return i;
+        }
+        i--;
+    }
+}
             </textarea>
             <div class="buttons">
                 <button onclick="validate8()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
@@ -194,7 +235,24 @@ function getAllDigits(arr) {
         <div class="content">
             <p>Ex 9: cmmmc</p>
             <textarea id="code9" >
-
+function cmmmc(num1, num2) {
+    let min,
+        max;
+    if (num1 > num2) {
+        min = num2;
+        max = num1;
+    } else {
+        min = num1;
+        max = num2;
+    }
+    let i = max;
+    while (min > 0) {
+        if (i % max === 0 && i % min === 0 ) {
+            return i;
+        }
+        i++;
+    }
+}
             </textarea>
             <div class="buttons">
                 <button onclick="validate9()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
@@ -209,7 +267,15 @@ function getAllDigits(arr) {
         <div class="content">
             <p>Ex 10: divizori</p>
             <textarea id="code10" >
-
+function divizori(num) {
+    let divNr = [];
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            divNr.push(i);
+        }
+    }
+    return divNr;
+}
             </textarea>
             <div class="buttons">
                 <button onclick="validate10()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
@@ -224,7 +290,17 @@ function getAllDigits(arr) {
         <div class="content">
             <p>Ex 11: palindrom</p>
             <textarea id="code11" >
-
+function palindrom(num) {
+    let num1 = num.toString(),
+        num2 = "";
+    for (let i = num1.length - 1; i >= 0; i--) {
+        num2 += num1[i];
+    }
+    if (num1 === num2) {
+        return true;
+    }
+    return false;
+}
             </textarea>
             <div class="buttons">
                 <button onclick="validate11()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
@@ -239,7 +315,26 @@ function getAllDigits(arr) {
         <div class="content">
             <p>Ex 12: sort</p>
             <textarea id="code12" >
-
+function sort(arr) {
+    let even = [], 
+        sorted = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i]);
+        }
+    }
+    for (let i = 1; even.length > 0; i++) {
+        let min = even[0];
+        for (let j = 0; j < even.length; j++) {
+            if (min > even[j]) {
+                min = even[j];
+            }
+        }
+        sorted.push(min);
+        even.splice(even.indexOf(min), 1);
+    }
+    return sorted;
+}
             </textarea>
             <div class="buttons">
                 <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
@@ -253,12 +348,47 @@ function getAllDigits(arr) {
         <a  onclick="show('test12', 'test13');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 13: sortAscDesc</p>
-            <textarea id="code12" >
-
+            <textarea id="code13" >
+function sortAscDesc(arr) {
+    let min = arr[0],
+        max = arr[0],
+        odd = [],
+        even = [],
+        newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i]);
+        }
+        if (arr[i] % 2 !== 0) {
+            odd.push(arr[i]);
+        }
+    }
+    for (let i = 1; even.length > 0; i++) {
+        let min = even[0];
+        for (let j = 0; j < even.length; j++) {
+            if (min > even[j]) {
+                min = even[j];
+            }
+        }
+        newArr.push(min);
+        even.splice(even.indexOf(min), 1);
+    }
+    for (let i = 1; odd.length > 0; i++) {
+        let max = odd[0];
+        for (let j = 0; j < odd.length; j++) {
+            if (max < odd[j]) {
+                max = odd[j];
+            }
+        }
+        newArr.push(max);
+        odd.splice(odd.indexOf(max), 1);
+    }
+    return newArr;
+}
             </textarea>
             <div class="buttons">
-                <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
-                <button onclick="copy12()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+                <button onclick="validate13()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy13()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
             </div>
         </div>
         <a  onclick="show('test14', 'test13');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
@@ -268,12 +398,26 @@ function getAllDigits(arr) {
         <a  onclick="show('test13', 'test14');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 14: binarySearch</p>
-            <textarea id="code12" >
-
+            <textarea id="code14" >
+function binarySearch(arr, num) {
+    let start = 0,
+        end = arr.length - 1;
+    while (start <= end) {
+        let middle = Math.floor((start + end) / 2);
+        if (arr[middle] === num) {
+            return true;
+        } else if (arr[middle] < num) {
+            start = middle + 1;
+        } else {
+            end = middle - 1;
+        }
+    }
+    return false;
+}
             </textarea>
             <div class="buttons">
-                <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
-                <button onclick="copy12()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+                <button onclick="validate14()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy14()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
             </div>
         </div>
         <a  onclick="show('test15', 'test14');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>
@@ -283,12 +427,31 @@ function getAllDigits(arr) {
         <a  onclick="show('test14', 'test15');"><button><span class="iconify" data-icon="topcoat:next" data-inline="false" data-rotate="180deg"></span></span></button></a> 
         <div class="content">
             <p>Ex 15: countBinarySearch</p>
-            <textarea id="code12" >
-
+            <textarea id="code15" >
+function countBinarySearch(arr, num) {
+    if (num > arr.length) {
+        arr.push(num);
+    }
+    let start = 0,
+        end = arr.length - 1,
+        counter = 1;
+    while (start <= end) {
+        let middle = Math.floor((start + end) / 2);
+        if (arr[middle] === num) {
+            return counter;
+        } else if (arr[middle] < num) {
+            start = middle + 1;
+            counter++;
+        } else {
+            end = middle - 1;
+            counter++;
+        }
+    }
+}
             </textarea>
             <div class="buttons">
-                <button onclick="validate12()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
-                <button onclick="copy12()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
+                <button onclick="validate15()">Check<span class="iconify" data-icon="emojione-v1:left-check-mark"></span></button>
+                <button onclick="copy15()">Copy<span class="iconify copy" data-icon="clarity:copy-line"></span></button>
             </div>
         </div>
         <a  style="opacity: 0"><button><span class="iconify" data-icon="topcoat:next" data-inline="false"></span></button></a>

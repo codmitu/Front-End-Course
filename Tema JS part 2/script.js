@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     "out_mode": "out",
                     "bounce": false,
                     "attract": {
-                        "enable": true,
+                        "enable": false,
                         "rotateX": 300,
                         "rotateY": 1200
                     }

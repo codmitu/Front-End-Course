@@ -1,0 +1,239 @@
+function getDigits(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 0 && str[i] <= 9) {
+            result += str[i];
+        }
+    }
+    return result;
+}
+            
+
+function getLetters(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
+        	result += str[i];
+        }
+    }
+    return result;
+}
+            
+
+function getFirst5Letters(str) {
+    let result = "",
+        counter = 0;
+    for (let i = 0; counter < 5; i++) {
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
+            result += str[i];
+            counter++;
+        }
+    }
+    return result;
+}
+            
+
+function concatenate(arr) {
+    let str = "";
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i];
+    }
+    return str;
+}
+            
+
+function getAllDigits(arr) {
+    let str = "", 
+        result = "";
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i];
+    }
+    for (let j = 0; j < str.length; j++) {
+        if (str[j] >= 0 && str[j] <= 9) {
+            result += str[j];
+        }
+    }
+    return result;
+}
+            
+
+function invertAllStrings(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        let str = "";
+        for (let j = arr[i].length - 1; j >= 0; j--) {
+            str += arr[i][j];
+        }
+        newArr.push(str);
+    }
+    return newArr;
+}
+
+
+function factorial(num) {
+    let prod = 1;
+    for (let i = 1; i <= num; i++) {
+        prod *= i;
+    }
+    if (num === 0) {
+        return 1;
+    }
+    return prod;
+}
+
+function cmmdc(num1, num2) {
+    let min,
+        max;
+    if (num1 > num2) {
+        min = num2;
+        max = num1;
+    } else {
+        min = num1;
+        max = num2;
+    }
+    let i = min;
+    while (min > 0) {
+        if (max % i === 0 && min % i === 0 ) {
+            return i;
+        }
+        i--;
+    }
+}
+            
+function cmmmc(num1, num2) {
+    let min,
+        max;
+    if (num1 > num2) {
+        min = num2;
+        max = num1;
+    } else {
+        min = num1;
+        max = num2;
+    }
+    let i = max;
+    while (min > 0) {
+        if (i % max === 0 && i % min === 0 ) {
+            return i;
+        }
+        i++;
+    }
+}
+            
+function divizori(num) {
+    let divNr = [];
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            divNr.push(i);
+        }
+    }
+    return divNr;
+}
+            
+function palindrom(num) {
+    let num1 = num.toString(),
+        num2 = "";
+    for (let i = num1.length - 1; i >= 0; i--) {
+        num2 += num1[i];
+    }
+    if (num1 === num2) {
+        return true;
+    }
+    return false;
+}
+            
+function sort(arr) {
+    let even = [], 
+        sorted = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i]);
+        }
+    }
+    for (let i = 1; even.length > 0; i++) {
+        let min = even[0];
+        for (let j = 0; j < even.length; j++) {
+            if (min > even[j]) {
+                min = even[j];
+            }
+        }
+        sorted.push(min);
+        even.splice(even.indexOf(min), 1);
+    }
+    return sorted;
+}
+            
+function sortAscDesc(arr) {
+    let min = arr[0],
+        max = arr[0],
+        odd = [],
+        even = [],
+        newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i]);
+        }
+        if (arr[i] % 2 !== 0) {
+            odd.push(arr[i]);
+        }
+    }
+    for (let i = 1; even.length > 0; i++) {
+        let min = even[0];
+        for (let j = 0; j < even.length; j++) {
+            if (min > even[j]) {
+                min = even[j];
+            }
+        }
+        newArr.push(min);
+        even.splice(even.indexOf(min), 1);
+    }
+    for (let i = 1; odd.length > 0; i++) {
+        let max = odd[0];
+        for (let j = 0; j < odd.length; j++) {
+            if (max < odd[j]) {
+                max = odd[j];
+            }
+        }
+        newArr.push(max);
+        odd.splice(odd.indexOf(max), 1);
+    }
+    return newArr;
+}
+            
+function binarySearch(arr, num) {
+    let start = 0,
+        end = arr.length - 1;
+    while (start <= end) {
+        let middle = Math.floor((start + end) / 2);
+        if (arr[middle] === num) {
+            return true;
+        } else if (arr[middle] < num) {
+            start = middle + 1;
+        } else {
+            end = middle - 1;
+        }
+    }
+    return false;
+}
+
+function countBinarySearch(arr, num) {
+    if (num > arr.length) {
+        arr.push(num);
+    }
+    let start = 0,
+        end = arr.length - 1,
+        counter = 1;
+    while (start <= end) {
+        let middle = Math.floor((start + end) / 2);
+        if (arr[middle] === num) {
+            return counter;
+        } else if (arr[middle] < num) {
+            start = middle + 1;
+            counter++;
+        } else {
+            end = middle - 1;
+            counter++;
+        }
+    }
+}
+
+            
