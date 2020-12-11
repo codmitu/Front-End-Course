@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichim Gelu DOM manipulation</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="contPrompt">
+        <div id="prompt">
+            <span class="iconify" data-icon="vaadin:check-circle"></span>
+            Thank you for contacting us, <span id="username"></span>
+            <button id="close" onclick="closePrompt();" ><span class="iconify" data-icon="gg:close"></span></button>
+        </div>
+    </div>
+    <main>
+        <section>
+            <form action="#" onsubmit="send();return false">
+                <input type="text" 
+                placeholder="First Name*" 
+                name="first" 
+                onblur="check(this, event, 3);" 
+                onfocus="remBlurOnFoc(this, event);" 
+                required 
+                pattern='[-A-Za-z\\s]*' 
+                minlength="3" 
+                maxlength="20"/>
+
+                <input type="text" 
+                placeholder="Last Name*" 
+                name="last" 
+                onblur="check(this, event, 3);" 
+                onfocus="remBlurOnFoc(this, event);" 
+                required 
+                pattern='[-A-Za-z\\s]*' 
+                minlength="3" 
+                maxlength="20"/>
+                <div>
+                    <span id="gender">Gender*</span> 
+                    <div id="radios">
+                        <label>
+                            <input type="radio" name="gender" required/>M
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" required/>F
+                        </label>
+                    </div>
+                </div>
+                <textarea required 
+                onblur="check(this, event, 10, 100);" 
+                onfocus="remBlurOnFoc(this, event);" 
+                placeholder="Your message here..." 
+                minlength="10" 
+                maxlength="100"></textarea>
+                <input type="submit" onsubmit="send();" />
+            </form>
+        </section>
+        <aside>
+            <img src="office.jpg" />
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
