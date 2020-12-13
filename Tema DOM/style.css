@@ -79,8 +79,10 @@ input[type="submit"]{
     border-radius: 3px;
     border: 1px solid rgb(64, 107, 128);
     align-self: flex-end;
-    /* right: 0; */
     cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color:  rgb(65, 138, 148);
 }
 aside{
     max-width: 40%;
