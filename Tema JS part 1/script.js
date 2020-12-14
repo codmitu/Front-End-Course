@@ -140,7 +140,7 @@ function validate6() {
 	let str = code6.value;
 	result.innerHTML="";
 	str += `addHeader("Ex 6: prim");`;
-	str += addCode("prim", [3], true);
+	str += addCode("prim", [2], true);
 	str += addCode("prim", [5], true);
 	str += addCode("prim", [7], true);
 	str += addCode("prim", [12], false);

@@ -97,8 +97,6 @@ function suma(num) {
 function prim(num) {
     if (num === 1) {
         return false;
-    } else if (num === 2) {
-        return true;
     } else {
         for (let i = 2; i < num; i++) {
             if (num % i === 0) {
@@ -117,8 +115,8 @@ function prim(num) {
         <p>Ex 7: sumaPrime</p>
         <textarea id="code7" >
 function sumaPrime(num) {
-    let sum = 0,
-        counter = 0;
+    let sum = 0;
+    let counter = 0;
     for (let i = 2; counter < num; i++) {
         for (let j = 2; j <= i; j++) {
             if (i % j === 0) {
@@ -141,8 +139,8 @@ function sumaPrime(num) {
         <p>Ex 8: invers</p>
         <textarea id="code8" >
 function invers(num) {
-    let resultat = 0,
-        rest;
+    let resultat = 0;
+    let rest;
     while (num > 0) {
         rest = num % 10;
         resultat = (resultat * 10) + rest;
@@ -159,8 +157,8 @@ function invers(num) {
         <p>Ex 9: produsImpare</p>
         <textarea id="code9" >
 function produsImpare(num) {
-    let prod = 1,
-        counter = 0;
+    let prod = 1;
+    let counter = 0;
     for (let i = 0; counter < num; i++) {
         if (i % 2 !== 0) {
             prod *= i;
@@ -211,9 +209,9 @@ function maxArray(arr) {
         <p>Ex 12: sumMinMax</p>
         <textarea id="code12" >
 function sumMinMax(arr) {
-    let i = 0, 
-        min = arr[i],
-        max = arr[i];
+    let i = 0;
+    let min = arr[i];
+    let max = arr[i];
     while (i < arr.length) {
         if (min < arr[i]) {
             min = arr[i];
