@@ -27,6 +27,9 @@ body{
     margin: 10px 0;
     visibility: hidden;
 }
+#username{
+    font-size: 16px;
+}
 .iconify{
     font-size: 16px;
 }
