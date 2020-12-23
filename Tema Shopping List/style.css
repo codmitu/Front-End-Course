@@ -34,7 +34,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.527);
     opacity: 0;
     pointer-events: none;
     transition: all .5s ease;
@@ -303,7 +303,7 @@ section{
     padding: 10px;
     overflow: scroll;
     border-left: 5px dashed green;
-    padding-bottom: 0;
+    /* padding-bottom: 20px; */
 }
 section::-webkit-scrollbar{
     width: 0;
@@ -426,17 +426,18 @@ h2{
     border: none;
     stroke: black;
     padding: 5px;
-    margin-top: 10px;
     cursor: pointer;
     position: sticky;
     bottom: 0;
+    transform: translateY(10px);
+    
 }
 .stickyBtn:hover{
     background: linear-gradient(to bottom, #c2f587, #3a6803);
 }
 .stickyBtn:active{
     filter: none;
-    transform: scale(.95);
+    transform: translateY(10px)  scale(.95);
 }
 
 @media screen and (max-width: 500px) {
