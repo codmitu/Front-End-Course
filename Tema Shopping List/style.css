@@ -110,7 +110,7 @@ img[src*="cart"]:hover{
     height: 50px;
     border-radius: 50%;
     background-color: #ffcd00;
-    top: 16%;
+    top: 12%;
     left: -100px;
     display: flex;
     justify-content: center;
@@ -298,12 +298,11 @@ section{
     background-color: white;
     position: absolute;
     right: 50%;
-    top: 20%;
+    top: 15%;
     transform: translateX(50%);
     padding: 10px;
     overflow: scroll;
     border-left: 5px dashed green;
-    /* padding-bottom: 0; */
 }
 section::-webkit-scrollbar{
     width: 0;
