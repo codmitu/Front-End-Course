@@ -303,6 +303,7 @@ section{
     padding: 10px;
     overflow: scroll;
     border-left: 5px dashed green;
+    padding-bottom: 0;
 }
 section::-webkit-scrollbar{
     width: 0;
@@ -441,5 +442,6 @@ h2{
 @media screen and (max-width: 500px) {
     h1{
         font-size: 3rem;
+        bottom: 0;
     }
 }
