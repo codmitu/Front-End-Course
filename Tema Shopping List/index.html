@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts,icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Ichim Gelu Shopping List</title>
+</head>
+<body onload="build();">
+    <div class="modal" ></div>
+    <main>
+        <img src="images/girl-shopping-bag.png" />
+
+        <!-- =========ADD FORM======= -->
+        <form onsubmit="event.preventDefault();addListItem();">
+            <input type="text" 
+                class="item" 
+                required 
+                spellcheck="false" 
+                maxlength="20"/>
+            <label class="labelItem">
+                <p class="itemName">write something</p></label>  
+            <textarea placeholder="Info (optional)" 
+            spellcheck="false" 
+            maxlength="100" 
+            class="textarea"></textarea>
+            <input type="submit" value="Add Item" onclick="build()" />    
+        </form>
+
+        <!-- ===========EDIT FORM========== -->
+        <div id="form2">
+            <input type="text" 
+                class="item2" 
+                required 
+                spellcheck="false" 
+                maxlength="20"/>
+            <label class="labelItem">
+                <p class="itemName">write something</p></label>  
+            <textarea placeholder="Info (optional)"  
+            spellcheck="false" 
+            maxlength="100" 
+            class="textarea2"></textarea>
+            <input type="button" value="Edit Item"  id="editBtn" onclick="edit2()" />    
+        </div>
+
+
+        <!-- =======EMOTICON======= -->
+        <div class="face">
+            <div class="eyes">
+                <div class=eye></div>
+                <div class=eye></div>
+            </div>
+        </div>
+
+
+
+        <!-- =======LIST======= -->
+        <section>
+            <h2>To buy . . .</h2>
+            <ol class="list">
+                
+            </ol>
+            <button class="stickyBtn" onclick="addItem();">Add Item</button>
+        </section>
+
+        
+        <img src="images/shopping-cart.png" /> 
+
+        <h1>Shopping List</h1>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

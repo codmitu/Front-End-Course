@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    /* border: 1px solid lightgrey; */
+}
+
+body {
+    background: linear-gradient(-45deg, #ff3c00, #ffe59e, #b8ebfd, #08ff98);
+	background-size: 400% 400%;
+    animation: gradient 25s ease-in-out infinite;
+    overflow: hidden;
+}
+
+/* Dynamic background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Dark layer on pop-up form/ */
+.modal{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.438);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* Shopping List title */
+h1{
+    font-family: 'Covered By Your Grace', cursive;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    font-size: 4rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0)10%, rgba(31, 190, 196, 0.863)150%);
+    padding: 20px;
+    border-right: 10px solid black;
+    z-index: -1;
+}
+
+
+
+
+
+/* the whole content goes in main/ */
+main{
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ /* two svgs */
+img[src*="girl"]{
+    width: 25%;
+    align-self: flex-end;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+img[src*="girl"]:hover{
+    opacity: 1;
+    transform: scale(1.1) translateX(-20px);
+}
+img[src*="cart"]{
+    width: 25%;
+    align-self: flex-start;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+img[src*="cart"]:hover{
+    opacity: 1;
+    transform: scale(1.1) translateX(20px);
+}
+
+
+
+
+
+
+
+/* emoticon */
+.face{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffcd00;
+    top: 16%;
+    left: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    z-index: 1;
+}
+.face::before{
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 25px;
+    height: 10px;
+    background-color: #b57700;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.3s;
+}
+.face:hover::before{
+    top: 35px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.face:hover{
+    background-color: #ff8800;
+    cursor: grabbing;
+}
+.eyes{
+    position: relative;
+    top: -5px;
+    display: flex;
+}
+.eyes .eye{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: white;
+    margin: 0 4px;
+    border-radius: 20px;
+}
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    background-color: rgb(15, 0, 151);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Submit and Edit popup forms */
+
+form, #form2{
+    right:50%;
+    top: 20%;
+    transform: translateX(50%);
+    width: 250px;
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(226, 252, 255, 0.37);
+    padding: 20px 10px;
+    z-index:3;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+.labelItem{
+    position: relative;
+}
+.itemName{
+    font-size: 0.9rem;
+    left: 0;
+    right: 0;
+    top: -45px;
+    text-align: center;
+    color: lightgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    pointer-events: none;
+    position: absolute;
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+input[type="text"]:focus + .labelItem .itemName, 
+input[type="text"]:valid + .labelItem .itemName{
+    transform: translate(40%, -200%);
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Sniglet', cursive;
+    border: none;
+    filter: drop-shadow(3px 10px 10px rgba(0, 0, 0, 0.45));
+    transition: all 0.5s ease-out;
+}
+textarea{
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    resize: none;
+    border: none;
+    filter: drop-shadow(3px 10px 10px rgba(0, 0, 0, 0.45));
+    transition: all 0.5s ease-out;
+}
+textarea::placeholder{
+    color: lightgrey;
+}
+input[type="submit"], 
+input[type="button"]{
+    margin-top: 10px;
+    filter: drop-shadow(3px 10px 10px rgba(0, 0, 0, 0.45));
+    
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    stroke: black;
+    padding: 5px;
+    cursor: pointer;
+}
+input[type="submit"]{
+    background: linear-gradient(to bottom, #c2f587, #65a313);
+}
+input[type="button"]{
+    background: linear-gradient(to bottom, #fda7fd, #d12cab);
+}
+input[type="submit"]:hover, 
+input[type="button"]:hover{
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
+}
+input[type="submit"]:active, 
+input[type="button"]:active{
+    filter: none;
+    transform: scale(.95);
+}
+input[type="text"]:invalid, textarea:placeholder-shown{
+    filter: none;
+    border: 1px solid grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* List section with the items */
+section{
+    width: 250px;
+    max-height: 60vh;
+    background-color: white;
+    position: absolute;
+    right: 50%;
+    top: 20%;
+    transform: translateX(50%);
+    padding: 10px;
+    /* padding-top: 2px; */
+    overflow: scroll;
+    border-left: 5px dashed green;
+    padding-bottom: 0;
+}
+section::-webkit-scrollbar{
+    width: 0;
+}
+h2{
+    font-family: 'Covered By Your Grace', cursive;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 2rem;
+    cursor: default;
+    position: sticky;
+    top: 0;
+    transform: translateY(-15px);
+    z-index: 1;
+    background-color: white;
+}
+.listDiv{
+    display: flex;
+    border-bottom: 1px solid gray;
+    list-style-type: decimal;
+    position: relative;
+    background-color: white;
+    transition: all .3s ease;
+}
+.checkIcon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+/* main item text */
+.itemText{
+    flex: 1;
+    margin: 10px 20px 10px 0;
+    cursor: default;
+    text-align: center;
+    font-family: 'Sniglet', cursive;
+    overflow: hidden;
+    list-style-position: inside;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+/* info text inside i*/
+.listDiv > div{
+    position: relative;
+}
+.moreInfo{
+    background-color: rgb(46, 130, 255);
+    position: absolute;
+    height: 100%;
+    width: 180px;
+    border-radius: 10px;
+    padding: 3px;
+    clip-path: circle(5% at 93.5% 25%);
+    right: 0;
+    overflow-y: scroll;
+    transition: clip-path .5s ease-in-out;
+}
+.moreInfo::-webkit-scrollbar{
+    width: 0;
+}
+.moreInfo:hover{
+    clip-path: circle(75%);
+    background-color: rgb(110, 168, 255);
+}
+
+/* i */
+.infoIcon{
+    float: right;
+    font-size: 0.8rem;
+    color: white;
+    transition: color .5s;
+    font-weight: bold;
+    margin-right: 4%;
+    cursor: default;
+    position: sticky;
+    top: 0;
+}
+.moreInfo:hover .infoIcon{
+    color: rgba(255, 255, 255, 0); 
+}
+.infoText{
+    color: rgba(255, 255, 255, 0); 
+}
+.moreInfo:hover .infoText {
+    color: rgb(255, 255, 255);
+    word-break: break-all;
+}
+.deleteMark{
+    margin: auto 0;
+    font-size: 1.5rem;
+    padding:2px;
+    color: red;
+    cursor: pointer;
+    background: none;
+}
+.deleteMark:hover{
+    padding:0;
+}
+
+
+/* JS delete and check animation */
+.remove{
+    transform: translateX(-250px);
+}
+.completed{
+    text-decoration: line-through;
+    color: lightgrey;
+}
+
+/* Add Item button - displays the form */
+.stickyBtn{
+    width: 100%;
+    background: linear-gradient(to bottom, #c2f587, #65a313);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    stroke: black;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: sticky;
+    bottom: 0;
+}
+.stickyBtn:hover{
+    background: linear-gradient(to bottom, #c2f587, #3a6803);
+}
+.stickyBtn:active{
+    filter: none;
+    transform: scale(.95);
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 3rem;
+    }
+}
