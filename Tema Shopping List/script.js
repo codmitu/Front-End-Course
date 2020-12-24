@@ -48,12 +48,11 @@ function dynamicSort(property) {
     }
 }
 
-/////// Show form
+/////// Shows form
 function addItem() {
     adauga.classList.add("open");
     modal.classList.add("open");
-    build();
-    
+    // build();
 }
 
 
@@ -95,8 +94,9 @@ function edit2(){
 
 ////// Check item
 function mark(idx) {
-    document.querySelectorAll("li")[idx].classList.toggle("completed");
+    document.querySelectorAll('li')[idx].classList.toggle('completed'); 
 }
+
 
 ////// Delete item
 function del(idx) {
