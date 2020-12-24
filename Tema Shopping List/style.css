@@ -8,6 +8,7 @@ body {
     background: linear-gradient(-45deg, #ff3c00, #ffe59e, #b8ebfd, #08ff98);
 	background-size: 400% 400%;
     animation: gradient 25s ease-in-out infinite;
+    overflow: hidden;
 }
 
 /* Dynamic background */
@@ -334,7 +335,8 @@ h2{
     top: 50px;
     transform: translateY(-20px);
     z-index: 1;
-    font-size: 1.3rem;
+    color: green;
+    font-size: 2rem;
     background-color: white;
 
 }
@@ -354,8 +356,8 @@ h2{
     
 }
 .checkIcon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     align-self: flex-end;
 }
