@@ -52,7 +52,6 @@ function dynamicSort(property) {
 function addItem() {
     adauga.classList.add("open");
     modal.classList.add("open");
-    document.querySelector("form").reset();
     build();
     
 }
@@ -68,6 +67,7 @@ function addListItem() {
     });
     modal.classList.remove("open");
     adauga.classList.remove("open");
+    document.querySelector("form").reset();
     build();
 }
 
