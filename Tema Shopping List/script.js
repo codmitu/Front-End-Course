@@ -1,3 +1,5 @@
+let modal = document.querySelector(".modal");
+let adauga = document.querySelector("form");
 let fullList = [];
 let position = -1;
 function build() {
@@ -20,11 +22,35 @@ function build() {
     }
     list.innerHTML = str;
 }
+/////// Sort A-Z
+function sortAZ() {
+    fullList.sort(dynamicSort("item"));
+    build();
+}
 
+
+/////// Sort Z-A
+function sortZA() {
+    fullList.sort(dynamicSort("-item"));
+    build();
+}
+
+///// sort by elements of objects in an array
+function dynamicSort(property) {
+    var sortOrder = 1;
+    if(property[0] === "-") {
+        sortOrder = -1;
+        property = property.substr(1);
+    }
+    return function (a,b) {
+        var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+        return result * sortOrder;
+    }
+}
 
 /////// Show form
 function addItem() {
-    document.querySelector("form").style.display = "flex";
+    adauga.classList.add("open");
     modal.classList.add("open");
     document.querySelector("form").reset();
     build();
@@ -37,11 +63,11 @@ function addListItem() {
     let item = document.querySelector(".item").value; 
     let info = document.querySelector(".textarea").value;
     fullList.push({
-        item : item,
-        info : info
+        "item" : item,
+        "info" : info
     });
-    document.querySelector("form").style.display = "none";
     modal.classList.remove("open");
+    adauga.classList.remove("open");
     build();
 }
 
@@ -50,7 +76,7 @@ function edit(idx) {
     let fl = fullList[idx];
     document.querySelector(".item2").value = fl.item;
     document.querySelector(".textarea2").value = fl.info;
-    document.querySelector("#form2").style.display = "flex";
+    document.querySelector(".form2").style.display = "flex";
     modal.classList.add("open");
     position = idx;
 }
@@ -59,13 +85,18 @@ function edit(idx) {
 ////// Edit item
 function edit2(){
     let fl = fullList[position];
-    fl.item =  document.querySelector(".item2").value;
+    fl.item = document.querySelector(".item2").value;
     fl.info = document.querySelector(".textarea2").value;
     document.querySelector("#form2").style.display = "none";
     modal.classList.remove("open");
     build();
 }
 
+
+////// Check item
+function mark(idx) {
+    document.querySelectorAll("li")[idx].classList.toggle("completed");
+}
 
 ////// Delete item
 function del(idx) {
@@ -75,12 +106,6 @@ function del(idx) {
         build();
     });
 }
-
-////// Check item
-function mark(idx) {
-    document.querySelectorAll("li")[idx].classList.toggle("completed");
-}
-
 
 
 //// Emoticon
@@ -98,13 +123,11 @@ function eyeball() {
 
 
 //// Modal Layer
-let modal = document.querySelector(".modal");
-
 modal.addEventListener("click", (e) => {
     if (e.target.classList.contains("modal")){
         modal.classList.remove("open");
-        document.querySelector("#form2").style.display = "none";
-        document.querySelector("form").style.display = "none";
+        adauga.classList.remove("open");
+        document.querySelector(".form2").style.display = "none";
     }
-})
+});
 

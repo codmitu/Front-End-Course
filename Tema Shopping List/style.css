@@ -3,14 +3,11 @@
     margin: 0;
     padding: 0;
     outline: none;
-    /* border: 1px solid lightgrey; */
 }
-
 body {
     background: linear-gradient(-45deg, #ff3c00, #ffe59e, #b8ebfd, #08ff98);
 	background-size: 400% 400%;
     animation: gradient 25s ease-in-out infinite;
-    overflow: hidden;
 }
 
 /* Dynamic background */
@@ -39,7 +36,11 @@ body {
     pointer-events: none;
     transition: all .5s ease;
 }
-.modal.open{
+.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.open2{
     opacity: 1;
     pointer-events: all;
 }
@@ -184,7 +185,7 @@ img[src*="cart"]:hover{
 
 /* Submit and Edit popup forms */
 
-form, #form2{
+form, .form2{
     right:50%;
     top: 20%;
     transform: translateX(50%);
@@ -196,6 +197,14 @@ form, #form2{
     padding: 20px 10px;
     z-index:3;
     backdrop-filter: blur(5px);
+}
+form{
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-out;
+}
+.form2{
     display: none;
 }
 .labelItem{
@@ -303,7 +312,6 @@ section{
     padding: 10px;
     overflow: scroll;
     border-left: 5px dashed green;
-    /* padding-bottom: 20px; */
 }
 section::-webkit-scrollbar{
     width: 0;
@@ -319,6 +327,22 @@ h2{
     transform: translateY(-15px);
     z-index: 1;
     background-color: white;
+    height: 50px;
+}
+.sortDiv{
+    position: sticky;
+    top: 50px;
+    transform: translateY(-20px);
+    z-index: 1;
+    font-size: 1.3rem;
+    background-color: white;
+
+}
+.iconify[data-icon*="ant-design"]{
+    cursor: pointer;
+}
+.iconify[data-icon*="ant-design"]:hover{
+    background-color: rgb(238, 238, 238);
 }
 .listDiv{
     display: flex;
@@ -327,6 +351,7 @@ h2{
     position: relative;
     background-color: white;
     transition: all .3s ease;
+    
 }
 .checkIcon{
     width: 20px;
@@ -383,6 +408,7 @@ h2{
     cursor: default;
     position: sticky;
     top: 0;
+    
 }
 .moreInfo:hover .infoIcon{
     color: rgba(255, 255, 255, 0); 
@@ -440,9 +466,14 @@ h2{
     transform: translateY(10px)  scale(.95);
 }
 
+
+
 @media screen and (max-width: 500px) {
     h1{
         font-size: 3rem;
         bottom: 0;
+    }
+    section{
+        width: 70%;
     }
 }
