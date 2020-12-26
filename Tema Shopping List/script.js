@@ -2,6 +2,8 @@ let modal = document.querySelector(".modal");
 let adauga = document.querySelector("form");
 let fullList = [];
 let position = -1;
+let arr;
+
 function build() {
     let list = document.querySelector("ol");
     let str = "";
@@ -9,7 +11,7 @@ function build() {
         str += `
             <div class="listDiv">
                 <span class="iconify checkIcon" data-icon="ant-design:edit-outlined" style="color: green;" onclick="edit(${i});"></span>
-                <li class="itemText" onclick="mark(${i});">${fullList[i].item}</li>
+                <li class="itemText" onclick="mark(${i});" style="${fullList[i].arr}">${fullList[i].item} </li>
                 <div>
                     <div class="moreInfo" >
                         <span class="infoIcon">i</span>
@@ -52,7 +54,6 @@ function dynamicSort(property) {
 function addItem() {
     adauga.classList.add("open");
     modal.classList.add("open");
-    // build();
 }
 
 
@@ -62,7 +63,7 @@ function addListItem() {
     let info = document.querySelector(".textarea").value;
     fullList.push({
         "item" : item,
-        "info" : info
+        "info" : info,
     });
     modal.classList.remove("open");
     adauga.classList.remove("open");
@@ -91,10 +92,16 @@ function edit2(){
     build();
 }
 
-
 ////// Check item
 function mark(idx) {
-    document.querySelectorAll('li')[idx].classList.toggle('completed'); 
+    let fl = fullList[idx];
+    let li = document.querySelectorAll("li")[idx];
+    if(li.style.color === "lightgrey"){
+        fl.arr =  "text-decoration: none; color: black";
+    } else {
+        fl.arr = "text-decoration: line-through; color: lightgrey";
+    }
+    build();
 }
 
 

@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body {
+    background: linear-gradient(-45deg, #ff3c00, #ffe59e, #b8ebfd, #08ff98);
+	background-size: 400% 400%;
+    animation: gradient 20s ease-in-out infinite;
+    overflow: hidden;
+}
+
+/* Dynamic background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Dark layer on pop-up form/ */
+.modal{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.527);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease;
+    backdrop-filter: blur(5px);
+}
+.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* Shopping List title */
+h1{
+    font-family: 'Covered By Your Grace', cursive;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    font-size: 4rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0)10%, rgba(31, 190, 196, 0.863)150%);
+    padding: 20px;
+    border-right: 10px solid black;
+    z-index: -1;
+}
+
+
+
+
+/* the whole content goes in main */
+main{
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+ /* two img svgs */
+img[src*="girl"]{
+    width: 25%;
+    align-self: flex-end;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+img[src*="girl"]:hover{
+    opacity: 1;
+    transform: scale(1.1) translateX(-20px);
+}
+img[src*="cart"]{
+    width: 25%;
+    align-self: flex-start;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+img[src*="cart"]:hover{
+    opacity: 1;
+    transform: scale(1.1) translateX(20px);
+}
+
+
+
+/* emoticon */
+.face{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffcd00;
+    top: 12%;
+    left: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    z-index: 1;
+}
+.face::before{
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 25px;
+    height: 10px;
+    background-color: #b57700;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.3s;
+}
+.face:hover::before{
+    top: 35px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.face:hover{
+    background-color: #ff8800;
+    cursor: grabbing;
+}
+.eyes{
+    position: relative;
+    top: -5px;
+    display: flex;
+}
+.eyes .eye{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: white;
+    margin: 0 4px;
+    border-radius: 20px;
+}
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    background-color: rgb(15, 0, 151);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 3rem;
+        bottom: 0;
+    }
+    section{
+        zoom: 1.3;
+        max-height: 55vh;
+    }
+    .itemText{
+        padding: 0 10px;
+    }
+    .deleteMark{
+        margin: 10px;
+    }
+}

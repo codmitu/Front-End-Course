@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-    <link rel="stylesheet" href="style.css"/>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/form_form2.css"/>
+    <link rel="stylesheet" href="style/item_list.css"/>
 
     <title>Ichim Gelu Shopping List</title>
 </head>
@@ -50,6 +53,20 @@
             <input type="button" value="Edit Item"  id="editBtn" onclick="edit2()" />    
         </div>
 
+        
+        <!-- ==========LIST========== -->
+        <section>   
+            <h2>To buy . . .</h2>
+            <div class="sortDiv">
+                <span class="iconify" data-icon="ant-design:sort-ascending-outlined" onclick="sortAZ();"></span>
+                <span class="iconify" data-icon="ant-design:sort-descending-outlined" onclick="sortZA();"></span>
+            </div>
+            <ol class="list">
+                
+            </ol>
+            <button class="stickyBtn" onclick="addItem();">Add Item</button>
+        </section>
+
 
         <!-- =======EMOTICON======= -->
         <div class="face">
@@ -61,18 +78,7 @@
 
 
 
-        <!-- =======LIST======= -->
-        <section>
-            <h2>To buy . . .</h2>
-            <div class="sortDiv">
-                <span class="iconify" data-icon="ant-design:sort-ascending-outlined" onclick="sortAZ();"></span>
-                <span class="iconify" data-icon="ant-design:sort-descending-outlined" onclick="sortZA();"></span>
-            </div>
-            <ol class="list">
-                
-            </ol>
-            <button class="stickyBtn" onclick="addItem();">Add Item</button>
-        </section>
+        
 
         
         <img src="images/shopping-cart.png" /> 
