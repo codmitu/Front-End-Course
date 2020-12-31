@@ -63,7 +63,7 @@ function addListItem() {
     let info = document.querySelector(".textarea").value;
     fullList.push({
         "item" : item,
-        "info" : info,
+        "info" : info
     });
     modal.classList.remove("open");
     adauga.classList.remove("open");
