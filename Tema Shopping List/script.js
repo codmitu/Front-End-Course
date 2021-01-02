@@ -92,7 +92,7 @@ function edit2(){
     build();
 }
 
-////// Check item
+////// Mark item
 function mark(idx) {
     let fl = fullList[idx];
     let li = document.querySelectorAll("li")[idx];
