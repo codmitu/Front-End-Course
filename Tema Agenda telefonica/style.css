@@ -90,6 +90,7 @@ section .loader span::before{
     z-index: 10;
     pointer-events: none;
     animation-delay: 5s;
+    visibility: hidden;
 }
 .border:before{
     content: '';
@@ -219,7 +220,7 @@ input[type="text"]{
     width: 267px;
     height: 66px;
     padding: 15px;
-    color: rgb(143, 143, 143);
+    color: rgb(77, 77, 77);
 }
 .lb-name1{
     margin: 0 20px;
