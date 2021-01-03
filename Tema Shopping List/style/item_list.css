@@ -47,7 +47,7 @@ h2{
     background-color: white;
     transition: all .5s ease;
 }
-.checkIcon{
+.editIcon{
     width: 30px;
     height: 30px;
     cursor: pointer;

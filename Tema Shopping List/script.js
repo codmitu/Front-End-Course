@@ -10,7 +10,7 @@ function build() {
     for (let i = 0; i < fullList.length; i++) {
         str += `
             <div class="listDiv">
-                <span class="iconify checkIcon" data-icon="ant-design:edit-outlined" style="color: green;" onclick="edit(${i});"></span>
+                <span class="iconify editIcon" data-icon="ant-design:edit-outlined" style="color: green;" onclick="edit(${i});"></span>
                 <li class="itemText" onclick="mark(${i});" style="${fullList[i].arr}">${fullList[i].item} </li>
                 <div>
                     <div class="moreInfo" >
