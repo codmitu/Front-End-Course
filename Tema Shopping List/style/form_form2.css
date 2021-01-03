@@ -55,7 +55,7 @@ input[type="text"]{
     text-align: center;
     font-family: 'Sniglet', cursive;
     border: none;
-    filter: drop-shadow(3px 10px 10px rgba(0, 0, 0, 0.45));
+    border-bottom: 3px solid rgb(233, 33, 27);
     transition: all 0.5s ease-out;
 }
 /* More info text area input  */
@@ -65,7 +65,7 @@ textarea{
     text-align: center;
     resize: none;
     border: none;
-    filter: drop-shadow(3px 10px 10px rgba(0, 0, 0, 0.45));
+    border-bottom: 3px solid rgb(233, 33, 27);
     transition: all 0.5s ease-out;
 }
 textarea::placeholder{
@@ -79,7 +79,6 @@ input[type="text"]:invalid, textarea:placeholder-shown{
 input[type="submit"], 
 input[type="button"]{
     margin-top: 10px;
-    filter: drop-shadow(3px 10px 10px rgba(0, 0, 0, 0.45));
     font-weight: bold;
     color: white;
     font-size: 1.2rem;
@@ -94,12 +93,15 @@ input[type="submit"]{
 input[type="button"]{
     background: linear-gradient(to bottom, #fda7fd, #d12cab);
 }
-input[type="submit"]:hover, 
-input[type="button"]:hover{
-    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
+input[type="submit"]:hover{
+    background: linear-gradient(to bottom, #b7d397, #4e7e0e);
 }
-input[type="submit"]:active, 
+input[type="button"]:hover{
+    background: linear-gradient(to bottom, #ff94ff, #8f0f71);
+}
+input[type="submit"]:active{
+    background: linear-gradient(to bottom, #c2f587, #65a313);
+}
 input[type="button"]:active{
-    filter: none;
-    transform: scale(.95);
+    background: linear-gradient(to bottom, #fda7fd, #d12cab);
 }

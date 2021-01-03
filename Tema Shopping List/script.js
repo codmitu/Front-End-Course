@@ -67,7 +67,7 @@ function addListItem() {
     });
     modal.classList.remove("open");
     adauga.classList.remove("open");
-    document.querySelector("form").reset();
+    adauga.reset();
     build();
 }
 

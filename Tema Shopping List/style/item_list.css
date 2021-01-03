@@ -33,10 +33,10 @@ h2{
     color: green;
     font-size: 2rem;
 }
-.iconify[data-icon*="ant-design"]{
+.iconify[data-icon*="la:sort"]{
     cursor: pointer;
 }
-.iconify[data-icon*="ant-design"]:hover{
+.iconify[data-icon*="la:sort"]:hover{
     background-color: rgb(238, 238, 238);
 }
 .listDiv{
@@ -75,7 +75,7 @@ h2{
     background-color: rgb(46, 130, 255);
     position: absolute;
     height: 100%;
-    width: 180px;
+    width: 170px;
     border-radius: 10px;
     padding: 3px;
     clip-path: circle(5% at 93.5% 25%);
@@ -98,11 +98,10 @@ h2{
     color: white;
     transition: color .5s;
     font-weight: bold;
-    margin-right: 4%;
+    margin-right: 6.5px;
     cursor: default;
     position: sticky;
     top: 0;
-    
 }
 .moreInfo:hover .infoIcon{
     color: rgba(255, 255, 255, 0); 
@@ -156,6 +155,5 @@ h2{
     background: linear-gradient(to bottom, #c2f587, #3a6803);
 }
 .stickyBtn:active{
-    filter: none;
-    transform: translateY(10px)  scale(.95);
+    background: linear-gradient(to bottom, #c2f587, #65a313);
 }
