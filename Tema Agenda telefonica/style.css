@@ -412,4 +412,9 @@ li:hover .iconify{
     ul{
         padding: 50px;
     }
+    .validator1,
+    .validator2,
+    .validator3{
+        right: 0%;
+    }
 }
