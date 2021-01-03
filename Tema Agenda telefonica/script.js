@@ -126,5 +126,5 @@ document.addEventListener('invalid', (function () {
 let loader = document.querySelector("section");
 window.addEventListener('load', function () {
     loader.parentElement.removeChild(loader);
-    document.querySelector(".border").style.visibility = "visible";
+    document.querySelector(".border").style.display = "block";
 });

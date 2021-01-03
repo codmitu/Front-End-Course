@@ -90,7 +90,7 @@ section .loader span::before{
     z-index: 10;
     pointer-events: none;
     animation-delay: 5s;
-    visibility: hidden;
+    display: none;
 }
 .border:before{
     content: '';
@@ -220,7 +220,7 @@ input[type="text"]{
     width: 267px;
     height: 66px;
     padding: 15px;
-    color: rgb(77, 77, 77);
+    color: rgb(112, 112, 112);
 }
 .lb-name1{
     margin: 0 20px;
@@ -280,7 +280,7 @@ button{
 }
 .buttons button:nth-child(1){
     clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
-    width: 160px;
+    width: 52%;
     text-align: left;
     margin-right: -30px;
     background-color:  rgb(53, 179, 201);
@@ -290,7 +290,7 @@ button{
 }
 .buttons button:nth-child(2){
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
-    width: 160px;
+    width: 52%;
     text-align: right;
     margin-left: -30px;
     background-color: darkgray;
@@ -320,10 +320,10 @@ button:nth-child(2).active:hover{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(123, 123, 123);
     border-radius: 50%;
     top: 37px;
-    right: 20px;
+    right: 5%;
     pointer-events: none;
 }
 .valid{
@@ -403,6 +403,9 @@ li:hover .iconify{
 
 /* Device media query */
 @media screen and (max-width: 800px) {
+    .border{
+        visibility: hidden;
+    }
     main{
         flex-direction: column;
     }
