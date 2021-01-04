@@ -2,8 +2,8 @@
     box-sizing: border-box;
     outline: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
+    /* border: 1px solid yellow; */
 }
 body{
     background-image: url("img2.jpg");
@@ -184,9 +184,9 @@ main{
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: space-around;
     color: white;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Form */
@@ -200,6 +200,7 @@ main{
     border-radius: 5px;
     box-shadow: inset 0 0 10px 0 white;
     margin: 30px;
+    transition: transform 2s ease;
 }
 input[type="text"]{
     background-color: rgba(0, 0, 0, 0.432);
@@ -350,38 +351,35 @@ button:nth-child(2).active:hover{
 ul{
     perspective: 1000px;
     max-height: 100vh;
-    padding: 50px 50px 50px 150px;
+    padding: 200px 50px 200px 200px;
     overflow: scroll;
 }
 ul::-webkit-scrollbar{
     width: 0;
 }
 ul:empty{
-    padding: 0;
     display: none;
 }
 li{
     transform: rotateY(-20deg) rotateX(10deg);
-    margin: 20px 20px -10px 20px;
+    margin: 20px 20px -50px 20px;
     font-size: 1.5rem;
     max-width: 300px;
-    background: url("card.jpg");
-    /* background-size: contain; */
-    color:  rgb(202, 202, 202);
+    background: url("card2.jpg");
+    color:  rgb(204, 204, 204);
     border-radius: 5px;
     box-shadow: 5px 2px 0 0 #0e97a398,
                 10px 4px 0 0 #0e97a398;
     position: relative;
-    z-index: -1;
-    transition: all .2s ease-out;
+    transition: all .3s ease-out;
     padding: 0 20px;
     list-style: none;
     font-family: 'Roboto Slab', serif;
 }
 li:hover{
-    transform: rotateY(-12deg) rotateX(10deg) scale(1.2);
+    transform: rotateY(-5deg) rotateX(10deg) scale(1.1);
     z-index: 1;
-    color:  #ffffff;
+    color:  #929292;
 }
 li p{
     padding: 10px 20px;
@@ -391,14 +389,25 @@ li p{
     float: right;
     visibility: hidden;
     margin-top: 10px;
-    margin-left: 10px;
     cursor: pointer;
 }
 li:hover .iconify{
     visibility: visible;
 }
 
-
+.bluredLayer{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 2s ease-in;
+}
+.open{
+    backdrop-filter: blur(10px);
+    box-shadow: inset 20px 0px 20px -25px rgba(255, 255, 255, 1);
+}
 
 
 /* Device media query */
@@ -409,7 +418,25 @@ li:hover .iconify{
     main{
         flex-direction: column;
     }
+    #form{
+        position: absolute;
+        top: 0;
+    }
     ul{
-        padding: 50px;
+        position: absolute;
+        top: 380px;
+        bottom: 0;
+        padding: 50px 50px 100px 150px;
+    }
+    li{
+        transform: rotateY(-20deg) rotateX(10deg) translateX(-20%);
+    }
+    li:hover{
+        transform: rotateY(-20deg) rotateX(10deg) translateX(-20%) scale(1.07);
+    }
+    .bluredLayer{
+        width: 100%;
+        height: 100%;
+        top: 380px;
     }
 }

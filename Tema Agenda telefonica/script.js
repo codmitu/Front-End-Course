@@ -9,7 +9,7 @@ function build() {
     let li = "";
     for (let i = 0; i < agenda.length; i++) {
         li += `
-                <li class="animate__animated">
+                <li>
                     <span class="iconify close" data-icon="gg:close" onclick="del(${i});" ></span>
                     <span class="iconify" data-icon="radix-icons:pencil-1" data-inline="false" onclick="edit1(${i})"></span>
                     <p>${agenda[i].first}</p>
@@ -17,6 +17,11 @@ function build() {
                     <p>${agenda[i].phone}</p>
                 </li>
         `        
+    }
+    if(agenda.length > 0){
+        document.querySelector(".bluredLayer").classList.add("open");
+    } else {
+        document.querySelector(".bluredLayer").classList.remove("open");
     }
     ul.innerHTML = li;
     setTimeout(clearCheck, 1000);
@@ -37,9 +42,8 @@ function addContact(form, event) {
             "second" : second,
             "phone" : phone
         });
-    } else {
-        event.preventDefault();
-    }
+    } 
+    // event.preventDefault();
     build();
 }
 // function to clear inputs
@@ -99,14 +103,16 @@ function edit2(event) {
         contacts.first = document.querySelector("#input1").value;
         contacts.second = document.querySelector("#input2").value;
         contacts.phone = document.querySelector("#input3").value;
+        // position = -1;
         build();
     } 
-        event.preventDefault();
+    return;
 }
 
-// Delete contacts with animation
+// Delete contacts with animation. 
+// replace() is to show names capitalized in confirm message
 function del(idx) {
-    if (confirm("Delete contact?") === true) {
+    if (confirm(`Delete ${agenda[idx].first.replace(/\b\w/g, l => l.toUpperCase())} ${agenda[idx].second.replace(/\b\w/g, l => l.toUpperCase())} from contacts?'`) === true) {
         document.querySelectorAll("li")[idx].classList.add("animate__hinge");
         document.querySelectorAll("li")[idx].addEventListener("animationend", function() {
             agenda.splice(idx, 1);
