@@ -334,6 +334,8 @@ button{
 }
 .buttons button:nth-child(1):hover{
     background-color:  rgb(113, 234, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px black;
 }
 button:nth-child(1).inactive{
     background-color: darkgrey;
@@ -346,6 +348,8 @@ button:nth-child(2).active{
 }
 button:nth-child(2).active:hover{
     background-color:   rgb(113, 234, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px black;
 }
 .validator1,
 .validator2,
