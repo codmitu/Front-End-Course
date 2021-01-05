@@ -135,10 +135,7 @@ document.addEventListener('invalid', (function () {
   })(), true);
 
 // Loading animation
-let loader = document.querySelector("section");
+let loader = document.querySelector(".anim");
 window.addEventListener('load', function () {
     loader.parentElement.removeChild(loader);
-    document.querySelector(".border").style.display = "block";
 });
-
-

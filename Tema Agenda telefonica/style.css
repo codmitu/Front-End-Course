@@ -27,6 +27,8 @@ section{
     min-height: 100vh;
     background: #042104;
     animation: animateBg 10s linear infinite; 
+    position: relative;
+    z-index: 1000;
 }
 @keyframes animateBg {
     0%{
@@ -377,12 +379,12 @@ button:nth-child(2).active:hover{
 .right{
     position: absolute;
     top: 0;
-    /* bottom: 0; */
     right: -30%;
     width: 30%;
     box-shadow: inset 20px 0px 20px -25px rgba(255, 255, 255, 1);
     height: 100%;
     transition: all 1s ease-in;
+    visibility: none;
 }
 .right.open{
     right: 0;
@@ -480,6 +482,7 @@ li:hover .iconify{
         width: 100%;
         top: 100%;
         box-shadow: inset 0px 20px 20px -20px rgba(255, 255, 255, 1);
+        visibility: none;
     }
     .right.open2{
         top: 50%;
