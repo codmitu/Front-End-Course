@@ -2,6 +2,7 @@
     box-sizing: border-box;
     outline: none;
     margin: 0;
+    padding: 0;
     overflow: hidden;
     /* border: 1px solid yellow; */
 }
@@ -14,6 +15,8 @@ body{
     background-size: cover;
     font-family: sans-serif;
 }
+
+
 
 
 /* Loading animation */
@@ -180,27 +183,46 @@ section .loader span::before{
 
 
 
-main{
+
+
+
+
+
+.left{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    min-height: 100%;
     display: flex;
-    width: 100%;
-    height: 100%;
-    color: white;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    transition: all 1s ease-in;
 }
+.left.open{
+    right: 30%;
+    width: 70%;
+}
+.open::-webkit-scrollbar{
+    width: 0;
+}
+
+
+
+
+
 
 /* Form */
 #form{
     display: flex;
     flex-direction: column;
-    min-width: 310px;
-    min-height: 320px;
+    width: 310px;
+    height: 320px;
     background-color: rgba(179, 179, 179, 0);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: inset 0 0 10px 0 white;
-    margin: 30px;
-    transition: transform 2s ease;
+    transition: all 2s ease;
 }
 input[type="text"]{
     background-color: rgba(0, 0, 0, 0.432);
@@ -302,6 +324,7 @@ button{
 }
 .buttons button:nth-child(1):hover{
     background-color:  rgb(113, 234, 255);
+    
 }
 button:nth-child(1).inactive{
     background-color: darkgrey;
@@ -347,25 +370,43 @@ button:nth-child(2).active:hover{
 
 
 
+
+
+
 /* List of contacts */
-ul{
-    perspective: 1000px;
-    max-height: 100vh;
-    padding: 200px 50px 200px 200px;
+.right{
+    position: absolute;
+    top: 0;
+    /* bottom: 0; */
+    right: -30%;
+    width: 30%;
+    box-shadow: inset 20px 0px 20px -25px rgba(255, 255, 255, 1);
+    height: 100%;
+    transition: all 1s ease-in;
+}
+.right.open{
+    right: 0;
+    backdrop-filter: blur(10px);
     overflow: scroll;
+    padding: 100px 0;
 }
-ul::-webkit-scrollbar{
-    width: 0;
-}
-ul:empty{
-    display: none;
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: visible;
+    width: 100%;
+    min-height: 100%;
 }
 li{
+    perspective: 5000px;
+    width: 300px;
     transform: rotateY(-20deg) rotateX(10deg);
-    margin: 20px 20px -50px 20px;
+    margin: 20px auto -50px auto;
     font-size: 1.5rem;
-    max-width: 300px;
     background: url("card2.jpg");
+    filter: drop-shadow(8px 8px 10px rgb(0, 255, 229));
     color:  rgb(204, 204, 204);
     border-radius: 5px;
     box-shadow: 5px 2px 0 0 #0e97a398,
@@ -377,9 +418,9 @@ li{
     font-family: 'Roboto Slab', serif;
 }
 li:hover{
-    transform: rotateY(-5deg) rotateX(10deg) scale(1.1);
+    transform: rotateY(-5deg) rotateX(10deg) scale(1.07);
     z-index: 1;
-    color:  #929292;
+    color:  #7e7e7e;
 }
 li p{
     padding: 10px 20px;
@@ -394,20 +435,20 @@ li p{
 li:hover .iconify{
     visibility: visible;
 }
+.iconify:hover{
+    color: rgb(0, 187, 255);
+}
 
-.bluredLayer{
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    transition: all 2s ease-in;
-}
-.open{
-    backdrop-filter: blur(10px);
-    box-shadow: inset 20px 0px 20px -25px rgba(255, 255, 255, 1);
-}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Device media query */
@@ -415,18 +456,49 @@ li:hover .iconify{
     .border{
         visibility: hidden;
     }
-    main{
-        flex-direction: column;
-    }
-    #form{
-        position: absolute;
+    .left{
         top: 0;
+        width: 100%;
+        right: 0;
+        max-height: 100vh;
+        /* min-height: 50%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left.open2{
+        top: 0;
+        left: 0;
+        min-height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right{
+        left: 0;
+        width: 100%;
+        top: 100%;
+        box-shadow: inset 0px 20px 20px -20px rgba(255, 255, 255, 1);
+    }
+    .right.open2{
+        top: 50%;
+        max-height: 50%;
+        left: 0;
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+    }
+    .right.open2::-webkit-scrollbar{
+        width: 0;
     }
     ul{
+        padding: 100px 0;
         position: absolute;
-        top: 380px;
-        bottom: 0;
-        padding: 50px 50px 100px 150px;
+        top: 10px;
+        transform: translateX(10%);
     }
     li{
         transform: rotateY(-20deg) rotateX(10deg) translateX(-20%);
@@ -434,9 +506,7 @@ li:hover .iconify{
     li:hover{
         transform: rotateY(-20deg) rotateX(10deg) translateX(-20%) scale(1.07);
     }
-    .bluredLayer{
-        width: 100%;
-        height: 100%;
-        top: 380px;
+    .iconify{
+        font-size: 2rem;
     }
 }

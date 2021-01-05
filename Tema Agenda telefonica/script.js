@@ -1,6 +1,6 @@
 const patternNames = /^([A-Za-z]{3}[ .'éàëA-Za-z-]*)$/;
 const patternPhoneNumber = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
-// patternEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+// const patternEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 let form = document.querySelector("#form");
 let agenda = [];
 let position = -1;
@@ -18,10 +18,17 @@ function build() {
                 </li>
         `        
     }
-    if(agenda.length > 0){
-        document.querySelector(".bluredLayer").classList.add("open");
+    if (window.innerWidth < 800 && agenda.length > 0) {
+        document.querySelector(".left").classList.add("open2");
+        document.querySelector(".right").classList.add("open2");
+    } else if (agenda.length > 0 && window.innerWidth > 800){
+        document.querySelector(".left").classList.add("open");
+        document.querySelector(".right").classList.add("open");
     } else {
-        document.querySelector(".bluredLayer").classList.remove("open");
+        document.querySelector(".left").classList.remove("open");
+        document.querySelector(".right").classList.remove("open");
+        document.querySelector(".left").classList.remove("open2");
+        document.querySelector(".right").classList.remove("open2");
     }
     ul.innerHTML = li;
     setTimeout(clearCheck, 1000);
@@ -43,7 +50,6 @@ function addContact(form, event) {
             "phone" : phone
         });
     } 
-    // event.preventDefault();
     build();
 }
 // function to clear inputs
@@ -103,7 +109,7 @@ function edit2(event) {
         contacts.first = document.querySelector("#input1").value;
         contacts.second = document.querySelector("#input2").value;
         contacts.phone = document.querySelector("#input3").value;
-        // position = -1;
+        // position = -1;     <- to remember
         build();
     } 
     return;
@@ -112,7 +118,7 @@ function edit2(event) {
 // Delete contacts with animation. 
 // replace() is to show names capitalized in confirm message
 function del(idx) {
-    if (confirm(`Delete ${agenda[idx].first.replace(/\b\w/g, l => l.toUpperCase())} ${agenda[idx].second.replace(/\b\w/g, l => l.toUpperCase())} from contacts?'`) === true) {
+    if (confirm(`Delete ${agenda[idx].first.replace(/\b\w/g, l => l.toUpperCase())} ${agenda[idx].second.replace(/\b\w/g, l => l.toUpperCase())} from contacts?`) === true) {
         document.querySelectorAll("li")[idx].classList.add("animate__hinge");
         document.querySelectorAll("li")[idx].addEventListener("animationend", function() {
             agenda.splice(idx, 1);
@@ -134,3 +140,5 @@ window.addEventListener('load', function () {
     loader.parentElement.removeChild(loader);
     document.querySelector(".border").style.display = "block";
 });
+
+

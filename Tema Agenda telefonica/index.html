@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
     <title>Ichim Gelu Phone Agenda</title>
 </head>
-<body onload="build();" >
+<body onload="build();">
+
+    <!-- Loading animation -->
     <section>
         <div class="loader">
             <span style="--i:1;"></span>
@@ -38,16 +43,19 @@
         </div>
     </section>
 
-        <!-- huge img -->
-    <img src="night-sky.png" style="display: none"/>
+        <!-- huge img for more loanding time-->
+    <img src="big-img.png" style="display: none"/>
 
+
+    <!-- Animated boarder -->
     <div class="border" class="animate__animated animate__fadeIn" >
         <span class="span sp1"></span>
         <span class="span sp2"></span>
         <div class="span div1"></div>
         <div class="span div2"></div>
     </div>
-    <main>
+   
+    <div class="left">
         <form id="form" onsubmit="addContact(this, event);"  method="post" action="" autocomplete="off" class="animate__animated animate__fadeInDownBig">
 
             <!-- This input disables autofill and autocomplete form -->
@@ -74,9 +82,12 @@
                 <button onclick="edit2();" class="animate__animated animate__rotateInDownRight">Edit</button>
             </div>
         </form>
-        <ul class="animate__animated animate__fadeInRightBig"></ul>
-        <div class="bluredLayer"></div>
-    </main>
+    </div>
+
+    <div class="right">
+        <ul></ul>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
