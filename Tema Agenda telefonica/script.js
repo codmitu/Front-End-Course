@@ -134,8 +134,14 @@ document.addEventListener('invalid', (function () {
     };
   })(), true);
 
-// Loading animation
+
+
+// Loading circle animation with delay on form (.left-form) animation 
 let loader = document.querySelector(".anim");
+let loading = document.querySelector(".left");
+loading.classList.add('js-loading');
 window.addEventListener('load', function () {
     loader.parentElement.removeChild(loader);
+    loading.classList.remove('js-loading');
 });
+

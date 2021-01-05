@@ -17,6 +17,15 @@ body{
 }
 
 
+/* delaying the animation  */
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+
+
 
 
 /* Loading animation */
@@ -95,7 +104,6 @@ section .loader span::before{
     z-index: 10;
     pointer-events: none;
     animation-delay: 5s;
-    display: none;
 }
 .border:before{
     content: '';
@@ -383,12 +391,12 @@ button:nth-child(2).active:hover{
     width: 30%;
     box-shadow: inset 20px 0px 20px -25px rgba(255, 255, 255, 1);
     height: 100%;
-    transition: all 1s ease-in;
-    visibility: none;
+    transition: right 1s ease-in, backdrop-filter 5s ease;
 }
 .right.open{
+    min-width: 350px;
     right: 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) brightness(90%);
     overflow: scroll;
     padding: 100px 0;
 }
@@ -463,7 +471,6 @@ li:hover .iconify{
         width: 100%;
         right: 0;
         max-height: 100vh;
-        /* min-height: 50%; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -482,13 +489,13 @@ li:hover .iconify{
         width: 100%;
         top: 100%;
         box-shadow: inset 0px 20px 20px -20px rgba(255, 255, 255, 1);
-        visibility: none;
+        transition: top 1s ease-in, backdrop-filter 5s ease;
     }
     .right.open2{
         top: 50%;
         max-height: 50%;
         left: 0;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px) brightness(90%);
         display: flex;
         align-items: center;
         justify-content: center;
