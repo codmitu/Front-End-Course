@@ -81,7 +81,7 @@ h2{
     clip-path: circle(5% at 93.5% 25%);
     right: 0;
     overflow-y: scroll;
-    transition: clip-path .5s ease-in-out;
+    transition: clip-path 0.4s ease-in-out;
 }
 .moreInfo::-webkit-scrollbar{
     width: 0;
