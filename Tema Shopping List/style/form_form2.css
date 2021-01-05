@@ -54,8 +54,8 @@ input[type="text"]{
     font-size: 1.5rem;
     text-align: center;
     font-family: 'Sniglet', cursive;
-    border: 1px solid rgb(233, 33, 27);
-    background-color: rgb(255, 223, 240);
+    border: none;
+    box-shadow: 0 20px 50px rgb(0, 0, 0);
     transition: all 0.5s ease-out;
 }
 /* More info text area input  */
@@ -64,8 +64,8 @@ textarea{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     resize: none;
-    border: 1px solid rgb(233, 33, 27);
-    background-color: rgb(255, 224, 240);
+    border: none;
+    box-shadow: 0 20px 50px rgb(0, 0, 0);
     transition: all 0.5s ease-out;
 }
 textarea::placeholder{
@@ -73,7 +73,7 @@ textarea::placeholder{
 }
 input[type="text"]:invalid, textarea:placeholder-shown{
     border: 1px solid grey;
-    background-color: white;
+    box-shadow: none;
 }
  /* Form, form2(div) buttons, add and edit */
 input[type="submit"], 

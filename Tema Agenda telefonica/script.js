@@ -136,7 +136,7 @@ document.addEventListener('invalid', (function () {
 
 
 
-// Loading circle animation with delay on form (.left-form) animation 
+// Loading circle animation with delay on form  animation (.left > form)
 let loader = document.querySelector(".anim");
 let loading = document.querySelector(".left");
 loading.classList.add('js-loading');

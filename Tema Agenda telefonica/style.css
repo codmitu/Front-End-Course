@@ -334,7 +334,6 @@ button{
 }
 .buttons button:nth-child(1):hover{
     background-color:  rgb(113, 234, 255);
-    
 }
 button:nth-child(1).inactive{
     background-color: darkgrey;
