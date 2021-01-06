@@ -152,7 +152,7 @@ h2{
     
 }
 .stickyBtn:hover{
-    background: linear-gradient(to bottom, #c2f587, #3a6803);
+    background: linear-gradient(to bottom, #c2f587, #4f8707);
 }
 .stickyBtn:active{
     background: linear-gradient(to bottom, #c2f587, #65a313);
