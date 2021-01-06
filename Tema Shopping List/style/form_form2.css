@@ -55,7 +55,7 @@ input[type="text"]{
     text-align: center;
     font-family: 'Sniglet', cursive;
     border: none;
-    box-shadow: 0 20px 50px rgb(0, 0, 0);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.323);
     transition: all 0.5s ease-out;
 }
 /* More info text area input  */
@@ -65,7 +65,7 @@ textarea{
     text-align: center;
     resize: none;
     border: none;
-    box-shadow: 0 20px 50px rgb(0, 0, 0);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.323);
     transition: all 0.5s ease-out;
 }
 textarea::placeholder{
