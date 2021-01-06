@@ -7,7 +7,7 @@
     /* border: 1px solid yellow; */
 }
 body{
-    background-image: url("img2.jpg");
+    background-image: url("img/img2.jpg");
     height: 100vh;
     width: 100vw;
     background-position: top center;
@@ -197,7 +197,7 @@ section .loader span::before{
 
 
 
-
+/* ========== MIDDLE - LEFT SIDE ========== */
 .left{
     position: absolute;
     top: 0;
@@ -333,9 +333,8 @@ button{
     animation-duration: 0.5s;
 }
 .buttons button:nth-child(1):hover{
-    background-color:  rgb(113, 234, 255);
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;
 }
 button:nth-child(1).inactive{
     background-color: darkgrey;
@@ -349,7 +348,7 @@ button:nth-child(2).active{
 button:nth-child(2).active:hover{
     background-color:   rgb(113, 234, 255);
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;
 }
 .validator1,
 .validator2,
@@ -385,7 +384,7 @@ button:nth-child(2).active:hover{
 
 
 
-
+/* ========= RIGHT SIDE ======== */
 /* List of contacts */
 .right{
     position: absolute;
@@ -418,7 +417,7 @@ li{
     transform: rotateY(-20deg) rotateX(10deg);
     margin: 20px auto -50px auto;
     font-size: 1.5rem;
-    background: url("card2.jpg");
+    background: url("img/card2.jpg");
     filter: drop-shadow(8px 8px 10px rgb(0, 255, 229));
     color:  rgb(204, 204, 204);
     border-radius: 5px;

@@ -9,7 +9,7 @@ function build() {
     let li = "";
     for (let i = 0; i < agenda.length; i++) {
         li += `
-                <li>
+                <li class="animate__animated">
                     <span class="iconify close" data-icon="gg:close" onclick="del(${i});" ></span>
                     <span class="iconify" data-icon="radix-icons:pencil-1" data-inline="false" onclick="edit1(${i})"></span>
                     <p>${agenda[i].first}</p>
@@ -102,17 +102,22 @@ function edit1(idx) {
     position = idx;
 }
 // edit contacts faze 2
-function edit2(event) {
+function edit2() {
     if (document.querySelectorAll(".invalid").length === 0 && 
-    document.querySelectorAll(".valid").length > 0) {
+    document.querySelectorAll(".valid").length > 0  && 
+    document.querySelector("#input1").value !== "" &&
+    document.querySelector("#input2").value !== "" &&
+    document.querySelector("#input3").value !== "") {
         let contacts = agenda[position];
         contacts.first = document.querySelector("#input1").value;
         contacts.second = document.querySelector("#input2").value;
         contacts.phone = document.querySelector("#input3").value;
-        // position = -1;     <- to remember
+        // position = -1;    
         build();
-    } 
-    return;
+    } else {
+        return false;
+    }
+    document.querySelectorAll("li")[position].classList.add("animate__flash");
 }
 
 // Delete contacts with animation. 
