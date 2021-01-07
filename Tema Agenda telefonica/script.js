@@ -9,13 +9,13 @@ function build() {
     let li = "";
     for (let i = 0; i < agenda.length; i++) {
         li += `
-                <li class="animate__animated">
-                    <span class="iconify close" data-icon="gg:close" onclick="del(${i});" ></span>
-                    <span class="iconify" data-icon="radix-icons:pencil-1" data-inline="false" onclick="edit1(${i})"></span>
-                    <p>${agenda[i].first}</p>
-                    <p>${agenda[i].second}</p>
-                    <p>${agenda[i].phone}</p>
-                </li>
+        <li class="animate__animated">
+            <span class="iconify close" data-icon="gg:close" onclick="del(${i});" ></span>
+            <span class="iconify" data-icon="radix-icons:pencil-1" data-inline="false" onclick="edit1(${i})"></span>
+            <p>${agenda[i].first}</p>
+            <p>${agenda[i].second}</p>
+            <p>${agenda[i].phone}</p>
+        </li>
         `        
     }
     if (window.innerWidth < 800 && agenda.length > 0) {
