@@ -312,7 +312,7 @@ button{
     
 }
 .buttons button:nth-child(1){
-    clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(60% 0, 100% 50%, 60% 100%, 0 100%, 0 0);
     width: 52%;
     text-align: left;
     margin-right: -30px;
@@ -322,7 +322,7 @@ button{
     animation-duration: 0.5s;
 }
 .buttons button:nth-child(2){
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 40% 50%);
     width: 52%;
     text-align: right;
     margin-left: -30px;
@@ -332,7 +332,9 @@ button{
     transition: all .1s ease;
     animation-duration: 0.5s;
 }
-.buttons button:nth-child(1):hover{
+.buttons button:nth-child(1):hover,
+.buttons button:nth-child(2).active:hover{
+    background-color:   rgb(113, 234, 255);
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;
 }
@@ -344,11 +346,6 @@ button:nth-child(2).active{
     background-color: rgb(53, 179, 201);
     pointer-events: all;
     transition: all .1s ease;
-}
-button:nth-child(2).active:hover{
-    background-color:   rgb(113, 234, 255);
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;
 }
 .validator1,
 .validator2,
@@ -364,17 +361,25 @@ button:nth-child(2).active:hover{
 }
 .valid{
     background-color: #0f0;
-    box-shadow: 0 0 5px #0f0,
+     box-shadow: 0 0 5px #0f0,
                 0 0 10px #0f0,
                 0 0 20px #0f0,
+                0 0 20px #0f0,
+                0 0 30px #0f0,
+                0 0 30px #0f0,
                 0 0 40px #0f0;
-}
+               
+            
+}             
 .invalid{
     background-color: #f00;
     box-shadow: 0 0 5px #f00,
                 0 0 10px #f00,
                 0 0 20px #f00,
-                0 0 40px #f00;
+                0 0 20px #f00,
+                0 0 30px #f00,
+                0 0 30px #f00,
+                0 0 40px #f00;      
 }
 
 
