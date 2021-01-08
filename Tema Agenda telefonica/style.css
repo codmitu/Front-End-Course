@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Cinzel+Decorative:wght@700&family=Fredericka+the+Great&family=Jacques+Francois+Shadow&family=Monofett&family=Nosifer&family=Raleway+Dots&display=swap');
+
+
 *{
     box-sizing: border-box;
     outline: none;
@@ -138,7 +141,6 @@ section .loader span::before{
     content: '';
     position: absolute;
     width: 100%;
-    box-shadow: 0 0 2px 3px rgb(0, 255, 200);
     animation: animate 3s linear infinite;
     animation-delay: 2s;
 }
@@ -146,7 +148,6 @@ section .loader span::before{
     content: '';
     position: absolute;
     height: 100%;
-    box-shadow: 0 0 2px 3px rgb(0, 255, 200);
     animation: animate2 3s linear infinite;
     animation-delay: 3.5s;
 }
@@ -155,6 +156,9 @@ section .loader span::before{
     0%{
         transform: scaleX(0);
         transform-origin: left;
+        box-shadow:0px 0px 1px 1px rgb(0, 255, 200),
+        0px 0px 5px 1px rgb(0, 255, 200), 
+        0px 0px 10px 1px rgb(0, 255, 200);
     }
     50%{
         transform: scaleX(1);
@@ -167,12 +171,18 @@ section .loader span::before{
     100%{
         transform: scaleX(0);
         transform-origin: right;
+        box-shadow:0px 0px 1px 1px rgb(0, 255, 200),
+        0px 0px 5px 1px rgb(0, 255, 200), 
+        0px 0px 10px 1px rgb(0, 255, 200);
     }
 }
 @keyframes animate2{
     0%{
         transform: scaleY(0);
         transform-origin: bottom;
+        box-shadow:0px 0px 1px 1px rgb(0, 255, 200),
+        0px 0px 5px 1px rgb(0, 255, 200), 
+        0px 0px 10px 1px rgb(0, 255, 200);
     }
     50%{
         transform: scaleY(1);
@@ -185,6 +195,9 @@ section .loader span::before{
     100%{
         transform: scaleY(0);
         transform-origin: top;
+        box-shadow:0px 0px 1px 1px rgb(0, 255, 200),
+        0px 0px 5px 1px rgb(0, 255, 200), 
+        0px 0px 10px 1px rgb(0, 255, 200);
     }
 }
 
@@ -218,6 +231,136 @@ section .loader span::before{
 }
 
 
+
+/* Text */
+  .sign {
+    position: absolute;
+    overflow: visible;
+    width: 50%;
+    height: 50%;
+    transform: translate(20%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 30%;
+    font-family: 'Cinzel Decorative', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #e6fdff;
+    text-shadow: 0 0 0.6rem #e6fbff, 0 0 1.5rem #adf3ff,
+      -0.2rem 0.1rem 1rem #8cf8ed, 0.2rem 0.1rem 1rem #60eee0,
+      0 -0.5rem 2rem #3cfae7, 0 0.5rem 3rem #40e2ff;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #e6fcff;
+      text-shadow: 0 0 0.6rem #ccfaff, 0 0 1.5rem #adf3ff,
+        -0.2rem 0.1rem 1rem #8cf8ed, 0.2rem 0.1rem 1rem #60eee0,
+        0 -0.5rem 2rem #3cfae7, 0 0.5rem 3rem #40e2ff;
+    }
+    28%,
+    33% {
+      color: #61c8d3;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #07496d;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #07a6b1;
+      text-shadow: none;
+    }
+    100% {
+      color: #e6fbff;
+      text-shadow: 0 0 0.6rem #c6f6fa, 0 0 1.5rem #cafafd,
+        -0.2rem 0.1rem 1rem #80f4fc, 0.2rem 0.1rem 1rem #60f0fa,
+        0 -0.5rem 2rem #39f0fd, 0 0.5rem 3rem #00eeff;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    } 4% {
+      opacity: 0.9;
+    } 6% {
+      opacity: 0.85;
+    } 8% {
+      opacity: 0.95;
+    } 10% {
+      opacity: 0.9;
+    } 11% {
+      opacity: 0.922;
+    } 12% {
+      opacity: 0.9;
+    } 14% {
+      opacity: 0.95;
+    } 16% {
+      opacity: 0.98;
+    } 17% {
+      opacity: 0.9;
+    } 19% {
+      opacity: 0.93;
+    } 20% {
+      opacity: 0.99;
+    } 24% {
+      opacity: 1;
+    } 26% {
+      opacity: 0.94;
+    } 28% {
+      opacity: 0.98;
+    } 37% {
+      opacity: 0.93;
+    } 38% {
+      opacity: 0.5;
+    } 39% {
+      opacity: 0.96;
+    } 42% {
+      opacity: 1;
+    } 44% {
+      opacity: 0.97;
+    } 46% {
+      opacity: 0.94;
+    } 56% {
+      opacity: 0.9;
+    } 58% {
+      opacity: 0.9;
+    } 60% {
+      opacity: 0.99;
+    } 68% {
+      opacity: 1;
+    } 70% {
+      opacity: 0.9;
+    } 72% {
+      opacity: 0.95;
+    } 93% {
+      opacity: 0.93;
+    } 95% {
+      opacity: 0.95;
+    } 97% {
+      opacity: 0.93;
+    } to {
+      opacity: 1;
+    }
+  }
+  
 
 
 
@@ -479,6 +622,7 @@ li:hover .iconify{
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 1;
     }
     .left.open2{
         top: 0;
