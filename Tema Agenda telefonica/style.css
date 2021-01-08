@@ -308,8 +308,6 @@ button{
     font-size: 1.3rem;
     margin: 20px;
     color: rgb(77, 77, 77);
-    animation-delay: 1s;
-    
 }
 .buttons button:nth-child(1){
     clip-path: polygon(60% 0, 100% 50%, 60% 100%, 0 100%, 0 0);
@@ -319,7 +317,7 @@ button{
     background-color:  rgb(53, 179, 201);
     border: none;
     transition: all .1s ease;
-    animation-duration: 0.5s;
+    animation-delay: .5s;
 }
 .buttons button:nth-child(2){
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 40% 50%);
@@ -330,7 +328,7 @@ button{
     pointer-events: none;
     border: none;
     transition: all .1s ease;
-    animation-duration: 0.5s;
+    animation-delay: 1s;
 }
 .buttons button:nth-child(1):hover,
 .buttons button:nth-child(2).active:hover{
@@ -418,7 +416,7 @@ ul{
 }
 li{
     perspective: 5000px;
-    width: 300px;
+    width: 250px;
     transform: rotateY(-20deg) rotateX(10deg);
     margin: 20px auto -50px auto;
     font-size: 1.5rem;

@@ -149,4 +149,3 @@ window.addEventListener('load', function () {
     loader.parentElement.removeChild(loader);
     loading.classList.remove('js-loading');
 });
-
