@@ -367,18 +367,20 @@ section .loader span::before{
 
 /* Form */
 #form{
+    clip-path: polygon(2% 17%, 0 6%, 0 100%, 100% 100%, 100% 0, 7% 0, 12% 1%, 6% 2%, 13% 6%, 4% 3%, 6% 10%, 3% 7%);
+
     display: flex;
     flex-direction: column;
     width: 310px;
     height: 320px;
-    background-color: rgba(179, 179, 179, 0);
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.357), transparent);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: inset 0 0 10px 0 white;
     transition: all 2s ease;
 }
 input[type="text"]{
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(53, 53, 53, 0.432);
     margin: 20px;
     border-radius: 5px;
     color: rgb(190, 190, 190);
@@ -387,6 +389,10 @@ input[type="text"]{
     outline: none;
     border: none;
     text-transform: capitalize;
+    box-shadow: -2px -2px 10px rgba(255,255,255, 0.1),
+                2px 2px 10px rgba(0,0,0,1),
+                inset -1px -1px 2px rgba(255,255,255,0.1),
+                inset 1px 1px 2px rgba(0,0,0,1);
 }
 .lb-name1,
 .lb-name2,
@@ -399,13 +405,13 @@ input[type="text"]{
     color: rgb(112, 112, 112);
 }
 .lb-name1{
-    margin: 0 20px;
+    margin: 0 22px;
 }
 .lb-name2{
-    margin: 85px 20px;
+    margin: 85px 22px;
 }
 .lb-phone{
-    margin: 169px 20px;
+    margin: 169px 22px;
 }
 .lb-name1::after,
 .lb-name2::after,
@@ -441,7 +447,7 @@ input[type="text"]{
 #input2:valid + .lb-name2::after,
 #input3:focus + .lb-phone::after,
 #input3:valid + .lb-phone::after{
-    transform: translateX(0);
+    transform: translateX(0px);
 }
 button{
     padding: 0 10px;
@@ -450,14 +456,14 @@ button{
     border-radius: 5px;
     font-size: 1.3rem;
     margin: 20px;
-    color: rgb(77, 77, 77);
+    color: rgb(150, 150, 150);
 }
 .buttons button:nth-child(1){
     clip-path: polygon(60% 0, 100% 50%, 60% 100%, 0 100%, 0 0);
     width: 52%;
     text-align: left;
     margin-right: -30px;
-    background-color:  rgb(53, 179, 201);
+    background-color:  rgb(0, 94, 128);
     border: none;
     transition: all .1s ease;
     animation-delay: .5s;
@@ -475,7 +481,7 @@ button{
 }
 .buttons button:nth-child(1):hover,
 .buttons button:nth-child(2).active:hover{
-    background-color:   rgb(113, 234, 255);
+    background-color:   rgb(0, 136, 160);
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;
 }
@@ -484,7 +490,7 @@ button:nth-child(1).inactive{
     pointer-events: none;
 }
 button:nth-child(2).active{
-    background-color: rgb(53, 179, 201);
+    background-color:  rgb(0, 94, 128);
     pointer-events: all;
     transition: all .1s ease;
 }
@@ -505,9 +511,6 @@ button:nth-child(2).active{
      box-shadow: 0 0 5px #0f0,
                 0 0 10px #0f0,
                 0 0 20px #0f0,
-                0 0 20px #0f0,
-                0 0 30px #0f0,
-                0 0 30px #0f0,
                 0 0 40px #0f0;
                
             
@@ -517,9 +520,6 @@ button:nth-child(2).active{
     box-shadow: 0 0 5px #f00,
                 0 0 10px #f00,
                 0 0 20px #f00,
-                0 0 20px #f00,
-                0 0 30px #f00,
-                0 0 30px #f00,
                 0 0 40px #f00;      
 }
 
@@ -542,9 +542,12 @@ button:nth-child(2).active{
     transition: right 1s ease-in, backdrop-filter 5s ease;
 }
 .right.open{
+    clip-path: polygon(8% 97%, 0 88%, 0 100%, 100% 100%, 100% 0, 0 0, 0 74%, 8% 66%, 19% 78%, 7% 79%, 23% 95%, 6% 84%);
+
     min-width: 350px;
     right: 0;
-    backdrop-filter: blur(10px) brightness(90%);
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.255), transparent);
+    backdrop-filter: blur(10px);
     overflow: scroll;
     padding: 100px 0;
 }
