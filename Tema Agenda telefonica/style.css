@@ -32,6 +32,7 @@ body{
 
 
 /* Loading animation */
+/* https://www.youtube.com/watch?v=ttWXapXj4cg&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=94&ab_channel=OnlineTutorials */
 section{
     display: flex;
     justify-content: center;
@@ -98,6 +99,7 @@ section .loader span::before{
 
 
 /* Snake border animation */
+/* https://www.youtube.com/watch?v=t-9UIPEJxxQ&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=43&t=562s&ab_channel=OnlineTutorials */
 .border{
     position: absolute;
     top: 0;
@@ -232,7 +234,8 @@ section .loader span::before{
 
 
 
-/* Text */
+/* Text, title */
+/* https://freefrontend.com/css-text-animations/ */
   .sign {
     position: absolute;
     overflow: visible;
