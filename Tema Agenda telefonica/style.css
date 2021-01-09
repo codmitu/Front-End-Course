@@ -373,8 +373,7 @@ section .loader span::before{
 /* Form */
 /* html Animations for form, buttons and contacts https://animate.style/ */
 #form{
-    clip-path: polygon(2% 17%, 0 6%, 0 100%, 100% 100%, 100% 0, 7% 0, 12% 1%, 6% 2%, 13% 6%, 4% 3%, 6% 10%, 3% 7%);
-
+    clip-path: polygon(5% 18%, 4% 30%, 0 14%, 0 100%, 100% 100%, 100% 0, 13% 0, 24% 1%, 11% 3%, 11% 9%, 2% 7%, 11% 20%);
     display: flex;
     flex-direction: column;
     width: 310px;
@@ -412,7 +411,7 @@ input[type="text"]{
     width: 267px;
     height: 66px;
     padding: 15px;
-    color: rgb(112, 112, 112);
+    color: rgb(138, 138, 138);
 }
 .lb-name1{
     margin: 0 22px;
