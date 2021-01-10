@@ -57,22 +57,23 @@ body{
 /* Form */
 /* html Animations for form, buttons and contacts https://animate.style/ */
 #form{
-    clip-path: polygon(5% 18%, 4% 30%, 0 14%, 0 100%, 100% 100%, 100% 0, 13% 0, 24% 1%, 11% 3%, 11% 9%, 2% 7%, 11% 20%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 79%, 1% 85%, 5% 81%, 11% 87%, 5% 75%, 14% 68%, 9% 70%, 6% 68%, 5% 64%, 1% 71%, 0 60%); */
     display: flex;
     flex-direction: column;
     width: 310px;
     height: 320px;
-    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.207)30%, transparent);
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.138)20%, transparent);
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    box-shadow: inset 0 0 10px 0 white;
+    box-shadow: inset 1px 1px 2px 0 rgba(208, 208, 208, 0.576);
     transition: all 2s ease;
 }
 
 /* The labels https://www.youtube.com/watch?v=IxRJ8vplzAo&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=35&ab_channel=DevEd */
 /* The shadows https://www.youtube.com/watch?v=CDldkBcrGkA&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=119&t=205s&ab_channel=OnlineTutorials */
 input[type="text"]{
-    background-color: rgba(53, 53, 53, 0.432);
+    /* background-color: rgba(53, 53, 53, 0.432); */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.186)20%, rgba(187, 187, 187, 0.111)20%);
     margin: 20px;
     border-radius: 5px;
     color: rgb(190, 190, 190);
@@ -192,8 +193,8 @@ button:nth-child(2).active{
 .validator2,
 .validator3{
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: rgb(123, 123, 123);
     border-radius: 50%;
     top: 37px;
@@ -232,20 +233,16 @@ button:nth-child(2).active{
     top: 0;
     right: -30%;
     width: 30%;
-    box-shadow: inset 20px 0px 20px -25px rgba(255, 255, 255, 1);
+    box-shadow: inset 1px 0px 2px 0px rgba(201, 201, 201, 0.638);
     height: 100%;
     transition: right 1s ease-in, backdrop-filter 5s ease;
-    clip-path: polygon(8% 97%, 0 88%, 0 100%, 100% 100%, 100% 0, 0 0, 0 74%, 8% 66%, 19% 78%, 7% 79%, 23% 95%, 6% 84%);
-    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.2)30%, transparent);
+    /* clip-path: polygon(20% 3%, 9% 0, 100% 0, 100% 100%, 0 100%, 0 13%, 2% 8%, 5% 16%, 6% 12%, 10% 15%, 6% 8%, 15% 13%, 6% 6%, 14% 7%, 18% 6%, 14% 3%); */
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.138)20%, transparent);
     backdrop-filter: blur(10px);
-
 }
 .right.open{
-    clip-path: polygon(8% 97%, 0 88%, 0 100%, 100% 100%, 100% 0, 0 0, 0 74%, 8% 66%, 19% 78%, 7% 79%, 23% 95%, 6% 84%);
     min-width: 350px;
     right: 0;
-    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.255), transparent);
-    backdrop-filter: blur(10px);
     overflow: scroll;
     padding: 100px 0;
 }
@@ -273,9 +270,7 @@ li{
                 -2px -2px 10px rgba(0,0,0,1),
                 inset 4px 4px 8px rgba(255,255,255,0.1),
                 inset -4px -4px 8px rgba(0,0,0,1),
-                5px 2px 0 0 #8ea8b1,
-                10px 4px 0 0 #005a76;
-
+                4px 2px 0 0 #396ca3d9;
     position: relative;
     transition: all .3s ease-out;
     padding: 0 20px;
