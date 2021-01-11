@@ -199,6 +199,7 @@ section .loader span::before{
     left: 50%;
     top: 30%;
     font-family: myFont;
+    text-transform: uppercase;
     font-size: 5rem;
     color: #e6fdff;
     text-shadow: 0 0 0.6rem #e6fbff, 0 0 1.5rem #adf3ff,
@@ -208,7 +209,7 @@ section .loader span::before{
   }
   @font-face{
     font-family: myFont;
-    src: url(WireThin.ttf);
+    src: url(TritonFilled.ttf);
   }
   
   @keyframes blink {
