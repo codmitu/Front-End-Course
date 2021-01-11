@@ -62,7 +62,7 @@ body{
     flex-direction: column;
     width: 310px;
     height: 320px;
-    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.138)20%, transparent);
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)20%, transparent);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: inset 1px 1px 2px 0 rgba(208, 208, 208, 0.576);
@@ -155,19 +155,19 @@ button{
 /* the shapes of buttons and glass crack https://bennettfeely.com/clippy/ */
 .buttons button:nth-child(1){
     clip-path: polygon(60% 0, 100% 50%, 60% 100%, 0 100%, 0 0);
-    width: 52%;
+    width: 54%;
     text-align: left;
-    margin-right: -30px;
-    background: linear-gradient(to top, rgb(0, 94, 128), rgb(1, 159, 187));
+    margin-right: -35px;
+    background: linear-gradient(to top, rgb(1, 118, 160), rgb(0, 188, 221));
     border: none;
     transition: all .1s ease;
     animation-delay: .5s;
 }
 .buttons button:nth-child(2){
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 40% 50%);
-    width: 52%;
+    width: 54%;
     text-align: right;
-    margin-left: -30px;
+    margin-left: -35px;
     background: linear-gradient(to top, rgb(92, 92, 92), rgb(155, 155, 155));
     pointer-events: none;
     border: none;
@@ -176,7 +176,7 @@ button{
 }
 .buttons button:nth-child(1):hover,
 .buttons button:nth-child(2).active:hover{
-    background: linear-gradient(to top, rgb(0, 92, 126), rgb(0, 204, 240));
+    background: linear-gradient(to top, rgb(0, 140, 191), rgb(76, 228, 255));
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;
 }
@@ -185,7 +185,7 @@ button:nth-child(1).inactive{
     pointer-events: none;
 }
 button:nth-child(2).active{
-    background: linear-gradient(to top, rgb(0, 94, 128), rgb(1, 159, 187)) ;
+    background: linear-gradient(to top, rgb(1, 118, 160), rgb(0, 188, 221)) ;
     pointer-events: all;
     transition: all .1s ease;
 }
@@ -237,7 +237,7 @@ button:nth-child(2).active{
     height: 100%;
     transition: right 1s ease-in, backdrop-filter 5s ease;
     /* clip-path: polygon(20% 3%, 9% 0, 100% 0, 100% 100%, 0 100%, 0 13%, 2% 8%, 5% 16%, 6% 12%, 10% 15%, 6% 8%, 15% 13%, 6% 6%, 14% 7%, 18% 6%, 14% 3%); */
-    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.138)20%, transparent);
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)20%, transparent);
     backdrop-filter: blur(10px);
 }
 .right.open{
