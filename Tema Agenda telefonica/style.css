@@ -347,6 +347,10 @@ li:hover .iconify{
         top: 100%;
         box-shadow: inset 0px 20px 20px -20px rgba(255, 255, 255, 1);
         transition: top 1s ease-in, backdrop-filter 5s ease;
+        background-image:linear-gradient(to right, rgba(255, 255, 255, 0.22)20%, transparent);
+        box-shadow: inset 0px 1px 2px 0px rgba(201, 201, 201, 0.638);
+
+
     }
     .right.open2{
         top: 50%;
