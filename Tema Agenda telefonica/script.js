@@ -49,8 +49,12 @@ function addContact(form, event) {
             "second" : second,
             "phone" : phone
         });
-    } 
+    }
     build();
+    // to defocus phone input after pressing enter
+    if (document && document.activeElement) {
+        document.activeElement.blur();
+    }
 }
 // function to clear inputs
 function clearCheck() {
