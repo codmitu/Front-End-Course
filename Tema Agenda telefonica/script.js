@@ -101,6 +101,7 @@ function edit1(idx) {
     document.querySelector("#input1").value = contacts.first;
     document.querySelector("#input2").value = contacts.second;
     document.querySelector("#input3").value = contacts.phone;
+    document.querySelector("button:nth-child(1)").disabled = true;
     document.querySelector("button:nth-child(1)").classList.add("inactive");
     document.querySelector("button:nth-child(2)").classList.add("active");
     position = idx;
@@ -121,11 +122,12 @@ function edit2() {
     } else {
         return false;
     }
+    document.querySelector("button:nth-child(1)").disabled = false;
     document.querySelectorAll("li")[position].classList.add("animate__flash");
 }
 
 // Delete contacts with animation. 
-// replace() is to show names capitalized in confirm message
+// replace() is to show names capitalized in the confirm message
 function del(idx) {
     if (confirm(`Delete ${agenda[idx].first.replace(/\b\w/g, l => l.toUpperCase())} ${agenda[idx].second.replace(/\b\w/g, l => l.toUpperCase())} from contacts?`) === true) {
         document.querySelectorAll("li")[idx].classList.add("animate__hinge");
