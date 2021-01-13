@@ -175,9 +175,10 @@ button{
     transition: all .1s ease;
     animation-delay: 1s;
 }
-.buttons button:nth-child(1):hover,
-.buttons button:nth-child(2).active:hover,
-button:nth-child(2).active:focus{
+button:nth-child(1):hover,
+button:nth-child(2).active:hover,
+button:nth-child(2).active:focus,
+button:nth-child(1).focused{
     background: linear-gradient(to top, rgb(0, 140, 191), rgb(76, 228, 255));
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;

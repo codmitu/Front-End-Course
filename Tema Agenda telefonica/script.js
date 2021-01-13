@@ -38,12 +38,12 @@ function build() {
 }
 
 function addContact(form, event) {
-    event.preventDefault();
+    event.preventDefault();      
     let first = document.querySelector("#input1").value;
     let second = document.querySelector("#input2").value;
     let phone = document.querySelector("#input3").value;
     if (document.querySelectorAll(".invalid").length === 0 && 
-        document.querySelectorAll(".valid").length > 0) {
+        document.querySelectorAll(".valid").length > 0) {   
         agenda.push({
             "first" : first,
             "second" : second,
@@ -54,6 +54,7 @@ function addContact(form, event) {
     // to defocus phone input after pressing enter
     if (document && document.activeElement) {
         document.activeElement.blur();
+        document.querySelector("button:nth-child(1)").classList.add("focused"); 
     }
 }
 // function to clear inputs
@@ -64,6 +65,7 @@ function clearCheck() {
     document.querySelector(".validator1").classList.remove("invalid");
     document.querySelector(".validator2").classList.remove("invalid");
     document.querySelector(".validator3").classList.remove("invalid");
+    document.querySelector("button:nth-child(1)").classList.remove("focused");
 }
 
 // check validity names inputs when typing
@@ -154,4 +156,4 @@ loading.classList.add('js-loading');
 window.addEventListener('load', function () {
     loader.parentElement.removeChild(loader);
     loading.classList.remove('js-loading');
-});
+});                     
