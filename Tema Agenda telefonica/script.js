@@ -54,7 +54,6 @@ function addContact(form, event) {
     // to defocus phone input after pressing enter
     if (document && document.activeElement) {
         document.activeElement.blur();
-        document.querySelector("button:nth-child(1)").classList.add("focused"); 
     }
 }
 // function to clear inputs
@@ -65,7 +64,6 @@ function clearCheck() {
     document.querySelector(".validator1").classList.remove("invalid");
     document.querySelector(".validator2").classList.remove("invalid");
     document.querySelector(".validator3").classList.remove("invalid");
-    document.querySelector("button:nth-child(1)").classList.remove("focused");
 }
 
 // check validity names inputs when typing
@@ -126,6 +124,7 @@ function edit2() {
     }
     document.querySelector("button:nth-child(1)").disabled = false;
     document.querySelectorAll("li")[position].classList.add("animate__flash");
+
 }
 
 // Delete contacts with animation. 
