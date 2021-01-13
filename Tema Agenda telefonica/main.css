@@ -56,23 +56,22 @@ body{
 /* Form */
 /* html Animations for form, buttons and contacts https://animate.style/ */
 #form{
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 79%, 1% 85%, 5% 81%, 11% 87%, 5% 75%, 14% 68%, 9% 70%, 6% 68%, 5% 64%, 1% 71%, 0 60%); */
     display: flex;
     flex-direction: column;
     width: 310px;
     height: 320px;
-    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)20%, transparent);
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)30%, rgba(255, 255, 255, 0.104));
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    box-shadow: inset 1px 1px 2px 0 rgba(208, 208, 208, 0.576);
+    box-shadow: inset 1px 1px 2px 0 rgba(208, 208, 208, 0.576),
+                inset -1px -1px 2px 0 rgba(148, 148, 148, 0.576);
     transition: all 2s ease;
 }
 
 /* The labels https://www.youtube.com/watch?v=IxRJ8vplzAo&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=35&ab_channel=DevEd */
 /* The shadows https://www.youtube.com/watch?v=CDldkBcrGkA&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=119&t=205s&ab_channel=OnlineTutorials */
 input[type="text"]{
-    /* background-color: rgba(53, 53, 53, 0.432); */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.186)20%, rgba(187, 187, 187, 0.111)20%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.186)20%, rgba(196, 196, 196, 0.165)20%);
     margin: 20px;
     border-radius: 5px;
     color: rgb(190, 190, 190);
@@ -95,7 +94,7 @@ input[type="text"]{
     width: 267px;
     height: 66px;
     padding: 15px;
-    color: rgb(138, 138, 138);
+    color: rgb(160, 160, 160);
 }
 .lb-name1{
     margin: 0 22px;
