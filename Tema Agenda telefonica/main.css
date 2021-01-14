@@ -320,8 +320,17 @@ li:hover .iconify{
 
 /* Device media query */
 @media screen and (max-width: 800px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative;
+      }
     .border{
         visibility: hidden;
+    }
+    .sign{
+        font-size: 30px !important;
     }
     .left{
         top: 0;
@@ -342,6 +351,9 @@ li:hover .iconify{
         align-items: center;
         justify-content: center;
     }
+
+
+    /* Bottom and bottom.open */
     .right{
         left: 0;
         width: 100%;
@@ -350,8 +362,6 @@ li:hover .iconify{
         transition: top 1s ease-in, backdrop-filter 5s ease;
         background-image:linear-gradient(to right, rgba(255, 255, 255, 0.22)20%, transparent);
         box-shadow: inset 0px 1px 2px 0px rgba(201, 201, 201, 0.638);
-
-
     }
     .right.open2{
         top: 50%;
