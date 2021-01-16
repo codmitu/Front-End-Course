@@ -61,7 +61,7 @@ body{
     width: 310px;
     height: 320px;
     background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)30%, rgba(255, 255, 255, 0.104));
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border-radius: 5px;
     box-shadow: inset 1px 1px 2px 0 rgba(208, 208, 208, 0.576),
                 inset -1px -1px 2px 0 rgba(148, 148, 148, 0.576);
@@ -142,12 +142,12 @@ input[type="text"]{
     transform: translateX(0px);
 }
 button{
-    padding: 0 10px;
+    padding: 10px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 1.3rem;
-    margin: 20px;
+    font-size: 1rem;
+    margin: 10px 20px;
     color: rgb(182, 182, 182);
 }
 /* the shapes of buttons and glass crack https://bennettfeely.com/clippy/ */
@@ -239,7 +239,7 @@ button:nth-child(2).active{
     height: 100%;
     transition: right 1s ease-in, backdrop-filter 5s ease;
     background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)20%, transparent);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 .right.open{
     min-width: 350px;
@@ -273,10 +273,10 @@ li{
                 inset -4px -4px 8px rgba(0,0,0,1),
                 4px 2px 0 0 #396ca3d9;
     position: relative;
-    transition: all .3s ease-out;
+    transition: all .5s ease-out;
     padding: 0 20px;
     list-style: none;
-    font-family: 'Roboto Slab', serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 li:hover{
     transform: rotateY(-5deg) rotateX(10deg) scale(1.07);
