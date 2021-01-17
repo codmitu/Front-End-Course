@@ -5,7 +5,7 @@
     /* border: 1px solid yellow; */
 }
 body{
-    background-image: url("img/bg-img.jpg");
+    background-image: url("../img/bg-img.jpg");
     height: 100vh;
     width: 100vw;
     background-position: top center;
@@ -263,7 +263,7 @@ li{
     transform: rotateY(-20deg) rotateX(10deg);
     margin: 20px auto -50px auto;
     font-size: 1.5rem;
-    background: url("img/card-img.jpg");
+    background: url("../img/card-img.jpg");
     filter: drop-shadow(3px 3px 6px rgb(0, 208, 255));
     color:  rgb(204, 204, 204);
     border-radius: 5px;
