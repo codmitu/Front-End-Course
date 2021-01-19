@@ -1,0 +1,159 @@
+/* List section with the items */
+section{
+    width: 250px;
+    max-height: 60vh;
+    background-color: white;
+    position: absolute;
+    right: 50%;
+    top: 15%;
+    transform: translateX(50%);
+    padding: 10px;
+    overflow: scroll;
+    border-left: 5px dashed green;
+}
+section::-webkit-scrollbar{
+    width: 0;
+}
+h2{
+    font-family: 'Covered By Your Grace', cursive;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 2rem;
+    cursor: default;
+    position: sticky;
+    top: 0;
+    transform: translateY(-15px);
+    z-index: 1;
+    background-color: white;
+    height: 50px;
+}
+.sortDiv{
+    position: sticky;
+    display: inline-block;
+    color: green;
+    font-size: 2rem;
+}
+.iconify[data-icon*="la:sort"]{
+    cursor: pointer;
+}
+.iconify[data-icon*="la:sort"]:hover{
+    background-color: rgb(238, 238, 238);
+}
+.listDiv{
+    display: flex;
+    border-bottom: 1px solid gray;
+    list-style-type: decimal;
+    position: relative;
+    background-color: white;
+    transition: all .5s ease;
+}
+.editIcon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+/* main item text */
+.itemText{
+    flex: 1;
+    margin: 10px 20px 10px 0;
+    cursor: default;
+    text-align: center;
+    font-family: 'Sniglet', cursive;
+    overflow: hidden;
+    list-style-position: inside;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+/* info text inside i*/
+.listDiv > div{
+    position: relative;
+}
+.moreInfo{
+    background-color: rgb(46, 130, 255);
+    position: absolute;
+    height: 100%;
+    width: 170px;
+    border-radius: 10px;
+    padding: 3px;
+    clip-path: circle(5% at 93.5% 25%);
+    right: 0;
+    overflow-y: scroll;
+    transition: clip-path 0.4s ease-in-out;
+}
+.moreInfo::-webkit-scrollbar{
+    width: 0;
+}
+.moreInfo:hover{
+    clip-path: circle(75%);
+    background-color: rgb(110, 168, 255);
+}
+
+/* i */
+.infoIcon{
+    float: right;
+    font-size: 0.8rem;
+    color: white;
+    transition: color .5s;
+    font-weight: bold;
+    margin-right: 6.5px;
+    cursor: default;
+    position: sticky;
+    top: 0;
+}
+.moreInfo:hover .infoIcon{
+    color: rgba(255, 255, 255, 0); 
+}
+.infoText{
+    color: rgba(255, 255, 255, 0); 
+}
+.moreInfo:hover .infoText {
+    color: rgb(255, 255, 255);
+    word-break: break-all;
+}
+.deleteMark{
+    margin: auto 0;
+    font-size: 1.5rem;
+    padding:2px;
+    color: red;
+    cursor: pointer;
+    background: none;
+}
+.deleteMark:hover{
+    padding:0;
+}
+
+
+/* JS delete and check animation */
+.remove{
+    transform: translateX(-250px);
+}
+.completed{
+    text-decoration: line-through;
+    color: lightgrey;
+}
+
+/* Add Item button - displays the form */
+.stickyBtn{
+    width: 100%;
+    background: linear-gradient(to bottom, #c2f587, #65a313);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    stroke: black;
+    padding: 5px;
+    cursor: pointer;
+    position: sticky;
+    bottom: 0;
+    transform: translateY(10px);
+    
+}
+.stickyBtn:hover{
+    background: linear-gradient(to bottom, #c2f587, #4f8707);
+}
+.stickyBtn:active{
+    background: linear-gradient(to bottom, #c2f587, #65a313);
+}

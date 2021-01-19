@@ -1,0 +1,107 @@
+/* Add and Edit popup forms */
+form, .form2{
+    right:50%;
+    top: 20%;
+    transform: translateX(50%);
+    width: 250px;
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(226, 252, 255);
+    padding: 20px 10px;
+    z-index:3;
+}
+/* Add item form */
+form{
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-out;
+}
+/* Edit item form (div) */
+.form2{
+    display: none;
+}
+/* Label inside main input */
+.labelItem{
+    position: relative;
+}
+/* Label > p "text" inside main input */
+.itemName{
+    font-size: 0.9rem;
+    left: 0;
+    right: 0;
+    top: -45px;
+    text-align: center;
+    color: lightgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    pointer-events: none;
+    position: absolute;
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+input[type="text"]:focus + .labelItem .itemName, 
+input[type="text"]:valid + .labelItem .itemName{
+    transform: translate(40%, -200%);
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Sniglet', cursive;
+    border: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.323);
+    transition: all 0.5s ease-out;
+}
+/* More info text area input  */
+textarea{
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    resize: none;
+    border: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.323);
+    transition: all 0.5s ease-out;
+}
+textarea::placeholder{
+    color: lightgrey;
+}
+input[type="text"]:invalid, textarea:placeholder-shown{
+    border: 1px solid grey;
+    box-shadow: none;
+}
+ /* Form, form2(div) buttons, add and edit */
+input[type="submit"], 
+input[type="button"]{
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    stroke: black;
+    padding: 5px;
+    cursor: pointer;
+}
+input[type="submit"]{
+    background: linear-gradient(to bottom, #c2f587, #65a313);
+}
+input[type="button"]{
+    background: linear-gradient(to bottom, #fda7fd, #d12cab);
+}
+input[type="submit"]:hover{
+    background: linear-gradient(to bottom, #c2f587, #4f8707);
+}
+input[type="button"]:hover{
+    background: linear-gradient(to bottom, #ff94ff, #8f0f71);
+}
+input[type="submit"]:active{
+    background: linear-gradient(to bottom, #c2f587, #65a313);
+}
+input[type="button"]:active{
+    background: linear-gradient(to bottom, #fda7fd, #d12cab);
+}
