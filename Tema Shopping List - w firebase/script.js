@@ -3,6 +3,7 @@ let form = document.querySelector("form");
 let fullList = {};
 let position = -1;
 let arr;
+let finished;
 let url = "https://shopping-list-bc921-default-rtdb.europe-west1.firebasedatabase.app/";
 
 
@@ -34,31 +35,6 @@ function build() {
         `
     }
     list.innerHTML = str;
-}
-/////// Sort A-Z
-function sortAZ() {
-    fullList.sort(dynamicSort("item"));
-    build();
-}
-
-
-/////// Sort Z-A
-function sortZA() {
-    fullList.sort(dynamicSort("-item"));
-    build();
-}
-
-///// sort by elements of objects in an array
-function dynamicSort(property) {
-    var sortOrder = 1;
-    if(property[0] === "-") {
-        sortOrder = -1;
-        property = property.substr(1);
-    }
-    return function (a,b) {
-        var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-        return result * sortOrder;
-    }
 }
 
 /////// Shows form
@@ -112,12 +88,12 @@ async function mark(idx) {
     await getFullList();
 }
 
-
 ////// Show edit 'form'
 function edit(idx) {
     let fl = fullList[idx];
     document.querySelector(".item2").value = fl.item;
     document.querySelector(".textarea2").value = fl.info;
+    finished = fl.completed;
     document.querySelector(".form2").style.display = "flex";
     modal.classList.add("open");
     position = idx;
@@ -129,6 +105,7 @@ async function edit2(){
     let x = {};
     x.item = document.querySelector(".item2").value;
     x.info = document.querySelector(".textarea2").value;
+    x.completed = finished;
     const res = await fetch(url + position + ".json", {
         method: "PUT",
         body: JSON.stringify(x),
