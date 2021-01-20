@@ -6,7 +6,6 @@ let arr;
 let finished;
 let url = "https://shopping-list-bc921-default-rtdb.europe-west1.firebasedatabase.app/";
 
-
 async function getFullList() {
     const res = await fetch(url + ".json");
         fullList = await res.json();
@@ -15,13 +14,12 @@ async function getFullList() {
         }
     build();
 }
-
 function build() {
     let list = document.querySelector("ol");
     let str = "";
     for (let [i, elem] of Object.entries(fullList)) {
         str += `
-            <div class="listDiv">
+            <div class="listDiv animate__animated ${elem.removed}">
                 <span class="iconify editIcon" data-icon="ant-design:edit-outlined" style="color: green;" onclick="edit('${i}');"></span>
                 <li class="itemText ${elem.completed}" onclick="mark('${i}');" > ${elem.item}</li>
                 <div>
@@ -68,7 +66,7 @@ async function addListItem() {
 ////// Mark item ========================================================
 async function mark(idx) {
     let fl = fullList[idx];
-    if(fl.completed == "completed") {
+    if(fl.completed === "completed") {
         fl.completed = '';
     } else {
         fl.completed = "completed";
@@ -118,18 +116,43 @@ async function edit2(){
 }
 
 
-
+async function del(idx) {
+    let fl = fullList[idx];
+    fl.removed = "animate__backOutLeft";
+    const res = await fetch(url + idx + ".json", {
+        method: "put",
+        body: JSON.stringify({
+            "item" : fl.item,
+            "info" : fl.info,
+            "completed" : fl.completed,
+            "removed" : fl.removed
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+    await res.json();
+    await getFullList();
+    setTimeout(async function() {
+        const res = await fetch(url + idx + ".json", {
+        method: "DELETE"
+        
+        });
+    await res.json();
+    await getFullList();
+    }, 500);
+}
 
 
 
 ////// Delete item
-async function del(idx) {
-    const res = await fetch(url + idx + ".json", {
-        method: "DELETE"
-    });
-    await res.json();
-    await getFullList();
-}
+// async function del(idx) {
+//     const res = await fetch(url + idx + ".json", {
+//         method: "DELETE"
+//     });
+//     await res.json();
+//     await getFullList();
+// }
 
 
 //// Modal Layer

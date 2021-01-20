@@ -45,7 +45,6 @@ h2{
     list-style-type: decimal;
     position: relative;
     background-color: white;
-    transition: all .5s ease;
 }
 .editIcon{
     width: 30px;
@@ -126,10 +125,7 @@ h2{
 }
 
 
-/* JS delete and check animation */
-.remove{
-    transform: translateX(-250px);
-}
+/* JS check animation */
 .completed{
     text-decoration: line-through;
     color: lightgrey;
