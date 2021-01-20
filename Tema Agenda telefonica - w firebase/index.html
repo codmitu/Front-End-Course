@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSSs -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/BorderTitle.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+   
+    <title>Ichim Gelu Phone Agenda</title>
+</head>
+<body onload="build();">
+
+    <!-- Loading animation -->
+    <section class="anim">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+        </div>
+    </section>
+
+
+    <!-- Animated border -->
+    <div class="border" class="animate__animated animate__fadeIn" >
+        <span class="span sp1"></span>
+        <span class="span sp2"></span>
+        <div class="span div1"></div>
+        <div class="span div2"></div>
+    </div>
+   
+    <!-- Title -->
+    <div class="sign">
+        co<span class="fast-flicker">n</span>tac<span class="flicker">t</span>s
+    </div>
+      
+
+
+    <div class="left">
+        <form id="form" onsubmit="addContact(this, event);"  method="post" action="" autocomplete="off" class="animate__animated animate__fadeInDownBig">
+
+            <!-- This input disables autofill and autocomplete form -->
+            <input type="week" id="wek" autocomplete="off" name="hidden" style="display:none;" />
+            <!-- togheter with method="post" action="" autocomplete="off" from #form -->
+
+            <input type="text" id="input1" spellcheck="false" required onkeyup="validName(this);" name="input"/>
+            <label class="lb-name1">
+                <span class="name1">First Name*</span>
+                <span class="validator1" ></span>
+            </label>
+            <input type="text" id="input2" spellcheck="false" required onkeyup="validName(this);" name="input"/>
+            <label class="lb-name2">
+                <span class="name2" >Last Name*</span>
+                <span class="validator2" ></span>
+            </label>
+            <input type="text" id="input3" required onkeyup="validPhone(this);" spellcheck="false"  name="input"/>
+            <label class="lb-phone">
+                <span class="phone">Phone Number*</span>
+                <span class="validator3"></span>
+            </label>
+            <div class="buttons">
+                <button type="submit" value="Submit" onsubmit="build();" class="animate__animated animate__backInLeft">Add</button>
+                <button onclick="edit2();" class="animate__animated animate__backInRight" id="editBtn">Edit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="right">
+        <ul></ul>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>

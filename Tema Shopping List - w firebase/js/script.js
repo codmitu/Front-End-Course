@@ -115,7 +115,7 @@ async function edit2(){
     modal.classList.remove("open");
 }
 
-
+////// Delete item
 async function del(idx) {
     let fl = fullList[idx];
     fl.removed = "animate__backOutLeft";

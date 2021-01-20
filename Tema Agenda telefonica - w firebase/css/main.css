@@ -1,0 +1,394 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+}
+body{
+    background-image: url("../img/bg-img.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========== MIDDLE - LEFT SIDE ========== */
+.left{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in;
+}
+.left.open{
+    right: 30%;
+    width: 70%;
+}
+.open::-webkit-scrollbar{
+    width: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Form */
+/* html Animations for form, buttons and contacts https://animate.style/ */
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 320px;
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)30%, rgba(255, 255, 255, 0.104));
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 2px 0 rgba(208, 208, 208, 0.576),
+                inset -1px -1px 2px 0 rgba(148, 148, 148, 0.576);
+    transition: all 2s ease;
+}
+
+/* The labels https://www.youtube.com/watch?v=IxRJ8vplzAo&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=35&ab_channel=DevEd */
+/* The shadows https://www.youtube.com/watch?v=CDldkBcrGkA&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=119&t=205s&ab_channel=OnlineTutorials */
+input[type="text"]{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.186)20%, rgba(196, 196, 196, 0.165)20%);
+    margin: 20px;
+    border-radius: 5px;
+    color: rgb(190, 190, 190);
+    padding: 10px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    box-shadow: -2px -2px 10px rgba(255,255,255, 0.1),
+                2px 2px 10px rgba(0,0,0,1),
+                inset -1px -1px 2px rgba(255,255,255,0.1),
+                inset 1px 1px 2px rgba(0,0,0,1);
+}
+/* Validator  https://www.youtube.com/watch?v=pEvISNLoYAk&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=55&ab_channel=OnlineTutorials */
+.lb-name1,
+.lb-name2,
+.lb-phone{
+    position: absolute;
+    pointer-events: none;
+    width: 267px;
+    height: 66px;
+    padding: 15px;
+    color: rgb(160, 160, 160);
+}
+.lb-name1{
+    margin: 0 22px;
+}
+.lb-name2{
+    margin: 85px 22px;
+}
+.lb-phone{
+    margin: 169px 22px;
+}
+.lb-name1::after,
+.lb-name2::after,
+.lb-phone::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 5%;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgb(0, 255, 234);
+    transform: translateX(-102%);
+    transition: all .3s ease;
+}
+.name1, .name2, .phone{
+    margin: 18px 0;
+    position: absolute;
+    transition: all .3s ease;
+}
+#input1:focus + .lb-name1 .name1,
+#input1:valid + .lb-name1 .name1,
+#input2:focus + .lb-name2 .name2,
+#input2:valid + .lb-name2 .name2,
+#input3:focus + .lb-phone .phone,
+#input3:valid + .lb-phone .phone{
+    transform: translateY(-30px);
+    font-size: 14px;
+    color:  rgb(0, 255, 234);
+}
+#input1:focus + .lb-name1::after,
+#input1:valid + .lb-name1::after,
+#input2:focus + .lb-name2::after,
+#input2:valid + .lb-name2::after,
+#input3:focus + .lb-phone::after,
+#input3:valid + .lb-phone::after{
+    transform: translateX(0px);
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 20px;
+    color: rgb(182, 182, 182);
+}
+/* the shapes of buttons and glass crack https://bennettfeely.com/clippy/ */
+.buttons button:nth-child(1){
+    clip-path: polygon(60% 0, 100% 50%, 60% 100%, 0 100%, 0 0);
+    width: 54%;
+    text-align: left;
+    padding-left: 20px;
+    margin-right: -35px;
+    background: linear-gradient(to top, rgb(1, 118, 160), rgb(0, 188, 221));
+    border: none;
+    transition: all .1s ease;
+    animation-delay: .5s;
+}
+.buttons button:nth-child(2){
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 40% 50%);
+    width: 54%;
+    text-align: right;
+    padding-right: 20px;
+    margin-left: -35px;
+    background: linear-gradient(to top, rgb(92, 92, 92), rgb(155, 155, 155));
+    pointer-events: none;
+    border: none;
+    transition: all .1s ease;
+    animation-delay: 1s;
+}
+button:nth-child(1):hover,
+button:nth-child(2).active:hover,
+button:nth-child(2).active:focus,
+button:nth-child(1).focused{
+    background: linear-gradient(to top, rgb(0, 140, 191), rgb(76, 228, 255));
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18ffd5, 0 0 30px #18ffd5, 0 0 40px #18ffd5, 0 0 55px #18ffd5, 0 0 75px #18ffd5;
+}
+button:nth-child(1).inactive{
+    background: linear-gradient(to top, rgb(92, 92, 92), rgb(155, 155, 155));
+    pointer-events: none;
+}
+button:nth-child(2).active{
+    background: linear-gradient(to top, rgb(1, 118, 160), rgb(0, 188, 221));
+    pointer-events: all;
+    transition: all .1s ease;
+}
+.validator1,
+.validator2,
+.validator3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(123, 123, 123);
+    border-radius: 50%;
+    top: 37px;
+    right: 5%;
+    pointer-events: none;
+}
+.valid{
+    background-color: #0f0;
+     box-shadow: 0 0 5px #0f0,
+                0 0 10px #0f0,
+                0 0 20px #0f0,
+                0 0 40px #0f0;
+               
+            
+}             
+.invalid{
+    background-color: #f00;
+    box-shadow: 0 0 5px #f00,
+                0 0 10px #f00,
+                0 0 20px #f00,
+                0 0 40px #f00;      
+}
+
+
+
+
+
+
+
+
+/* ========= RIGHT SIDE ======== */
+/* List of contacts */
+/* Sliding div https://www.youtube.com/watch?v=8MgpE2DTTKA&ab_channel=TraversyMedia */
+.right{
+    position: absolute;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    box-shadow: inset 1px 0px 2px 0px rgba(201, 201, 201, 0.638);
+    height: 100%;
+    transition: right 1s ease-in, backdrop-filter 5s ease;
+    background-image:linear-gradient(125deg, rgba(255, 255, 255, 0.22)20%, transparent);
+    backdrop-filter: blur(20px);
+}
+.right.open{
+    min-width: 350px;
+    right: 0;
+    overflow: scroll;
+    padding: 100px 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: visible;
+    width: 100%;
+    min-height: 100%;
+}
+/* Perspective https://www.youtube.com/watch?v=VTtNBpSidNw&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=50&ab_channel=DesignCourse */
+li{
+    perspective: 5000px;
+    width: 250px;
+    transform: rotateY(-20deg) rotateX(10deg);
+    margin: 20px auto -50px auto;
+    font-size: 1.5rem;
+    background: url("../img/card-img.jpg");
+    filter: drop-shadow(3px 3px 6px rgb(0, 208, 255));
+    color:  rgb(204, 204, 204);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(255,255,255, 0.1),
+                -2px -2px 10px rgba(0,0,0,1),
+                inset 4px 4px 8px rgba(255,255,255,0.1),
+                inset -4px -4px 8px rgba(0,0,0,1),
+                4px 2px 0 0 #396ca3d9;
+    position: relative;
+    transition: all .5s ease-out;
+    padding: 0 20px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li:hover{
+    transform: rotateY(-5deg) rotateX(10deg) scale(1.07);
+    z-index: 1;
+    color:  #7e7e7e;
+    box-shadow: 1px 1px 5px rgba(255,255,255, 0.1),
+                -1px -1px 5px rgba(0,0,0,1),
+                inset 1px 1px 2px rgba(255,255,255,0.1),
+                inset -1px -1px 2px rgba(0,0,0,1),
+                1px 0px 0 0 #8ea8b1,
+                2px 1px 0 0 #005a76;
+}
+li p{
+    text-transform: capitalize;
+    margin: 10px;
+}
+.iconify{
+    float: right;
+    visibility: hidden;
+    margin-top: 10px;
+    cursor: pointer;
+}
+li:hover .iconify{
+    visibility: visible;
+}
+.iconify:hover{
+    color: rgb(0, 187, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Device media query */
+@media screen and (max-width: 800px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative;
+      }
+    .border{
+        visibility: hidden;
+    }
+    .sign{
+        font-size: 30px !important;
+    }
+    .left{
+        top: 0;
+        width: 100%;
+        right: 0;
+        max-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    .left.open2{
+        top: 0;
+        left: 0;
+        min-height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Bottom and bottom.open */
+    .right{
+        left: 0;
+        width: 100%;
+        top: 100%;
+        box-shadow: inset 0px 20px 20px -20px rgba(255, 255, 255, 1);
+        transition: top 1s ease-in, backdrop-filter 5s ease;
+        background-image:linear-gradient(to right, rgba(255, 255, 255, 0.22)20%, transparent);
+        box-shadow: inset 0px 1px 2px 0px rgba(201, 201, 201, 0.638);
+    }
+    .right.open2{
+        top: 50%;
+        max-height: 50%;
+        left: 0;
+        backdrop-filter: blur(10px) brightness(90%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+    }
+    .right.open2::-webkit-scrollbar{
+        width: 0;
+    }
+    ul{
+        padding: 100px 0;
+        position: absolute;
+        top: 10px;
+        transform: translateX(10%);
+    }
+    li{
+        transform: rotateY(-20deg) rotateX(10deg) translateX(-20%);
+    }
+    li:hover{
+        transform: translateX(-20%);
+    }
+    .iconify{
+        font-size: 2rem;
+    }
+}
