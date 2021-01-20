@@ -63,7 +63,7 @@ async function addListItem() {
 }
 
 
-////// Mark item ========================================================
+////// Mark item
 async function mark(idx) {
     let fl = fullList[idx];
     if(fl.completed === "completed") {
@@ -142,17 +142,6 @@ async function del(idx) {
     await getFullList();
     }, 500);
 }
-
-
-
-////// Delete item
-// async function del(idx) {
-//     const res = await fetch(url + idx + ".json", {
-//         method: "DELETE"
-//     });
-//     await res.json();
-//     await getFullList();
-// }
 
 
 //// Modal Layer
