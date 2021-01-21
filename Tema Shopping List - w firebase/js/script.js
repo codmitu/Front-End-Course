@@ -99,7 +99,7 @@ function edit(idx) {
 
 
 ////// Edit item
-async function edit2(){
+async function edit2() {
     let x = {};
     x.item = document.querySelector(".item2").value;
     x.info = document.querySelector(".textarea2").value;
@@ -107,7 +107,7 @@ async function edit2(){
     const res = await fetch(url + position + ".json", {
         method: "PUT",
         body: JSON.stringify(x),
-        headers: {'Content-Type': 'application/json'},
+        headers: {'Content-Type': 'application/json'}
     });
     await res.json();
     await getFullList();

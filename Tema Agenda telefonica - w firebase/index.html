@@ -17,7 +17,7 @@
    
     <title>Ichim Gelu Phone Agenda</title>
 </head>
-<body onload="build();">
+<body onload="getAgenda();">
 
     <!-- Loading animation -->
     <section class="anim">
@@ -62,11 +62,11 @@
 
 
     <div class="left">
-        <form id="form" onsubmit="addContact(this, event);"  method="post" action="" autocomplete="off" class="animate__animated animate__fadeInDownBig">
+        <form id="form" onsubmit="event.preventDefault();addContact();" autocomplete="off" class="animate__animated animate__fadeInDownBig">
 
             <!-- This input disables autofill and autocomplete form -->
             <input type="week" id="wek" autocomplete="off" name="hidden" style="display:none;" />
-            <!-- togheter with method="post" action="" autocomplete="off" from #form -->
+            <!-- togheter with autocomplete="off" from #form -->
 
             <input type="text" id="input1" spellcheck="false" required onkeyup="validName(this);" name="input"/>
             <label class="lb-name1">
@@ -84,7 +84,7 @@
                 <span class="validator3"></span>
             </label>
             <div class="buttons">
-                <button type="submit" value="Submit" onsubmit="build();" class="animate__animated animate__backInLeft">Add</button>
+                <button type="submit" value="submit" class="animate__animated animate__backInLeft" id="addBtn">Add</button>
                 <button onclick="edit2();" class="animate__animated animate__backInRight" id="editBtn">Edit</button>
             </div>
         </form>
@@ -94,7 +94,7 @@
         <ul></ul>
     </div>
     
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <script src="js/loading.js"></script>
 </body>
 </html>
