@@ -1,4 +1,4 @@
-const patternNames = /^([A-Za-z]{3}[ .'éàëA-Za-z-]*)$/;
+const patternNames = /^(?=.{3,20}$)[a-z]+(?:['-_.\s][a-z]+)*$/i;
 const patternPhoneNumber = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
 // const patternEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 let form = document.querySelector("#form");
@@ -15,7 +15,6 @@ let btn2 = document.querySelector("#editBtn");
 let val1 = document.querySelector(".validator1");
 let val2 = document.querySelector(".validator2");
 let val3 = document.querySelector(".validator3");
-
 
 // function to update the build() function whenever there is a change on the database server
 async function getAgenda() {
@@ -34,7 +33,7 @@ function build() {
     let li = "";
     for (let [i, elem] of Object.entries(agenda)) {
         li += `
-        <li class="animate__animated ${elem.removed}">
+        <li class="animate__animated ${elem.removed} ${elem.anim}">
             <span class="iconify close" data-icon="gg:close" onclick="del('${i}');" ></span>
             <span class="iconify" data-icon="radix-icons:pencil-1" data-inline="false" onclick="edit1('${i}');"></span>
             <p>${elem.first}</p>
@@ -44,7 +43,7 @@ function build() {
         `     
     }
     ul.innerHTML = li;
-    if (window.innerWidth < 800 && Object.entries(agenda).length > 0) {
+    if (Object.entries(agenda).length > 0 && window.innerWidth < 800) {
         left.classList.add("open2");
         right.classList.add("open2");
     } else if (Object.entries(agenda).length > 0 && window.innerWidth > 800){
@@ -56,7 +55,7 @@ function build() {
         left.classList.remove("open2");
         right.classList.remove("open2");
     }
-    setTimeout(clearCheck, 1000);
+    setTimeout(clearValidators, 1000);
     form.reset();
     btn1.classList.remove("inactive");
     btn2.classList.remove("active");
@@ -87,7 +86,7 @@ async function addContact() {
     }
 }
 // function to clear inputs
-function clearCheck() {
+function clearValidators() {
     val1.classList.remove("valid");
     val2.classList.remove("valid");
     val3.classList.remove("valid");
@@ -99,9 +98,8 @@ function clearCheck() {
 // check validity names inputs when typing
 // intentionaly works only on POST and not on PUT method (duplicating bug)
 function validName(elem) {
-    if (btn1.disabled === false) {
         let el = elem.nextElementSibling.lastElementChild.classList;
-        if (elem.value.match(patternNames) && elem.value.length < 20) {
+        if (elem.value.match(patternNames)) {
             el.add("valid");
             el.remove("invalid");
         } else if (elem.value === "") {
@@ -111,12 +109,10 @@ function validName(elem) {
             el.remove("valid");
             el.add("invalid");
         }
-    }
 }
 // check validity phone input when typing
 // intentionaly works only on POST and not on PUT method (duplicating bug)
 function validPhone(elem) {
-    if (btn1.disabled === false) {
         let el = elem.nextElementSibling.lastElementChild.classList;
         if (elem.value.match(patternPhoneNumber)) {
             el.add("valid");
@@ -128,7 +124,6 @@ function validPhone(elem) {
             el.remove("valid");
             el.add("invalid");
         }
-    }
 }
 
 // Edit contacts faze 1
@@ -141,7 +136,7 @@ function edit1(idx) {
         btn1.classList.remove("inactive");
         btn2.classList.remove("active");
         form.reset();
-        setTimeout(clearCheck, 1000);
+        setTimeout(clearValidators, 1000);
     } else {
         input1.value = contacts.first;
         input2.value = contacts.second;
@@ -157,6 +152,7 @@ function edit1(idx) {
 async function edit2() {
     if (input1.value.length > 2 && input2.value.length > 2 && input3.value.length > 9
         && input1.value.length < 21 && input2.value.length < 21 && input3.value.length < 16) {
+        clearValidators();
         let x = {};
         x.first = input1.value;
         x.second = input2.value;
@@ -169,18 +165,6 @@ async function edit2() {
         await res.json();
         await getAgenda();
         btn1.disabled = false;
-        val1.classList.add("valid");
-        val2.classList.add("valid");
-        val3.classList.add("valid");
-    } else {
-        val1.classList.add("invalid");
-        val2.classList.add("invalid");
-        val3.classList.add("invalid");
-        setTimeout(clearCheck, 1000);
-        form.reset();
-        btn1.disabled = false;
-        btn1.classList.remove("inactive");
-        btn2.classList.remove("active");
     }
 }
 
@@ -218,4 +202,3 @@ document.addEventListener('invalid', (function () {
       e.preventDefault();
     };
   })(), true);
-                   
