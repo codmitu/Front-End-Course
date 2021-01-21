@@ -136,7 +136,7 @@ function validPhone(elem) {
 function edit1(idx) {
     let contacts = agenda[idx];
     position = idx;
-    if (input1.value.length > 0 || input2.value.length > 0 || input3.value.length > 0) {
+    if (input1.value !== "" || input2.value !== "" || input3.value !== "") {
         btn1.disabled = false;
         btn1.classList.remove("inactive");
         btn2.classList.remove("active");
@@ -172,13 +172,12 @@ async function edit2() {
         val1.classList.add("valid");
         val2.classList.add("valid");
         val3.classList.add("valid");
-        setTimeout(clearCheck, 1000);
     } else {
         val1.classList.add("invalid");
         val2.classList.add("invalid");
         val3.classList.add("invalid");
-        form.reset();
         setTimeout(clearCheck, 1000);
+        form.reset();
         btn1.disabled = false;
         btn1.classList.remove("inactive");
         btn2.classList.remove("active");
@@ -189,6 +188,7 @@ async function edit2() {
 //// replace() is to show capitalized letters in confirm message
 /// PUT is for showing an animation before deleting it
 async function del(idx) {
+    btn1.disabled = false;
     let ag = agenda[idx];
     ag.removed = "animate__hinge";
     if (confirm(`Delete ${agenda[idx].first.replace(/\b\w/g, l => l.toUpperCase())} ${agenda[idx].second.replace(/\b\w/g, l => l.toUpperCase())} from contacts?`) === true) {
@@ -205,7 +205,7 @@ async function del(idx) {
             const res = await fetch(url + idx + ".json", {
             method: "DELETE"
             });
-        await res.json();
+        await res.json();                      
         await getAgenda();
         }, 2000);
     } 
