@@ -174,15 +174,9 @@ async function edit2() {
         val3.classList.add("valid");
         setTimeout(clearCheck, 1000);
     } else {
-        if (document.querySelector("#input1:not(.valid)")) {
-            val1.classList.add("invalid");
-        }
-        if (document.querySelector("#input2:not(.valid)")) {
-            val2.classList.add("invalid");
-        }
-        if (document.querySelector("#input3:not(.valid)")) {
-            val3.classList.add("invalid");
-        }
+        val1.classList.add("invalid");
+        val2.classList.add("invalid");
+        val3.classList.add("invalid");
         form.reset();
         setTimeout(clearCheck, 1000);
         btn1.disabled = false;
