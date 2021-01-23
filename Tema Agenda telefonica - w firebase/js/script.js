@@ -16,7 +16,7 @@ let val1 = document.querySelector(".validator1");
 let val2 = document.querySelector(".validator2");
 let val3 = document.querySelector(".validator3");
 
-// function to update the build() function whenever there is a change on the database server
+// function to add into database and update the build() function 
 async function getAgenda() {
     const res = await fetch(url + ".json");
     agenda = await res.json();
@@ -27,7 +27,7 @@ async function getAgenda() {
 }
 
 
-// function to build the visible html
+// function to build the visible html on the webpage
 function build() {
     let ul = document.querySelector("ul");
     let li = "";
@@ -96,7 +96,6 @@ function clearValidators() {
 }
 
 // check validity names inputs when typing
-// intentionaly works only on POST and not on PUT method (duplicating bug)
 function validName(elem) {
         let el = elem.nextElementSibling.lastElementChild.classList;
         if (elem.value.match(patternNames)) {
@@ -111,7 +110,6 @@ function validName(elem) {
         }
 }
 // check validity phone input when typing
-// intentionaly works only on POST and not on PUT method (duplicating bug)
 function validPhone(elem) {
         let el = elem.nextElementSibling.lastElementChild.classList;
         if (elem.value.match(patternPhoneNumber)) {
@@ -147,8 +145,6 @@ function edit1(idx) {
     }
 }
 // edit contacts faze 2
-// removed the validator for Edit part because it was duplicating instead of updating
-// thast why there is an IF ELSE
 async function edit2() {
     if (input1.value.length > 2 && input2.value.length > 2 && input3.value.length > 9
         && input1.value.length < 21 && input2.value.length < 21 && input3.value.length < 16) {
