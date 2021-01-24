@@ -1,0 +1,138 @@
+* {
+    outline: none;
+}
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143)) fixed;
+    font-family: sans-serif;
+    color: white;
+}
+#tempSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.div1,
+.div2 {
+    display: flex;
+    color: lightgray;
+}
+.minMax {
+    text-align: end;
+}
+.minMax > div {
+    margin: 10px;
+}
+.degreeWrap {
+    margin: 0 5vw;
+}
+.tempDegree,
+.tempSymbol {
+    font-size: 4rem;
+    color: white;
+}
+.div2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 10px;
+}
+.country {
+    width: 50%;
+}
+.city {
+    color: white;
+    font-size: 2rem;
+}
+.iconify {
+    margin-left: 10px;
+}
+.div2>div>div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+input {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+button{
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgb(209, 119, 1);
+    color: white;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.buttons .iconify{
+    margin-left: 0;
+    pointer-events: none;
+}
+#btn2, #btn3 {
+    background-color: rgb(47,150,163);
+}
+#weekSection {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+.dayCol1, .dayCol2, .dayCol3, 
+.dayCol4, .dayCol5, .dayCol6 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.day {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+.day:nth-child(odd) {
+    background-color: rgba(160, 160, 160, 0.227);
+}
+.weekDegrees {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 1rem;
+}
+.font {
+    font-size: 0.7rem;
+}
+.weekIcon {
+    margin: -7px auto;
+}
+#map {
+    margin: 50px;
+}
+
+
+.hidden {
+    display: none !important;
+}
