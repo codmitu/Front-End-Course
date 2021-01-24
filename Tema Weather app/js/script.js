@@ -57,12 +57,10 @@ window.addEventListener('load', async () => {
     document.querySelector(".lds-ring").classList.add("hidden");
 });
 
-// display current weather and shows more days if showMore is already unhidden
+// display current weather and show more days if showMore is already unhidden
 btn1.addEventListener('click', async () => {
     document.querySelector(".lds-ring").classList.remove("hidden");
-    if (input.value === "") {
-        setTimeout(remLoader, 2000);
-    }
+    setTimeout(hideLoader, 2000);
     api = `https://api.openweathermap.org/data/2.5/weather?appid=69518b1f8f16c35f8705550dc4161056&lang=ro&units=metric&q=${input.value}`;
     let res = await fetch(api);
     let json = await res.json();
@@ -86,10 +84,6 @@ async function showMore() {
     } else {
         document.querySelector("#weekSection").classList.remove("hidden");
 
-    }
-    
-    if (input.value === "") {
-        setTimeout(remLoader, 2000);
     }
     document.querySelector(".lds-ring").classList.remove("hidden");
     api = `https://api.openweathermap.org/data/2.5/forecast?appid=69518b1f8f16c35f8705550dc4161056&lang=ro&units=metric&q=${input.value}`;
@@ -218,3 +212,7 @@ btn3.addEventListener('click', () => {
     document.querySelector("#weekSection").classList.add("hidden");
     document.querySelector(".lds-ring").classList.add("hidden");
 });
+
+function hideLoader() {
+    document.querySelector(".lds-ring").classList.add("hidden");
+}

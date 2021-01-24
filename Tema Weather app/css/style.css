@@ -121,6 +121,7 @@ button{
     justify-content: center;
     flex-direction: row;
     font-size: 1rem;
+    font-weight: bold;
 }
 .font {
     font-size: 0.7rem;
