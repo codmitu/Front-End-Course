@@ -18,7 +18,7 @@ input.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) {
       btn1.click();
     }
-  });
+});
 
 // get current date and next 5 days as type: Jan 02 2020
 let today = new Date();
