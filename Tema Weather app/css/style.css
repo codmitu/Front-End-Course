@@ -1,16 +1,6 @@
 * {
     outline: none;
 }
-html, body {
-    box-sizing: border-box;
-    margin: 0;
-}
-html {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 body {
     display: flex;
     justify-content: center;
@@ -94,10 +84,12 @@ button{
     background-color: rgb(47,150,163);
 }
 #weekSection {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    margin: 30px;
+    margin: 30px 0;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .dayCol1, .dayCol2, .dayCol3, 
 .dayCol4, .dayCol5, .dayCol6 {
@@ -105,6 +97,8 @@ button{
     flex-direction: column;
     text-align: center;
     margin-bottom: 50px;
+    padding: 0;
+    box-sizing: border-box;
 }
 .day {
     display: flex;
@@ -137,16 +131,13 @@ button{
 .hidden {
     display: none !important;
 }
-
-@media screen and (max-width: 812px) {
-    #tempSection {
-        width: 100vw;
+@media screen and (max-width: 500px) {
+    #weekSection {
+        margin-left: -20px;
+        justify-content: center;
     }
     .tempDegree,
     .tempSymbol {
         font-size: 2rem;
-    }
-    #weekSection {
-        width: 100%;
     }
 }
