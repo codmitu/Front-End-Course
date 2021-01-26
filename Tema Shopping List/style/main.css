@@ -10,7 +10,7 @@ body {
 }
 
 
-/* Dark layer on pop-up form/ */
+/* Dark layer on pop-up forms */
 .modal{
     position: fixed;
     z-index: 2;
@@ -58,8 +58,6 @@ main{
 }
 
 
-
-
  /* two img svgs */
 img[src*="girl"]{
     width: 25%;
@@ -69,7 +67,6 @@ img[src*="cart"]{
     width: 25%;
     align-self: flex-start;
 }
-
 
 
 

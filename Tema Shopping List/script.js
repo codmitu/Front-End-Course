@@ -30,7 +30,6 @@ function sortAZ() {
     build();
 }
 
-
 /////// Sort Z-A
 function sortZA() {
     fullList.sort(dynamicSort("-item"));
@@ -71,7 +70,7 @@ function addListItem() {
     build();
 }
 
-////// Show edit div
+////// Show edit div (edit form)
 function edit(idx) {
     let fl = fullList[idx];
     document.querySelector(".item2").value = fl.item;
@@ -104,7 +103,6 @@ function mark(idx) {
     build();
 }
 
-
 ////// Delete item
 function del(idx) {
     document.querySelectorAll(".listDiv")[idx].classList.add("remove");
@@ -113,7 +111,6 @@ function del(idx) {
         build();
     });
 }
-
 
 //// Emoticon
 document.querySelector('body').addEventListener('mousemove', eyeball);
@@ -127,7 +124,6 @@ function eyeball() {
         eye.style.transform = "rotate(" + rot + "deg)";
     });
 }
-
 
 //// Modal Layer
 modal.addEventListener("click", (e) => {

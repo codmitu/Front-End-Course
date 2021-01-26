@@ -54,7 +54,8 @@ h2{
     align-self: flex-end;
 }
 
-/* main item text */
+
+/* list item text */
 .itemText{
     flex: 1;
     margin: 10px 20px 10px 0;
@@ -67,7 +68,7 @@ h2{
     transition: all .3s ease;
 }
 
-/* info text inside i*/
+/* info text inside i (more info) */
 .listDiv > div{
     position: relative;
 }
@@ -91,7 +92,7 @@ h2{
     background-color: rgb(110, 168, 255);
 }
 
-/* i */
+/* i (more info) */
 .infoIcon{
     float: right;
     font-size: 0.8rem;
@@ -126,10 +127,11 @@ h2{
 }
 
 
-/* JS delete and check animation */
+/* JS delete */
 .remove{
     transform: translateX(-250px);
 }
+/* JS mark as completed */
 .completed{
     text-decoration: line-through;
     color: lightgrey;

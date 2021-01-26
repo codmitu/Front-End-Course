@@ -11,17 +11,20 @@ form, .form2{
     padding: 20px 10px;
     z-index:3;
 }
-/* Add item form */
+
+/* Only Add item form */
 form{
     display: flex;
     opacity: 0;
     pointer-events: none;
     transition: all .3s ease-out;
 }
-/* Edit item form (div) */
+
+/* Only Edit item form (div) */
 .form2{
     display: none;
 }
+
 /* Label inside main input */
 .labelItem{
     position: relative;
@@ -58,7 +61,7 @@ input[type="text"]{
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.323);
     transition: all 0.5s ease-out;
 }
-/* More info text area input  */
+/* More info textarea input  */
 textarea{
     padding: 5px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -75,7 +78,7 @@ input[type="text"]:invalid, textarea:placeholder-shown{
     border: 1px solid grey;
     box-shadow: none;
 }
- /* Form, form2(div) buttons, add and edit */
+ /* Form and form2(div) buttons (add and edit) */
 input[type="submit"], 
 input[type="button"]{
     margin-top: 10px;
