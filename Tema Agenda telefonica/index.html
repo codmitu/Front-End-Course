@@ -46,7 +46,7 @@
     </section>
 
 
-    <!-- Animated border -->
+    <!-- Animated border with animation on window -->
     <div class="border" class="animate__animated animate__fadeIn" >
         <span class="span sp1"></span>
         <span class="span sp2"></span>
@@ -54,7 +54,7 @@
         <div class="span div2"></div>
     </div>
    
-    <!-- Title -->
+    <!-- Title with flicker animation-->
     <div class="sign">
         co<span class="fast-flicker">n</span>tac<span class="flicker">t</span>s
     </div>
@@ -73,23 +73,27 @@
                 <span class="name1">First Name*</span>
                 <span class="validator1" ></span>
             </label>
+
             <input type="text" id="input2" spellcheck="false" required onkeyup="validName(this);" name="input"/>
             <label class="lb-name2">
                 <span class="name2" >Last Name*</span>
                 <span class="validator2" ></span>
             </label>
+
             <input type="text" id="input3" required onkeyup="validPhone(this);" spellcheck="false"  name="input"/>
             <label class="lb-phone">
                 <span class="phone">Phone Number*</span>
                 <span class="validator3"></span>
             </label>
+
             <div class="buttons">
-                <button type="submit" value="Submit" onsubmit="build();" class="animate__animated animate__backInLeft">Add</button>
+                <button type="submit" value="Submit" onsubmit="build();" class="animate__animated animate__backInLeft" id="addBtn">Add</button>
                 <button onclick="edit2();" class="animate__animated animate__backInRight" id="editBtn">Edit</button>
             </div>
         </form>
     </div>
 
+    <!-- New contacts goes here -->
     <div class="right">
         <ul></ul>
     </div>

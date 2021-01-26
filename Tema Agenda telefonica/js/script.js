@@ -4,6 +4,17 @@ const patternPhoneNumber = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-.
 let form = document.querySelector("#form");
 let agenda = [];
 let position = -1;
+let left = document.querySelector(".left");
+let right = document.querySelector(".right");
+let input1 = document.querySelector("#input1");
+let input2 = document.querySelector("#input2");
+let input3 = document.querySelector("#input3");
+let btn1 = document.querySelector("#addBtn");
+let btn2 = document.querySelector("#editBtn");
+let val1 = document.querySelector(".validator1");
+let val2 = document.querySelector(".validator2");
+let val3 = document.querySelector(".validator3");
+
 function build() {
     let ul = document.querySelector("ul");
     let li = "";
@@ -19,29 +30,29 @@ function build() {
         `        
     }
     if (window.innerWidth < 800 && agenda.length > 0) {
-        document.querySelector(".left").classList.add("open2");
-        document.querySelector(".right").classList.add("open2");
+        left.classList.add("open2");
+        right.classList.add("open2");
     } else if (agenda.length > 0 && window.innerWidth > 800){
-        document.querySelector(".left").classList.add("open");
-        document.querySelector(".right").classList.add("open");
+        left.classList.add("open");
+        right.classList.add("open");
     } else {
-        document.querySelector(".left").classList.remove("open");
-        document.querySelector(".right").classList.remove("open");
-        document.querySelector(".left").classList.remove("open2");
-        document.querySelector(".right").classList.remove("open2");
+        left.classList.remove("open");
+        right.classList.remove("open");
+        left.classList.remove("open2");
+        right.classList.remove("open2");
     }
     ul.innerHTML = li;
-    setTimeout(clearCheck, 1000);
+    setTimeout(clearValidators, 1000);
     form.reset();
-    document.querySelector("button:nth-child(1)").classList.remove("inactive");
-    document.querySelector("button:nth-child(2)").classList.remove("active");
+    btn1.classList.remove("inactive");
+    btn2.classList.remove("active");
 }
 
 function addContact(form, event) {
     event.preventDefault();      
-    let first = document.querySelector("#input1").value;
-    let second = document.querySelector("#input2").value;
-    let phone = document.querySelector("#input3").value;
+    let first = input1.value;
+    let second = input2.value;
+    let phone = input3.value;
     if (document.querySelectorAll(".invalid").length === 0 && 
         document.querySelectorAll(".valid").length > 0) {   
         agenda.push({
@@ -56,14 +67,15 @@ function addContact(form, event) {
         document.activeElement.blur();
     }
 }
+
 // function to clear inputs
-function clearCheck() {
-    document.querySelector(".validator1").classList.remove("valid");
-    document.querySelector(".validator2").classList.remove("valid");
-    document.querySelector(".validator3").classList.remove("valid");
-    document.querySelector(".validator1").classList.remove("invalid");
-    document.querySelector(".validator2").classList.remove("invalid");
-    document.querySelector(".validator3").classList.remove("invalid");
+function clearValidators() {
+    val1.classList.remove("valid");
+    val2.classList.remove("valid");
+    val3.classList.remove("valid");
+    val1.classList.remove("invalid");
+    val2.classList.remove("invalid");
+    val3.classList.remove("invalid");
 }
 
 // check validity names inputs when typing
@@ -80,6 +92,7 @@ function validName(elem) {
         el.add("invalid");
     }
 }
+
 // check validity phone input when typing
 function validPhone(elem) {
     let el = elem.nextElementSibling.lastElementChild.classList;
@@ -98,33 +111,41 @@ function validPhone(elem) {
 // Edit contacts faze 1
 function edit1(idx) {
     let contacts = agenda[idx];
-    document.querySelector("#input1").value = contacts.first;
-    document.querySelector("#input2").value = contacts.second;
-    document.querySelector("#input3").value = contacts.phone;
-    document.querySelector("button:nth-child(1)").disabled = true;
-    document.querySelector("button:nth-child(1)").classList.add("inactive");
-    document.querySelector("button:nth-child(2)").classList.add("active");
     position = idx;
+    if (input1.value !== "" || input2.value !== "" || input3.value !== "") {
+        btn1.disabled = false;
+        btn1.classList.remove("inactive");
+        btn2.classList.remove("active");
+        form.reset();
+        setTimeout(clearValidators, 1000);
+    } else {
+        input1.value = contacts.first;
+        input2.value = contacts.second;
+        input3.value = contacts.phone;
+        btn1.disabled = true;
+        btn1.classList.add("inactive");
+        btn2.classList.add("active");    
+    }
 }
+
 // edit contacts faze 2
 function edit2() {
     if (document.querySelectorAll(".invalid").length === 0 && 
     document.querySelectorAll(".valid").length > 0  && 
-    document.querySelector("#input1").value !== "" &&
-    document.querySelector("#input2").value !== "" &&
-    document.querySelector("#input3").value !== "") {
+    input1.value !== "" &&
+    input2.value !== "" &&
+    input3.value !== "") {
         let contacts = agenda[position];
-        contacts.first = document.querySelector("#input1").value;
-        contacts.second = document.querySelector("#input2").value;
-        contacts.phone = document.querySelector("#input3").value;
+        contacts.first = input1.value;
+        contacts.second = input2.value;
+        contacts.phone = input3.value;
         // position = -1;    
         build();
     } else {
         return false;
     }
-    document.querySelector("button:nth-child(1)").disabled = false;
+    btn1.disabled = false;
     document.querySelectorAll("li")[position].classList.add("animate__flash");
-
 }
 
 // Delete contacts with animation. 
@@ -144,5 +165,5 @@ document.addEventListener('invalid', (function () {
     return function (e) {
       e.preventDefault();
     };
-  })(), true);
+})(), true);
                    

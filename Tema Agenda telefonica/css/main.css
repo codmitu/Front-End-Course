@@ -256,9 +256,7 @@ ul{
     width: 100%;
     min-height: 100%;
 }
-/* Perspective https://www.youtube.com/watch?v=VTtNBpSidNw&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=50&ab_channel=DesignCourse */
 li{
-    perspective: 5000px;
     width: 250px;
     transform: rotateY(-20deg) rotateX(10deg);
     margin: 20px auto -50px auto;

@@ -1,4 +1,4 @@
-/* Snake border animation */
+/* Window border animation */
 /* https://www.youtube.com/watch?v=t-9UIPEJxxQ&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=43&t=562s&ab_channel=OnlineTutorials */
 .border{
     position: absolute;
@@ -39,14 +39,16 @@
 .border .div2{
     transform: rotate(180deg);
 }
-.sp1:before, .sp2:before{
+.sp1:before, 
+.sp2:before{
     content: '';
     position: absolute;
     width: 100%;
     animation: animate 3s linear infinite;
     animation-delay: 2s;
 }
-.div1:before, .div2:before{
+.div1:before, 
+.div2:before{
     content: '';
     position: absolute;
     height: 100%;
