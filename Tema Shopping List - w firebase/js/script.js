@@ -14,6 +14,7 @@ async function getFullList() {
         }
     build();
 }
+
 function build() {
     let list = document.querySelector("ol");
     let str = "";
@@ -35,7 +36,7 @@ function build() {
     list.innerHTML = str;
 }
 
-/////// Shows form
+/////// Shows add form
 function showform() {
     form.classList.add("open");
     modal.classList.add("open");
@@ -62,7 +63,6 @@ async function addListItem() {
     form.reset();
 }
 
-
 ////// Mark item
 async function mark(idx) {
     let fl = fullList[idx];
@@ -72,7 +72,7 @@ async function mark(idx) {
         fl.completed = "completed";
     }
     const res = await fetch(url + idx + ".json", {
-        method: "put",
+        method: "PUT",
         body: JSON.stringify({
             "item" : fl.item,
             "info" : fl.info,
@@ -97,7 +97,6 @@ function edit(idx) {
     position = idx;
 }
 
-
 ////// Edit item
 async function edit2() {
     let x = {};
@@ -120,7 +119,7 @@ async function del(idx) {
     let fl = fullList[idx];
     fl.removed = "animate__backOutLeft";
     const res = await fetch(url + idx + ".json", {
-        method: "put",
+        method: "PUT",
         body: JSON.stringify({
             "item" : fl.item,
             "info" : fl.info,
@@ -136,13 +135,11 @@ async function del(idx) {
     setTimeout(async function() {
         const res = await fetch(url + idx + ".json", {
         method: "DELETE"
-        
         });
     await res.json();
     await getFullList();
     }, 500);
 }
-
 
 //// Modal Layer
 modal.addEventListener("click", (e) => {

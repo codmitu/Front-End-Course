@@ -1,4 +1,4 @@
-/* List section with the items */
+/* Ordered List section with the items */
 section{
     width: 250px;
     max-height: 60vh;
@@ -66,7 +66,7 @@ h2{
     transition: all .3s ease;
 }
 
-/* info text inside i*/
+/* info text inside i (more info) */
 .listDiv > div{
     position: relative;
 }
@@ -90,7 +90,7 @@ h2{
     background-color: rgb(110, 168, 255);
 }
 
-/* i */
+/* i (more info) */
 .infoIcon{
     float: right;
     font-size: 0.8rem;
@@ -125,13 +125,13 @@ h2{
 }
 
 
-/* JS check animation */
+/* JS check completed item */
 .completed{
     text-decoration: line-through;
     color: lightgrey;
 }
 
-/* Add Item button - displays the form */
+/* Add Item button - displays the add form */
 .stickyBtn{
     width: 100%;
     background: linear-gradient(to bottom, #c2f587, #65a313);
