@@ -129,6 +129,7 @@ button{
 }
 #map {
     margin: 50px;
+    width: 50%;
 }
 .hidden {
     display: none !important;
@@ -141,5 +142,8 @@ button{
     .tempDegree,
     .tempSymbol {
         font-size: 2rem;
+    }
+    #map {
+        width: 85%;
     }
 }
