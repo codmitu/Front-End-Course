@@ -11,6 +11,7 @@ body {
     background: linear-gradient(rgb(47,150,163), rgb(48,62,143)) fixed;
     font-family: sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 #tempSection {
     display: flex;
@@ -89,9 +90,11 @@ button{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    margin: 30px 0;
+    margin: 50px 0;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 1000px;
+    max-width: 100%;
 }
 .dayCol1, .dayCol2, .dayCol3, 
 .dayCol4, .dayCol5, .dayCol6 {
@@ -101,6 +104,7 @@ button{
     margin-bottom: 50px;
     padding: 0;
     box-sizing: border-box;
+    flex: 1 1 auto;
 }
 .day {
     display: flex;
@@ -129,7 +133,8 @@ button{
 }
 #map {
     margin: 50px;
-    width: 50%;
+    width: 700px;
+    max-width: 90%;
 }
 .hidden {
     display: none !important;
@@ -137,7 +142,6 @@ button{
 @media screen and (max-width: 500px) {
     #weekSection {
         margin-left: -20px;
-        justify-content: center;
     }
     .tempDegree,
     .tempSymbol {

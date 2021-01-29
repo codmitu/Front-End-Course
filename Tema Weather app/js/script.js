@@ -97,7 +97,7 @@ async function showMore() {
     let days6 = x6;
     let counter = 1;
     for (let i = 0; i < json.list.length; i++) {
-        if (json.list[i].dt_txt.slice(11) === "00:00:00") {
+        if (json.list[i].dt_txt.slice(11) === "00:00:00" && document.querySelector("#weekSection .dayCol1").value !== "") {
             counter++;
         }
         if (counter === 1) {
