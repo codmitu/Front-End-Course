@@ -41,10 +41,11 @@ footer {
       top: 0;
       z-index: 1;
       background-color: white;
+      padding: 0 20px;
   }
       .logo {
           width: 150px;
-          margin-left: 10px;
+          /* margin-left: 10px; */
       }
       .nav-bar {
           max-width: 1200px;
@@ -59,14 +60,15 @@ footer {
               margin: 0 10px;
           }
           .nav-bar .menu-links {
-              display: flex;
+              /* display: flex; */
               list-style: none;
-              justify-content: space-between;
-              padding: 0 20px 0 0;
+              /* justify-content: space-between; */
+              /* padding: 0 20px 0 0; */
               min-width: 20%;
           }
               .menu-links a {
                   white-space: nowrap;
+                  margin-left: 20px;
                   padding: 0 10px;
                   font-weight: 500;
                   cursor: pointer;
@@ -171,7 +173,7 @@ main {
         align-items: flex-end;
         padding: 0 20px;
         height: 380px;
-        min-width: 320px;
+        min-width: 300px;
     }
         aside p:first-child,
         aside p:last-of-type {
@@ -179,7 +181,7 @@ main {
             font-size: 1.5rem;
         }
         aside p:last-of-type {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 500;
         }
             .total-price {

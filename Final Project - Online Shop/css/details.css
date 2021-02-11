@@ -43,13 +43,13 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 20px;
         
     }
         .nav-bar .menu-links {
             display: flex;
             list-style: none;
             justify-content: space-between;
-            padding: 0 20px 0 0;
             min-width: 30%;
         }
             .menu-links a {
@@ -92,8 +92,12 @@ footer {
             font-size: 2rem;
             color: white;
         }
+
+
+
+
     .product .product-wrapper {
-        display: flex;
+        /* display: flex; */
         max-width: 1200px;
         margin: 0 auto;
     }

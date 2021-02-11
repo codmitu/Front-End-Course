@@ -4,8 +4,9 @@ const filterPhones = document.querySelector("#parent1");
 const filterLaptops = document.querySelector("#parent2");
 const filterTvs = document.querySelector("#parent3");
 let container = document.querySelector("main");
+const modal = document.querySelector(".modal");
 let list = [];
-let posts = 12;
+let posts = 20;
 let idx = 0;
 
 
@@ -42,12 +43,11 @@ function shuffle(array) {
 // build the html on scroll*
 function buildMain() {
     if (posts === idx) {
-        posts += 12;
+        posts += 20;
         if (posts > list.length) {
             posts = list.length;
         }
     }
-    console.log(list[7]);
     let str = "";
     for (; idx < posts; idx++) {
         // If theres no image, display a NO IMAGE picture
@@ -173,7 +173,7 @@ filterTvs.addEventListener("click", (event) => {
         let item = items[i];
         let id = item.querySelector(".item-id").innerText;
         if (event.target.innerText !== id) {
-            if (event.target.innerText === "Laptops") {
+            if (event.target.innerText === "TV's") {
                 return;
             }
             item.classList.add("hidden");
@@ -232,4 +232,18 @@ function filterByPrice() {
     }
 }
 
+
+
+
+// Shows menu
+function showMenu() {
+    modal.style.display = "block";
+}
+
+// Remove created inputs and hides the modal when clicking it
+modal.addEventListener('click', (event) => {
+    if (event.target.classList.contains("modal")) {
+      modal.style.display = "none";
+    }
+  });
 

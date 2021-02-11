@@ -203,5 +203,5 @@ main {
 
 
 .flash {
-    background-color: rgba(0, 0, 0, 0.659);
+    background-color: rgba(0, 0, 0, 0.659) !important;
 }

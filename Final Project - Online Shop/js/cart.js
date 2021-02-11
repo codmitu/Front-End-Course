@@ -2,15 +2,18 @@ let quantity = document.querySelectorAll(".quantity");
 let TScart = [];
 
 function buildCart() {
-      let totalPrice = 15;
+      if (TScart.length === 0) {
+            var totalPrice = 0;
+      } else {
+            var totalPrice = 15;
+      }
       TScart = JSON.parse(localStorage.getItem("TScart"));
       let str = "";
       for (let i = 0; i < TScart.length; i++) {
             totalPrice += TScart[i].product.price * TScart[i].quantity;
-            // totalPrice += TScart[i].product.price * TScart[i].quantity;
             str += `
                   <tr>
-                        <td><a href="" class="link-item">${TScart[i].product.name}</a></td>
+                        <td><a href="details.html?index=${TScart[i].product.name}" class="link-item">${TScart[i].product.name}</a></td>
                         <td><span class="price">${TScart[i].product.price.toLocaleString('ro')}</span>&nbsp;RON</td>
                         <td class="quantity-wrapper"><input type="number" class="quantity" id="quantity" onchange="calculate('${i}');" value="${TScart[i].quantity}" min="1"/></td>
                         <td class="remove-btn" onclick="removeItem('${i}');">Remove</td>
@@ -31,7 +34,6 @@ function calculate(idx) {
       }
       buildCart();
 }
-
 
 function removeItem(idx) {
       TScart.splice(idx, 1);

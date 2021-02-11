@@ -20,12 +20,14 @@
     <section class="nav-bar-container">
         <nav class="nav-bar">
             <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
+
             <label for="search">
                 <input type="search" class="search-input" onkeyup="searchInput();" oninput="searchInput();">
                 <span class="iconify search-icon" data-icon="wpf:search"></span>
             </label>
+
             <div class="menu-links">
-                <a class="menu-link-favorites" href="favorites.html" >Favorites
+                <a class="menu-link-favorites" href="favorites.html">Favorites
                     <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
                 </a>
                 <a class="menu-link-shopping-basket" href="cart.html">Cart
@@ -35,6 +37,8 @@
                     <span class="iconify" data-icon="bx:bx-lock-alt"></span>
                 </a>
             </div>
+
+            <span class="iconify menu-icon" data-icon="ion:menu-sharp" onclick="showMenu();"></span>
         </nav>
     </section>
     
@@ -91,6 +95,25 @@
 
     <main id="items-container">
     </main>
+
+
+
+    
+    <!-- Responsive menu -->
+    <div class="modal">
+        <ul class="responsive-menu">
+            <li><a href="admin.html">Admin
+                <span class="iconify" data-icon="bx:bx-lock-alt"></span></a>
+            </li>
+            <li><a href="cart.html">Cart
+                <span class="iconify" data-icon="bytesize:cart"></span></a>
+            </li>
+            <li><a href="favorites.html">Favorites
+                <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span></a>
+            </li>
+        </ul>
+    </div>
+
 
     
 
