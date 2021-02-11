@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/icon2.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+
+
+    <title>Ichim Gelu Online Shop</title>
+</head>
+
+<body onload="getList();">
+    
+
+    <section class="nav-bar-container">
+        <nav class="nav-bar">
+            <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
+            <label for="search">
+                <input type="search" class="search-input" onkeyup="searchInput();" oninput="searchInput();">
+                <span class="iconify search-icon" data-icon="wpf:search"></span>
+            </label>
+            <div class="menu-links">
+                <a class="menu-link-favorites" href="favorites.html" >Favorites
+                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                </a>
+                <a class="menu-link-shopping-basket" href="cart.html">Cart
+                    <span class="iconify" data-icon="bytesize:cart"></span>
+                </a>
+                <a class="menu-link-admin" href="admin.html">Admin
+                    <span class="iconify" data-icon="bx:bx-lock-alt"></span>
+                </a>
+            </div>
+        </nav>
+    </section>
+    
+    
+
+    <section class="filter-items-container">
+        <ul class="filter-items">
+            <li class="show-all" onclick="showAll();">Show All</li>
+            <li class="dropdown" id="parent1">
+                <div class="drop-btn">Phones</div>
+                <ul class="dropdown-content">
+                    <li>Phone Samsung</li>
+                    <li>Phone iPhone</li>
+                    <li>Phone Huawei</li>
+                </ul>
+            </li>
+            <li class="dropdown" id="parent2">
+                <div class="drop-btn">Laptops</div>
+                <ul class="dropdown-content" >
+                    <li>Laptop Asus</li>
+                    <li>Laptop Acer</li>
+                    <li>Laptop HP</li>
+                </ul>
+            </li>
+            <li class="dropdown" id="parent3">
+                <div class="drop-btn">TV's</div>
+                <ul class="dropdown-content">
+                    <li>TV Samsung</li>
+                    <li>TV LG</li>
+                    <li>TV Philips</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+
+
+    <section class="sort-items">
+        <div class="sort-price">
+            <p>Sort by price</p>
+            <span onclick="sortAZ();">Asc
+                <span class="iconify" data-icon="gg:sort-za" ></span>
+            </span>
+            <span onclick="sortZA();">Desc
+                <span class="iconify" data-icon="gg:sort-az"></span>
+            </span>
+        </div>
+        <div class="sort-price-range">
+            <p>Price range</p>
+            <input type="number" class="sort-price-min" step="100" min="0" onchange="filterByPrice()">
+            <input type="number" class="sort-price-max" step="100" min="0" onchange="filterByPrice()">
+        </div>
+    </section>
+
+    <main id="items-container">
+    </main>
+
+    
+
+    <footer>
+        <div class="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <a href=""><div class="back-to-top">Back to top
+            <span class="iconify" data-icon="cil:arrow-top"></span>
+        </div></a>
+        <div class="footer-links-wrapper">
+            <div class="footer-links">
+                <p>Adipisicing elit.</p>
+                <a href="">Illum. dolor sit.</a>
+                <a href="">Natus facilis ad rerum.</a>
+                <a href="">Consectetur, adipisicing elit.</a>
+                <a href="">Illum ipsum dolor sit.</a>
+                <a href="">Omnis, velit! dolor.</a>
+                <a href="">Quia quibusdam.</a>
+                <a href="">Eos perferendis, qui ex itaque.</a>
+            </div>
+            <div class="footer-links">
+                <p>Lorem, ipsum.</p>
+                <a href="">Natus facilis ad rerum.</a>
+                <a href="">Illum ipsum dolor sit.</a>
+                <a href="">Consectetur, adipisicing elit.</a>
+                <a href="">Eos perferendis, qui ex itaque.</a>
+            </div>
+            <div class="footer-links">
+                <p>Omnis, velit! dolor.</p>
+                <a href="">Illum. dolor sit.</a>
+                <a href="">Natus facilis ad rerum.</a>
+                <a href="">Consectetur, adipisicing elit.</a>
+                <a href="">Illum ipsum dolor sit.</a>
+                <a href="">Omnis, velit! dolor.</a>
+                <a href="">Quia quibusdam.</a>
+            </div>
+            <div class="footer-links">
+                <p>Natus facilis ad</p>
+                <a href="">Illum. dolor sit.</a>
+                <a href="">Natus facilis ad rerum.</a>
+                <a href="">Consectetur, adipisicing elit.</a>
+                <a href="">Illum ipsum dolor sit.</a>
+                <a href="">Omnis, velit! dolor.</a>
+                <a href="">Quia quibusdam.</a>
+                <a href="">Eos perferendis, qui ex itaque.</a>
+                <a href="">Consectetur, adipiqui ex itaque.</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

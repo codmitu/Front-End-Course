@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/icon2.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <title>TS Cart</title>
+</head>
+
+
+<body onload="event.preventDefault();buildCart();">
+    <section class="nav-bar-container">
+        <nav class="nav-bar">
+            <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
+          
+            <div class="menu-links">
+                <a class="menu-link-favorites" href="favorites.html" >Favorites
+                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                </a>
+                <a class="menu-link-admin" href="main.html">
+                    Home
+                    <span class="iconify" data-icon="carbon:home"></span>
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <header>
+        <h1>Cart
+            <span class="iconify" data-icon="emojione-monotone:shopping-cart"></span>
+        </h1>
+    </header>
+
+    <main>
+        <table>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <aside>
+            <p>Items:&nbsp;<span class="total-items"></span></p>
+            <p>V.A.T 19%</p>
+            <p>Delivery: 15 RON</p>
+            <p>Total price: <span class="total-price"></span> RON</p>
+            <button type="button">Buy<span class="iconify" data-icon="emojione:white-heavy-check-mark"></span></button>
+        </aside>
+    </main>
+
+
+    <img src="../img/undraw_video_game_night_8h8m.svg" alt="" class="bg-svg">
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>

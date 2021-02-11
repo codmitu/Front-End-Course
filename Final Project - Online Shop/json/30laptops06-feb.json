@@ -1,0 +1,241 @@
+[ {
+  "description" : "procesor Intel® Core™ i3-1115G4 pana la 4.10 GHz, 15.6\", Full HD, 8GB, 512GB SSD, Intel® Iris Xe Graphics, No OS, Silver",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/aspire-a515/aspire-a515_1.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_2.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_3.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_4.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_5.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_6.jpg" ],
+  "name" : "Laptop Acer Aspire 5 A515-56",
+  "price" : 2499,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i3", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Tip memorie DDR4", "Tip stocare SSD", "Capacitate SSD 512 GB", "Tip placa video Integrata", "Sistem de operare EFI Shell" ],
+  "stock" : 100
+}, {
+  "description" : "procesor AMD Ryzen 5 4600H pana la 4.00 GHz, 15.6\", Full HD, 144Hz, 8GB, 512GB SSD, NVIDIA GeForce GTX 1650Ti 4GB, No OS, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/nitro-an515/nitro-an515_1.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_2.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_3.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_4.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_5.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_6.jpg" ],
+  "name" : "Laptop Gaming Acer Nitro 5 AN515-44",
+  "price" : 3899,
+  "specs" : [ "Producator procesor AMD", "Tip procesor Ryzen 5", "Numar nuclee 6", "Diagonala display 15.6 inch", "Rata de refresh 144 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX", "Model placa video GTX 1650 i" ],
+  "stock" : 56
+}, {
+  "description" : "procesor Intel Core i7-9750H pana la 4.50 GHz, 15.6\", Full HD, IPS, 8GB, 512GB SSD, NVIDIA GeForce GTX 1650Ti 4GB, No OS, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/aspire-a715/aspire-a715_1.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_2.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_3.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_4.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_5.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_6.jpg" ],
+  "name" : "Laptop Gaming Acer Aspire 7 A715-75G",
+  "price" : 3999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor 9750H", "Numar nuclee 6", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX", "Model placa video GTX 1650 i", "Capacitate memorie video 4096 MB" ],
+  "stock" : 50
+}, {
+  "description" : "procesor Intel® Core™ i9-10980HK pana la 5.30, 17.3\", Full HD, 144Hz, 32GB, 2TB SSD RAID, NVIDIA® GeForce RTX 2080 Super™ 8GB, Windows 10 Home, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/predator-ph717/predator-ph717_1.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_2.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_3.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_4.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_5.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_6.jpg" ],
+  "name" : "Laptop Gaming Acer Predator Helios 700 PH717-72",
+  "price" : 15999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i9", "Model procesor 10980HK", "Rezolutie 1920 x 1080", "Capacitate memorie 32 GB", "Capacitate SSD 2 TB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2080 Super", "Capacitate memorie video 8192 MB", "Sistem de operare Windows 10 Home" ],
+  "stock" : 10
+}, {
+  "description" : "procesor Intel® Pentium® Silver N5030 pana la 3.10, 14\", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, Windows 10 Home, Gold",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/swift-sf114/swift-sf114_1.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_2.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_3.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_4.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_5.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_6.jpg" ],
+  "name" : "Laptop ultraportabil Acer Swift 1 SF114-33",
+  "price" : 2349,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor Pentium", "Model procesor N5030", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Windows 10 Home", "", "" ],
+  "stock" : 100
+}, {
+  "description" : "procesor Intel Core i5-10300H pana la 4.50 GHz, 15.6\", Full HD, 144Hz, 16GB, 256GB SSD, NVIDIA® GeForce RTX™ 2060 6GB, No OS, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/predator-ph315/predator-ph315_1.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_2.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_3.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_4.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_5.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_6.jpg" ],
+  "name" : "Laptop Gaming Acer Predator Helios 300 PH315-53",
+  "price" : 5499,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Numar nuclee 4", "Rezolutie 1920 x 1080", "Rata de refresh 144 Hz", "Capacitate memorie 16 GB", "Capacitate SSD 256 GB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2060", "Capacitate memorie video 6144 MB" ],
+  "stock" : 76
+}, {
+  "description" : "procesor Intel® Core™ i5-1035G1 pana la 3.60 GHz Ice Lake, 14\", Full HD, 8GB, 512GB SSD, Intel UHD Graphics, Windows 10 Home, Steel Gray",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/swift-sf314/swift-sf314_1.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_2.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_3.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_4.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_5.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_6.jpg" ],
+  "name" : "Laptop ultraportabil Acer Swift 3 SF314-57-516Z",
+  "price" : 3399,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Numar nuclee 4", "Diagonala display 14 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Tip placa video Integrata", "Chipset video Intel UHD", "Sistem de operare Windows 10 Home" ],
+  "stock" : 100
+}, {
+  "description" : "procesor Intel Core i5-1035G1 pana la 3.60 GHz, 15.6\", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, Windows 10 Home, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/aspire-a315/aspire-a315_1.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_2.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_3.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_4.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_5.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_6.jpg" ],
+  "name" : "Laptop Acer Aspire 3 A315-56",
+  "price" : 3495,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Chipset video Intel UHD", "Sistem de operare Windows 10 Home" ],
+  "stock" : 150
+}, {
+  "description" : "procesor Intel® Core™ i7-1165G7 pana la 4.70 GHz, 13.5\", QHD, 16GB, 1TB SSD, Intel UHD Graphics, Windows 10 Home, Sparkly Silver",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/swift-sf313/swift-sf314_1.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_2.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_3.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_4.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_5.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_6.jpg" ],
+  "name" : "Laptop ultraportabil Acer Swift SF313-53",
+  "price" : 5199,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Numar nuclee 4", "Diagonala display 13.5 inch", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Tip placa video Integrata", "Chipset video Intel Iris Xe", "Sistem de operare Windows 10 Home", "" ],
+  "stock" : 35
+}, {
+  "description" : "procesor Intel® Core™ i7-10750H pana la 5.00 GHz, 17.3\", Full HD, 144Hz, 16GB, 1TB SSD, NVIDIA® GeForce RTX™ 2070 8 GB, Windows 10 Home, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/predator-ph317/predator-ph317_1.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_2.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_3.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_4.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_5.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_6.jpg" ],
+  "name" : "Laptop Acer Gaming Predator Helios 300 PH317-54",
+  "price" : 8561,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Numar nuclee 6", "Diagonala display 17.3 inch", "Rezolutie 1920 x 1080", "Rata de refresh 144 Hz", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2070" ],
+  "stock" : 50
+}, {
+  "description" : "procesor Intel® Celeron® N4020 pana la 2.80 GHz, 15.6\", HD, 4GB, 256GB SSD, Intel® UHD Graphics 600, Free DOS, ransparent Silver",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/x515ma/x515ma_1.jpg", "../img/products/laptops/asus/x515ma/x515ma_2.jpg", "../img/products/laptops/asus/x515ma/x515ma_3.jpg", "../img/products/laptops/asus/x515ma/x515ma_4.jpg", "../img/products/laptops/asus/x515ma/x515ma_5.jpg", "../img/products/laptops/asus/x515ma/x515ma_6.jpg" ],
+  "name" : "Laptop ASUS X515MA ",
+  "price" : 1499,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor Celeron", "Model procesor N4020", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Free DOS" ],
+  "stock" : 106
+}, {
+  "description" : "procesor Intel® Core™ i7-10870H pana la 5.00 GHz, 15.6\" Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA® GeForce RTX™ 2060 6GB, FreeDOS, Original Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_1.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_2.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_3.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_4.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_5.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_6.jpg" ],
+  "name" : "Laptop Gaming ASUS ROG Strix G15 G512LV",
+  "price" : 5799,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor 10870H", "Numar nuclee 8", "Diagonala display 15.6 inch", "Rata de refresh 144 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce RTX" ],
+  "stock" : 100
+}, {
+  "description" : "procesor Intel® Core™ i5-1035G1 pana la 3.60 GHz, 15.6\", Full HD, 8GB, 256GB SSD, Intel® UHD Graphics, Free DOS, Slate Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/x509ja/x509ja_1.jpg", "../img/products/laptops/asus/x509ja/x509ja_2.jpg", "../img/products/laptops/asus/x509ja/x509ja_3.jpg", "../img/products/laptops/asus/x509ja/x509ja_4.jpg", "../img/products/laptops/asus/x509ja/x509ja_5.jpg", "../img/products/laptops/asus/x509ja/x509ja_6.jpg" ],
+  "name" : "Laptop ASUS X509JA",
+  "price" : 2799,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Model procesor 1035G1", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Free DOS" ],
+  "stock" : 200
+}, {
+  "description" : "procesor Intel® Core™ i5-10300H pana la 4.50 GHz, 15.6\", Full HD, 144Hz, 8GB, 512GB SSD, NVIDIA® GeForce® GTX 1650 i 4GB, Free DOS, Bonfire Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/tuf-f15/tuf-f15_1.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_2.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_3.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_4.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_5.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_6.jpg" ],
+  "name" : "Laptop Gaming ASUS ASUS UF F15 FX506LI",
+  "price" : 3999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Model procesor 10300H", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rata de refresh 144 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX" ],
+  "stock" : 29
+}, {
+  "description" : "procesor AMD Ryzen 5 3550H pana la 3.70 GHz, 15.6\", Full HD, 8GB, 512GB SSD, NVIDIA GeForce GTX 1650 4GB, Free DOS, Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_1.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_2.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_3.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_4.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_5.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_6.jpg" ],
+  "name" : "Laptop Gaming ASUS TUF FX505DT",
+  "price" : 3499,
+  "specs" : [ "Producator procesor AMD", "Tip procesor Ryzen 5", "Model procesor 3550H", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rata de refresh 60 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX" ],
+  "stock" : 50
+}, {
+  "description" : "procesor AMD Ryzen™ 5 4500U pana la 4GHz, 14\" Full HD, 8GB, 512GB SSD, NVIDIA® GeForce® MX350 2GB, Windows 10 Home, Light Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_1.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_2.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_3.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_4.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_5.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_6.jpg" ],
+  "name" : "Laptop ultraportabil ASUS ZenBook UM433IQ",
+  "price" : 4399,
+  "specs" : [ "Producator procesor AMD", "Tip procesor Ryzen 5", "Model procesor 4500U", "Numar nuclee 6", "Diagonala display 14 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce MX", "Capacitate memorie video 2048 MB" ],
+  "stock" : 76
+}, {
+  "description" : "Intel Core i7-10870H, 15.6inch, RAM 16GB, SSD 1TB, nVidia GeForce GTX 1650 i 4GB, No OS, Bonfire Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_1.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_2.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_3.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_4.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_5.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_6.jpg" ],
+  "name" : "Laptop ASUS TUF Gaming F15 FX506LI-HN110",
+  "price" : 5799,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor Intel Core i7", "Numar nuclee 8", "Diagonala display 15.6 inch", "Rata de refresh 144 GHz", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Chipset video nVidia GeForce GTX" ],
+  "stock" : 83
+}, {
+  "description" : "procesor Intel® Core™ i7-9750H pana la 4.5GHz, 15.6\" 4K UHD, 16GB, 512GB SSD, NVIDIA® GeForce® RTX 2060 6GB, Windows 10 Pro, Star Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_1.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_2.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_3.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_4.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_5.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_6.jpg" ],
+  "name" : "Laptop ASUS ProArt StudioBook H500GV",
+  "price" : 8999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor 9750H", "Numar nuclee 6", "Diagonala display 15.6 inch", "Rezolutie 3840 x 2160", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2060" ],
+  "stock" : 150
+}, {
+  "description" : "procesor Intel® Celeron® N4020 pana la 2.80 GHz, 15.6\" HD 4GB DDR4, 256GB SSD, GMA UHD 600, No OS, Slate Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_1.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_2.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_3.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_4.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_5.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_6.jpg" ],
+  "name" : "Laptop ASUS VivoBook X515MA",
+  "price" : 1404,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor Celeron", "Model procesor N4020", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Free DOS" ],
+  "stock" : 122
+}, {
+  "description" : "Procesor Intel® Celeron® N3350 2.40 GHz, Kaby Lake, 15.6\" HD, 4GB, 500GB HDD, Intel® HD Graphics 500, Negru",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/vivobook-15/vivobook-15_1.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_2.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_3.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_4.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_5.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_6.jpg" ],
+  "name" : "Laptop ASUS VivoBook 15 X540NA-GQ005",
+  "price" : 2344,
+  "specs" : [ "Model procesor Intel® Celeron® N3350", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rata de refresh 60 Hz", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate HDD/SSHD 500 GB", "Chipset video Intel UHD", "Sistem de operare Endless OS", "" ],
+  "stock" : 69
+}, {
+  "description" : "procesor AMD Ryzen 3 3200U pana la 3.50 GHz, 15.6\", Full HD, 8GB, 256GB SSD, AMD Radeon Vega Grahics, Free DOS, Dark Ash Silver",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/255-g7/255-g7_1.jpg", "../img/products/laptops/hp/255-g7/255-g7_2.jpg", "../img/products/laptops/hp/255-g7/255-g7_3.jpg", "../img/products/laptops/hp/255-g7/255-g7_4.jpg", "../img/products/laptops/hp/255-g7/255-g7_5.jpg", "" ],
+  "name" : "Laptop HP 255 G7",
+  "price" : 1700,
+  "specs" : [ "Tip procesor Ryzen 3", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Chipset video AMD Radeon Vega", "Sistem de operare Free DOS", "" ],
+  "stock" : 0
+}, {
+  "description" : "procesor AMD Ryzen™ 7 3700U pana la 4.00 GHz, 15.6\", Full HD, 8GB, 1TB HDD, DVD-RW Radeon™ Vega 10, Free DOS, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-db1200/15-db1200_1.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_2.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_3.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_4.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_5.jpg", "" ],
+  "name" : "Laptop HP 15-db1200ny",
+  "price" : 2799,
+  "specs" : [ "Tip procesor Ryzen 7", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate HDD/SSHD 1 TB", "Chipset video AMD Radeon Vega", "Sistem de operare Free DOS", "", "" ],
+  "stock" : 33
+}, {
+  "description" : "procesor AMD Ryzen™ 5 3500U pana la 3.70 GHz, 15.6\", Full HD, 16GB, 512GB SSD, AMD Radeon™ Vega 8 Graphics, Windows 10 Home, Natural silver",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15s-eq777/15s-eq777_1.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_2.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_3.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_4.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_5.jpg", "" ],
+  "name" : "Laptop HP 15s-eq0777nd",
+  "price" : 3299,
+  "specs" : [ "Tip procesor Ryzen 5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video AMD Radeon Vega", "Sistem de operare Windows 10 Home", "", "" ],
+  "stock" : 50
+}, {
+  "description" : "procesor Intel Pentium Silver N5030 pana la 3.10 GHz Quad Core, 15.6\", Full HD, 4GB, 256GB SSD, Intel UHD Graphics, Free DOS, Jet Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-dw1017/15-dw1017_1.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_2.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_3.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_4.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_5.jpg", "" ],
+  "name" : "Laptop HP 15-dw1017nq",
+  "price" : 1599,
+  "specs" : [ "Tip procesor Pentium", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 4 GB", "Capacitate SSD 256 GB", "Chipset video Intel UHD", "Sistem de operare Free DOS", "", "" ],
+  "stock" : 50
+}, {
+  "description" : "procesor Intel® Core™ i7-1165G7 pana la 4.70 GHz, 15.6\", Full HD, 8GB, 512GB SSD, Intel® Iris® Xᵉ Graphics, Free DOS, Grey",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15s-fq2006/15s-fq2006_1.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_2.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_3.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_4.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_5.jpg", "" ],
+  "name" : "Laptop HP 15s-fq2006nq",
+  "price" : 3499,
+  "specs" : [ "Tip procesor i7", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video Intel Iris Xe", "Sistem de operare Free DOS", "", "" ],
+  "stock" : 5
+}, {
+  "description" : "procesor Intel Core i5-1035G1 pana la 3.60 GHz, 15.6\", Full HD, 16GB, 512GB SSD, Intel UHD Graphics, Windows 10 Pro, Asteroid Silver",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/250-g7/250-g7_1.jpg", "../img/products/laptops/hp/250-g7/250-g7_2.jpg", "../img/products/laptops/hp/250-g7/250-g7_3.jpg", "../img/products/laptops/hp/250-g7/250-g7_4.jpg", "../img/products/laptops/hp/250-g7/250-g7_5.jpg", "../img/products/laptops/hp/250-g7/250-g7_6.jpg" ],
+  "name" : "Laptop HP 250 G7",
+  "price" : 3699,
+  "specs" : [ "Tip procesor i5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video Intel UHD", "Sistem de operare Windows 10 Pro", "", "" ],
+  "stock" : 66
+}, {
+  "description" : "procesor AMD Ryzen 3 3300U pana la 3.50 GHz, 14\", HD, 4GB, 1TB HDD, AMD Radeon™ Vega 6 Graphics, Windows 10 Home, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/245-g7/245-g7_1.jpg", "../img/products/laptops/hp/245-g7/245-g7_2.jpg", "../img/products/laptops/hp/245-g7/245-g7_3.jpg", "../img/products/laptops/hp/245-g7/245-g7_4.jpg", "../img/products/laptops/hp/245-g7/245-g7_5.jpg", "" ],
+  "name" : "Laptop ultraportabil HP 245 G7",
+  "price" : 1999,
+  "specs" : [ "Tip procesor Ryzen 3", "Numar nuclee 4", "Frecventa nominala 2.1 GHz", "Diagonala display 14 inch", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate HDD/SSHD 1 TB", "Chipset video AMD Radeon Vega", "Sistem de operare Windows 10 Home", "Culoare Negru" ],
+  "stock" : 100
+}, {
+  "description" : "procesor AMD Ryzen 5 3500U pana la 3.70 GHz, 15.6\", Full HD, 16GB, 1TB SSD, AMD Radeon Vega 8, Free DOS, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-db1100/15-db1100_1.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_2.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_3.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_4.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_5.jpg", "" ],
+  "name" : "Laptop HP 15-db1100ny",
+  "price" : 3598,
+  "specs" : [ "Tip procesor Ryzen 5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Chipset video AMD Radeon Vega", "Sistem de operare Free DOS", "Autonomie baterie 2 h", "Culoare Negru" ],
+  "stock" : 45
+}, {
+  "description" : "procesor Intel® Core™ i3-10110U pana la 4.10 GHz, 15.6\", Full HD, 8GB, 256GB SSD, Intel® UHD Graphics, Free DOS, Grey",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-da2042/15-da2042_1.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_2.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_3.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_4.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_5.jpg", "" ],
+  "name" : "Laptop HP 15-da2042nq",
+  "price" : 1999,
+  "specs" : [ "Tip procesor i3", "Numar nuclee 2", "Frecventa nominala 2.1 GHz", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Chipset video Intel UHD", "Sistem de operare Free DOS", "Autonomie baterie 10.5 h" ],
+  "stock" : 55
+}, {
+  "description" : "procesor Intel® Core™ i7-1065G7 pana la 3.90 GHz, 15.6\", Full HD, 8GB, 512GB SSD, NVIDIA® GeForce® MX330 2GB, Free DOS, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-dw2014/15-dw2014_1.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_2.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_3.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_4.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_5.jpg", "" ],
+  "name" : "Laptop HP 15-dw2014nq",
+  "price" : 3399,
+  "specs" : [ "Tip procesor i7", "Numar nuclee 4", "Frecventa nominala 1.3 GHz", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce MX", "Model placa video MX330", "Capacitate memorie video 2048 MB" ],
+  "stock" : 130
+} ]
