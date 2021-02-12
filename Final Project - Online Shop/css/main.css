@@ -482,7 +482,7 @@ footer {
                 }
             
 
-footer a:active {
+footer > a:active {
     text-decoration: none;
     border-bottom: none;
 }
@@ -501,13 +501,18 @@ footer a:active {
         
     .footer-links-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         max-width: 1000px;
         margin: 0 auto;
         flex-wrap: wrap;
     }
+        .footer-links-wrapper > div {
+            flex: 1 1 400px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
         .footer-links {
-            flex: 1 1 200px;
             display: flex;
             flex-direction: column;
             margin: 10px;
@@ -552,8 +557,8 @@ footer a:active {
 .menu-icon {
     cursor: pointer;
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 3px;
     border-radius: 5px;
 }
@@ -573,8 +578,8 @@ footer a:active {
         right: 0;
         height: 100%;
         width: 200px;
-        background-color: var(--btth);
-        border-left: 1px solid var(--btt);
+        background-image: linear-gradient(145deg, var(--btt), var(--second));
+        border-left: 2px solid grey;
         display: block;
         margin: 0;
         padding: 0;
@@ -588,16 +593,19 @@ footer a:active {
             .responsive-menu li:hover {
                 background-color: var(--btt);
             }
-            .responsive-menu li:first-child {
+            .responsive-menu a:first-child li {
                 margin-top: 50px;
             }
-            .responsive-menu li a {
+            .responsive-menu li .arrow {
+                color: var(--text);
+            }
+            .responsive-menu a {
                 text-decoration: none;
                 color: white;
                 font-weight: 600;
-                font-size: x-large;
+                font-size: large;
             }
-                .responsive-menu li a:hover {
+                .responsive-menu a:hover {
                     color: var(--text);
                 }
     
@@ -645,6 +653,9 @@ footer a:active {
         background-color: lightgrey;
         border-left: none;
     }
+    /* .footer-links {
+        flex: 1 1 150px;
+    } */
 }
 
 @media only screen and (max-width: 480px) {
@@ -686,8 +697,6 @@ footer a:active {
         max-width: 90%;
         padding: 10px;
     }
-    .favoritesStock-item .item-stock-container {
-    }
     .item > p {
         font-size: 1rem;
     }
@@ -698,7 +707,18 @@ footer a:active {
         box-shadow: none;
         transform: none;
     }
+    .image-container:hover .front,
+    .image-container:hover .back{
+        transition: none;
+    }
+    .image-container:hover .front{
+        transform: none;
+        transform-style: none;
+    }
     .back {
         display: none;
+    }
+    .footer-links a {
+        margin: 0;
     }
 }
