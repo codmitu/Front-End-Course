@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/icon2.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <!-- Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+
+
+    <title>Ichim Gelu Online Shop</title>
+</head>
+
+<body onload="getList();">
+    
+    <div class="lds-default-container"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+
+    <section class="nav-bar-container">
+        <nav class="nav-bar">
+            <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
+
+            <label for="search">
+                <input type="search" class="search-input" onkeyup="searchInput();" oninput="searchInput();">
+                <span class="iconify search-icon" data-icon="wpf:search"></span>
+            </label>
+
+            <div class="menu-links">
+                <a class="menu-link-favorites" href="favorites.html">Favorites
+                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                </a>
+                <a class="menu-link-shopping-basket" href="cart.html">Cart
+                    <span class="iconify" data-icon="bytesize:cart"></span>
+                    <small class="cart-quantity"></small>
+                </a>
+                <a class="menu-link-admin" href="admin.html">Admin
+                    <span class="iconify" data-icon="bx:bx-lock-alt"></span>
+                </a>
+            </div>
+
+            <span class="iconify menu-icon" data-icon="ion:menu-sharp" onclick="showMenu();"></span>
+        </nav>
+    </section>
+    
+    
+
+    <section class="filter-items-container">
+        <ul class="filter-items">
+            <a href="">
+                <li class="show-all">Show All</li>
+            </a>
+            <li class="dropdown" id="parent1">
+                <div class="drop-btn">Phones</div>
+                <ul class="dropdown-content">
+                    <li>Phone Samsung</li>
+                    <li>Phone iPhone</li>
+                    <li>Phone Huawei</li>
+                </ul>
+            </li>
+            <li class="dropdown" id="parent2">
+                <div class="drop-btn">Laptops</div>
+                <ul class="dropdown-content">
+                    <li>Laptop Asus</li>
+                    <li>Laptop Acer</li>
+                    <li>Laptop HP</li>
+                </ul>
+            </li>
+            <li class="dropdown" id="parent3">
+                <div class="drop-btn">TV's</div>
+                <ul class="dropdown-content">
+                    <li>Tv Samsung</li>
+                    <li>Tv LG</li>
+                    <li>Tv Philips</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+
+    <div class="sort-items-wrapper">
+        <section class="sort-items">
+            <div class="sort-price">
+                <p>Sort by price</p>
+                <span onclick="sortAZ();">Asc
+                    <span class="iconify" data-icon="gg:sort-za" ></span>
+                </span>
+                <span onclick="sortZA();">Desc
+                    <span class="iconify" data-icon="gg:sort-az"></span>
+                </span>
+            </div>
+            <div class="sort-price-range">
+                <p>Price range</p>
+                <input type="number" class="sort-price-min" step="100" min="0" value="0" oninput="filterByPrice();" onchange="filterByPrice();">
+                <input type="number" class="sort-price-max" step="100" min="0" value="0" oninput="filterByPrice();" onchange="filterByPrice();">
+            </div>
+        </section>
+    </div>  
+
+
+
+    <div class="autoplay">
+        <div><img src="../img/cover/img1.png" alt=""></div>
+        <div><img src="../img/cover/img2.png" alt=""></div>
+        <div><img src="../img/cover/img3.png" alt=""></div>
+        <div><img src="../img/cover/img4.png" alt=""></div>
+        <div><img src="../img/cover/img5.png" alt=""></div>
+        <div><img src="../img/cover/img6.png" alt=""></div>
+        <div><img src="../img/cover/img7.png" alt=""></div>
+        <div><img src="../img/cover/img8.png" alt=""></div>
+        <div><img src="../img/cover/img9.png" alt=""></div>
+        <div><img src="../img/cover/img10.png" alt=""></div>
+    </div>
+
+
+
+    
+    <main id="items-container">
+    </main>
+
+
+
+    
+    <!-- Responsive menu -->
+    <div class="modal">
+        <ul class="responsive-menu">
+            <a href="admin.html"><li>
+                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                Admin
+                <span class="iconify" data-icon="bx:bx-lock-alt"></span></li>
+            </a>
+            <a href="cart.html"><li>
+                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                Cart
+                <span class="iconify" data-icon="bytesize:cart"></span></li>
+            </a>
+            <a href="favorites.html"><li>
+                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                Favorites
+                <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span></li>
+            </a>
+        </ul>
+    </div>
+
+
+    
+
+    <footer>
+        <div class="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <a href=""><div class="back-to-top">Back to top
+            <span class="iconify" data-icon="cil:arrow-top"></span>
+        </div></a>
+        <div class="footer-links-wrapper">
+            <div>
+                <div class="footer-links">
+                    <p>Adipisicing elit.</p>
+                    <a href="">Illum. dolor sit.</a>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Omnis, velit! dolor.</a>
+                    <a href="">Quia quibusdam.</a>
+                    <a href="">Eos perferendis, qui ex itaque.</a>
+                </div>
+                <div class="footer-links">
+                    <p>Lorem, ipsum.</p>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Eos perferendis, qui ex itaque.</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-links">
+                    <p>Omnis, velit! dolor.</p>
+                    <a href="">Illum. dolor sit.</a>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Omnis, velit! dolor.</a>
+                    <a href="">Quia quibusdam.</a>
+                </div>
+                <div class="footer-links">
+                    <p>Natus facilis ad</p>
+                    <a href="">Illum. dolor sit.</a>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Omnis, velit! dolor.</a>
+                    <a href="">Quia quibusdam.</a>
+                    <a href="">Eos perferendis, qui ex itaque.</a>
+                    <a href="">Consectetur, adipiqui ex itaque.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/loader.js"></script>
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            centerMode: true,
+            pauseOnHover: false,
+            arrows: true,
+            // centerPadding: 'auto',
+            // adaptiveHeight: false
+        });
+    </script>
+    
+</body>
+</html>

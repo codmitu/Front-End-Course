@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/icon2.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <!-- Icons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <title>TS Cart</title>
+</head>
+
+
+<body onload="event.preventDefault();getList();">
+
+    <div class="lds-default-container"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+    
+    <section class="nav-bar-container">
+        <nav class="nav-bar">
+            <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
+          
+            <div class="menu-links">
+                <a class="menu-link-favorites" href="favorites.html" >Favorites
+                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                </a>
+                <a class="menu-link-admin" href="main.html">
+                    Home
+                    <span class="iconify" data-icon="carbon:home"></span>
+                </a>
+            </div>
+
+            <span class="iconify menu-icon" data-icon="ion:menu-sharp" onclick="showMenu();"></span>
+        </nav>
+    </section>
+
+    <header>
+        <h1>Cart
+            <span class="iconify" data-icon="emojione-monotone:shopping-cart"></span>
+        </h1>
+    </header>
+
+    <main>
+        <table>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <aside>
+            <p>Products:&nbsp;<span class="total-items"></span></p>
+            <p>V.A.T 19%</p>
+            <p>Delivery: 15 RON</p>
+            <p>Total price: <span class="total-price" on></span> RON</p>
+            <button type="button" onclick="buy();">Buy<span class="iconify" data-icon="emojione:white-heavy-check-mark" ></span></button>
+        </aside>
+    </main>
+
+
+
+    <img src="../img/undraw_video_game_night_8h8m.svg" alt="" class="bg-svg">
+
+
+
+    <div class="message">
+        <div>Cangratulations on your purchase! <br>You will now be redirected<br> to main page.</div>
+        <button type="button" onclick="confirmBuy();">OK!</button>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-links-wrapper">
+            <div>
+                <div class="footer-links">
+                    <p>Adipisicing elit.</p>
+                    <a href="">Illum. dolor sit.</a>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Omnis, velit! dolor.</a>
+                    <a href="">Quia quibusdam.</a>
+                    <a href="">Eos perferendis, qui ex itaque.</a>
+                </div>
+                <div class="footer-links">
+                    <p>Lorem, ipsum.</p>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Eos perferendis, qui ex itaque.</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-links">
+                    <p>Omnis, velit! dolor.</p>
+                    <a href="">Illum. dolor sit.</a>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Omnis, velit! dolor.</a>
+                    <a href="">Quia quibusdam.</a>
+                </div>
+                <div class="footer-links">
+                    <p>Natus facilis ad</p>
+                    <a href="">Illum. dolor sit.</a>
+                    <a href="">Natus facilis ad rerum.</a>
+                    <a href="">Consectetur, adipisicing elit.</a>
+                    <a href="">Illum ipsum dolor sit.</a>
+                    <a href="">Omnis, velit! dolor.</a>
+                    <a href="">Quia quibusdam.</a>
+                    <a href="">Eos perferendis, qui ex itaque.</a>
+                    <a href="">Consectetur, adipiqui ex itaque.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Responsive menu -->
+    <div class="modal">
+        <ul class="responsive-menu">
+            <a href="main.html"><li>
+                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                Home
+                <span class="iconify" data-icon="bx:bx-lock-alt"></span></li>
+            </a>
+            <a href="favorites.html"><li>
+                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                Favorites
+                <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span></li>
+            </a>
+        </ul>
+    </div>
+
+
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/loader.js"></script>
+</body>
+</html>
