@@ -248,8 +248,11 @@ modal.addEventListener('click', (event) => {
 function cartQuantity() {
     if (TScart.length === 0) {
         document.querySelector(".cart-quantity").style.display = "none";
+        document.querySelector(".cart-quantity-mobile").style.display = "none";
     } else {
         document.querySelector(".cart-quantity").style.display = "inline-block";
         document.querySelector(".cart-quantity").innerText = TScart.length;
+        document.querySelector(".cart-quantity-mobile").style.display = "inline-block";
+        document.querySelector(".cart-quantity-mobile").innerText = TScart.length;
     }
 }

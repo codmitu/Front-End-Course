@@ -483,7 +483,19 @@ main {
             padding: 10px;
             border-bottom: 1px solid white;
             padding-bottom: 0px;
+            position: relative;
         }
+            .cart-quantity-mobile {
+                display: none;
+                position: absolute;
+                width: 20px;
+                top: 5px;
+                text-align: center;
+                height: 20px;
+                border-radius: 50%;
+                color: white;
+                background-color: red;
+            }
             .responsive-menu li:hover {
                 background-color: var(--btt);
             }
