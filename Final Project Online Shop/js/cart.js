@@ -64,6 +64,7 @@ function buildCart() {
             
 function calculate(idx) {
       let cart = window.localStorage.getItem("TScart");
+      document.querySelector(".total-items").innerText = parseInt(document.querySelectorAll(".quantity")[idx].value);
       if (cart !== null) {
             let TScart = JSON.parse(cart);
             TScart[idx].quantity = document.querySelectorAll(".quantity")[idx].value;
@@ -108,16 +109,24 @@ function confirmBuy() {
 }
 
 function increase(idx) {
+      let itemName = document.querySelectorAll(".link-item")[idx].innerText;
+      let index = list.findIndex(x => x.name == itemName);
+      console.log(index);
+      if (document.querySelectorAll(".quantity")[idx].value >= list[index].stock) {
+            return;
+      }
       document.querySelectorAll(".quantity")[idx].value = parseInt(document.querySelectorAll(".quantity")[idx].value) + 1;
-      document.querySelectorAll(".quantity")[idx].addEventListener('focus', calculate(idx));
+      document.querySelectorAll(".quantity")[idx].addEventListener('input', calculate(idx));
+      buildCart();
 }
 
 function decrease(idx) {
-      if (document.querySelectorAll(".quantity")[idx].value < 2) {
+      if (document.querySelectorAll(".quantity")[idx].value <= 1) {
             return;
       }
       document.querySelectorAll(".quantity")[idx].value = parseInt(document.querySelectorAll(".quantity")[idx].value) - 1;
-      document.querySelectorAll(".quantity")[idx].addEventListener('focus', calculate(idx));
+      document.querySelectorAll(".quantity")[idx].addEventListener('input', calculate(idx));
+      buildCart();
 }
 
 
