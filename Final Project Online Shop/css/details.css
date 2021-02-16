@@ -438,6 +438,8 @@ h3 {
             margin: 10px;
             cursor: pointer;
             padding: 10px;
+            border-bottom: 1px solid white;
+            padding-bottom: 0px;
         }
             .responsive-menu li:hover {
                 background-color: var(--btt);
@@ -448,15 +450,15 @@ h3 {
             .responsive-menu li .arrow {
                 color: var(--text);
             }
-        .responsive-menu a {
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-            font-size: large;
-        }
-            .responsive-menu a:hover {
-                color: var(--text);
+            .responsive-menu a {
+                text-decoration: none;
+                color: rgb(225, 225, 225);
+                font-size: large;
             }
+                .responsive-menu a:hover {
+                    color: var(--text);
+                }
+    
 
 
 

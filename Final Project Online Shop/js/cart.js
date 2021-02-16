@@ -119,3 +119,19 @@ function decrease(idx) {
       document.querySelectorAll(".quantity")[idx].value = parseInt(document.querySelectorAll(".quantity")[idx].value) - 1;
       document.querySelectorAll(".quantity")[idx].addEventListener('focus', calculate(idx));
 }
+
+
+
+
+// Shows menu on menu click
+function showMenu() {
+      modal.style.display = "block";
+      menu.style.display = "none";
+}
+
+modal.addEventListener('click', (event) => {
+      if (event.target.classList.contains("modal")) {
+        modal.style.display = "none";
+        menu.style.display = "block";
+      }
+});
