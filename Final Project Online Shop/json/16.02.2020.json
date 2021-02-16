@@ -1,0 +1,721 @@
+[ {
+  "description" : "procesor Intel® Core™ i3-1115G4 pana la 4.10 GHz, 15.6\", Full HD, 8GB, 512GB SSD, Intel® Iris Xe Graphics, No OS, Silver",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/aspire-a515/aspire-a515_1.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_2.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_3.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_4.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_5.jpg", "../img/products/laptops/acer/aspire-a515/aspire-a515_6.jpg" ],
+  "name" : "Laptop Acer Aspire 5 A515-56",
+  "price" : 2499,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i3", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Tip memorie DDR4", "Tip stocare SSD", "Capacitate SSD 512 GB", "Tip placa video Integrata", "Sistem de operare EFI Shell" ],
+  "stock" : 100
+}, {
+  "description" : "procesor AMD Ryzen 5 4600H pana la 4.00 GHz, 15.6\", Full HD, 144Hz, 8GB, 512GB SSD, NVIDIA GeForce GTX 1650Ti 4GB, No OS, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/nitro-an515/nitro-an515_1.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_2.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_3.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_4.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_5.jpg", "../img/products/laptops/acer/nitro-an515/nitro-an515_6.jpg" ],
+  "name" : "Laptop Gaming Acer Nitro 5 AN515-44",
+  "price" : 3899,
+  "specs" : [ "Producator procesor AMD", "Tip procesor Ryzen 5", "Numar nuclee 6", "Diagonala display 15.6 inch", "Rata de refresh 144 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX", "Model placa video GTX 1650 i" ],
+  "stock" : 55
+}, {
+  "description" : "procesor Intel Core i7-9750H pana la 4.50 GHz, 15.6\", Full HD, IPS, 8GB, 512GB SSD, NVIDIA GeForce GTX 1650Ti 4GB, No OS, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/aspire-a715/aspire-a715_1.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_2.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_3.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_4.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_5.jpg", "../img/products/laptops/acer/aspire-a715/aspire-a715_6.jpg" ],
+  "name" : "Laptop Gaming Acer Aspire 7 A715-75G",
+  "price" : 3999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor 9750H", "Numar nuclee 6", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX", "Model placa video GTX 1650 i", "Capacitate memorie video 4096 MB" ],
+  "stock" : 50
+}, {
+  "description" : "procesor Intel® Core™ i9-10980HK pana la 5.30, 17.3\", Full HD, 144Hz, 32GB, 2TB SSD RAID, NVIDIA® GeForce RTX 2080 Super™ 8GB, Windows 10 Home, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/predator-ph717/predator-ph717_1.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_2.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_3.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_4.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_5.jpg", "../img/products/laptops/acer/predator-ph717/predator-ph717_6.jpg" ],
+  "name" : "Laptop Gaming Acer Predator Helios 700 PH717-72",
+  "price" : 15999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i9", "Model procesor 10980HK", "Rezolutie 1920 x 1080", "Capacitate memorie 32 GB", "Capacitate SSD 2 TB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2080 Super", "Capacitate memorie video 8192 MB", "Sistem de operare Windows 10 Home" ],
+  "stock" : 10
+}, {
+  "description" : "procesor Intel® Pentium® Silver N5030 pana la 3.10, 14\", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, Windows 10 Home, Gold",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/swift-sf114/swift-sf114_1.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_2.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_3.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_4.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_5.jpg", "../img/products/laptops/acer/swift-sf114/swift-sf114_6.jpg" ],
+  "name" : "Laptop ultraportabil Acer Swift 1 SF114-33",
+  "price" : 2349,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor Pentium", "Model procesor N5030", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Windows 10 Home", "", "" ],
+  "stock" : 100
+}, {
+  "description" : "procesor Intel Core i5-10300H pana la 4.50 GHz, 15.6\", Full HD, 144Hz, 16GB, 256GB SSD, NVIDIA® GeForce RTX™ 2060 6GB, No OS, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/predator-ph315/predator-ph315_1.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_2.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_3.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_4.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_5.jpg", "../img/products/laptops/acer/predator-ph315/predator-ph315_6.jpg" ],
+  "name" : "Laptop Gaming Acer Predator Helios 300 PH315-53",
+  "price" : 5499,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Numar nuclee 4", "Rezolutie 1920 x 1080", "Rata de refresh 144 Hz", "Capacitate memorie 16 GB", "Capacitate SSD 256 GB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2060", "Capacitate memorie video 6144 MB" ],
+  "stock" : 76
+}, {
+  "description" : "procesor Intel® Core™ i5-1035G1 pana la 3.60 GHz Ice Lake, 14\", Full HD, 8GB, 512GB SSD, Intel UHD Graphics, Windows 10 Home, Steel Gray",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/swift-sf314/swift-sf314_1.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_2.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_3.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_4.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_5.jpg", "../img/products/laptops/acer/swift-sf314/swift-sf314_6.jpg" ],
+  "name" : "Laptop ultraportabil Acer Swift 3 SF314-57-516Z",
+  "price" : 3399,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Numar nuclee 4", "Diagonala display 14 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Tip placa video Integrata", "Chipset video Intel UHD", "Sistem de operare Windows 10 Home" ],
+  "stock" : 96
+}, {
+  "description" : "procesor Intel Core i5-1035G1 pana la 3.60 GHz, 15.6\", Full HD, 8GB, 256GB SSD, Intel UHD Graphics, Windows 10 Home, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/aspire-a315/aspire-a315_1.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_2.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_3.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_4.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_5.jpg", "../img/products/laptops/acer/aspire-a315/aspire-a315_6.jpg" ],
+  "name" : "Laptop Acer Aspire 3 A315-56",
+  "price" : 3495,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Chipset video Intel UHD", "Sistem de operare Windows 10 Home" ],
+  "stock" : 147
+}, {
+  "description" : "procesor Intel® Core™ i7-1165G7 pana la 4.70 GHz, 13.5\", QHD, 16GB, 1TB SSD, Intel UHD Graphics, Windows 10 Home, Sparkly Silver",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/swift-sf313/swift-sf314_1.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_2.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_3.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_4.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_5.jpg", "../img/products/laptops/acer/swift-sf313/swift-sf314_6.jpg" ],
+  "name" : "Laptop ultraportabil Acer Swift SF313-53",
+  "price" : 5199,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Numar nuclee 4", "Diagonala display 13.5 inch", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Tip placa video Integrata", "Chipset video Intel Iris Xe", "Sistem de operare Windows 10 Home", "" ],
+  "stock" : 33
+}, {
+  "description" : "procesor Intel® Core™ i7-10750H pana la 5.00 GHz, 17.3\", Full HD, 144Hz, 16GB, 1TB SSD, NVIDIA® GeForce RTX™ 2070 8 GB, Windows 10 Home, Black",
+  "id" : "Laptop Acer",
+  "image" : [ "../img/products/laptops/acer/predator-ph317/predator-ph317_1.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_2.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_3.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_4.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_5.jpg", "../img/products/laptops/acer/predator-ph317/predator-ph317_6.jpg" ],
+  "name" : "Laptop Acer Gaming Predator Helios 300 PH317-54",
+  "price" : 8561,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Numar nuclee 6", "Diagonala display 17.3 inch", "Rezolutie 1920 x 1080", "Rata de refresh 144 Hz", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2070" ],
+  "stock" : 50
+}, {
+  "description" : "procesor Intel® Celeron® N4020 pana la 2.80 GHz, 15.6\", HD, 4GB, 256GB SSD, Intel® UHD Graphics 600, Free DOS, ransparent Silver",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/x515ma/x515ma_1.jpg", "../img/products/laptops/asus/x515ma/x515ma_2.jpg", "../img/products/laptops/asus/x515ma/x515ma_3.jpg", "../img/products/laptops/asus/x515ma/x515ma_4.jpg", "../img/products/laptops/asus/x515ma/x515ma_5.jpg", "../img/products/laptops/asus/x515ma/x515ma_6.jpg" ],
+  "name" : "Laptop ASUS X515MA",
+  "price" : 1499,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor Celeron", "Model procesor N4020", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Free DOS" ],
+  "stock" : 106
+}, {
+  "description" : "procesor Intel® Core™ i7-10870H pana la 5.00 GHz, 15.6\" Full HD, 144Hz, 16GB, 512GB SSD, NVIDIA® GeForce RTX™ 2060 6GB, FreeDOS, Original Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_1.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_2.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_3.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_4.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_5.jpg", "../img/products/laptops/asus/rog-strix-g15/rog-strix-g15_6.jpg" ],
+  "name" : "Laptop Gaming ASUS ROG Strix G15 G512LV",
+  "price" : 5799,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor 10870H", "Numar nuclee 8", "Diagonala display 15.6 inch", "Rata de refresh 144 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce RTX" ],
+  "stock" : 100
+}, {
+  "description" : "procesor Intel® Core™ i5-1035G1 pana la 3.60 GHz, 15.6\", Full HD, 8GB, 256GB SSD, Intel® UHD Graphics, Free DOS, Slate Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/x509ja/x509ja_1.jpg", "../img/products/laptops/asus/x509ja/x509ja_2.jpg", "../img/products/laptops/asus/x509ja/x509ja_3.jpg", "../img/products/laptops/asus/x509ja/x509ja_4.jpg", "../img/products/laptops/asus/x509ja/x509ja_5.jpg", "../img/products/laptops/asus/x509ja/x509ja_6.jpg" ],
+  "name" : "Laptop ASUS X509JA",
+  "price" : 2799,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Model procesor 1035G1", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Free DOS" ],
+  "stock" : 200
+}, {
+  "description" : "procesor Intel® Core™ i5-10300H pana la 4.50 GHz, 15.6\", Full HD, 144Hz, 8GB, 512GB SSD, NVIDIA® GeForce® GTX 1650 i 4GB, Free DOS, Bonfire Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/tuf-f15/tuf-f15_1.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_2.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_3.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_4.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_5.jpg", "../img/products/laptops/asus/tuf-f15/tuf-f15_6.jpg" ],
+  "name" : "Laptop Gaming ASUS ASUS UF F15 FX506LI",
+  "price" : 3999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i5", "Model procesor 10300H", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rata de refresh 144 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX" ],
+  "stock" : 27
+}, {
+  "description" : "procesor AMD Ryzen 5 3550H pana la 3.70 GHz, 15.6\", Full HD, 8GB, 512GB SSD, NVIDIA GeForce GTX 1650 4GB, Free DOS, Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_1.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_2.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_3.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_4.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_5.jpg", "../img/products/laptops/asus/tuf-fx505dt/tuf-fx505dt_6.jpg" ],
+  "name" : "Laptop Gaming ASUS TUF FX505DT",
+  "price" : 3499,
+  "specs" : [ "Producator procesor AMD", "Tip procesor Ryzen 5", "Model procesor 3550H", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rata de refresh 60 Hz", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce GTX" ],
+  "stock" : 50
+}, {
+  "description" : "procesor AMD Ryzen™ 5 4500U pana la 4GHz, 14\" Full HD, 8GB, 512GB SSD, NVIDIA® GeForce® MX350 2GB, Windows 10 Home, Light Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_1.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_2.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_3.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_4.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_5.jpg", "../img/products/laptops/asus/zenbook-um433iq/zenbook-um433iq_6.jpg" ],
+  "name" : "Laptop ultraportabil ASUS ZenBook UM433IQ",
+  "price" : 4399,
+  "specs" : [ "Producator procesor AMD", "Tip procesor Ryzen 5", "Model procesor 4500U", "Numar nuclee 6", "Diagonala display 14 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce MX", "Capacitate memorie video 2048 MB" ],
+  "stock" : 76
+}, {
+  "description" : "Intel Core i7-10870H, 15.6inch, RAM 16GB, SSD 1TB, nVidia GeForce GTX 1650 i 4GB, No OS, Bonfire Black",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_1.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_2.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_3.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_4.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_5.jpg", "../img/products/laptops/asus/tuf-fx506li/tuf-fx506li_6.jpg" ],
+  "name" : "Laptop ASUS TUF Gaming F15 FX506LI-HN110",
+  "price" : 5799,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor Intel Core i7", "Numar nuclee 8", "Diagonala display 15.6 inch", "Rata de refresh 144 GHz", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Chipset video nVidia GeForce GTX" ],
+  "stock" : 83
+}, {
+  "description" : "procesor Intel® Core™ i7-9750H pana la 4.5GHz, 15.6\" 4K UHD, 16GB, 512GB SSD, NVIDIA® GeForce® RTX 2060 6GB, Windows 10 Pro, Star Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_1.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_2.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_3.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_4.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_5.jpg", "../img/products/laptops/asus/proart-studiobook-one/proart-studiobook-one_6.jpg" ],
+  "name" : "Laptop ASUS ProArt StudioBook H500GV",
+  "price" : 8999,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor i7", "Model procesor 9750H", "Numar nuclee 6", "Diagonala display 15.6 inch", "Rezolutie 3840 x 2160", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce RTX", "Model placa video RTX 2060" ],
+  "stock" : 150
+}, {
+  "description" : "procesor Intel® Celeron® N4020 pana la 2.80 GHz, 15.6\" HD 4GB DDR4, 256GB SSD, GMA UHD 600, No OS, Slate Grey",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_1.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_2.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_3.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_4.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_5.jpg", "../img/products/laptops/asus/vivobook-x515ma/vivobook-x515ma_6.jpg" ],
+  "name" : "Laptop ASUS VivoBook X515MA",
+  "price" : 1404,
+  "specs" : [ "Producator procesor Intel®", "Tip procesor Celeron", "Model procesor N4020", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Sistem de operare Free DOS" ],
+  "stock" : 121
+}, {
+  "description" : "Procesor Intel® Celeron® N3350 2.40 GHz, Kaby Lake, 15.6\" HD, 4GB, 500GB HDD, Intel® HD Graphics 500, Negru",
+  "id" : "Laptop Asus",
+  "image" : [ "../img/products/laptops/asus/vivobook-15/vivobook-15_1.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_2.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_3.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_4.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_5.jpg", "../img/products/laptops/asus/vivobook-15/vivobook-15_6.jpg" ],
+  "name" : "Laptop ASUS VivoBook 15 X540NA-GQ005",
+  "price" : 2344,
+  "specs" : [ "Model procesor Intel® Celeron® N3350", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rata de refresh 60 Hz", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate HDD/SSHD 500 GB", "Chipset video Intel UHD", "Sistem de operare Endless OS", "" ],
+  "stock" : 69
+}, {
+  "description" : "procesor AMD Ryzen 3 3200U pana la 3.50 GHz, 15.6\", Full HD, 8GB, 256GB SSD, AMD Radeon Vega Grahics, Free DOS, Dark Ash Silver",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/255-g7/255-g7_1.jpg", "../img/products/laptops/hp/255-g7/255-g7_2.jpg", "../img/products/laptops/hp/255-g7/255-g7_3.jpg", "../img/products/laptops/hp/255-g7/255-g7_4.jpg", "../img/products/laptops/hp/255-g7/255-g7_5.jpg" ],
+  "name" : "Laptop HP 255 G7",
+  "price" : 1700,
+  "specs" : [ "Tip procesor Ryzen 3", "Numar nuclee 2", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Tip placa video Integrata", "Chipset video AMD Radeon Vega", "Sistem de operare Free DOS", "" ],
+  "stock" : 0
+}, {
+  "description" : "procesor AMD Ryzen™ 7 3700U pana la 4.00 GHz, 15.6\", Full HD, 8GB, 1TB HDD, DVD-RW Radeon™ Vega 10, Free DOS, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-db1200/15-db1200_1.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_2.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_3.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_4.jpg", "../img/products/laptops/hp/15-db1200/15-db1200_5.jpg" ],
+  "name" : "Laptop HP 15-db1200ny",
+  "price" : 2799,
+  "specs" : [ "Tip procesor Ryzen 7", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate HDD/SSHD 1 TB", "Chipset video AMD Radeon Vega", "Sistem de operare Free DOS", "", "" ],
+  "stock" : 28
+}, {
+  "description" : "procesor AMD Ryzen™ 5 3500U pana la 3.70 GHz, 15.6\", Full HD, 16GB, 512GB SSD, AMD Radeon™ Vega 8 Graphics, Windows 10 Home, Natural silver",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15s-eq777/15s-eq777_1.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_2.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_3.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_4.jpg", "../img/products/laptops/hp/15s-eq777/15s-eq777_5.jpg" ],
+  "name" : "Laptop HP 15s-eq0777nd",
+  "price" : 3299,
+  "specs" : [ "Tip procesor Ryzen 5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video AMD Radeon Vega", "Sistem de operare Windows 10 Home", "", "" ],
+  "stock" : 50
+}, {
+  "description" : "procesor Intel Pentium Silver N5030 pana la 3.10 GHz Quad Core, 15.6\", Full HD, 4GB, 256GB SSD, Intel UHD Graphics, Free DOS, Jet Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-dw1017/15-dw1017_1.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_2.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_3.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_4.jpg", "../img/products/laptops/hp/15-dw1017/15-dw1017_5.jpg" ],
+  "name" : "Laptop HP 15-dw1017nq",
+  "price" : 1599,
+  "specs" : [ "Tip procesor Pentium", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 4 GB", "Capacitate SSD 256 GB", "Chipset video Intel UHD", "Sistem de operare Free DOS", "", "" ],
+  "stock" : 49
+}, {
+  "description" : "procesor Intel® Core™ i7-1165G7 pana la 4.70 GHz, 15.6\", Full HD, 8GB, 512GB SSD, Intel® Iris® Xᵉ Graphics, Free DOS, Grey",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15s-fq2006/15s-fq2006_1.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_2.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_3.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_4.jpg", "../img/products/laptops/hp/15s-fq2006/15s-fq2006_5.jpg" ],
+  "name" : "Laptop HP 15s-fq2006nq",
+  "price" : 3499,
+  "specs" : [ "Tip procesor i7", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video Intel Iris Xe", "Sistem de operare Free DOS", "", "" ],
+  "stock" : 4
+}, {
+  "description" : "procesor Intel Core i5-1035G1 pana la 3.60 GHz, 15.6\", Full HD, 16GB, 512GB SSD, Intel UHD Graphics, Windows 10 Pro, Asteroid Silver",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/250-g7/250-g7_1.jpg", "../img/products/laptops/hp/250-g7/250-g7_2.jpg", "../img/products/laptops/hp/250-g7/250-g7_3.jpg", "../img/products/laptops/hp/250-g7/250-g7_4.jpg", "../img/products/laptops/hp/250-g7/250-g7_5.jpg", "../img/products/laptops/hp/250-g7/250-g7_6.jpg" ],
+  "name" : "Laptop HP 250 G7",
+  "price" : 3699,
+  "specs" : [ "Tip procesor i5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 512 GB", "Chipset video Intel UHD", "Sistem de operare Windows 10 Pro", "", "" ],
+  "stock" : 66
+}, {
+  "description" : "procesor AMD Ryzen 3 3300U pana la 3.50 GHz, 14\", HD, 4GB, 1TB HDD, AMD Radeon™ Vega 6 Graphics, Windows 10 Home, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/245-g7/245-g7_1.jpg", "../img/products/laptops/hp/245-g7/245-g7_2.jpg", "../img/products/laptops/hp/245-g7/245-g7_3.jpg", "../img/products/laptops/hp/245-g7/245-g7_4.jpg", "../img/products/laptops/hp/245-g7/245-g7_5.jpg" ],
+  "name" : "Laptop ultraportabil HP 245 G7",
+  "price" : 1999,
+  "specs" : [ "Tip procesor Ryzen 3", "Numar nuclee 4", "Frecventa nominala 2.1 GHz", "Diagonala display 14 inch", "Rezolutie 1366 x 768", "Capacitate memorie 4 GB", "Capacitate HDD/SSHD 1 TB", "Chipset video AMD Radeon Vega", "Sistem de operare Windows 10 Home", "Culoare Negru" ],
+  "stock" : 100
+}, {
+  "description" : "procesor AMD Ryzen 5 3500U pana la 3.70 GHz, 15.6\", Full HD, 16GB, 1TB SSD, AMD Radeon Vega 8, Free DOS, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-db1100/15-db1100_1.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_2.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_3.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_4.jpg", "../img/products/laptops/hp/15-db1100/15-db1100_5.jpg" ],
+  "name" : "Laptop HP 15-db1100ny",
+  "price" : 3598,
+  "specs" : [ "Tip procesor Ryzen 5", "Numar nuclee 4", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 16 GB", "Capacitate SSD 1 TB", "Chipset video AMD Radeon Vega", "Sistem de operare Free DOS", "Autonomie baterie 2 h", "Culoare Negru" ],
+  "stock" : 45
+}, {
+  "description" : "procesor Intel® Core™ i3-10110U pana la 4.10 GHz, 15.6\", Full HD, 8GB, 256GB SSD, Intel® UHD Graphics, Free DOS, Grey",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-da2042/15-da2042_1.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_2.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_3.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_4.jpg", "../img/products/laptops/hp/15-da2042/15-da2042_5.jpg" ],
+  "name" : "Laptop HP 15-da2042nq",
+  "price" : 1999,
+  "specs" : [ "Tip procesor i3", "Numar nuclee 2", "Frecventa nominala 2.1 GHz", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 256 GB", "Chipset video Intel UHD", "Sistem de operare Free DOS", "Autonomie baterie 10.5 h" ],
+  "stock" : 49
+}, {
+  "description" : "procesor Intel® Core™ i7-1065G7 pana la 3.90 GHz, 15.6\", Full HD, 8GB, 512GB SSD, NVIDIA® GeForce® MX330 2GB, Free DOS, Black",
+  "id" : "Laptop HP",
+  "image" : [ "../img/products/laptops/hp/15-dw2014/15-dw2014_1.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_2.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_3.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_4.jpg", "../img/products/laptops/hp/15-dw2014/15-dw2014_5.jpg" ],
+  "name" : "Laptop HP 15-dw2014nq",
+  "price" : 3399,
+  "specs" : [ "Tip procesor i7", "Numar nuclee 4", "Frecventa nominala 1.3 GHz", "Diagonala display 15.6 inch", "Rezolutie 1920 x 1080", "Capacitate memorie 8 GB", "Capacitate SSD 512 GB", "Chipset video nVidia GeForce MX", "Model placa video MX330", "Capacitate memorie video 2048 MB" ],
+  "stock" : 128
+}, {
+  "description" : "Dual SIM, 32GB, 3GB RAM, 4G, Starry Black",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/y6s/y6s_1.jpg", "../img/products/phones/huawei/y6s/y6s_2.jpg", "../img/products/phones/huawei/y6s/y6s_3.jpg", "../img/products/phones/huawei/y6s/y6s_4.jpg", "../img/products/phones/huawei/y6s/y6s_5.jpg", "../img/products/phones/huawei/y6s/y6s_6.jpg" ],
+  "name" : "Telefon mobil Huawei Y6S",
+  "price" : 499,
+  "specs" : [ "Sloturi SIM Dual SIM", "Sloturi SIM Dual SIM", "Versiune sistem operare Android 9", "Numar nuclee 8", "Model procesor MediaTek Helio P35 MT6765", "Frecventa procesor 2.3 GHz, 1.8 GHz", "Tehnologii 2G, 3G, 4G", "Dimensiuni 73.5 x 156.28 x 8 mm", "Dimensiune ecran 6.09 inch", "Functii display 283 PPI" ],
+  "stock" : 249
+}, {
+  "description" : "Dual SIM, 128GB, 4G, Midnight Black",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/p30lite/p30lite_1.jpg", "../img/products/phones/huawei/p30lite/p30lite_2.jpg", "../img/products/phones/huawei/p30lite/p30lite_3.jpg", "../img/products/phones/huawei/p30lite/p30lite_4.jpg", "../img/products/phones/huawei/p30lite/p30lite_5.jpg", "../img/products/phones/huawei/p30lite/p30lite_6.jpg" ],
+  "name" : "Telefon mobil Huawei P30 Lite",
+  "price" : 999,
+  "specs" : [ "Sloturi SIM Dual SIM", "Versiune sistem operare Android 9", "Numar nuclee 8", "Model procesor HiSilicon Kirin 710", "Frecventa procesor 2.2 GHz, 1.7 GHz", "An aparitie 2019", "Dimensiune ecran 6.15 inch", "Functii display Multi-touch, 415 PPI", "Memorie interna 128 GB", "Memorie RAM 4 GB" ],
+  "stock" : 200
+}, {
+  "description" : "Dual SIM, 128GB, 4G, Midnight Black",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/psmart/psmart_1.jpg", "../img/products/phones/huawei/psmart/psmart_2.jpg", "../img/products/phones/huawei/psmart/psmart_3.jpg", "../img/products/phones/huawei/psmart/psmart_4.jpg", "../img/products/phones/huawei/psmart/psmart_5.jpg", "../img/products/phones/huawei/psmart/psmart_6.jpg" ],
+  "name" : "Telefon mobil Huawei P Smart (2021)",
+  "price" : 799,
+  "specs" : [ "Sloturi SIM Dual SIM", "Versiune sistem operare Android 10", "Numar nuclee 8", "Model procesor HiSilicon Kirin 710", "Frecventa procesor 2 GHz, 1.7 GHz", "An aparitie 2021", "Dimensiune ecran 6.67 inch", "Functii display 394 PPI", "Memorie interna 128 GB", "Memorie RAM 4 GB" ],
+  "stock" : 75
+}, {
+  "description" : "Dual SIM, 64GB, 4G, Midnight Black",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/y6p/y6p_1.jpg", "../img/products/phones/huawei/y6p/y6p_2.jpg", "../img/products/phones/huawei/y6p/y6p_3.jpg", "../img/products/phones/huawei/y6p/y6p_4.jpg", "../img/products/phones/huawei/y6p/y6p_5.jpg", "../img/products/phones/huawei/y6p/y6p_6.jpg" ],
+  "name" : "Telefon mobil Huawei Y6P",
+  "price" : 689,
+  "specs" : [ "Sloturi SIM Dual SIM", "Capacitate baterie 5000 mAh", "Numar nuclee 8", "Versiune sistem operare Android 10", "Frecventa procesor 2 GHz, 1.5 GHz", "An aparitie 2020", "Dimensiune ecran 6.3 inch", "Functii display 278 PPI", "Memorie interna 64 GB", "Memorie RAM 3 GB" ],
+  "stock" : 89
+}, {
+  "description" : "Dual SIM, 128GB, 6GB RAM, 4G, Sakura Pink",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/p40lite/p40lite_1.jpg", "../img/products/phones/huawei/p40lite/p40lite_2.jpg", "../img/products/phones/huawei/p40lite/p40lite_3.jpg", "../img/products/phones/huawei/p40lite/p40lite_4.jpg", "../img/products/phones/huawei/p40lite/p40lite_5.jpg", "../img/products/phones/huawei/p40lite/p40lite_6.jpg" ],
+  "name" : "Telefon mobil Huawei P40 Lite",
+  "price" : 960,
+  "specs" : [ "Sloturi SIM Dual SIM", "Capacitate baterie 4200 mAh", "Numar nuclee 8", "Model procesor Kirin 810", "Frecventa procesor 2.27 GHz, 1.88 GHz", "An aparitie 2020", "Dimensiune ecran 6.4 inch", "Functii display 398 PPI", "Memorie interna 128 GB", "Memorie RAM 6 GB" ],
+  "stock" : 30
+}, {
+  "description" : "Dual SIM, 128GB, 8GB RAM, 4G, Breathing Crystal",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/p30pro/p30pro_1.jpg", "../img/products/phones/huawei/p30pro/p30pro_2.jpg", "../img/products/phones/huawei/p30pro/p30pro_3.jpg", "", "", "" ],
+  "name" : "Telefon mobil Huawei P30 Pro",
+  "price" : 2449,
+  "specs" : [ "Sloturi SIM Dual SIM", "Capacitate baterie 4200 mAh", "Numar nuclee 8", "Model procesor Kirin 980", "Frecventa procesor 2.6 GHz, 1.92 GHz, 1.8 GHz", "An aparitie 2019", "Dimensiune ecran 6.47 inch", "Rezolutie (pixeli) 1080 x 2340", "Memorie interna 128 GB", "Memorie RAM 8 GB" ],
+  "stock" : 50
+}, {
+  "description" : "Dual SIM, 32GB, 4G, Midnight Black",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/y7/y7_1.jpg", "../img/products/phones/huawei/y7/y7_2.jpg", "../img/products/phones/huawei/y7/y7_3.jpg", "../img/products/phones/huawei/y7/y7_4.jpg", "../img/products/phones/huawei/y7/y7_5.jpg", "../img/products/phones/huawei/y7/y7_6.jpg" ],
+  "name" : "Telefon mobil Huawei Y7 2019",
+  "price" : 900,
+  "specs" : [ "Sloturi SIM Dual SIM", "Capacitate baterie 4000 mAh", "Numar nuclee 8", "Model procesor Qualcomm Snapdragon 450", "Frecventa procesor 1.8 GHz", "An aparitie 2019", "Dimensiune ecran 6.26 inch", "Rezolutie (pixeli) 720 x 1520", "Memorie interna 32 GB", "Memorie RAM 3 GB" ],
+  "stock" : 47
+}, {
+  "description" : "Dual SIM, 256GB, 8GB RAM, 5G, Mystic Silver",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/mate40pro/mate40pro_1.jpg", "../img/products/phones/huawei/mate40pro/mate40pro_2.jpg", "../img/products/phones/huawei/mate40pro/mate40pro_3.jpg", "../img/products/phones/huawei/mate40pro/mate40pro_4.jpg", "../img/products/phones/huawei/mate40pro/mate40pro_5.jpg", "../img/products/phones/huawei/mate40pro/mate40pro_6.jpg" ],
+  "name" : "Telefon mobil Huawei Mate 40 Pro",
+  "price" : 5249,
+  "specs" : [ "Sloturi SIM Dual SIM", "Capacitate baterie 4400 mAh", "Numar nuclee 8", "Model procesor Kirin 9000 5G", "Frecventa procesor 2.05 GHz, 3.13 GHz, 2.54 GHz", "An aparitie 2020", "Dimensiune ecran 6.76 inch", "Rezolutie (pixeli) 2772 x 1334", "Memorie interna 256 GB", "Memorie RAM 8 GB" ],
+  "stock" : 54
+}, {
+  "description" : "Dual SIM, 128GB, 6GB RAM, 4G, Black",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/nova5t/nova5t_1.jpg", "../img/products/phones/huawei/nova5t/nova5t_2.jpg", "../img/products/phones/huawei/nova5t/nova5t_3.jpg", "../img/products/phones/huawei/nova5t/nova5t_4.jpg", "../img/products/phones/huawei/nova5t/nova5t_5.jpg", "../img/products/phones/huawei/nova5t/nova5t_6.jpg" ],
+  "name" : "Telefon mobil Huawei Nova 5T",
+  "price" : 1299,
+  "specs" : [ "Sloturi SIM Dual SIM", "Capacitate baterie 3650 mAh", "Numar nuclee 8", "Model procesor HiSilicon Kirin 980", "recventa procesor 2.6 GHz, 1.9 GHz, 1.8 GHz", "An aparitie 2019", "Dimensiune ecran 6.26 inch", "Rezolutie (pixeli) 1080 x 2340", "Memorie interna 128 GB", "Memorie RAM 6 GB" ],
+  "stock" : 40
+}, {
+  "description" : "Dual SIM, 512GB, 8GB RAM, 5G, Black Ceramic",
+  "id" : "Phone Huawei",
+  "image" : [ "../img/products/phones/huawei/p40pro/p40pro_1.jpg", "../img/products/phones/huawei/p40pro/p40pro_2.jpg", "../img/products/phones/huawei/p40pro/p40pro_3.jpg", "../img/products/phones/huawei/p40pro/p40pro_4.jpg", "../img/products/phones/huawei/p40pro/p40pro_5.jpg", "../img/products/phones/huawei/p40pro/p40pro_6.jpg" ],
+  "name" : "Telefon mobil Huawei P40 Pro Plus",
+  "price" : 8945,
+  "specs" : [ "Sloturi SIM Dual SIM", "Capacitate baterie 4200 mAh", "Numar nuclee 8", "Model procesor Huawei Kirin 990", "Frecventa procesor 2.86 GHz, 2.36 GHz, 1.95 GHz", "An aparitie 2020", "Dimensiune ecran 6.58 inch", "Rezolutie (pixeli) 2640 x 1200", "Memorie interna 512 GB", "Memorie RAM 8 GB" ],
+  "stock" : 10
+}, {
+  "description" : "Dual SIM, 128GB, 6GB RAM, 4G, Silver + Bratara fitness Lenovo Fit Band G02, Silicon, Sleep Traker, HR, Black",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/a71/a71_1.jpg", "../img/products/phones/samsung/a71/a71_2.jpg", "../img/products/phones/samsung/a71/a71_3.jpg", "../img/products/phones/samsung/a71/a71_4.jpg", "../img/products/phones/samsung/a71/a71_5.jpg", "../img/products/phones/samsung/a71/a71_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy A71",
+  "price" : 1626,
+  "specs" : [ "Versiune sistem operare Android 10", "Numar nuclee 8", "Model procesor Qualcomm Snapdragon 730", "Frecventa procesor 2.2 GHz, 1.8 GHz", "An aparitie 2020", "Dimensiune ecran 6.7 inch", "Memorie interna 128 GB", "Memorie RAM 6 GB", "Rezolutie video Full HD, 4K", "Capacitate baterie 4500 mAh" ],
+  "stock" : 44
+}, {
+  "description" : "Dual SIM, 128GB, 4GB RAM, 4G, Prism Blue",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/a51/a51_1.jpg", "../img/products/phones/samsung/a51/a51_2.jpg", "../img/products/phones/samsung/a51/a51_3.jpg", "../img/products/phones/samsung/a51/a51_4.jpg", "../img/products/phones/samsung/a51/a51_5.jpg", "" ],
+  "name" : "Telefon mobil Samsung Galaxy A51",
+  "price" : 1249,
+  "specs" : [ "Versiune sistem operare Android 10", "Numar nuclee 8", "Model procesor Samsung Exynos 9611", "Frecventa procesor 2.3 GHz, 1.7 GHz", "An aparitie 2019", "Dimensiune ecran 6.5 inch", "Memorie interna 128 GB", "Memorie RAM 4 GB", "Rezolutie video Full HD, 4K", "Capacitate baterie 4000 mAh" ],
+  "stock" : 40
+}, {
+  "description" : "Dual SIM, 64GB, 4G, Black",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/m21/m21_1.jpg", "../img/products/phones/samsung/m21/m21_2.jpg", "../img/products/phones/samsung/m21/m21_3.jpg", "../img/products/phones/samsung/m21/m21_4.jpg", "../img/products/phones/samsung/m21/m21_5.jpg", "../img/products/phones/samsung/m21/m21_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy M21",
+  "price" : 929,
+  "specs" : [ "Versiune sistem operare Android 10", "Numar nuclee 8", "Model procesor Samsung Exynos 9611", "Frecventa procesor 2.3 GHz, 1.7 GHz", "An aparitie 2020", "Dimensiune ecran 6.4 inch", "Memorie interna 64 GB", "Memorie RAM 4 GB", "Rezolutie video UHD, 4K", "Capacitate baterie 6000 mAh" ],
+  "stock" : 30
+}, {
+  "description" : "Dual SIM, 32GB, 4G, Black",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/a20e/a20e_1.jpg", "../img/products/phones/samsung/a20e/a20e_2.jpg", "../img/products/phones/samsung/a20e/a20e_3.jpg", "../img/products/phones/samsung/a20e/a20e_4.jpg", "../img/products/phones/samsung/a20e/a20e_5.jpg", "../img/products/phones/samsung/a20e/a20e_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy A20e",
+  "price" : 599,
+  "specs" : [ "Versiune sistem operare Android 9.0 Pie", "Numar nuclee 8", "Model procesor Samsung Exynos 9611", "Frecventa procesor 1.6 GHz, 1.35 GHz", "An aparitie 2019", "Dimensiune ecran 5.8 inch", "Memorie interna 32 GB", "Memorie RAM 3 GB", "Rezolutie video FULL HD", "Capacitate baterie 3000 mAh" ],
+  "stock" : 52
+}, {
+  "description" : "Dual SIM, 128GB, 6GB RAM, 4G, Blue",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/m31s/m31s_1.jpg", "../img/products/phones/samsung/m31s/m31s_2.jpg", "../img/products/phones/samsung/m31s/m31s_3.jpg", "../img/products/phones/samsung/m31s/m31s_4.jpg", "../img/products/phones/samsung/m31s/m31s_5.jpg", "../img/products/phones/samsung/m31s/m31s_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy M31S",
+  "price" : 1364,
+  "specs" : [ "Versiune sistem operare Android 10", "Numar nuclee 8", "Model procesor Samsung Exynos 9611", "Frecventa procesor 2.3 GHz, 1.7 GHz", "An aparitie 2020", "Dimensiune ecran 6.5 inch", "Memorie interna 128 GB", "Memorie RAM 6 GB", "Rezolutie video 4K", "Capacitate baterie 6000 mAh" ],
+  "stock" : 65
+}, {
+  "description" : "Dual SIM, 128GB, 8GB RAM, 4G, Cloud Pink",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/s20/s20_1.jpg", "../img/products/phones/samsung/s20/s20_2.jpg", "../img/products/phones/samsung/s20/s20_3.jpg", "../img/products/phones/samsung/s20/s20_4.jpg", "../img/products/phones/samsung/s20/s20_5.jpg", "../img/products/phones/samsung/s20/s20_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy S20",
+  "price" : 3549,
+  "specs" : [ "Versiune sistem operare Android 10", "Numar nuclee 8", "Model procesor Samsung Exynos 990", "Frecventa procesor 2.6 GHz, 2 GHz, 2.73 GHz", "An aparitie 2020", "Dimensiune ecran 6.2 inch", "Memorie interna 128 GB", "Memorie RAM 8 GB", "Capacitate baterie 4000 mAh", "" ],
+  "stock" : 20
+}, {
+  "description" : "Dual SIM, 64GB, 4G, Black",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/a12/a12_1.jpg", "../img/products/phones/samsung/a12/a12_2.jpg", "../img/products/phones/samsung/a12/a12_3.jpg", "../img/products/phones/samsung/a12/a12_4.jpg", "../img/products/phones/samsung/a12/a12_5.jpg", "../img/products/phones/samsung/a12/a12_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy A12",
+  "price" : 3549,
+  "specs" : [ "Versiune sistem operare Android 10", "Numar nuclee 8", "Model procesor Samsung Exynos 990", "Frecventa procesor 2.3 GHz, 1.8 GHz", "An aparitie 2020", "Dimensiune ecran 6.5 inch", "Memorie interna 64 GB", "Memorie RAM 4 GB", "Rezolutie video Full HD", "Capacitate baterie 5000 mAh" ],
+  "stock" : 57
+}, {
+  "description" : "Dual SIM, 128GB, 8GB RAM, 5G, Phantom Black",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/s21/s21_1.jpg", "../img/products/phones/samsung/s21/s21_2.jpg", "../img/products/phones/samsung/s21/s21_3.jpg", "../img/products/phones/samsung/s21/s21_4.jpg", "../img/products/phones/samsung/s21/s21_5.jpg", "../img/products/phones/samsung/s21/s21_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy S21 Plus",
+  "price" : 5099,
+  "specs" : [ "Versiune sistem operare Android", "Numar nuclee 8", "Model procesor Samsung Exynos 2100", "Frecventa procesor 2.8 GHz, 2.2 GHz, 2.9 GHz", "An aparitie 2021", "Dimensiune ecran 6.7 inch", "Memorie interna 128 GB", "Memorie RAM 8 GB", "Capacitate baterie 4000 mAh", "Rezolutie video 8K" ],
+  "stock" : 27
+}, {
+  "description" : "Dual SIM, 128GB, 8GB RAM, 4G, Black",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/s10/s10_1.jpg", "../img/products/phones/samsung/s10/s10_2.jpg", "../img/products/phones/samsung/s10/s10_3.jpg", "../img/products/phones/samsung/s10/s10_4.jpg", "../img/products/phones/samsung/s10/s10_5.jpg", "../img/products/phones/samsung/s10/s10_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy S10",
+  "price" : 2984,
+  "specs" : [ "Versiune sistem operare Android 9.0 Pie", "Numar nuclee 8", "", "", "An aparitie 2019", "Dimensiune ecran 6.1 inch", "Memorie interna 128 GB", "Memorie RAM 8 GB", "Capacitate baterie 3400 mAh", "Rezolutie video Full HD, HD, 4K" ],
+  "stock" : 68
+}, {
+  "description" : "Dual SIM, 32GB, 4G, Blue",
+  "id" : "Phone Samsung",
+  "image" : [ "../img/products/phones/samsung/a20s/a20s_1.jpg", "../img/products/phones/samsung/a20s/a20s_2.jpg", "../img/products/phones/samsung/a20s/a20s_3.jpg", "../img/products/phones/samsung/a20s/a20s_4.jpg", "../img/products/phones/samsung/a20s/a20s_5.jpg", "../img/products/phones/samsung/a20s/a20s_6.jpg" ],
+  "name" : "Telefon mobil Samsung Galaxy A20s",
+  "price" : 739,
+  "specs" : [ "Versiune sistem operare Android 9", "Numar nuclee 8", "Model procesor Qualcomm Snapdragon 450", "Frecventa procesor 1.8 GHz", "An aparitie 2019", "Dimensiune ecran 6.5 inch", "Memorie interna 32 GB", "Memorie RAM 3 GB", "Capacitate baterie 4000 mAh", "Rezolutie video Full HD" ],
+  "stock" : 43
+}, {
+  "description" : "64GB, Black",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/11/11_1.jpg", "../img/products/phones/iphone/11/11_2.jpg", "../img/products/phones/iphone/11/11_3.jpg", "../img/products/phones/iphone/11/11_4.jpg", "../img/products/phones/iphone/11/11_5.jpg", "" ],
+  "name" : "Telefon mobil Apple iPhone 11",
+  "price" : 3249,
+  "specs" : [ "Versiune sistem operare iOS 13", "Numar nuclee 6", "Model procesor Apple A13 Bionic", "Frecventa procesor 2.65 GHz, 1.8 GHz", "An aparitie 2019", "Dimensiune ecran 6.1 inch", "Memorie interna 64 GB", "Memorie RAM 4 GB", "Rezolutie video 4K, Full HD", "Capacitate baterie 3110 mAh" ],
+  "stock" : 18
+}, {
+  "description" : "128GB, 5G, Black",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/12/12_1.jpg", "../img/products/phones/iphone/12/12_2.jpg", "../img/products/phones/iphone/12/12_3.jpg", "../img/products/phones/iphone/12/12_4.jpg", "../img/products/phones/iphone/12/12_5.jpg", "" ],
+  "name" : "Telefon mobil Apple iPhone 12",
+  "price" : 4499,
+  "specs" : [ "Versiune sistem operare iOS 14", "Numar nuclee 6", "Model procesor Apple A14 Bionic", "Frecventa procesor 2.65 GHz, 1.8 GHz", "An aparitie 2020", "Dimensiune ecran 6.1 inch", "Memorie interna 128 GB", "Memorie RAM 4 GB", "Rezolutie video 4K", "Capacitate baterie 3110 mAh" ],
+  "stock" : 8
+}, {
+  "description" : "128GB, 5G, Black",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/12mini/12mini_1.jpg", "../img/products/phones/iphone/12mini/12mini_2.jpg", "../img/products/phones/iphone/12mini/12mini_3.jpg", "../img/products/phones/iphone/12mini/12mini_4.jpg", "", "" ],
+  "name" : "Telefon mobil Apple iPhone 12 mini",
+  "price" : 3899,
+  "specs" : [ "Versiune sistem operare iOS 14", "Numar nuclee 6", "Model procesor Apple A14 Bionic", "Frecventa procesor 2.65 GHz, 1.8 GHz", "An aparitie 2020", "Dimensiune ecran 5.4 inch", "Memorie interna 128 GB", "Memorie RAM 4 GB", "Rezolutie video 4K", "Capacitate baterie 3110 mAh" ],
+  "stock" : 14
+}, {
+  "description" : "32GB, Gold",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/7/7_1.jpg", "../img/products/phones/iphone/7/7_2.jpg", "../img/products/phones/iphone/7/7_3.jpg", "../img/products/phones/iphone/7/7_4.jpg", "", "" ],
+  "name" : "Telefon mobil Apple iPhone 7",
+  "price" : 1499,
+  "specs" : [ "Versiune sistem operare iOS 10", "Numar nuclee 4", "Model procesor Apple A10 Fusion", "Frecventa procesor 2.3 GHz, 1.8 GHz", "An aparitie 2016", "Dimensiune ecran 4.7 inch", "Memorie interna 32 GB", "Memorie RAM 2 GB", "Rezolutie video Full HD, HD, 4K", "Capacitate baterie 1960 mAh" ],
+  "stock" : 2
+}, {
+  "description" : "64GB, Black",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/xr/xr_1.jpg", "../img/products/phones/iphone/xr/xr_2.jpg", "../img/products/phones/iphone/xr/xr_3.jpg", "", "", "" ],
+  "name" : "Telefon mobil Apple iPhone XR",
+  "price" : 2759,
+  "specs" : [ "Versiune sistem operare iOS 12", "Numar nuclee 6", "Model procesor Apple A12 Bionic", "Frecventa procesor 2.5 GHz, 1.6 GHz", "An aparitie 2018", "Dimensiune ecran 6.1 inch", "Memorie interna 64 GB", "Memorie RAM 3 GB", "Rezolutie video Full HD, 4K", "Capacitate baterie 2942 mAh" ],
+  "stock" : 10
+}, {
+  "description" : "256GB, 5G, Pacific Blue",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/12promax/12promax_1.jpg", "../img/products/phones/iphone/12promax/12promax_2.jpg", "../img/products/phones/iphone/12promax/12promax_3.jpg", "../img/products/phones/iphone/12promax/12promax_4.jpg", "", "" ],
+  "name" : "Telefon mobil Apple iPhone 12 Pro Max",
+  "price" : 6839,
+  "specs" : [ "Versiune sistem operare iOS 14", "Numar nuclee 6", "Model procesor Apple A14 Bionic", "Frecventa procesor 2.5 GHz, 1.6 GHz", "An aparitie 2020", "Dimensiune ecran 6.7 inch", "Memorie interna 256 GB", "Memorie RAM 3 GB", "Rezolutie video 4K", "Capacitate baterie 2942 mAh" ],
+  "stock" : 5
+}, {
+  "description" : "128GB, 4G, White",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/se2/se2_1.jpg", "../img/products/phones/iphone/se2/se2_2.jpg", "../img/products/phones/iphone/se2/se2_3.jpg", "../img/products/phones/iphone/se2/se2_4.jpg", "../img/products/phones/iphone/se2/se2_5.jpg", "../img/products/phones/iphone/se2/se2_6.jpg" ],
+  "name" : "Telefon mobil Apple iPhone SE 2",
+  "price" : 2299,
+  "specs" : [ "Versiune sistem operare iOS 13", "Numar nuclee 6", "Model procesor Apple A13 Bionic", "Frecventa procesor 2.5 GHz, 1.6 GHz", "An aparitie 2020", "Dimensiune ecran 4.7 inch", "Memorie interna 128 GB", "Memorie RAM 3 GB", "Rezolutie video 4K", "Capacitate baterie 2942 mAh" ],
+  "stock" : 14
+}, {
+  "description" : "128GB, 5G, Graphite",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/12pro/12pro_1.jpg", "../img/products/phones/iphone/12pro/12pro_2.jpg", "../img/products/phones/iphone/12pro/12pro_3.jpg", "../img/products/phones/iphone/12pro/12pro_4.jpg", "../img/products/phones/iphone/12pro/12pro_5.jpg", "" ],
+  "name" : "Telefon mobil Apple iPhone 12 Pro",
+  "price" : 6349,
+  "specs" : [ "Versiune sistem operare iOS 14", "Numar nuclee 6", "Model procesor Apple A14 Bionic", "Frecventa procesor 2.5 GHz, 1.6 GHz", "An aparitie 2020", "Dimensiune ecran 6.1 inch", "Memorie interna 128 GB", "Memorie RAM 3 GB", "Rezolutie video 4K", "Capacitate baterie 2942 mAh" ],
+  "stock" : 20
+}, {
+  "description" : "64GB, 4G, Space Grey",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/8/8_1.jpg", "../img/products/phones/iphone/8/8_2.jpg", "../img/products/phones/iphone/8/8_3.jpg", "../img/products/phones/iphone/8/8_4.jpg", "", "" ],
+  "name" : "Telefon mobil Apple iPhone 8",
+  "price" : 2472,
+  "specs" : [ "Versiune sistem operare iOS 11", "Numar nuclee 6", "Model procesor Apple A11 Bionic", "Frecventa procesor 2.1 GHz", "An aparitie 2020", "Dimensiune ecran 4.7 inch", "Memorie interna 64 GB", "Memorie RAM 2 GB", "Rezolutie video FULL HD, 4K", "Capacitate baterie 1821 mAh" ],
+  "stock" : 18
+}, {
+  "description" : "64GB, Gold",
+  "id" : "Phone iPhone",
+  "image" : [ "../img/products/phones/iphone/8plus/8plus_1.jpg", "../img/products/phones/iphone/8plus/8plus_2.jpg", "../img/products/phones/iphone/8plus/8plus_3.jpg", "../img/products/phones/iphone/8plus/8plus_4.jpg", "", "" ],
+  "name" : "Telefon mobil Apple iPhone 8 Plus",
+  "price" : 2999,
+  "specs" : [ "Versiune sistem operare iOS 11", "Numar nuclee 6", "Model procesor Apple A11 Bionic", "Frecventa procesor 2.1 GHz", "An aparitie 2017", "Dimensiune ecran 5.5 inch", "Memorie interna 64 GB", "Memorie RAM 3 GB", "Rezolutie video FULL HD, 4K", "Capacitate baterie 2691 mAh" ],
+  "stock" : 16
+}, {
+  "description" : "Full HD, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/43lm6300pla/43lm6300pla_1.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_2.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_3.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_4.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_5.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_6.jpg" ],
+  "name" : "Televizor LED Smart LG, 80 cm, 32LM6300PLA",
+  "price" : 1089,
+  "specs" : [ "Diagonala display 80 cm", "Tip TV Smart TV", "Claritate imagine Full HD", "An aparitie 2019", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 1920 x 1080", "Rata de refresh 50 Hz", "Consum energie electrica 36 W", "Dimensiune cu stand 736 x 464 x 180 mm" ],
+  "stock" : 55
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/49un71003lb/49un71003lb_1.jpg", "../img/products/tvs/lg/49un71003lb/49un71003lb_2.jpg", "../img/products/tvs/lg/49un71003lb/49un71003lb_3.jpg", "../img/products/tvs/lg/49un71003lb/49un71003lb_4.jpg", "../img/products/tvs/lg/49un71003lb/49un71003lb_5.jpg", "../img/products/tvs/lg/49un71003lb/49un71003lb_6.jpg" ],
+  "name" : "Televizor LG 49UN71003LB, 123 cm",
+  "price" : 1699,
+  "specs" : [ "Diagonala display 123 cm", "Tip TV Smart TV", "Claritate imagine 4K", "An aparitie 2020", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 76 W", "Dimensiune cu stand 1108 x 708 x 231 mm" ],
+  "stock" : 35
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/55un70003la/55un70003la_1.jpg", "../img/products/tvs/lg/55un70003la/55un70003la_2.jpg", "../img/products/tvs/lg/55un70003la/55un70003la_3.jpg", "../img/products/tvs/lg/55un70003la/55un70003la_4.jpg", "../img/products/tvs/lg/55un70003la/55un70003la_5.jpg", "../img/products/tvs/lg/55un70003la/55un70003la_6.jpg" ],
+  "name" : "Televizor LG 55UN70003LA, 139 cm",
+  "price" : 1899,
+  "specs" : [ "Diagonala display 139 cm", "Tip TV Smart TV", "Claritate imagine 4K", "An aparitie 2020", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 112 W", "Dimensiune cu stand 1244 x 791 x 284 mm" ],
+  "stock" : 0
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/55nano793ne/55nano793ne_1.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_2.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_3.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_4.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_5.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_6.jpg" ],
+  "name" : "Televizor LG 43NANO793NE, 108 cm",
+  "price" : 1849,
+  "specs" : [ "Diagonala display 108 cm", "Tip TV Smart TV", "Claritate imagine 4K", "An aparitie 2020", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 70 W", "Dimensiune cu stand 973 x 622 x 221 mm" ],
+  "stock" : 5
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/43un80003lc/43un80003lc_1.jpg", "../img/products/tvs/lg/43un80003lc/43un80003lc_2.jpg", "../img/products/tvs/lg/43un80003lc/43un80003lc_3.jpg", "../img/products/tvs/lg/43un80003lc/43un80003lc_4.jpg", "../img/products/tvs/lg/43un80003lc/43un80003lc_5.jpg", "../img/products/tvs/lg/43un80003lc/43un80003lc_6.jpg" ],
+  "name" : "Televizor LG 43UN80003LC, 108 cm",
+  "price" : 1749,
+  "specs" : [ "Diagonala display 108 cm", "Tip TV Smart TV", "Claritate imagine 4K", "An aparitie 2020", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 72 W", "Dimensiune cu stand 975 x 625 x 216 mm" ],
+  "stock" : 65
+}, {
+  "description" : "Smart, Full HD, LED, Clasa A+",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/43lm6300pla/43lm6300pla_1.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_2.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_3.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_4.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_5.jpg", "../img/products/tvs/lg/43lm6300pla/43lm6300pla_6.jpg" ],
+  "name" : "Televizor LG 43LM6300PLA, 108 cm",
+  "price" : 1399,
+  "specs" : [ "Diagonala display 108 cm", "Tip TV Smart TV", "Claritate imagine Full HD", "An aparitie -", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 1920 x 1080", "Rata de refresh 50 Hz", "Consum energie electrica 49 W", "Dimensiune cu stand 973 x 623 x 216 mm" ],
+  "stock" : 108
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/55nano793ne/55nano793ne_1.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_2.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_3.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_4.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_5.jpg", "../img/products/tvs/lg/55nano793ne/55nano793ne_6.jpg" ],
+  "name" : "Televizor LG 55NANO793NE, 139 cm",
+  "price" : 2699,
+  "specs" : [ "Diagonala display 139 cm", "Tip TV Smart TV", "Claritate imagine 4K", "An aparitie 2020", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 113 W", "Dimensiune cu stand 1244 x 791 x 260 mm" ],
+  "stock" : 38
+}, {
+  "description" : "Smart, 4K Ultra HD, OLED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/oled55bx3lb/oled55bx3lb_1.jpg", "../img/products/tvs/lg/oled55bx3lb/oled55bx3lb_2.jpg", "../img/products/tvs/lg/oled55bx3lb/oled55bx3lb_3.jpg", "../img/products/tvs/lg/oled55bx3lb/oled55bx3lb_4.jpg", "../img/products/tvs/lg/oled55bx3lb/oled55bx3lb_5.jpg", "../img/products/tvs/lg/oled55bx3lb/oled55bx3lb_6.jpg" ],
+  "name" : "Televizor LG OLED55BX3LB, 139 cm",
+  "price" : 5399,
+  "specs" : [ "Diagonala display 139 cm", "Tip TV Smart TV", "Claritate imagine 4K", "An aparitie 2020", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 100 Hz", "Consum energie electrica 108 W", "Dimensiune cu stand 1228 x 744 x 246 mm" ],
+  "stock" : 9
+}, {
+  "description" : "Smart, HD, LED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/28tn515s/28tn515s_1.jpg", "../img/products/tvs/lg/28tn515s/28tn515s_2.jpg", "../img/products/tvs/lg/28tn515s/28tn515s_3.jpg", "../img/products/tvs/lg/28tn515s/28tn515s_4.jpg", "../img/products/tvs/lg/28tn515s/28tn515s_5.jpg", "../img/products/tvs/lg/28tn515s/28tn515s_6.jpg" ],
+  "name" : "Televizor / monitor LG, 28TN515S-PZ, 70 cm",
+  "price" : 899,
+  "specs" : [ "Diagonala display 70 cm", "Tip TV Smart TV", "Claritate imagine HD", "An aparitie -", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 1366 x 768", "Rata de refresh 50 Hz", "Consum energie electrica 24 W", "Dimensiune cu stand 187.5 x 448.5 x 649.5 mm" ],
+  "stock" : 20
+}, {
+  "description" : "Smart, 4K Ultra HD, OLED, Clasa A",
+  "id" : "Tv LG",
+  "image" : [ "../img/products/tvs/lg/oled65bx3lb/oled65bx3lb_1.jpg", "../img/products/tvs/lg/oled65bx3lb/oled65bx3lb_2.jpg", "../img/products/tvs/lg/oled65bx3lb/oled65bx3lb_3.jpg", "../img/products/tvs/lg/oled65bx3lb/oled65bx3lb_4.jpg", "../img/products/tvs/lg/oled65bx3lb/oled65bx3lb_5.jpg", "../img/products/tvs/lg/oled65bx3lb/oled65bx3lb_6.jpg" ],
+  "name" : "Televizor LG OLED65BX3LB, 164 cm",
+  "price" : 7799,
+  "specs" : [ "Diagonala display 164 cm", "Tip TV Smart TV", "Claritate imagine 4K", "An aparitie 2020", "Sistem de operare webOS", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 100 Hz", "Consum energie electrica 129 W", "Dimensiune cu stand 1449 x 869 x 246 mm" ],
+  "stock" : 10
+}, {
+  "description" : "Smart, HD, LED, Clasa A+",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/32phs6605/32phs6605_1.jpg", "../img/products/tvs/philips/32phs6605/32phs6605_2.jpg", "../img/products/tvs/philips/32phs6605/32phs6605_3.jpg", "../img/products/tvs/philips/32phs6605/32phs6605_4.jpg", "../img/products/tvs/philips/32phs6605/32phs6605_5.jpg", "../img/products/tvs/philips/32phs6605/32phs6605_6.jpg" ],
+  "name" : "Televizor Philips 32PHS6605/12, 80 cm",
+  "price" : 799,
+  "specs" : [ "Diagonala display 80 cm", "Tip TV Smart TV", "Claritate imagine HD", "Sistem de operare Saphi", "Tip procesor Dual Core", "Rezolutie 1366 x 768", "Rata de refresh 50 Hz", "Consum energie electrica 27 W", "Dimensiune cu stand 731.8 x 454 x 166.6 mm", "An aparitie 2020" ],
+  "stock" : 10
+}, {
+  "description" : "Smart, Full HD, LED, Clasa A+",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/32pfs6805/32pfs6805_1.jpg", "../img/products/tvs/philips/32pfs6805/32pfs6805_2.jpg", "../img/products/tvs/philips/32pfs6805/32pfs6805_3.jpg", "../img/products/tvs/philips/32pfs6805/32pfs6805_4.jpg", "../img/products/tvs/philips/32pfs6805/32pfs6805_5.jpg", "../img/products/tvs/philips/32pfs6805/32pfs6805_6.jpg" ],
+  "name" : "Televizor Philips 32PFS6805/12, 80 cm",
+  "price" : 999,
+  "specs" : [ "Diagonala display 80 cm", "Tip TV Smart TV", "Claritate imagine Full HD", "Sistem de operare Saphi", "Tip procesor Dual Core", "Rezolutie 1920 x 1080", "Rata de refresh 50 Hz", "Consum energie electrica 30 W", "Dimensiune cu stand 731.8 x 452.8 x 175.9 mm", "An aparitie 2020" ],
+  "stock" : 8
+}, {
+  "description" : "Smart Android, 4K Ultra HD, LED, Clasa A+",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/58pus8545/58pus8545_1.jpg", "../img/products/tvs/philips/58pus8545/58pus8545_2.jpg", "../img/products/tvs/philips/58pus8545/58pus8545_3.jpg", "../img/products/tvs/philips/58pus8545/58pus8545_4.jpg", "../img/products/tvs/philips/58pus8545/58pus8545_5.jpg", "../img/products/tvs/philips/58pus8545/58pus8545_6.jpg" ],
+  "name" : "Televizor Philips 58PUS8545/12, 146 cm",
+  "price" : 3099,
+  "specs" : [ "Diagonala display 146 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Android", "Tip procesor Dual Core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 20 W", "Dimensiune cu stand 1298.7 x 830.1 x 253.6 mm", "An aparitie -" ],
+  "stock" : 11
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A+",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/58pus7555/58pus7555_1.jpg", "../img/products/tvs/philips/58pus7555/58pus7555_2.jpg", "../img/products/tvs/philips/58pus7555/58pus7555_3.jpg", "../img/products/tvs/philips/58pus7555/58pus7555_4.jpg", "../img/products/tvs/philips/58pus7555/58pus7555_5.jpg", "../img/products/tvs/philips/58pus7555/58pus7555_6.jpg" ],
+  "name" : "Televizor Philips 58PUS7555/12, 146 cm",
+  "price" : 1699,
+  "specs" : [ "Diagonala display 146 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Saphi", "Tip procesor Dual Core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 81 W", "Dimensiune cu stand 1032.1 x 858.1 x 256.2 mm", "An aparitie 2020" ],
+  "stock" : 15
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/58pus7805/58pus7805_1.jpg", "../img/products/tvs/philips/58pus7805/58pus7805_2.jpg", "../img/products/tvs/philips/58pus7805/58pus7805_3.jpg", "../img/products/tvs/philips/58pus7805/58pus7805_4.jpg", "../img/products/tvs/philips/58pus7805/58pus7805_5.jpg", "../img/products/tvs/philips/58pus7805/58pus7805_6.jpg" ],
+  "name" : "Televizor Philips 58PUS7805/12, 146 cm",
+  "price" : 2299,
+  "specs" : [ "Diagonala display 146 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Saphi", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 96 W", "Dimensiune cu stand 1301.7 x 785.6 x 246 mm", "An aparitie 2020" ],
+  "stock" : 14
+}, {
+  "description" : "Full HD, LED, Clasa A",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/24pfs5505/24pfs5505_1.jpg", "../img/products/tvs/philips/24pfs5505/24pfs5505_2.jpg", "../img/products/tvs/philips/24pfs5505/24pfs5505_3.jpg", "../img/products/tvs/philips/24pfs5505/24pfs5505_4.jpg", "../img/products/tvs/philips/24pfs5505/24pfs5505_5.jpg", "../img/products/tvs/philips/24pfs5505/24pfs5505_6.jpg" ],
+  "name" : "Televizor Philips 24PFS5505/12, 60 cm",
+  "price" : 699,
+  "specs" : [ "Diagonala display 60 cm", "Tip TV Non Smart TV", "Claritate imagine Full HD", "Sistem de operare -", "Tip procesor -", "Rezolutie 1920 x 1080", "Rata de refresh 50 Hz", "Consum energie electrica 22 W", "Dimensiune cu stand 135 x 356.3 x 567.4 mm", "An aparitie 2020" ],
+  "stock" : 3
+}, {
+  "description" : "Smart Android, 4K Ultra HD, OLED, Clasa B",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/55oled855/55oled855_1.jpg", "../img/products/tvs/philips/55oled855/55oled855_2.jpg", "../img/products/tvs/philips/55oled855/55oled855_3.jpg", "../img/products/tvs/philips/55oled855/55oled855_4.jpg", "../img/products/tvs/philips/55oled855/55oled855_5.jpg", "../img/products/tvs/philips/55oled855/55oled855_6.jpg" ],
+  "name" : "Televizor Philips 55OLED855/12, 139 cm",
+  "price" : 5999,
+  "specs" : [ "Diagonala display 139 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Android", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 100 Hz", "Consum energie electrica 146 W", "Dimensiune cu stand 1227.8 x 772.2 x 236.4 mm", "An aparitie 2020" ],
+  "stock" : 6
+}, {
+  "description" : "HD, LED, Clasa A+",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/32phs5525/32phs5525_1.jpg", "../img/products/tvs/philips/32phs5525/32phs5525_2.jpg", "../img/products/tvs/philips/32phs5525/32phs5525_3.jpg", "../img/products/tvs/philips/32phs5525/32phs5525_4.jpg", "../img/products/tvs/philips/32phs5525/32phs5525_5.jpg", "../img/products/tvs/philips/32phs5525/32phs5525_6.jpg" ],
+  "name" : "Televizor Philips 32PHS5525/12, 80 cm",
+  "price" : 799,
+  "specs" : [ "Diagonala display 80 cm", "Tip TV Non Smart TV", "Claritate imagine HD", "Sistem de operare -", "Tip procesor -", "Rezolutie 1366 x 768", "Rata de refresh 50 Hz", "Consum energie electrica 24 W", "Dimensiune cu stand 732.6 x 453.9 x 166.5 mm", "An aparitie 2020" ],
+  "stock" : 0
+}, {
+  "description" : "Smart Android, 4K Ultra HD, OLED, Clasa B",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/48oled935/48oled935_1.jpg", "../img/products/tvs/philips/48oled935/48oled935_2.jpg", "../img/products/tvs/philips/48oled935/48oled935_3.jpg", "../img/products/tvs/philips/48oled935/48oled935_4.jpg", "../img/products/tvs/philips/48oled935/48oled935_5.jpg", "../img/products/tvs/philips/48oled935/48oled935_6.jpg" ],
+  "name" : "Televizor Philips 48OLED935/12, 121 cm",
+  "price" : 6999,
+  "specs" : [ "Diagonala display 121 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Android", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 100 Hz", "Consum energie electrica 123 W", "Dimensiune cu stand 71068.5 x 716.5 x 260.7 mm", "An aparitie 2020" ],
+  "stock" : 7
+}, {
+  "description" : "4K Ultra HD, Clasa B",
+  "id" : "Tv Philips",
+  "image" : [ "../img/products/tvs/philips/55oled934/55oled934_1.jpg", "../img/products/tvs/philips/55oled934/55oled934_2.jpg", "../img/products/tvs/philips/55oled934/55oled934_3.jpg", "../img/products/tvs/philips/55oled934/55oled934_4.jpg", "../img/products/tvs/philips/55oled934/55oled934_5.jpg", "../img/products/tvs/philips/55oled934/55oled934_6.jpg" ],
+  "name" : "Televizor OLED Smart Android Philips, 139 cm, 55OLED934/12",
+  "price" : 7999,
+  "specs" : [ "Diagonala display 139 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Android", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 100 Hz", "Consum energie electrica -", "Dimensiune cu stand 1227.8 x 770.3 x 252 mm", "An aparitie -" ],
+  "stock" : 5
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/43tu7172/43TU7172_1.jpg", "../img/products/tvs/samsung/43tu7172/43TU7172_2.jpg", "../img/products/tvs/samsung/43tu7172/43TU7172_3.jpg", "../img/products/tvs/samsung/43tu7172/43TU7172_4.jpg", "../img/products/tvs/samsung/43tu7172/43TU7172_5.jpg", "../img/products/tvs/samsung/43tu7172/43TU7172_6.jpg" ],
+  "name" : "Televizor Samsung 43TU7172, 108 cm",
+  "price" : 1599,
+  "specs" : [ "Diagonala display 108 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 69 W", "Dimensiune cu stand 963 x 627.3 x 192.5 mm", "An aparitie 2020" ],
+  "stock" : 14
+}, {
+  "description" : "Smart, HD, LED, Clasa A+",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/32t4302/32t4302_1.jpg", "../img/products/tvs/samsung/32t4302/32t4302_2.jpg", "../img/products/tvs/samsung/32t4302/32t4302_3.jpg", "../img/products/tvs/samsung/32t4302/32t4302_4.jpg", "../img/products/tvs/samsung/32t4302/32t4302_5.jpg", "../img/products/tvs/samsung/32t4302/32t4302_6.jpg" ],
+  "name" : "Televizor Samsung 32T4302, 80 cm",
+  "price" : 999,
+  "specs" : [ "Diagonala display 80 cm", "Tip TV Smart TV", "Claritate imagine HD", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 1366 x 768", "Rata de refresh -", "Consum energie electrica 60 W", "Dimensiune cu stand 737.4 x 465.4 x 150.5 mm", "An aparitie 2020" ],
+  "stock" : 2
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A+",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/55tu7172/55tu7172_1.jpg", "../img/products/tvs/samsung/55tu7172/55tu7172_2.jpg", "../img/products/tvs/samsung/55tu7172/55tu7172_3.jpg", "../img/products/tvs/samsung/55tu7172/55tu7172_4.jpg", "../img/products/tvs/samsung/55tu7172/55tu7172_5.jpg", "../img/products/tvs/samsung/55tu7172/55tu7172_6.jpg" ],
+  "name" : "Televizor Samsung 55TU7172, 138 cm",
+  "price" : 2099,
+  "specs" : [ "Diagonala display 138 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 84 W", "Dimensiune cu stand 1230.5 x 782.8 x 250.2 mm", "An aparitie 2020" ],
+  "stock" : 5
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/50tu7172/50tu7172_1.jpg", "../img/products/tvs/samsung/50tu7172/50tu7172_2.jpg", "../img/products/tvs/samsung/50tu7172/50tu7172_3.jpg", "../img/products/tvs/samsung/50tu7172/50tu7172_4.jpg", "../img/products/tvs/samsung/50tu7172/50tu7172_5.jpg", "../img/products/tvs/samsung/50tu7172/50tu7172_6.jpg" ],
+  "name" : "Televizor Samsung 50TU7172, 125 cm",
+  "price" : 1799,
+  "specs" : [ "Diagonala display 125 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 91 W", "Dimensiune cu stand 1115.8 x 718.6 x 250.2 mm", "An aparitie 2020" ],
+  "stock" : 7
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/43tu8072/43TU8072_1.jpg", "../img/products/tvs/samsung/43tu8072/43TU8072_2.jpg", "../img/products/tvs/samsung/43tu8072/43TU8072_3.jpg", "../img/products/tvs/samsung/43tu8072/43TU8072_4.jpg", "../img/products/tvs/samsung/43tu8072/43TU8072_5.jpg", "../img/products/tvs/samsung/43tu8072/43TU8072_6.jpg" ],
+  "name" : "Televizor Samsung 43TU8072, 108 cm",
+  "price" : 1699,
+  "specs" : [ "Diagonala display 108 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 125 W", "Dimensiune cu stand 963.9 x 627.8 x 192.5 nm", "An aparitie 2020" ],
+  "stock" : 4
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/55tu8372/55tu8372_1.jpg", "../img/products/tvs/samsung/55tu8372/55tu8372_2.jpg", "../img/products/tvs/samsung/55tu8372/55tu8372_3.jpg", "../img/products/tvs/samsung/55tu8372/55tu8372_4.jpg", "../img/products/tvs/samsung/55tu8372/55tu8372_5.jpg", "../img/products/tvs/samsung/55tu8372/55tu8372_6.jpg" ],
+  "name" : "Televizor Samsung curbat 55TU8372, 138 cm",
+  "price" : 2199,
+  "specs" : [ "Diagonala display 138 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 140 W", "Dimensiune cu stand 1236 x 791.1 x 263.9 mm", "An aparitie 2020" ],
+  "stock" : 6
+}, {
+  "description" : "Smart, 4K Ultra HD, QLED, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/43q60ta/43q60ta_1.jpg", "../img/products/tvs/samsung/43q60ta/43q60ta_2.jpg", "../img/products/tvs/samsung/43q60ta/43q60ta_3.jpg", "../img/products/tvs/samsung/43q60ta/43q60ta_4.jpg", "../img/products/tvs/samsung/43q60ta/43q60ta_5.jpg", "../img/products/tvs/samsung/43q60ta/43q60ta_6.jpg" ],
+  "name" : "Televizor Samsung 43Q60TA, 108 cm",
+  "price" : 2149,
+  "specs" : [ "Diagonala display 108 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 69 W", "Dimensiune cu stand 963.5 x 629.4 x 195.2 mm", "An aparitie 2020" ],
+  "stock" : 8
+}, {
+  "description" : "4K Ultra HD, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/49ru7302/49ru7302_1.jpg", "../img/products/tvs/samsung/49ru7302/49ru7302_2.jpg", "../img/products/tvs/samsung/49ru7302/49ru7302_3.jpg", "../img/products/tvs/samsung/49ru7302/49ru7302_4.jpg", "../img/products/tvs/samsung/49ru7302/49ru7302_5.jpg", "../img/products/tvs/samsung/49ru7302/49ru7302_6.jpg" ],
+  "name" : "Televizor LED curbat Smart Samsung, 123 cm, 49RU7302",
+  "price" : 2199,
+  "specs" : [ "Diagonala display 123 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 91 W", "Dimensiune cu stand 1101.5 x 717.4 x 261.3 mm", "An aparitie 2019" ],
+  "stock" : 9
+}, {
+  "description" : "Smart, 4K Ultra HD, QLED, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/50q60ta/50q60ta_1.jpg", "../img/products/tvs/samsung/50q60ta/50q60ta_2.jpg", "../img/products/tvs/samsung/50q60ta/50q60ta_3.jpg", "../img/products/tvs/samsung/50q60ta/50q60ta_4.jpg", "../img/products/tvs/samsung/50q60ta/50q60ta_5.jpg", "../img/products/tvs/samsung/50q60ta/50q60ta_6.jpg" ],
+  "name" : "Televizor Samsung 50Q60TA, 125cm",
+  "price" : 2399,
+  "specs" : [ "Diagonala display 125 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 85 W", "Dimensiune cu stand 1116.4 x 720.5 x 243.3 mm", "An aparitie 2020" ],
+  "stock" : 3
+}, {
+  "description" : "Smart, 4K Ultra HD, LED, Clasa A",
+  "id" : "Tv Samsung",
+  "image" : [ "../img/products/tvs/samsung/50tu8072/50tu8072_1.jpg", "../img/products/tvs/samsung/50tu8072/50tu8072_2.jpg", "../img/products/tvs/samsung/50tu8072/50tu8072_3.jpg", "../img/products/tvs/samsung/50tu8072/50tu8072_4.jpg", "../img/products/tvs/samsung/50tu8072/50tu8072_5.jpg", "../img/products/tvs/samsung/50tu8072/50tu8072_6.jpg" ],
+  "name" : "Televizor Samsung 50TU8072, 125 cm",
+  "price" : 1999,
+  "specs" : [ "Diagonala display 125 cm", "Tip TV Smart TV", "Claritate imagine 4K", "Sistem de operare Tizen", "Tip procesor Quad core", "Rezolutie 3840 x 2160", "Rata de refresh 50 Hz", "Consum energie electrica 140 W", "Dimensiune cu stand 1116.8 x 719.1 x 250.2 nm", "An aparitie 2020" ],
+  "stock" : 0
+} ]
