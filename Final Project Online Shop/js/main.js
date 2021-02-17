@@ -1,3 +1,4 @@
+// Variables
 const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
 const loading = document.querySelector(".loading");
 const filterPhones = document.querySelector("#parent1");
@@ -11,6 +12,8 @@ let posts = 20;
 let idx = 0;
 
 
+
+// AJAX function
 async function ajax(url, method, body) {
     const res = await fetch(url + ".json", {
         method: method,
@@ -19,6 +22,9 @@ async function ajax(url, method, body) {
     });
     return await res.json();
 }
+
+
+
 
 // get list from database then shuffle the items then build the html
 async function getList() {
@@ -34,17 +40,6 @@ async function getList() {
 
 
 
-// Shuffle list to rearrange items differently on load/refresh 
-function shuffle(array) {
-    var tmp, current, top = array.length;
-    if(top) while(--top) {
-      current = Math.floor(Math.random() * (top + 1));
-      tmp = array[current];
-      array[current] = array[top];
-      array[top] = tmp;
-    }
-    return array;
-}
 
 // build the html on scroll*
 function buildMain() {
@@ -90,23 +85,12 @@ function buildMain() {
     loading.classList.remove("show");
 }
 
-// Add event listener when scroll to bottom
-window.addEventListener("scroll", () => {
-    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-    if (clientHeight + scrollTop >= scrollHeight) {
-        showLoading();
-    }
-});
-
-// Add loading animation when scroll to bottom and load more items
-function showLoading() {
-    loading.classList.add("show");
-    setTimeout(buildMain, 1000);
-}
 
 
 
-// Search input
+
+
+// Search input function
 function searchInput() {
     posts = list.length;
     buildMain();
@@ -124,6 +108,9 @@ function searchInput() {
 }
 
 
+
+
+// Show Phones/Laptops/TVs items only and unhover the parent onclick child
 filterPhones.addEventListener("click", (event) => {
     posts = list.length;
     buildMain();
@@ -137,9 +124,13 @@ filterPhones.addEventListener("click", (event) => {
             }
             item.classList.add("hidden");
         } else {
+            event.target.parentElement.classList.add("hidden");
             item.classList.remove("hidden");
         }
     }
+    setTimeout(() => {
+        event.target.parentElement.classList.remove("hidden");
+    }, 100);
 });
 filterLaptops.addEventListener("click", (event) => {
     posts = list.length;
@@ -154,27 +145,36 @@ filterLaptops.addEventListener("click", (event) => {
             }
             item.classList.add("hidden");
         } else {
+            event.target.parentElement.classList.add("hidden");
             item.classList.remove("hidden");
         }
     }
+    setTimeout(() => {
+        event.target.parentElement.classList.remove("hidden");
+    }, 100);
 });
 filterTvs.addEventListener("click", (event) => {
-    buildMain();
     posts = list.length;
+    buildMain();
     let items = document.querySelectorAll(".item");
     for (let i = 0; i < list.length; i++) {
         let item = items[i];
         let id = item.querySelector(".item-id").innerText;
         if (event.target.innerText !== id) {
-            if (event.target.innerText === "TV's") {
+            if (event.target.innerText === "TVs") {
                 return;
             }
             item.classList.add("hidden");
         } else {
+            event.target.parentElement.classList.add("hidden");
             item.classList.remove("hidden");
         }
     }
+    setTimeout(() => {
+        event.target.parentElement.classList.remove("hidden");
+    }, 200);
 });
+
 
 
 
@@ -207,7 +207,7 @@ function dynamicSort(property) {
 
 
 
-// Filter items between price range
+// Shows only items between min and max price
 function filterByPrice() {
     posts = list.length;
     buildMain();
@@ -229,22 +229,28 @@ function filterByPrice() {
 
 
 
-// Shows menu
+// Opens menu on clicking hamburger menu
 function showMenu() {
     modal.style.display = "block";
     menu.style.display = "none";
 }
+  
 
-// Remove created inputs and hides the modal when clicking it
+
+
+// Hide the modal and closes the menu when clicking on modal
 modal.addEventListener('click', (event) => {
     if (event.target.classList.contains("modal")) {
-      modal.style.display = "none";
-      menu.style.display = "block";
+    modal.style.display = "none";
+    menu.style.display = "block";
     }
 });
+  
+  
 
 
 
+// Displays the quantity from localStorage cart to Cart link and hamburger menu
 function cartQuantity() {
     if (TScart.length === 0) {
         document.querySelector(".cart-quantity").style.display = "none";
@@ -258,4 +264,37 @@ function cartQuantity() {
         document.querySelector(".cart-quantity-mobile-menu").innerText = TScart.length;
         document.querySelector(".cart-quantity-mobile-menu").style.display = "inline-block";
     }
+}
+
+
+
+
+// Shuffle list function to rearrange items differently on load/refresh 
+function shuffle(array) {
+    var tmp, current, top = array.length;
+    if(top) while(--top) {
+      current = Math.floor(Math.random() * (top + 1));
+      tmp = array[current];
+      array[current] = array[top];
+      array[top] = tmp;
+    }
+    return array;
+}
+
+
+
+// Add event listener when scroll to bottom
+window.addEventListener("scroll", () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    if (clientHeight + scrollTop >= scrollHeight) {
+        showLoading();
+    }
+});
+
+
+
+// Add loading animation when scroll to bottom and load more items
+function showLoading() {
+    loading.classList.add("show");
+    setTimeout(buildMain, 1000);
 }

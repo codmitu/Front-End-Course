@@ -14,14 +14,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     
 
-
     <title>Ichim Gelu Online Shop</title>
 </head>
 
 <body onload="getList();">
     
+    <!-- Loading animation -->
     <div class="lds-default-container"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
 
+
+
+
+    <!-- Navigation bar: logo, search, links and hamburger menu icon -->
     <section class="nav-bar-container">
         <nav class="nav-bar">
             <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
@@ -57,15 +61,17 @@
     
     
 
+
+    <!-- Filter by type section -->
     <section class="filter-items-container">
         <ul class="filter-items">
             <a href="">
                 <li class="show-all">Show All</li>
             </a>
             <li class="dropdown" id="parent1">
-                <div class="drop-btn">Phones</div>
-                <ul class="dropdown-content">
-                    <li>Phone Samsung</li>
+                <div class="drop-btn" id="blur-phones">Phones</div>
+                <ul class="dropdown-content" id="blur-phones2">
+                    <li id="li">Phone Samsung</li>
                     <li>Phone iPhone</li>
                     <li>Phone Huawei</li>
                 </ul>
@@ -79,8 +85,8 @@
                 </ul>
             </li>
             <li class="dropdown" id="parent3">
-                <div class="drop-btn">TV's</div>
-                <ul class="dropdown-content">
+                <div class="drop-btn">TVs</div>
+                <ul class="dropdown-content c3">
                     <li>Tv Samsung</li>
                     <li>Tv LG</li>
                     <li>Tv Philips</li>
@@ -90,6 +96,9 @@
     </section>
     
 
+
+
+    <!-- Sort by price section -->
     <div class="sort-items-wrapper">
         <section class="sort-items">
             <div class="sort-price">
@@ -111,6 +120,7 @@
 
 
 
+    <!-- ADs image slider -->
     <div class="autoplay">
         <div><img src="../img/cover/img1.png" alt=""></div>
         <div><img src="../img/cover/img2.png" alt=""></div>
@@ -126,44 +136,13 @@
 
 
 
-    
+    <!-- Items container -->
     <main id="items-container">
     </main>
 
 
-
     
-    <!-- Responsive menu -->
-    <div class="modal">
-        <ul class="responsive-menu">
-            <a href="admin.html">
-                <li>
-                    <i class="far fa-arrow-alt-circle-right arrow"></i>
-                    Admin
-                    <i class="fas fa-lock"></i>
-                </li>
-            </a>
-            <a href="cart.html">
-                <li>
-                    <i class="far fa-arrow-alt-circle-right arrow"></i>
-                    Cart
-                    <i class="fas fa-shopping-cart"></i>
-                    <small class="cart-quantity-mobile"></small>
-                </li>
-            </a>
-            <a href="favorites.html">
-                <li>
-                    <i class="far fa-arrow-alt-circle-right arrow"></i>
-                    Favorites
-                    <i class="fas fa-heart"></i>
-                </li>
-            </a>
-        </ul>
-    </div>
-
-
-    
-
+    <!-- Footer links with loading items on scroll and button 'back to top' -->
     <footer>
         <div class="loading">
             <div class="dot"></div>
@@ -220,12 +199,51 @@
         </div>
     </footer>
 
+
+
+
+     
+    <!-- Responsive menu -->
+    <div class="modal">
+        <ul class="responsive-menu">
+            <a href="admin.html">
+                <li>
+                    <i class="far fa-arrow-alt-circle-right arrow"></i>
+                    Admin
+                    <i class="fas fa-lock"></i>
+                </li>
+            </a>
+            <a href="cart.html">
+                <li>
+                    <i class="far fa-arrow-alt-circle-right arrow"></i>
+                    Cart
+                    <i class="fas fa-shopping-cart"></i>
+                    <small class="cart-quantity-mobile"></small>
+                </li>
+            </a>
+            <a href="favorites.html">
+                <li>
+                    <i class="far fa-arrow-alt-circle-right arrow"></i>
+                    Favorites
+                    <i class="fas fa-heart"></i>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+
+
+
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../js/main.js"></script>
     <script src="../js/loader.js"></script>
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+
+    <!-- Settings for the AD image slider -->
     <script>
         $('.autoplay').slick({
             slidesToShow: 2,
@@ -239,6 +257,7 @@
             // adaptiveHeight: false
         });
     </script>
+
     
 </body>
 </html>
