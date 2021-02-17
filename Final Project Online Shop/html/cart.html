@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/loader.css">
     <!-- Icons -->
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
     <title>TS Cart</title>
@@ -29,21 +28,21 @@
           
             <div class="menu-links">
                 <a class="menu-link-favorites" href="favorites.html" >Favorites
-                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                    <i class="fas fa-heart"></i>
                 </a>
                 <a class="menu-link-admin" href="main.html">
                     Home
-                    <span class="iconify" data-icon="carbon:home"></span>
+                    <i class="fas fa-home"></i>
                 </a>
             </div>
-
-            <span class="iconify menu-icon" data-icon="ion:menu-sharp" onclick="showMenu();"></span>
+            
+            <i class="fas fa-bars" onclick="showMenu();"></i>
         </nav>
     </section>
 
     <header>
         <h1>Cart
-            <span class="iconify" data-icon="emojione-monotone:shopping-cart"></span>
+            <i class="fas fa-shopping-cart"></i>
         </h1>
     </header>
 
@@ -59,7 +58,7 @@
             <p>V.A.T 19%</p>
             <p>Delivery: 15 RON</p>
             <p>Total price: <span class="total-price" on></span> RON</p>
-            <button type="button" onclick="buy();">Buy<span class="iconify" data-icon="emojione:white-heavy-check-mark" ></span></button>
+            <button type="button" onclick="buy();">Buy<i class="fas fa-check-circle"></i></button>
         </aside>
     </main>
 
@@ -131,14 +130,14 @@
     <div class="modal">
         <ul class="responsive-menu">
             <a href="main.html"><li>
-                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
                 Home
-                <span class="iconify" data-icon="bx:bx-lock-alt"></span></li>
+                <i class="fas fa-home"></i></li>
             </a>
             <a href="favorites.html"><li>
-                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
                 Favorites
-                <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span></li>
+                <i class="fas fa-heart"></i></li>
             </a>
         </ul>
     </div>

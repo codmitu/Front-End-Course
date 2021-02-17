@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/loader.css">
     <!-- Icons -->
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
 
     <title>Details</title>
@@ -26,20 +26,23 @@
             <div class="menu-links">
                 <a class="menu-link-favorites" href="favorites.html" >
                     Favorites
-                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                    <i class="fas fa-heart"></i>
                 </a>
                 <a class="menu-link-shopping-basket" href="cart.html">
                     Cart
-                    <span class="iconify" data-icon="bytesize:cart"></span>
+                    <i class="fas fa-shopping-cart"></i>
                     <small class="cart-quantity"></small>
                 </a>
                 <a class="menu-link-admin" href="main.html">
                     Home
-                    <span class="iconify" data-icon="carbon:home"></span>
+                    <i class="fas fa-home"></i>
                 </a>
             </div>
 
-            <span class="iconify menu-icon" data-icon="ion:menu-sharp" onclick="showMenu();"></span>
+            <div class="menu-icon-wrapper">
+                <i class="fas fa-bars" onclick="showMenu();"></i>
+                <small class="cart-quantity-mobile-menu"></small>
+            </div>
         </nav>
     </section>
 
@@ -74,14 +77,14 @@
                 <p class="total-price">Total price: <span class="product-total-price"></span>&nbsp;RON</p>
                 <div class="buttons">
                     <button onclick="addToCart();">
-                        <span class="iconify" data-icon="bytesize:cart"></span>
+                        <i class="fas fa-shopping-cart"></i>
                         ADD TO CART
                     </button>
                     <p class="message">Added to the Cart</p>
                     <p class="error-message">We're sorry, this item is out of stock.</p>
                     <p class="cart-duplicate-item">Already added, change the quantity on the Cart page.</p>
                     <button>
-                        <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                        <i class="far fa-heart"></i></li>
                         ADD TO FAVORITES
                     </button>
                 </div>
@@ -105,20 +108,20 @@
      <div class="modal">
         <ul class="responsive-menu">
             <a href="main.html"><li>
-                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
                 Home
-                <span class="iconify" data-icon="carbon:home"></span></li>
+                <i class="fas fa-home"></i></li>
             </a>
             <a href="cart.html"><li>
-                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
                 Cart
-                <span class="iconify" data-icon="bytesize:cart"></span>
+                <i class="fas fa-shopping-cart"></i>
                 <small class="cart-quantity-mobile"></small></li>
             </a>
             <a href="favorites.html"><li>
-                <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
                 Favorites
-                <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span></li>
+                <i class="fas fa-heart"></i></li>
             </a>
         </ul>
     </div>

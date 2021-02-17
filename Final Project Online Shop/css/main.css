@@ -75,7 +75,7 @@ footer {
                 }
             .nav-bar label .search-icon {
                 position: absolute;
-                top: 0;
+                top: 15px;
                 right: 10px;
                 height: 100%;
                 font-size: 1.3rem;
@@ -167,7 +167,7 @@ footer {
                     text-align: left;
                     color: white;
                     display: none;
-                    background-image: linear-gradient(to left, var(--main), var(--second));
+                    background-color: grey;
                     font-size: 0.8rem;
                 }
                     .dropdown-content li:hover {
@@ -188,7 +188,7 @@ footer {
                             animation-delay: 0ms;
                             animation-timing-function: ease-in-out;
                             animation-fill-mode: forwards;
-                            border-top: 1px solid grey;
+                            border-top: 1px solid rgb(189, 188, 188);
                         }
                         .dropdown:hover .dropdown-content li:nth-child(2) {
                             animation-name: menu;
@@ -196,8 +196,7 @@ footer {
                             animation-delay: 150ms;
                             animation-timing-function: ease-in-out;
                             animation-fill-mode: forwards;
-                            border-top: 1px solid grey;
-                            border-bottom: 1px solid grey;
+                            border-top: 1px solid rgb(189, 188, 188);
                         }
                         .dropdown:hover .dropdown-content li:nth-child(3) {
                             animation-name: menu;
@@ -205,6 +204,7 @@ footer {
                             animation-delay: 300ms;
                             animation-timing-function: ease-in-out;
                             animation-fill-mode: forwards;
+                            border-top: 1px solid rgb(189, 188, 188);
                         }
                             @keyframes menu {
                                 0% {
@@ -257,16 +257,25 @@ footer {
             cursor: pointer;
             margin-left: 20px;
             padding: 0 5px;
+            padding: 2px;
+            border-radius: 5px;
         }
+            .sort-price > span:hover i,
             .sort-price > span:hover {
-                background-color: var(--main);
+                background-color: var(--second);
                 color:white;
-                box-shadow: 2px 2px 2px rgb(213, 213, 213);
+                
+                /* box-shadow: 2px 2px 2px rgb(213, 213, 213); */
             }
-        .sort-price .iconify {
+        .sort-price i {
             font-size: 1.3rem;
-            width: 30px;
+            /* width: 30px; */
+            color: grey;
+            margin-left: 5px;
         }
+            .sort-price i:hover {
+                color: white;
+            }
     .sort-price-range {
         display: flex;
         align-items: center;
@@ -365,6 +374,9 @@ main {
             font-weight: 500;
             color: red;
         }
+        .fas.hidden {
+            display: none;
+        }
         
 
 
@@ -446,23 +458,6 @@ main {
 
 
 
-.menu-icon {
-    cursor: pointer;
-    display: none;
-    width: 40px;
-    height: 40px;
-    padding: 3px;
-    border-radius: 5px;
-}
-    .menu-icon:hover {
-        background-color: rgb(235, 235, 235);
-    }
-    .menu-icon:active {
-        background-color: rgb(175, 175, 175);
-    }
-
-
-
 
     .responsive-menu {
         position: absolute;
@@ -495,6 +490,7 @@ main {
                 border-radius: 50%;
                 color: white;
                 background-color: red;
+                pointer-events: none;
             }
             .responsive-menu li:hover {
                 background-color: var(--btt);
@@ -517,6 +513,40 @@ main {
 
 
 
+
+
+
+                .menu-icon-wrapper {
+                    display: none !important;
+                    position: relative;
+                }
+                    i.fa-bars {
+                        cursor: pointer;
+                        font-size: 2rem;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                        i.fa-bars:hover {
+                            background-color: rgb(235, 235, 235);
+                        }
+                        i.fa-bars:active {
+                            background-color: rgb(175, 175, 175);
+                        }
+                    .cart-quantity-mobile-menu {
+                        display: none;
+                        width: 20px;
+                        text-align: center;
+                        height: 20px;
+                        border-radius: 50%;
+                        color: white;
+                        background-color: red;
+                        pointer-events: none;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
+
         
 
 
@@ -532,18 +562,19 @@ main {
 
 
 @media only screen and (max-width: 800px) {
-    .menu-icon {
-        display: block;
+    .menu-icon-wrapper {
+        display: block !important;
     }
     .nav-bar .menu-links {
         display: none;
     }
+    .drop-btn,
+    .show-all {
+        padding: 10px;
+    }
     .dropdown,
     .show-all {
         color: white;
-    }
-    #parent3 {
-        /* margin-right: 50px; */
     }
     .dropdown {
         max-width: 100px;
@@ -557,9 +588,13 @@ main {
     .sort-price {
         background-color: rgb(230, 230, 230);
     }
+    .sort-price span {
+        padding: 10px;
+    }
     .sort-price-range {
         background-color: lightgrey;
         border-left: none;
+        padding: 5px;
     }
     .autoplay {
         display: none !important;

@@ -1,6 +1,6 @@
 let quantity = document.querySelectorAll(".quantity");
 const modal = document.querySelector(".modal");
-const menu = document.querySelector(".menu-icon");
+const menu = document.querySelector(".fa-bars");
 let TScart = [];
 const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
 let list = []; 
@@ -140,7 +140,7 @@ function showMenu() {
 
 modal.addEventListener('click', (event) => {
       if (event.target.classList.contains("modal")) {
-        modal.style.display = "none";
-        menu.style.display = "block";
+            modal.style.display = "none";
+            menu.style.display = "none";
       }
 });

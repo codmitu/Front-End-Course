@@ -215,8 +215,9 @@ main {
             outline: none;
             border-radius: 10px;
         }
-            aside button .iconify {
+            aside button .fa-check-circle {
                 margin-left: 10px;
+                color: rgb(0, 201, 0);
             }
             aside button:hover {
                 background-color: var(--main);
@@ -290,18 +291,17 @@ main {
 
 
 
-.menu-icon {
+i.fa-bars {
     cursor: pointer;
     display: none;
-    width: 40px;
-    height: 40px;
+    font-size: 2rem;
     padding: 3px;
     border-radius: 5px;
 }
-    .menu-icon:hover {
+    i.fa-bars:hover {
         background-color: rgb(235, 235, 235);
     }
-    .menu-icon:active {
+    i.fa-bars:active {
         background-color: rgb(175, 175, 175);
     }
 
@@ -407,11 +407,9 @@ main {
 }
 
 
-
-
 @media only screen and (max-width: 800px) {
-    .menu-icon {
-        display: block;
+    i.fa-bars {
+        display: block !important;
     }
     header h1 {
         font-size: 3rem;

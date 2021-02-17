@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/slick.css" />
     <link rel="stylesheet" href="../css/loader.css" />
     <!-- Icons -->
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     
 
 
@@ -28,23 +28,30 @@
 
             <label for="search">
                 <input type="search" class="search-input" onkeyup="searchInput();" oninput="searchInput();">
-                <span class="iconify search-icon" data-icon="wpf:search"></span>
+                <i class="fas fa-search search-icon"></i>
             </label>
 
             <div class="menu-links">
-                <a class="menu-link-favorites" href="favorites.html">Favorites
-                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                <a class="menu-link-favorites" href="favorites.html">
+                    Favorites
+                    <i class="fas fa-heart"></i>
                 </a>
-                <a class="menu-link-shopping-basket" href="cart.html">Cart
-                    <span class="iconify" data-icon="bytesize:cart"></span>
+                <a class="menu-link-shopping-basket" href="cart.html">
+                    Cart
+                    <i class="fas fa-shopping-cart"></i>
                     <small class="cart-quantity"></small>
                 </a>
-                <a class="menu-link-admin" href="admin.html">Admin
-                    <span class="iconify" data-icon="bx:bx-lock-alt"></span>
+                <a class="menu-link-admin" href="admin.html">
+                    Admin
+                    <i class="fas fa-lock"></i>
                 </a>
             </div>
 
-            <span class="iconify menu-icon" data-icon="ion:menu-sharp" onclick="showMenu();"></span>
+            <div class="menu-icon-wrapper">
+                <i class="fas fa-bars" onclick="showMenu();"></i>
+                <small class="cart-quantity-mobile-menu"></small>
+            </div>
+            
         </nav>
     </section>
     
@@ -88,10 +95,10 @@
             <div class="sort-price">
                 <p>Sort by price</p>
                 <span onclick="sortAZ();">Asc
-                    <span class="iconify" data-icon="gg:sort-za" ></span>
+                    <i class="fas fa-sort-amount-down-alt"></i>
                 </span>
                 <span onclick="sortZA();">Desc
-                    <span class="iconify" data-icon="gg:sort-az"></span>
+                    <i class="fas fa-sort-amount-down"></i>
                 </span>
             </div>
             <div class="sort-price-range">
@@ -131,24 +138,24 @@
         <ul class="responsive-menu">
             <a href="admin.html">
                 <li>
-                    <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                    <i class="far fa-arrow-alt-circle-right arrow"></i>
                     Admin
-                    <span class="iconify" data-icon="bx:bx-lock-alt"></span>
+                    <i class="fas fa-lock"></i>
                 </li>
             </a>
             <a href="cart.html">
                 <li>
-                    <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                    <i class="far fa-arrow-alt-circle-right arrow"></i>
                     Cart
-                    <span class="iconify" data-icon="bytesize:cart"></span>
+                    <i class="fas fa-shopping-cart"></i>
                     <small class="cart-quantity-mobile"></small>
                 </li>
             </a>
             <a href="favorites.html">
                 <li>
-                    <span class="iconify arrow" data-icon="bx:bx-right-arrow-circle"></span>
+                    <i class="far fa-arrow-alt-circle-right arrow"></i>
                     Favorites
-                    <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
+                    <i class="fas fa-heart"></i>
                 </li>
             </a>
         </ul>
@@ -166,7 +173,7 @@
             <div class="dot"></div>
         </div>
         <a href=""><div class="back-to-top">Back to top
-            <span class="iconify" data-icon="cil:arrow-top"></span>
+            <i class="fas fa-long-arrow-alt-up"></i>
         </div></a>
         <div class="footer-links-wrapper">
             <div>

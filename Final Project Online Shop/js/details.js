@@ -1,5 +1,5 @@
 const modal = document.querySelector(".modal");
-const menu = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menu-icon-wrapper");
 const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
 let list = [];
 let id = decodeURI(location.search.substr(7));
@@ -154,6 +154,16 @@ function addToCart() {
 
 
 
+function removeMessages() {
+    document.querySelector(".message").classList.remove("visible");
+    document.querySelector(".cart-duplicate-item").classList.remove("visible");
+    document.querySelector(".error-message").classList.remove("visible");
+}
+
+
+
+
+
 // Shows menu on menu click
 function showMenu() {
     modal.style.display = "block";
@@ -168,21 +178,18 @@ modal.addEventListener('click', (event) => {
     }
 });
 
-function removeMessages() {
-    document.querySelector(".message").classList.remove("visible");
-    document.querySelector(".cart-duplicate-item").classList.remove("visible");
-    document.querySelector(".error-message").classList.remove("visible");
-}
-
 
 function cartQuantity() {
     if (TScart.length === 0) {
         document.querySelector(".cart-quantity").style.display = "none";
         document.querySelector(".cart-quantity-mobile").style.display = "none";
+        document.querySelector(".cart-quantity-mobile-menu").style.display = "none";
     } else {
         document.querySelector(".cart-quantity").style.display = "inline-block";
         document.querySelector(".cart-quantity").innerText = TScart.length;
         document.querySelector(".cart-quantity-mobile").style.display = "inline-block";
         document.querySelector(".cart-quantity-mobile").innerText = TScart.length;
+        document.querySelector(".cart-quantity-mobile-menu").innerText = TScart.length;
+        document.querySelector(".cart-quantity-mobile-menu").style.display = "inline-block";
     }
 }

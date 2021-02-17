@@ -403,24 +403,6 @@ h3 {
 
 
 
-.menu-icon {
-    cursor: pointer;
-    display: none;
-    width: 40px;
-    height: 40px;
-    padding: 3px;
-    border-radius: 5px;
-}
-    .menu-icon:hover {
-        background-color: rgb(235, 235, 235);
-    }
-    .menu-icon:active {
-        background-color: rgb(175, 175, 175);
-    }
-
-
-
-
     .responsive-menu {
         position: absolute;
         top: 0;
@@ -470,6 +452,40 @@ h3 {
                 .responsive-menu a:hover {
                     color: var(--text);
                 }
+
+            
+
+
+                .menu-icon-wrapper {
+                    display: none !important;
+                    position: relative;
+                }
+                    i.fa-bars {
+                        cursor: pointer;
+                        font-size: 2rem;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                        i.fa-bars:hover {
+                            background-color: rgb(235, 235, 235);
+                        }
+                        i.fa-bars:active {
+                            background-color: rgb(175, 175, 175);
+                        }
+                    .cart-quantity-mobile-menu {
+                        display: none;
+                        width: 20px;
+                        text-align: center;
+                        height: 20px;
+                        border-radius: 50%;
+                        color: white;
+                        background-color: red;
+                        pointer-events: none;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
     
 
 
@@ -493,8 +509,8 @@ p.visible {
 
 
 @media only screen and (max-width: 800px) {
-    .menu-icon {
-        display: block;
+    .menu-icon-wrapper {
+        display: block !important;
     }
     .nav-bar .menu-links {
         display: none;

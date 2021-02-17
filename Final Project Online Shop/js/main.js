@@ -5,7 +5,7 @@ const filterLaptops = document.querySelector("#parent2");
 const filterTvs = document.querySelector("#parent3");
 let container = document.querySelector("main");
 const modal = document.querySelector(".modal");
-const menu = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menu-icon-wrapper");
 let list = [];
 let posts = 20;
 let idx = 0;
@@ -72,8 +72,8 @@ function buildMain() {
                 </a>
             </div>
             <div class="favoritesStock-item">
-                <span class="iconify empty-heart-icon" data-icon="ant-design:heart-outlined"></span>
-                <span class="iconify hidden" data-icon="carbon:favorite-filled"></span>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart hidden"></i>
                 <div class="item-stock-container">
                     <span>In stock:</span>
                     <span class="item-stock">${list[idx].stock.toLocaleString('ro')}</span>
@@ -249,10 +249,13 @@ function cartQuantity() {
     if (TScart.length === 0) {
         document.querySelector(".cart-quantity").style.display = "none";
         document.querySelector(".cart-quantity-mobile").style.display = "none";
+        document.querySelector(".cart-quantity-mobile-menu").style.display = "none";
     } else {
         document.querySelector(".cart-quantity").style.display = "inline-block";
         document.querySelector(".cart-quantity").innerText = TScart.length;
         document.querySelector(".cart-quantity-mobile").style.display = "inline-block";
         document.querySelector(".cart-quantity-mobile").innerText = TScart.length;
+        document.querySelector(".cart-quantity-mobile-menu").innerText = TScart.length;
+        document.querySelector(".cart-quantity-mobile-menu").style.display = "inline-block";
     }
 }
