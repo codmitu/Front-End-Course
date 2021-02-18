@@ -43,7 +43,9 @@ async function getList() {
 
 // build the html on scroll*
 function buildMain() {
-    if (posts === idx) {
+    if (window.innerWidth < 500) {
+        posts = list.length;
+    } else if (posts === idx) {
         posts += 20;
         if (posts > list.length) {
             posts = list.length;
@@ -287,9 +289,11 @@ function shuffle(array) {
 
 
 // Add event listener when scroll to bottom
+// clientHeight = view height
+// scrollHeight = height of scrollable area
 window.addEventListener("scroll", () => {
     const {scrollHeight, clientHeight } = document.documentElement;
-    if (clientHeight + window.pageYOffset  >= scrollHeight) {
+    if (clientHeight + window.pageYOffset >= scrollHeight) {
         showLoading();
     }
 });

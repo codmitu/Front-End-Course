@@ -453,8 +453,6 @@ main .item:hover {
 .item img {
     max-width: 200px;
     padding: 10px;
-}
-.item img:hover {
     cursor: pointer;
 }
 .item-stock-container {
