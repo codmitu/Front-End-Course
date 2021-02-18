@@ -66,17 +66,19 @@ function buildMain() {
                     <div class="back"><div class="inner">${list[idx].name}, ${list[idx].description}</div></div>
                 </a>
             </div>
-            <div class="favoritesStock-item">
+            <div class="item-stock-container">
+                <span>In stock:</span>
+                <span class="item-stock">${list[idx].stock.toLocaleString('ro')}</span>
+            </div>
+            <div class="price-heart-wrapper">
+                <div class="price-container">
+                    <span>Price:&nbsp;</span>
+                    <span class="price-item">${list[idx].price.toLocaleString('ro')}</span>
+                    <span>&nbsp;RON</span>
+                </div>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-heart hidden"></i>
-                <div class="item-stock-container">
-                    <span>In stock:</span>
-                    <span class="item-stock">${list[idx].stock.toLocaleString('ro')}</span>
-                </div>
             </div>
-            <span>&nbsp;RON</span>
-            <span class="price-item">${list[idx].price.toLocaleString('ro')}</span>
-            <p>Price:&nbsp;</p>
         </div> 
         `
     }

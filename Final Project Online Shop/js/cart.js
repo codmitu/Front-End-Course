@@ -1,3 +1,4 @@
+// Variables
 let quantity = document.querySelectorAll(".quantity");
 const modal = document.querySelector(".modal");
 const menu = document.querySelector(".fa-bars");
@@ -5,6 +6,8 @@ let TScart = [];
 const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
 let list = []; 
 
+
+// AJAX function
 async function ajax(url, method, body) {
       const res = await fetch(url + ".json", {
           method: method,
@@ -13,6 +16,10 @@ async function ajax(url, method, body) {
       });
       return await res.json();
 }
+
+
+
+// get list from database to calculate the remaining quantity on items
 async function getList() {
       list = await ajax(url);
       if (localStorage.getItem("TScart") === null) {
@@ -25,6 +32,7 @@ async function getList() {
 
 
 
+// Build html with information from local storage
 function buildCart() {
       let qty = 0;
       if (TScart.length === 0) {
@@ -61,7 +69,10 @@ function buildCart() {
       document.querySelector(".total-items").innerText = qty;
       document.querySelector(".total-price").innerText = totalPrice.toLocaleString('ro');
 }
-            
+   
+
+
+// Calculate total items in the cart when changing quantity
 function calculate(idx) {
       let cart = window.localStorage.getItem("TScart");
       document.querySelector(".total-items").innerText = parseInt(document.querySelectorAll(".quantity")[idx].value);
@@ -73,6 +84,9 @@ function calculate(idx) {
       buildCart();
 }
 
+
+
+// Delete item from cart (local storage)
 function removeItem(idx) {
       TScart.splice(idx, 1);
       localStorage.setItem("TScart", JSON.stringify(TScart));
@@ -80,6 +94,9 @@ function removeItem(idx) {
 }
 
 
+
+
+// Buy button and change quantity in database after buying
 async function buy() {
       if (TScart.length === 0) {
             return;
@@ -104,10 +121,17 @@ async function buy() {
       }, 1000);
 }
 
+
+
+
+// popup button after buying that redirects user to main page
 function confirmBuy() {
       window.location.href = "main.html";
 }
 
+
+
+// Increase quantity in html and in local storage and dont increase more than max quantity of the item
 function increase(idx) {
       let itemName = document.querySelectorAll(".link-item")[idx].innerText;
       let index = list.findIndex(x => x.name == itemName);
@@ -120,6 +144,8 @@ function increase(idx) {
       buildCart();
 }
 
+
+// Decrease quantity in html and local storage and dont decrease below 1
 function decrease(idx) {
       if (document.querySelectorAll(".quantity")[idx].value <= 1) {
             return;
@@ -132,12 +158,15 @@ function decrease(idx) {
 
 
 
-// Shows menu on menu click
+// Opens menu on clicking hamburger menu
 function showMenu() {
       modal.style.display = "block";
       menu.style.display = "none";
 }
 
+
+
+// Hide the modal and closes the menu when clicking on modal
 modal.addEventListener('click', (event) => {
       if (event.target.classList.contains("modal")) {
             modal.style.display = "none";

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/loader.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
 
     <title>TS Cart</title>
 </head>
@@ -17,11 +18,12 @@
 
 <body onload="event.preventDefault();getList();">
 
+    <!-- Loading animation -->
     <div class="lds-default-container"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
 
-    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
     
+    <!-- Navigation bar: logo, links and hamburger menu icon -->
     <section class="nav-bar-container">
         <nav class="nav-bar">
             <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
@@ -40,12 +42,18 @@
         </nav>
     </section>
 
+
+
+    <!-- Header -->
     <header>
         <h1>Cart
             <i class="fas fa-shopping-cart"></i>
         </h1>
     </header>
 
+
+
+    <!-- Cart items container -->
     <main>
         <table>
             <tbody>
@@ -53,6 +61,7 @@
             </tbody>
         </table>
 
+        <!-- Overall information and submit button to buy -->
         <aside>
             <p>Products:&nbsp;<span class="total-items"></span></p>
             <p>V.A.T 19%</p>
@@ -64,10 +73,12 @@
 
 
 
-    <img src="../img/undraw_video_game_night_8h8m.svg" alt="" class="bg-svg">
+    <!-- Simulate Buying with a loading animation -->
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
 
 
+    <!-- Displays message after buying and redirects user to main page -->
     <div class="message">
         <div>Cangratulations on your purchase! <br>You will now be redirected<br> to main page.</div>
         <button type="button" onclick="confirmBuy();">OK!</button>
@@ -75,6 +86,13 @@
 
 
 
+    <!-- Background image -->
+    <img src="../img/undraw_video_game_night_8h8m.svg" alt="" class="bg-svg">
+
+
+
+
+    <!-- Footer links -->
     <footer>
         <div class="footer-links-wrapper">
             <div>
@@ -144,7 +162,10 @@
 
 
 
-    <script src="../js/cart.js"></script>
+
+    <!-- Loading animation -->
     <script src="../js/loader.js"></script>
+    
+    <script src="../js/cart.js"></script>
 </body>
 </html>
