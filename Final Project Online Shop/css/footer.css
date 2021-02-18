@@ -14,7 +14,7 @@ footer {
           left: 50%;
           transform: translate(-50%, -50px);
           transition: opacity .3s ease-out;
-          z-index: 4;
+          /* z-index: 4; */
       }
           .loading.show {
               opacity: 1;

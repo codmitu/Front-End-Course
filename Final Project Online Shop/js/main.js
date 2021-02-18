@@ -288,8 +288,8 @@ function shuffle(array) {
 
 // Add event listener when scroll to bottom
 window.addEventListener("scroll", () => {
-    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-    if (clientHeight + scrollTop >= scrollHeight) {
+    const {scrollHeight, clientHeight } = document.documentElement;
+    if (clientHeight + window.pageYOffset  >= scrollHeight) {
         showLoading();
     }
 });
