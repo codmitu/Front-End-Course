@@ -51,10 +51,12 @@ function buildCart() {
       let str = "";
       for (let i = 0; i < TScart.length; i++) {
             totalPrice += TScart[i].product.price * TScart[i].quantity;
+            let name = TScart[i].product.name;
+            let index = list.findIndex(x => x.name === name);
             str += `
                   <tr>
-                        <td><a href="details.html?index=${TScart[i].product.name}" class="link-item">${TScart[i].product.name}</a></td>
-                        <td><span class="price">${TScart[i].product.price.toLocaleString('ro')}</span>&nbsp;RON</td>
+                        <td><a href="details.html?index=${list[index].name}" class="link-item">${list[index].name}</a></td>
+                        <td><span class="price">${list[index].price.toLocaleString('ro')}</span>&nbsp;RON</td>
                         <td class="quantity-wrapper">
                               <p class="increase" onclick="increase('${i}');"><i class="fas fa-plus"></i></p>
                               <input type="number" class="quantity" onfocus="calculate('${i}');" oninput="calculate('${i}');" value="${TScart[i].quantity}" min="1"/>
