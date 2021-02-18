@@ -662,8 +662,8 @@ main .item:hover {
     .back {
         display: none;
     }
-    .footer-links a {
-        margin: 0;
+    footer {
+        display: none;
     }
 }
 

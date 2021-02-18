@@ -47,6 +47,7 @@ function buildMain() {
         posts += 20;
         if (posts > list.length) {
             posts = list.length;
+            document.querySelector("footer").style.display = "block";
         }
     }
     let str = "";
