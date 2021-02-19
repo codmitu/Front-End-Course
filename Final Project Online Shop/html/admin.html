@@ -13,6 +13,8 @@
 </head>
 
 <body onload="getList();">
+
+    <!-- Navbar -->
     <section class="nav-bar-container">
         <nav class="nav-bar">
             <h2>Manage Products</h2>
@@ -23,11 +25,14 @@
         </nav>
     </section>
 
+
+    <!-- ADD button -->
     <button class="add-btn" onclick="addProduct();">
         <i class="far fa-plus-square"></i>
         ADD NEW PRODUCT
     </button>
 
+    <!-- Products list -->
     <main id="products">
         <table>
             <thead>
@@ -48,6 +53,7 @@
     </main>
 
 
+    <!-- Modal and the form -->
     <section class="modal">
         <form action="" onsubmit="event.preventDefault();addNewProduct();">
             <div class="wrapper">

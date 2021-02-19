@@ -235,6 +235,7 @@ i.fa-bars:active {
 
 
 /* Filter by type section */
+/* https://www.youtube.com/watch?v=AIdslaUj9wg&list=PLTccUFlC4_WmV9ki6lYYJaonM7Y8QrUY_&index=29&t=865s&ab_channel=DevTips */
 .filter-items-container {
     max-width: 100vw;
     background-color: var(--main);
@@ -492,6 +493,7 @@ main .item:hover {
 
 
 /* Hover flip effect on item image */
+/* https://codemyui.com/3d-card-flip-hovering-text/ */
 .front,
 .back{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);

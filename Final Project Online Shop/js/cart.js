@@ -32,7 +32,7 @@ async function getList() {
 
 
 
-// Build html with information from local storage
+// Build html with information from local storage and database
 function buildCart() {
       let qty = 0;
       if (TScart.length === 0) {

@@ -7,6 +7,8 @@ const idValid = document.querySelector(".id-form");
 const nameValid = document.querySelector(".name-form");
 const priceValid = document.querySelector(".price-form");
 
+
+// AJAX function
 async function ajax(url, method, body) {
     const res = await fetch(url + ".json", {
         method: method,
@@ -15,6 +17,9 @@ async function ajax(url, method, body) {
     });
     return await res.json();
 }
+
+
+// get list from database to calculate the remaining quantity on items
 async function getList(idx) {
     list = await ajax(url);
     if (list === null) {
@@ -24,6 +29,7 @@ async function getList(idx) {
 }
 
 
+// Build html 
 function buildAdmin(idx) {
   let str = "";
   for (let i = 0; i < list.length; i++) {
@@ -60,17 +66,15 @@ function buildAdmin(idx) {
   document.querySelector("tbody").innerHTML = str;
 }
 
-// Displays the form
-function addProduct() {
-  position = -1;
-  modal.style.display = "flex";
-}
+
+// Button to reset the form
 function resetForm() {
   form.reset();
   position = -1;
 }
 
-// Add product to the list
+
+// Add product to the list, Edit product if position is not -1
 async function addNewProduct() {
   if (idValid.value === "") {
     errorID();
@@ -97,7 +101,7 @@ async function addNewProduct() {
   let images = [].map.call(image, function(input) {
     return input.value;
   });
-  if (position > -1) {
+  if (position !== -1) {
     await ajax(url + position, "PUT", {
       "id": id,
       "name": name,
@@ -123,6 +127,8 @@ async function addNewProduct() {
   modal.style.display = "none";
 }
 
+
+// Edit product button
 async function editItem(idx) {
   let li = await ajax(url + idx);
   document.querySelector(".id-form").value = li.id;
@@ -141,6 +147,7 @@ async function editItem(idx) {
 }
 
 
+// Delete product button
 async function deleteItem(idx) {
   if (confirm(`Delete product "${list[idx].name}"`) === true) {
     await ajax(url + idx, "DELETE");
@@ -150,12 +157,14 @@ async function deleteItem(idx) {
 
 
 
-// hide the modal when clicking it
+// hide the modal and the form when clicking the modal
 modal.addEventListener('click', (event) => {
   if (event.target.classList.contains("modal")) {
     modal.style.display = "none";
   }
 });
+
+
 
 // ID Select validator 
 function errorID() {
@@ -164,12 +173,14 @@ function errorID() {
     idValid.classList.remove("invalid");
   }, 2000);
 }
+// Product name validator
 function errorName() {
   nameValid.classList.add("invalid");
   setTimeout(() => {
     nameValid.classList.remove("invalid");
   }, 2000);
 }
+// Product price validator
 function errorPrice() {
   priceValid.classList.add("invalid");
   setTimeout(() => {
@@ -178,7 +189,16 @@ function errorPrice() {
 }
 
 
+
+// refresh item quantity onhover button edit
 async function refresh(idx) {
   let list2 = await ajax(url + idx);
   document.querySelectorAll(".stock")[idx].innerText = list2.stock;
+}
+
+
+// Displays the form
+function addProduct() {
+  position = -1;
+  modal.style.display = "flex";
 }
