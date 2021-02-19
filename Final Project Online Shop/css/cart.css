@@ -308,7 +308,7 @@ aside button:active {
 /* Simulate Buying with a loading animation  */
 .lds-ring {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100px;
     height: 100px;
     top: 50%;

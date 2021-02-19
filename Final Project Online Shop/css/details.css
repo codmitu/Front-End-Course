@@ -39,53 +39,152 @@ footer {
 .nav-bar-container {
     max-width: 100%;
     background-color: white;
-    /* margin: 0; */
     padding: 0 20px;
 }
-    .logo img {
-        width: 150px;
-    }
-    .nav-bar {
-        max-width: 1200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        
-    }
-        .nav-bar .menu-links {
-            display: flex;
-            list-style: none;
-            justify-content: space-between;
-            width: 300px;
-        }
-            .menu-links a {
-                padding: 0 10px;
-                font-weight: 500;
-                cursor: pointer;
-                text-decoration: none;
-                color: black;
-                border: 1px solid var(--main);
-            }
-                .menu-links a:hover {
-                    color: white;
-                    background-color: var(--main);
-                    box-shadow: 2px 2px 2px rgb(213, 213, 213);
-                }
-                .menu-link-shopping-basket {
-                    position: relative;
-                }
-                    .cart-quantity {
-                        display: none;
-                        position: absolute;
-                        width: 20px;
-                        top: -10px;
-                        text-align: center;
-                        height: 20px;
-                        border-radius: 50%;
-                        color: white;
-                        background-color: red;
-                    }
+.logo img {
+    width: 150px;
+}
+.nav-bar {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar .menu-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 300px;
+}
+.menu-links a {
+    padding: 0 10px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: 1px solid var(--main);
+}
+.menu-links a:hover {
+    color: white;
+    background-color: var(--main);
+    box-shadow: 2px 2px 2px rgb(213, 213, 213);
+}
+.menu-link-shopping-basket {
+    position: relative;
+}
+/* Cart quantity floating number on hamburger icon */
+.cart-quantity {
+    display: none;
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    text-align: center;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+}
+
+
+
+
+
+
+/* Hamburger icon and quantity number */
+.menu-icon-wrapper {
+    display: none !important;
+    position: relative;
+}
+i.fa-bars {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 5px;
+}
+i.fa-bars:hover {
+    background-color: rgb(235, 235, 235);
+}
+i.fa-bars:active {
+    background-color: rgb(175, 175, 175);
+}
+.cart-quantity-mobile-menu {
+    display: none;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+
+/* Modal and mobile menu */
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 12;
+    background-color: rgba(0, 0, 0, 0.713);
+    top: 0;
+    left: 0;
+    display: none;
+}    
+.responsive-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-image: linear-gradient(145deg, var(--btt), var(--second));
+    border-left: 2px solid grey;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.responsive-menu li {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 0px;
+    position: relative;
+}
+.cart-quantity-mobile {
+    display: none;
+    position: absolute;
+    width: 20px;
+    top: 5px;
+    text-align: center;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+}
+.responsive-menu li:hover {
+    background-color: var(--btt);
+}
+.responsive-menu a:first-child li {
+    margin-top: 50px;
+}
+.responsive-menu li .arrow {
+    color: var(--text);
+}
+.responsive-menu a {
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+    font-size: large;
+}
+.responsive-menu a:hover {
+    color: var(--text);
+}
 
 
 
@@ -99,20 +198,20 @@ footer {
     max-width: 100%;
     margin: 0 auto;
 }
-    /* Product details navbar */
-    .product header {
-        max-width: 100%;
-        border-bottom: 2px solid var(--text);
-        background-image: linear-gradient(to bottom, var(--second)0%, var(--main)30% 70%, var(--second)100%);
-        left: 0;
-    }
-        header p {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            font-size: 2rem;
-            color: white;
-        }
+/* Product details header */
+.product header {
+    max-width: 100%;
+    border-bottom: 2px solid var(--text);
+    background-image: linear-gradient(to bottom, var(--second)0%, var(--main)30% 70%, var(--second)100%);
+    left: 0;
+}
+header p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 2rem;
+    color: white;
+}
 
 
 
@@ -122,7 +221,7 @@ footer {
 
 
         
-
+/* Image slider section */
 .image-wrapper {
     max-width: 1200px;
     min-height: 507px;
@@ -145,7 +244,6 @@ footer {
 .mySlides > img {
     max-width: 500px;
 }
-  
   /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -159,22 +257,19 @@ footer {
     transition: 0.6s ease;
     user-select: none;
 }
-  
-  /* Position the "next button" to the right */
+  /* Position the next prev buttons */
 .next {
     right: 20px;
 }
 .prev {
     left: 20px;
-  }
-  
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, 
 .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
-  
-/* Number text (1/3 etc) */
+/* Number text (1/6 etc) */
 .numbertext {
     font-size: 12px;
     padding: 8px 12px;
@@ -182,7 +277,6 @@ footer {
     top: 0;
     left: 20px;
 }
-  
   /* The dots/bullets/indicators */
 .dots {
     position: absolute;
@@ -198,11 +292,9 @@ footer {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-  
 .active, .dot:hover {
     background-color: #717171;
 }
-  
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
@@ -210,12 +302,10 @@ footer {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
-  
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -231,157 +321,162 @@ footer {
 
 
 
-/* Buy section */
-    .product .bottom {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        gap: 20px;
-        padding: 1rem;
-        flex-wrap: wrap;
-        /* background-color: rgb(250, 247, 247); */
-        min-height: 100%;
-    }
-        .bottom section,
-        .bottom aside {
-            flex: 1;
-            align-self: flex-end;
-        }
-        .bottom small {
-            color: var(--second);
-            display: block;
-        }
-        .bottom p,
-        .bottom div {
-            margin: 10px 0;
-        }
-            div input {
-                text-align: center;
-                border: 1px solid lightgrey;
-                width: 50px;
-                outline: none;
-                background-color: rgb(243, 243, 243);
-            }
-        .bottom .stock {
-            font-size: 0.9rem;
-        }
-        .bottom .price {
-            font-size: 1.3rem;
-        }
-        .bottom .total-price {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: red;
-        }
-        .bottom .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 30px;
-            position: relative;
-        }
-            .buttons button {
-                flex: 1 1;
-                min-width: 250px;
-                font-size: 1.2rem;
-                padding: 5px;
-                cursor: pointer;
-                background-color: var(--second);
-                color: white;
-                border: 2px solid var(--main);
-            }
-                .buttons button:last-of-type {
-                    background-color: white;
-                    color: var(--main);
-                }
-                .buttons button:hover {
-                    background-color: var(--main);
-                    color: var(--text);
-                }
-                .buttons p {
-                    position: absolute;
-                    font-size: 0.9rem;
-                    padding: 3px;
-                    text-align: center;
-                    transform: translate(0px, -45px);
-                    transform-origin: top;
-                    visibility: hidden;
-                    opacity: 1;
-                    width: 100%;
-                    pointer-events: none;
-                }
-                .buttons .message {
-                    color: white;
-                    /* background-color: rgb(0, 165, 0); */
-                    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(0, 92, 0), rgb(255, 255, 255));
-                }
-                .buttons .error-message,
-                .buttons .cart-duplicate-item {
-                    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(148, 0, 0), rgb(255, 255, 255));
-                    color: white;
-                }
-            aside {
-                min-width: 200px;
-            }
-            aside h3 {
-                padding: 0 10px;
-                margin: 0;
-            }
-            aside p {
-                padding: 0 10px;
-            }
-            aside .product-specs p:nth-child(odd) {
-                background-color: rgb(245, 245, 245);
-            }
+/* Buy, add to fav section */
+.product .bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    padding: 1rem;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+.bottom section,
+.bottom aside {
+    flex: 1;
+    align-self: flex-end;
+}
+.bottom small {
+    color: var(--second);
+    display: block;
+}
+.bottom p,
+.bottom div {
+    margin: 10px 0;
+}
+div input {
+    text-align: center;
+    border: 1px solid lightgrey;
+    width: 50px;
+    outline: none;
+    background-color: rgb(243, 243, 243);
+}
+.bottom .stock {
+    font-size: 0.9rem;
+}
+.bottom .price {
+    font-size: 1.3rem;
+}
+.bottom .total-price {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: red;
+}
+.bottom .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+    position: relative;
+}
+.buttons button {
+    flex: 1 1;
+    min-width: 250px;
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--second);
+    color: white;
+    border: 2px solid var(--main);
+}
+.buttons button:last-of-type {
+    background-color: white;
+    color: var(--main);
+}
+.buttons button:hover {
+    background-color: var(--main);
+    color: var(--text);
+}
+.buttons p {
+    position: absolute;
+    font-size: 0.9rem;
+    padding: 3px;
+    text-align: center;
+    transform: translate(0px, -45px);
+    transform-origin: top;
+    visibility: hidden;
+    opacity: 1;
+    width: 100%;
+    pointer-events: none;
+}
+.buttons .message {
+    color: white;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(0, 92, 0), rgb(255, 255, 255));
+}
+.buttons .error-message,
+.buttons .cart-duplicate-item {
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(148, 0, 0), rgb(255, 255, 255));
+    color: white;
+}
 
 
 
 
 
 
+/* Specification section */
 h3 {
     margin-left: 20px;
     color: var(--main);
     text-decoration: underline;
 }
+aside {
+    min-width: 200px;
+}
+aside h3 {
+    padding: 0 10px;
+    margin: 0;
+}
+aside p {
+    padding: 0 10px;
+}
+aside .product-specs p:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
 
+
+
+
+
+
+
+
+/* 4 other products section */
 .more-items-container {
-    /* height: 700px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     padding: 10px;
 }
-    .more-items {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* align-items: center; */
-        text-align: center;
-        padding: 0 20px;
-        border: 1px solid rgb(191, 191, 191);
-    }
-        .more-items > p {
-            font-weight: 500;
-        }
-        .more-items a{
-            display: flex;
-            flex-direction: column;
-            place-content: center;
-            place-items: center;
-        }
-        .more-items-image {
-            max-width: 200px;
-        }
-            .more-items > div {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
-                .more-items > div p:first-child {
-                    color: red;
-                    font-weight: 500;
-                }
+.more-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 20px;
+    border: 1px solid rgb(191, 191, 191);
+}
+.more-items > p {
+    font-weight: 500;
+}
+.more-items a{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+.more-items-image {
+    max-width: 200px;
+}
+.more-items > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.more-items > div p:first-child {
+    color: red;
+    font-weight: 500;
+}
 
 
 
@@ -390,103 +485,6 @@ h3 {
 
 
 
-.modal {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 12;
-    background-color: rgba(0, 0, 0, 0.713);
-    top: 0;
-    left: 0;
-    display: none;
-}    
-
-
-
-    .responsive-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 200px;
-        background-image: linear-gradient(145deg, var(--btt), var(--second));
-        border-left: 2px solid grey;
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-        .responsive-menu li {
-            list-style: none;
-            margin: 10px;
-            cursor: pointer;
-            padding: 10px;
-            border-bottom: 1px solid white;
-            padding-bottom: 0px;
-            position: relative;
-        }
-        .cart-quantity-mobile {
-            display: none;
-            position: absolute;
-            width: 20px;
-            top: 5px;
-            text-align: center;
-            height: 20px;
-            border-radius: 50%;
-            color: white;
-            background-color: red;
-        }
-            .responsive-menu li:hover {
-                background-color: var(--btt);
-            }
-            .responsive-menu a:first-child li {
-                margin-top: 50px;
-            }
-            .responsive-menu li .arrow {
-                color: var(--text);
-            }
-            .responsive-menu a {
-                text-decoration: none;
-                color: rgb(225, 225, 225);
-                font-size: large;
-            }
-                .responsive-menu a:hover {
-                    color: var(--text);
-                }
-
-            
-
-
-                .menu-icon-wrapper {
-                    display: none !important;
-                    position: relative;
-                }
-                    i.fa-bars {
-                        cursor: pointer;
-                        font-size: 2rem;
-                        padding: 5px;
-                        border-radius: 5px;
-                    }
-                        i.fa-bars:hover {
-                            background-color: rgb(235, 235, 235);
-                        }
-                        i.fa-bars:active {
-                            background-color: rgb(175, 175, 175);
-                        }
-                    .cart-quantity-mobile-menu {
-                        display: none;
-                        width: 20px;
-                        text-align: center;
-                        height: 20px;
-                        border-radius: 50%;
-                        color: white;
-                        background-color: red;
-                        pointer-events: none;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                    }
-
-    
 
 
 
@@ -494,6 +492,7 @@ h3 {
 
 
 
+/* classes from JS */
 .hidden {
     display: none;
 }
@@ -507,7 +506,7 @@ p.visible {
 
 
 
-
+/* Media queries for 800> and 480> */
 @media only screen and (max-width: 800px) {
     .menu-icon-wrapper {
         display: block !important;
@@ -529,9 +528,6 @@ p.visible {
         transform: translate(0px, -65px);
     }
 }
-
-
-
 @media only screen and (max-width: 480px) {
     .logo img {
         width: 100px;

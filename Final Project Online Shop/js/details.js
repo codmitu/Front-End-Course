@@ -5,6 +5,9 @@ let list = [];
 let id = decodeURI(location.search.substr(7));
 let TScart = [];
 let product;
+
+
+// AJAX function
 async function ajax(url, method, body) {
     const res = await fetch(url + ".json", {
         method: method,
@@ -13,10 +16,14 @@ async function ajax(url, method, body) {
     });
     return await res.json();
 }
+
+
+
+// get the list from database and shuffle it to display 4 other products randomly
+// get the products from local storage
 async function getList() {
     list = await ajax(url);
     list = shuffle(list);
-    // console.log(list);
     if (localStorage.getItem("TScart") === null) {
         TScart = [];
     } else {
@@ -26,20 +33,11 @@ async function getList() {
 }
 
 
-function shuffle(array) {
-    var tmp, current, top = array.length;
-    if(top) while(--top) {
-      current = Math.floor(Math.random() * (top + 1));
-      tmp = array[current];
-      array[current] = array[top];
-      array[top] = tmp;
-    }
-    return array;
-}
+
 
 // Build the html with onload function
 function buildDetails() {
-    // get index of the product by matching the product name its been clicked with the one in the array
+    // get database index of the product by matching the product name its been clicked with the one in the local storage
     let index = list.findIndex(x => x.name == id);
     // Loop thru image array to get all images
     let image = list[index].image;
@@ -86,7 +84,7 @@ function buildDetails() {
 
 
 
-    // More items alike
+    // More items alike (if they match products id)
     let alikeItems = [];
     for (let i = 0; i < list.length; i++) {
         if (list[index].id === list[i].id && list[index].name !== list[i].name) {
@@ -115,7 +113,9 @@ function buildDetails() {
     cartQuantity();
 }
 
-// Change the total price with onchange function whenever quantity is changed
+
+
+// Change the total price with onchange function on input whenever quantity is changed
 function findTotal() {
     if (document.querySelector(".product-stock").innerText === "0") {
         document.querySelector('.quantity').value = 1;
@@ -127,6 +127,9 @@ function findTotal() {
     document.querySelector(".product-total-price").innerText = parseFloat(price * quantity + 0.015).toFixed(3);
 }
 
+
+
+// Add to local storage button only if stock is more than 0, and wasnt already added, stores the full product + quantity
 function addToCart() {
     if (product.stock === 0) {
         document.querySelector(".error-message").classList.add("visible");
@@ -154,23 +157,16 @@ function addToCart() {
 
 
 
-function removeMessages() {
-    document.querySelector(".message").classList.remove("visible");
-    document.querySelector(".cart-duplicate-item").classList.remove("visible");
-    document.querySelector(".error-message").classList.remove("visible");
-}
 
-
-
-
-
-// Shows menu on menu click
+// Shows menu on menu clicking the hamburger icon
 function showMenu() {
     modal.style.display = "block";
     menu.style.display = "none";
 }
 
-// Remove created inputs and hides the modal when clicking it
+
+
+// hides the modal and menu when clicking the modal
 modal.addEventListener('click', (event) => {
     if (event.target.classList.contains("modal")) {
       modal.style.display = "none";
@@ -179,6 +175,9 @@ modal.addEventListener('click', (event) => {
 });
 
 
+
+
+// Displays the quantity from localStorage to Cart link and hamburger menu
 function cartQuantity() {
     if (TScart.length === 0) {
         document.querySelector(".cart-quantity").style.display = "none";
@@ -192,4 +191,27 @@ function cartQuantity() {
         document.querySelector(".cart-quantity-mobile-menu").innerText = TScart.length;
         document.querySelector(".cart-quantity-mobile-menu").style.display = "inline-block";
     }
+}
+
+
+
+
+// Shuffle list function to rearrange items differently on load/refresh 
+function shuffle(array) {
+    var tmp, current, top = array.length;
+    if(top) while(--top) {
+      current = Math.floor(Math.random() * (top + 1));
+      tmp = array[current];
+      array[current] = array[top];
+      array[top] = tmp;
+    }
+    return array;
+}
+
+
+// Remove messages after delay for addToCart button
+function removeMessages() {
+    document.querySelector(".message").classList.remove("visible");
+    document.querySelector(".cart-duplicate-item").classList.remove("visible");
+    document.querySelector(".error-message").classList.remove("visible");
 }

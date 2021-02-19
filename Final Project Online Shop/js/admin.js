@@ -15,16 +15,16 @@ async function ajax(url, method, body) {
     });
     return await res.json();
 }
-async function getList() {
+async function getList(idx) {
     list = await ajax(url);
     if (list === null) {
       list = [];
     }
-    buildAdmin();
+    buildAdmin(idx);
 }
 
 
-function buildAdmin() {
+function buildAdmin(idx) {
   let str = "";
   for (let i = 0; i < list.length; i++) {
     let image = list[i].image;
@@ -51,7 +51,7 @@ function buildAdmin() {
           ${strImage}
         </td>
         <td class="buttons">
-            <button onclick="editItem('${i}');">Edit</button>
+            <button onclick="editItem('${i}');" onmouseover="refresh('${i}');">Edit</button>
             <button onclick="deleteItem('${i}');">Remove</button>
         </td>
       </tr>
@@ -62,6 +62,7 @@ function buildAdmin() {
 
 // Displays the form
 function addProduct() {
+  position = -1;
   modal.style.display = "flex";
 }
 function resetForm() {
@@ -118,13 +119,12 @@ async function addNewProduct() {
       "image": images
     });
   }
-  position = -1;
   await getList();
   modal.style.display = "none";
 }
 
-function editItem(idx) {
-  let li = list[idx];
+async function editItem(idx) {
+  let li = await ajax(url + idx);
   document.querySelector(".id-form").value = li.id;
   document.querySelector(".name-form").value = li.name;
   document.querySelector(".description-form").value = li.description;
@@ -140,8 +140,9 @@ function editItem(idx) {
   position = idx;
 }
 
+
 async function deleteItem(idx) {
-  if (confirm(`Delete product ${list[idx].name}`) === true) {
+  if (confirm(`Delete product "${list[idx].name}"`) === true) {
     await ajax(url + idx, "DELETE");
     await getList();
   }
@@ -149,7 +150,7 @@ async function deleteItem(idx) {
 
 
 
-// Remove created inputs and hides the modal when clicking it
+// hide the modal when clicking it
 modal.addEventListener('click', (event) => {
   if (event.target.classList.contains("modal")) {
     modal.style.display = "none";
@@ -174,4 +175,10 @@ function errorPrice() {
   setTimeout(() => {
     priceValid.classList.remove("invalid");
   }, 2000);
+}
+
+
+async function refresh(idx) {
+  let list2 = await ajax(url + idx);
+  document.querySelectorAll(".stock")[idx].innerText = list2.stock;
 }

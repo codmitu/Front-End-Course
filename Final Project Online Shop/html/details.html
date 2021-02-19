@@ -16,10 +16,12 @@
     <title>Details</title>
 </head>
 <body onload="getList();">
+
+    <!-- Loading animation -->
     <div class="lds-default-container"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
 
 
-
+    <!-- Navigation bar: logo, links and hamburger menu icon -->
     <section class="nav-bar-container">
         <nav class="nav-bar">
             <div class="logo"><img src="../img/logo.svg" alt="logo"></div>
@@ -39,6 +41,7 @@
                 </a>
             </div>
 
+            <!-- Hamburger menu icon -->
             <div class="menu-icon-wrapper">
                 <i class="fas fa-bars" onclick="showMenu();"></i>
                 <small class="cart-quantity-mobile-menu"></small>
@@ -47,11 +50,12 @@
     </section>
 
     
-
+    <!-- Poduct info -->
     <section class="product">
         <header>
             <p class="product-title"></p>
         </header>
+        <!-- Image slider -->
         <section class="image-wrapper">
             <a class="prev" onclick="minusSlides(1)">&#10094;</a>
 
@@ -65,6 +69,7 @@
         </section>
 
 
+        <!-- Specs and cart fav section -->
         <div class="bottom">
             <section>
                 <p class="stock">Stock: <span class="product-stock"></span></p>
@@ -97,39 +102,16 @@
             </aside>
         </div>
 
+        <!-- More items section -->
         <h3>Products related to this item</h3>
         <div class="more-items-container">
             
         </div>
     </section>
 
-
-     <!-- Responsive menu -->
-     <div class="modal">
-        <ul class="responsive-menu">
-            <a href="main.html"><li>
-                <i class="far fa-arrow-alt-circle-right arrow"></i>
-                Home
-                <i class="fas fa-home"></i></li>
-            </a>
-            <a href="cart.html"><li>
-                <i class="far fa-arrow-alt-circle-right arrow"></i>
-                Cart
-                <i class="fas fa-shopping-cart"></i>
-                <small class="cart-quantity-mobile"></small></li>
-            </a>
-            <a href="favorites.html"><li>
-                <i class="far fa-arrow-alt-circle-right arrow"></i>
-                Favorites
-                <i class="fas fa-heart"></i></li>
-            </a>
-        </ul>
-    </div>
-
      
 
-
-
+    <!-- Footer links -->
     <footer>
         <div class="footer-links-wrapper">
             <div>
@@ -177,9 +159,34 @@
     </footer>
 
 
+    
+    <!-- Responsive menu -->
+    <div class="modal">
+        <ul class="responsive-menu">
+            <a href="main.html"><li>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
+                Home
+                <i class="fas fa-home"></i></li>
+            </a>
+            <a href="cart.html"><li>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
+                Cart
+                <i class="fas fa-shopping-cart"></i>
+                <small class="cart-quantity-mobile"></small></li>
+            </a>
+            <a href="favorites.html"><li>
+                <i class="far fa-arrow-alt-circle-right arrow"></i>
+                Favorites
+                <i class="fas fa-heart"></i></li>
+            </a>
+        </ul>
+    </div>
+
+
 
      
     <script src="../js/details.js"></script>
+    <!-- Image slider script -->
     <script>
         // Image slideshow
         var slideIndex = 1;

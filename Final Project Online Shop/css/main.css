@@ -106,6 +106,7 @@ footer {
 .menu-link-shopping-basket {
     position: relative;
 }
+/* Cart quantity floating number on hamburger icon */
 .cart-quantity {
     display: none;
     position: absolute;
@@ -357,8 +358,14 @@ ul.filter-items {
 }
 .sort-price {
     display: flex;
-    min-width: 30%;
+    min-width: 20%;
     align-items: center;
+    /* justify-content: flex-start; */
+}
+.sort-price .asc,
+.sort-price .desc {
+    min-width: 60px;
+    margin: 5px;
 }
 .sort-price p {
     padding: 5px 10px;
@@ -378,7 +385,7 @@ ul.filter-items {
 }
 .sort-price i {
     font-size: 1.1rem;
-    color: grey;
+    color: var(--main);
     margin-left: 5px;
 }
 .sort-price i:hover {
@@ -548,7 +555,7 @@ main .item:hover {
 
 /* Add display none from JS */
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 

@@ -4,6 +4,8 @@ const loading = document.querySelector(".loading");
 const filterPhones = document.querySelector("#parent1");
 const filterLaptops = document.querySelector("#parent2");
 const filterTvs = document.querySelector("#parent3");
+const asc = document.querySelector(".asc");
+const desc = document.querySelector(".desc");
 let container = document.querySelector("main");
 const modal = document.querySelector(".modal");
 const menu = document.querySelector(".menu-icon-wrapper");
@@ -186,12 +188,16 @@ filterTvs.addEventListener("click", (event) => {
 
 // Sort ASc and Desc by price
 function sortAZ() {
+    asc.classList.add("hidden");
+    desc.classList.remove("hidden");
     container.innerHTML = "";
     idx = 0;
     list.sort(dynamicSort("price"));
     filterByPrice();
 }
 function sortZA() {
+    asc.classList.remove("hidden");
+    desc.classList.add("hidden");
     container.innerHTML = "";
     idx = 0;
     list.sort(dynamicSort("-price"));
@@ -255,7 +261,7 @@ modal.addEventListener('click', (event) => {
 
 
 
-// Displays the quantity from localStorage cart to Cart link and hamburger menu
+// Displays the quantity from localStorage to Cart link and hamburger menu
 function cartQuantity() {
     if (TScart.length === 0) {
         document.querySelector(".cart-quantity").style.display = "none";
