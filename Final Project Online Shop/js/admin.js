@@ -20,19 +20,22 @@ async function ajax(url, method, body) {
 
 
 // get list from database to calculate the remaining quantity on items
-async function getList(idx) {
+async function getList() {
     list = await ajax(url);
     if (list === null) {
       list = [];
     }
-    buildAdmin(idx);
+    buildAdmin();
 }
 
 
 // Build html 
-function buildAdmin(idx) {
+function buildAdmin() {
   let str = "";
   for (let i = 0; i < list.length; i++) {
+    if (list[i] === null) {
+      continue;
+    }
     let image = list[i].image;
     let strImage = "";
     for (let k = 0; k < image.length; k++) {
@@ -57,7 +60,7 @@ function buildAdmin(idx) {
           ${strImage}
         </td>
         <td class="buttons">
-            <button onclick="editItem('${i}');" onmouseover="refresh('${i}');">Edit</button>
+            <button onclick="editItem('${i}');">Edit</button>
             <button onclick="deleteItem('${i}');">Remove</button>
         </td>
       </tr>
@@ -111,7 +114,6 @@ async function addNewProduct() {
       "stock": Number(stock),
       "image": images
     });
-    document.querySelectorAll(".table-row")[position].classList.add("flash");
   } else {
     await ajax(url + list.length, "PUT", {
       "id": id,
@@ -123,6 +125,7 @@ async function addNewProduct() {
       "image": images
     });
   }
+  position = -1;
   await getList();
   modal.style.display = "none";
 }
@@ -188,13 +191,6 @@ function errorPrice() {
   }, 2000);
 }
 
-
-
-// refresh item quantity onhover button edit
-async function refresh(idx) {
-  let list2 = await ajax(url + idx);
-  document.querySelectorAll(".stock")[idx].innerText = list2.stock;
-}
 
 
 // Displays the form

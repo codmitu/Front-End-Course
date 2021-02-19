@@ -34,6 +34,9 @@ async function getList() {
 
 // Build html with information from local storage and database
 function buildCart() {
+      if (localStorage.getItem("TScart") === null) {
+            TScart = [];
+      }
       let qty = 0;
       if (TScart.length === 0) {
             var totalPrice = 0;
@@ -53,6 +56,9 @@ function buildCart() {
             let name = TScart[i].product.name;
             let index = list.findIndex(x => x.name === name);
             totalPrice += list[index].price * TScart[i].quantity;
+            if (list[index].stock === 0) {
+                  continue;
+            }
             str += `
                   <tr>
                         <td><a href="details.html?index=${list[index].name}" class="link-item">${list[index].name}</a></td>
@@ -100,12 +106,13 @@ function removeItem(idx) {
 
 // Buy button and change quantity in database after buying
 async function buy() {
+      if (TScart === null) {
+            alert("We're sorry but we couldnt initiate your transaction, please refresh the page or change the quantity.");
+            return;
+      }
       let totalPrice = document.querySelector(".total-price").innerText;
-      if (confirm(`Proceed to buy ${TScart.length} item and pay ${totalPrice} RON?`)) {
+      if (confirm(`Proceed to buy and pay ${totalPrice} RON?`)) {
             let list2 = await ajax(url);
-            if (TScart.length === 0) {
-                  return;
-            }
             let index = [];
             let lsName = "";
             let newStock = "";
