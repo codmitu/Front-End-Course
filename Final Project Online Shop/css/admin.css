@@ -213,6 +213,7 @@ input[type="submit"]:hover,
 /* Flash product on edit */
 .flash {
     background-color: rgba(0, 0, 0, 0.659) !important;
+    color: white;
 }
 /* Empty input css */
 .invalid {
