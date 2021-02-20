@@ -50,17 +50,17 @@ function buildAdmin() {
     }
 
     str += `
-      <tr class="table-row">
+      <tr class="table-row" data-idx="${i}">
         <td>${list[i].name}</td>
         <td class="description">${list[i].description}</td>
         <td class="specs">${strSpecs}</td>
         <td><span class="price">${list[i].price.toLocaleString('ro')}</span><span>&nbsp;RON</span></td>
-        <td class="stock">${list[i].stock.toLocaleString('ro')}</td>
+        <td class="stock" data-stock="${i}">${list[i].stock.toLocaleString('ro')}</td>
         <td class="images-container">
           ${strImage}
         </td>
         <td class="buttons">
-            <button onclick="editItem('${i}');">Edit</button>
+            <button onclick="editItem('${i}');" onmouseover="refreshStock('${i}')">Edit</button>
             <button onclick="deleteItem('${i}');">Remove</button>
         </td>
       </tr>
@@ -133,6 +133,8 @@ async function addNewProduct() {
 
 // Edit product button
 async function editItem(idx) {
+  let idNr = document.querySelector(`[data-idx='${idx}']`);
+  idNr.classList.add("flash");
   let li = await ajax(url + idx);
   document.querySelector(".id-form").value = li.id;
   document.querySelector(".name-form").value = li.name;
@@ -164,6 +166,8 @@ async function deleteItem(idx) {
 modal.addEventListener('click', (event) => {
   if (event.target.classList.contains("modal")) {
     modal.style.display = "none";
+    let idNr = document.querySelector(`[data-idx='${position}']`);
+    idNr.classList.remove("flash");
   }
 });
 
@@ -197,4 +201,11 @@ function errorPrice() {
 function addProduct() {
   position = -1;
   modal.style.display = "flex";
+}
+
+
+// Refresh product stock onmouseover Edit button
+async function refreshStock(idx) {
+  let list2 = await ajax(url + idx);
+  document.querySelector(`[data-stock='${idx}']`).innerText = list2.stock;
 }

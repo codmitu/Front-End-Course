@@ -31,6 +31,7 @@ async function ajax(url, method, body) {
 // get list from database then shuffle the items then build the html
 async function getList() {
     list = await ajax(url);
+    console.log(list);
     list = shuffle(list);
     if (localStorage.getItem("TScart") === null) {
         TScart = [];
@@ -56,6 +57,10 @@ function buildMain() {
     }
     let str = "";
     for (; idx < posts; idx++) {
+        // If theres a skipped index in database, skip it
+        if (list[idx] === null) {
+            continue;
+        }
         // If theres no image, display a NO IMAGE picture
         if (list[idx].image === undefined || list[idx].image.length === 0 || list[idx].image[0] === "") {
             list[idx].image[0] = "../img/no-image.png";
@@ -261,7 +266,7 @@ modal.addEventListener('click', (event) => {
 
 
 
-// Displays the quantity from localStorage to Cart link and hamburger menu
+// Displays the quantity from localStorage on Cart link and hamburger menu
 function cartQuantity() {
     if (TScart.length === 0) {
         document.querySelector(".cart-quantity").style.display = "none";
@@ -277,6 +282,15 @@ function cartQuantity() {
     }
 }
 
+
+
+
+// Refresh product stock onmouseover Edit button
+// async function refreshStockPrice(idx) {
+//     let list2 = await ajax(url + idx);
+//     document.querySelector(`[data-stock='${idx}']`).innerText = list2.stock;
+//     document.querySelector(`[data-price='${idx}']`).innerText = list2.price;
+// }
 
 
 

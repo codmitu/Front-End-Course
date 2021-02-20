@@ -56,9 +56,6 @@ function buildCart() {
             let name = TScart[i].product.name;
             let index = list.findIndex(x => x.name === name);
             totalPrice += list[index].price * TScart[i].quantity;
-            if (list[index].stock === 0) {
-                  continue;
-            }
             str += `
                   <tr>
                         <td><a href="details.html?index=${list[index].name}" class="link-item">${list[index].name}</a></td>

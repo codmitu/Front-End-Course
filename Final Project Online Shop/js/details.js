@@ -20,10 +20,12 @@ async function ajax(url, method, body) {
 
 
 // get the list from database and shuffle it to display 4 other products randomly
+// dont get the null value items (deleted products)
 // get the products from local storage
 async function getList() {
     list = await ajax(url);
     list = shuffle(list);
+    list = list.filter(item => item !== null);
     if (localStorage.getItem("TScart") === null) {
         TScart = [];
     } else {
@@ -87,7 +89,9 @@ function buildDetails() {
     // More items alike (if they match products id)
     let alikeItems = [];
     for (let i = 0; i < list.length; i++) {
-        if (list[index].id === list[i].id && list[index].name !== list[i].name) {
+        if (list[i] === null) {
+            return;
+        } else if (list[index].id === list[i].id && list[index].name !== list[i].name) {
             alikeItems.push(list[i]);
         }
     }
@@ -198,6 +202,9 @@ function cartQuantity() {
 
 // Shuffle list function to rearrange items differently on load/refresh 
 function shuffle(array) {
+    if (array === null) {
+        return;
+    }
     var tmp, current, top = array.length;
     if(top) while(--top) {
       current = Math.floor(Math.random() * (top + 1));
