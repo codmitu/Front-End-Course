@@ -37,7 +37,7 @@ async function getList() {
 
 
 // Get user IP address to create a new database for user wislist products
-$.getJSON('http://ip.jsontest.com/?callback=?', function(data) {
+$.getJSON('https://jsonip.com/?callback=?', function(data) {
     userID = JSON.stringify(data.ip).replace(/"/g, "");
     userID = userID.replace(/\./g, "");
 });
