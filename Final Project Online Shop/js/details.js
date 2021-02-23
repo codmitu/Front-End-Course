@@ -164,9 +164,14 @@ function findTotal() {
     }
     let stockNr = Number(document.querySelector(".product-stock").innerText);
     document.querySelector('.quantity').setAttribute("max", `${stockNr}`);
-    let price = document.querySelector(".product-price").innerText;
+    let price = (document.querySelector(".product-price").innerText).toLocaleString('ro');
     let quantity = document.querySelector('.quantity').value;
-    document.querySelector(".product-total-price").innerText = parseFloat(price * quantity + 0.015).toFixed(3);
+    // if price < 100 RON (ex: 3.500 RON < 100)
+    if (price < 100) {
+        document.querySelector(".product-total-price").innerText = parseFloat(price * quantity + 0.015).toFixed(3);
+    } else {  // esle if price > 100 and price < 999 (ex: 659 RON)
+        document.querySelector(".product-total-price").innerText = (price * quantity + 15).toLocaleString('ro');
+    }
 }
 
 
