@@ -166,7 +166,7 @@ function findTotal() {
     document.querySelector('.quantity').setAttribute("max", `${stockNr}`);
     let price = document.querySelector(".product-price").innerText;
     let quantity = document.querySelector('.quantity').value;
-    document.querySelector(".product-total-price").innerText = parseFloat(price * quantity + 0.015).toFixed(3);
+    document.querySelector(".product-total-price").innerText = parseFloat(price * quantity + 15).toFixed(3);
 }
 
 
