@@ -73,9 +73,9 @@ footer {
     border: none;
     border-bottom: 1px solid rgb(83, 86, 184);
 }
-    .search-input:focus {
-        outline: 1px solid var(--main);
-    }
+.search-input:focus {
+    outline: 1px solid var(--main);
+}
 .nav-bar label .search-icon {
     position: absolute;
     top: 15px;
@@ -196,9 +196,10 @@ i.fa-bars:active {
 }
 .cart-quantity-mobile {
     display: none;
-    position: absolute;
+    position: relative;
     width: 20px;
-    top: 5px;
+    top: -10px;
+    left: -10px;
     text-align: center;
     height: 20px;
     border-radius: 50%;
@@ -479,7 +480,10 @@ main .item:hover {
 .fa-heart {
     cursor: pointer;
 }
-.fa-heart:hover {
+[data-h2] {
+    color: red;
+}
+[data-h1]:hover {
     color: red;
 }
 .fas.hidden {

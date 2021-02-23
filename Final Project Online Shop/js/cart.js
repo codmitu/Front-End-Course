@@ -3,7 +3,7 @@ let quantity = document.querySelectorAll(".quantity");
 const modal = document.querySelector(".modal");
 const menu = document.querySelector(".fa-bars");
 let TScart = [];
-const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
+const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/Products/";
 let list = []; 
 
 
@@ -22,6 +22,7 @@ async function ajax(url, method, body) {
 // get list from database to calculate the remaining quantity on items
 async function getList() {
       list = await ajax(url);
+      list = list.filter(item => item !== null);
       if (localStorage.getItem("TScart") === null) {
             TScart = [];
       } else {
@@ -34,6 +35,7 @@ async function getList() {
 
 // Build html with information from local storage and database
 function buildCart() {
+      let lengt = 0
       if (localStorage.getItem("TScart") === null) {
             TScart = [];
       }
@@ -44,6 +46,7 @@ function buildCart() {
             var totalPrice = 15;
       }
       if (TScart.length > 0) {
+            lengt = TScart.length;
             for (let i = 0; i < TScart.length; i++) {
                   qty += Number(TScart[i].quantity);
             }
@@ -52,7 +55,7 @@ function buildCart() {
       }
       TScart = JSON.parse(localStorage.getItem("TScart"));
       let str = "";
-      for (let i = 0; i < TScart.length; i++) {
+      for (let i = 0; i < lengt; i++) {
             let name = TScart[i].product.name;
             let index = list.findIndex(x => x.name === name);
             totalPrice += list[index].price * TScart[i].quantity;
@@ -114,8 +117,18 @@ async function buy() {
             let lsName = "";
             let newStock = "";
             for (let i = 0; i < TScart.length; i++) {
+                  if (list2[i] === null) {
+                        list2[i] = "";
+                  }
                   lsName = TScart[i].product.name;
-                  index = list2.findIndex(x => x.name == lsName);
+                  for (let j = 0; j < list2.length; j++) {
+                        if (list2[j] === null) {
+                              continue;
+                        }
+                        if (list2[j].name === lsName) {
+                              index = j;
+                        } 
+                  }
                   newStock = list2[index].stock - TScart[i].quantity;
                   if (list2[index].stock < TScart[i].quantity || newStock < 0) {
                         alert(`We're sorry but "${list2[index].name}" has (only) ${list2[index].stock} product(s) in stock.`);
@@ -149,6 +162,7 @@ function confirmBuy() {
 // Increase quantity in html and in local storage and dont increase more than max database quantity of the item
 async function increase(idx) {
       let list2 = await ajax(url);
+      list2 = list2.filter(item => item !== null);
       let itemName = document.querySelectorAll(".link-item")[idx].innerText;
       let index = list2.findIndex(x => x.name == itemName);
       if (document.querySelectorAll(".quantity")[idx].value >= list2[index].stock) {
@@ -188,6 +202,8 @@ modal.addEventListener('click', (event) => {
             menu.style.display = "none";
       }
 });
+
+
 
 // refresh price on Buy button mouseover
 async function refresh() {

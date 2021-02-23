@@ -1,4 +1,4 @@
-const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
+const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/Products/";
 const form = document.querySelector("form");
 const modal = document.querySelector(".modal");
 let list = []; 

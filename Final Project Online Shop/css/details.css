@@ -408,6 +408,15 @@ div input {
     background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(148, 0, 0), rgb(255, 255, 255));
     color: white;
 }
+button .c2 {
+    color: rgb(11, 214, 11);
+}
+button .h2 {
+    color: red;
+}
+
+
+
 
 
 
@@ -494,6 +503,9 @@ aside .product-specs p:nth-child(odd) {
 
 /* classes from JS */
 .hidden {
+    display: none;
+}
+i.hidden {
     display: none;
 }
 p.visible {

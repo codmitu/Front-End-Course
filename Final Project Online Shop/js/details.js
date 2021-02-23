@@ -1,10 +1,14 @@
-const modal = document.querySelector(".modal");
-const menu = document.querySelector(".menu-icon-wrapper");
+// Variables
 const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
+let urlWishlist;
+let userID;
 let list = [];
 let id = decodeURI(location.search.substr(7));
 let TScart = [];
 let product;
+let wishList = [];
+const modal = document.querySelector(".modal");
+const menu = document.querySelector(".menu-icon-wrapper");
 
 
 // AJAX function
@@ -23,7 +27,7 @@ async function ajax(url, method, body) {
 // dont get the null value items (deleted products)
 // get the products from local storage
 async function getList() {
-    list = await ajax(url);
+    list = await ajax(url + "Products");
     list = shuffle(list);
     list = list.filter(item => item !== null);
     if (localStorage.getItem("TScart") === null) {
@@ -34,6 +38,24 @@ async function getList() {
     buildDetails();
 }
 
+
+
+// Get user IP address to create a new database for user wislist products
+$.getJSON('http://ip.jsontest.com/?callback=?', function(data) {
+    userID = JSON.stringify(data.ip).replace(/"/g, "");
+    userID = userID.replace(/\./g, "");
+});
+
+
+
+
+// get wishlist from database to color item hearts
+async function getWishlist() {
+    wishList = await ajax(url + userID);
+    if (wishList === null) {
+        wishList = [];
+    }
+}
 
 
 
@@ -74,7 +96,23 @@ function buildDetails() {
     for (let i = 0; i < specs.length; i++) {
         specsStr += `<p>${specs[i]}</p>`;
     }
-  // Insert all values from database to details.html
+    // check if item is already in cart or wishlist to add style to buttons
+    for (let j = 0; j < wishList.length; j++) {
+        if (wishList[j] === null) {
+            continue;
+        } 
+        if (wishList[j].name === list[index].name) {
+            document.querySelector(".h1").classList.add("hidden");
+            document.querySelector(".h2").classList.remove("hidden");
+        }
+    }
+    for (let i = 0; i < TScart.length; i++) {
+        if (TScart[i].product.name === list[index].name) {
+            document.querySelector(".c1").classList.add("hidden");
+            document.querySelector(".c2").classList.remove("hidden");
+        }
+    }
+    // Insert all values from database to details.html
     document.querySelector(".product-title").innerText = list[index].name + ", " + list[index].description;
     document.querySelector(".product-price").innerText = list[index].price.toLocaleString('ro');
     document.querySelector(".product-total-price").innerText = (list[index].price + 15).toLocaleString('ro') ;
@@ -147,6 +185,8 @@ function addToCart() {
             return;
         }
     }
+    document.querySelector(".c1").classList.add("hidden");
+    document.querySelector(".c2").classList.remove("hidden");
     document.querySelector(".message").classList.add("visible");
     setTimeout(removeMessages, 3000);
     let quantity = document.querySelector('.quantity').value;
@@ -157,6 +197,29 @@ function addToCart() {
     localStorage.setItem("TScart", JSON.stringify(TScart));
     cartQuantity();
 }
+
+
+
+
+// Add items to wishlist database 
+async function addToWishlist() {
+    document.querySelector(".h1").classList.add("hidden");
+    document.querySelector(".h2").classList.remove("hidden");
+    for (let i = 0; i < wishList.length; i++) {
+        if (wishList[i] === null) {
+            continue;
+        } else if (wishList[i].name === product.name) {
+            return;
+        }
+    }
+    await ajax(url + userID + "/" + wishList.length, "PUT", {
+        "name" : product.name
+    });
+    getWishlist();
+}
+
+
+
 
 
 

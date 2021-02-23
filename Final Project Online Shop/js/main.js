@@ -1,5 +1,6 @@
 // Variables
-const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
+let url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
+let userID;
 const loading = document.querySelector(".loading");
 const filterPhones = document.querySelector("#parent1");
 const filterLaptops = document.querySelector("#parent2");
@@ -10,6 +11,7 @@ let container = document.querySelector("main");
 const modal = document.querySelector(".modal");
 const menu = document.querySelector(".menu-icon-wrapper");
 let list = [];
+let wishList = [];
 let posts = 20;
 let idx = 0;
 
@@ -30,9 +32,9 @@ async function ajax(url, method, body) {
 
 // get list from database then shuffle the items then build the html
 async function getList() {
-    list = await ajax(url);
-    console.log(list);
+    list = await ajax(url + "Products");
     list = shuffle(list);
+    list = list.filter(item => item !== null);
     if (localStorage.getItem("TScart") === null) {
         TScart = [];
     } else {
@@ -42,20 +44,34 @@ async function getList() {
 }
 
 
+// Get user IP address to create a new database for user wislist products
+$.getJSON('http://ip.jsontest.com/?callback=?', function(data) {
+    userID = JSON.stringify(data.ip).replace(/"/g, "");
+    userID = userID.replace(/\./g, "");
+});
+
+
+
+
+// get wishlist from database to color item hearts
+async function getWishlist() {
+    wishList = await ajax(url + userID);
+    if (wishList === null) {
+        wishList = [];
+    }
+}
 
 
 // build the html on scroll*
 function buildMain() {
+    let str = "";
     if (window.innerWidth < 500) {
-        posts = list.length;
     } else if (posts === idx) {
         posts += 20;
         if (posts > list.length) {
             posts = list.length;
-            document.querySelector("footer").style.display = "block";
         }
     }
-    let str = "";
     for (; idx < posts; idx++) {
         // If theres a skipped index in database, skip it
         if (list[idx] === null) {
@@ -65,8 +81,19 @@ function buildMain() {
         if (list[idx].image === undefined || list[idx].image.length === 0 || list[idx].image[0] === "") {
             list[idx].image[0] = "../img/no-image.png";
         }
+        let fullHeart = "hidden";
+        let emptyHeart = "";
+        for (let j = 0; j < wishList.length; j++) {
+            if (wishList[j] === null) {
+                continue;
+            } 
+            if (wishList[j].name === list[idx].name) {
+                fullHeart = "";
+                emptyHeart = "hidden";
+            }
+        }
         str += `
-        <div class="item" onclick="indexItem('${idx}');">
+        <div class="item">
             <div style="display: none" class="item-id">${list[idx].id}</div>
             <div style="display: none" class="info">${list[idx].specs}${list[idx].name}${list[idx].description}</div>
             <div class="item-name">${list[idx].name}</div>
@@ -86,17 +113,55 @@ function buildMain() {
                     <span class="price-item">${list[idx].price.toLocaleString('ro')}</span>
                     <span>&nbsp;RON</span>
                 </div>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart hidden"></i>
+                <i class="far fa-heart ${emptyHeart}" onclick="addToWishlist('${idx}');" data-h1="${idx}"></i>
+                <i class="fas fa-heart ${fullHeart}" data-h2="${idx}"></i>
             </div>
         </div> 
         `
+        fullHeart = "hidden";
+        emptyHeart = "";
     }
     container.innerHTML += str;
     cartQuantity();
     loading.classList.remove("show");
+    
 }
 
+
+
+
+
+// Add items to wishlist database 
+async function addToWishlist(idx) {
+    document.querySelector(`[data-h1='${idx}']`).classList.add("hidden");
+    document.querySelector(`[data-h2='${idx}']`).classList.remove("hidden");
+    let itemName = document.querySelectorAll(".item-name")[idx].innerText;
+    for (let i = 0; i < wishList.length; i++) {
+        if (wishList[i] === null) {
+            continue;
+        } else if (wishList[i].name === itemName) {
+            return;
+        }
+    }
+    await ajax(url + userID + "/" + wishList.length, "PUT", {
+        "name" : itemName
+    });
+    getWishlist();
+}
+
+
+
+// ======  CREATE RANDOM CODE ======
+// function makeid(length) {
+//     var result           = '';
+//     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//     var charactersLength = characters.length;
+//     for ( var i = 0; i < length; i++ ) {
+//        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//     }
+//     return result;
+// }
+ 
 
 
 
@@ -121,7 +186,6 @@ function searchInput() {
 
 
 
-
 // Show Phones/Laptops/TVs items only and unhover the parent onclick child
 filterPhones.addEventListener("click", (event) => {
     posts = list.length;
@@ -139,10 +203,10 @@ filterPhones.addEventListener("click", (event) => {
             event.target.parentElement.classList.add("hidden");
             item.classList.remove("hidden");
         }
+        setTimeout(() => {
+            event.target.parentElement.classList.remove("hidden");
+        }, 200);
     }
-    setTimeout(() => {
-        event.target.parentElement.classList.remove("hidden");
-    }, 100);
 });
 filterLaptops.addEventListener("click", (event) => {
     posts = list.length;
@@ -160,10 +224,10 @@ filterLaptops.addEventListener("click", (event) => {
             event.target.parentElement.classList.add("hidden");
             item.classList.remove("hidden");
         }
+        setTimeout(() => {
+            event.target.parentElement.classList.remove("hidden");
+        }, 200);
     }
-    setTimeout(() => {
-        event.target.parentElement.classList.remove("hidden");
-    }, 100);
 });
 filterTvs.addEventListener("click", (event) => {
     posts = list.length;
@@ -181,10 +245,10 @@ filterTvs.addEventListener("click", (event) => {
             event.target.parentElement.classList.add("hidden");
             item.classList.remove("hidden");
         }
+        setTimeout(() => {
+            event.target.parentElement.classList.remove("hidden");
+        }, 200);
     }
-    setTimeout(() => {
-        event.target.parentElement.classList.remove("hidden");
-    }, 200);
 });
 
 
@@ -285,14 +349,6 @@ function cartQuantity() {
 
 
 
-// Refresh product stock onmouseover Edit button
-// async function refreshStockPrice(idx) {
-//     let list2 = await ajax(url + idx);
-//     document.querySelector(`[data-stock='${idx}']`).innerText = list2.stock;
-//     document.querySelector(`[data-price='${idx}']`).innerText = list2.price;
-// }
-
-
 
 // Shuffle list function to rearrange items differently on load/refresh 
 function shuffle(array) {
@@ -325,3 +381,4 @@ function showLoading() {
     loading.classList.add("show");
     setTimeout(buildMain, 1000);
 }
+

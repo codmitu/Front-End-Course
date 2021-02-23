@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="../img/icon2.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/cart.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/wishlist.css">
     <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    
 
-    <title>TS Cart</title>
+
+    <title>Wishlist</title>
 </head>
-
-
-<body onload="event.preventDefault();getList();">
+<body onload="getList();getWishlist();">
 
     <!-- Loading animation -->
     <div class="lds-default-container"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
@@ -29,8 +28,10 @@
             <div><img src="../img/logo.svg" class="logo" alt="logo"></div>
           
             <div class="menu-links">
-                <a class="menu-link-favorites" href="wishlist.html" >Wishlist
-                    <i class="fas fa-heart"></i>
+                <a class="menu-link-shopping-basket" href="cart.html">
+                    Cart
+                    <i class="fas fa-shopping-cart"></i>
+                    <small class="cart-quantity"></small>
                 </a>
                 <a class="menu-link-admin" href="main.html">
                     Home
@@ -38,7 +39,11 @@
                 </a>
             </div>
             
-            <i class="fas fa-bars" onclick="showMenu();"></i>
+             <!-- Hamburger menu icon -->
+             <div class="menu-icon-wrapper">
+                <i class="fas fa-bars" onclick="showMenu();"></i>
+                <small class="cart-quantity-mobile-menu"></small>
+            </div>
         </nav>
     </section>
 
@@ -46,48 +51,21 @@
 
     <!-- Header -->
     <header>
-        <h1>Cart
-            <i class="fas fa-shopping-cart"></i>
+        <h1>Wishlist
+            <i class="fas fa-icons"></i>
         </h1>
     </header>
 
 
+    <!-- Wishlist items -->
+    <main id="items-container">
 
-    <!-- Cart items container -->
-    <main>
-        <table>
-            <tbody>
-                
-            </tbody>
-        </table>
-
-        <!-- Overall information and submit button to buy -->
-        <aside>
-            <p>Products:&nbsp;<span class="total-items"></span></p>
-            <p>V.A.T 19%</p>
-            <p>Delivery: 15 RON</p>
-            <p>Total price: <span class="total-price"></span> RON</p>
-            <button type="button" onclick="buy();" onmouseover="refresh();">Buy<i class="fas fa-check-circle"></i></button>
-        </aside>
     </main>
 
 
 
-    <!-- Simulate Buying with a loading animation -->
-    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-
-
-
-    <!-- Displays message after buying and redirects user to main page -->
-    <div class="message">
-        <div>Cangratulations on your purchase! <br>You will now be redirected<br> to main page.</div>
-        <button type="button" onclick="confirmBuy();">OK!</button>
-    </div>
-
-
-
     <!-- Background image -->
-    <img src="../img/undraw_video_game_night_8h8m.svg" alt="" class="bg-svg">
+    <img src="../img/undraw_Wishlist.svg" alt="" class="bg-svg">
 
 
 
@@ -152,20 +130,24 @@
                 Home
                 <i class="fas fa-home"></i></li>
             </a>
-            <a href="wishlist.html"><li>
+            <a href="cart.html"><li>
                 <i class="far fa-arrow-alt-circle-right arrow"></i>
-                Wishlist
-                <i class="fas fa-heart"></i></li>
+                Cart
+                <i class="fas fa-shopping-cart"></i>
+                <small class="cart-quantity-mobile"></small>
             </a>
         </ul>
     </div>
 
 
 
-
     <!-- Loading animation -->
     <script src="../js/loader.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <script src="../js/wishlist.js"></script>
 
-    <script src="../js/cart.js"></script>
 </body>
 </html>
