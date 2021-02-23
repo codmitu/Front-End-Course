@@ -66,6 +66,7 @@ async function getWishlist() {
 function buildMain() {
     let str = "";
     if (window.innerWidth < 500) {
+        posts = list.length;
     } else if (posts === idx) {
         posts += 20;
         if (posts > list.length) {
