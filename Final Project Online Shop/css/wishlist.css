@@ -382,6 +382,7 @@ main {
 
 
 /* Add display none from JS */
+.fa-cart-plus.hidden,
 .hidden {
       display: none;
 }

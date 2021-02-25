@@ -63,6 +63,12 @@ function buildWishlist() {
                   if (wishList[idx] === null) {
                         continue;
                   } else if (wishList[idx].name === list[i].name) {
+                        let hidden;
+                        if (TScart.some(x => x.product.name.includes(list[i].name))) {
+                              hidden = "hidden";
+                        } else {
+                              hidden = "";
+                        }
                         str += `
                         <div class="item" data-item="${idx}">
                         <div style="display: none" class="item-id">${list[i].id}</div>
@@ -77,7 +83,7 @@ function buildWishlist() {
                         <div class="item-stock-container">
                               <span>In stock:</span>
                               <span class="item-stock">${list[i].stock.toLocaleString('ro')}</span>
-                              <i class="fas fa-cart-plus" title="Add to Cart" onclick="addToCart('${i}');removeItem('${idx}');"></i>
+                              <i class="fas fa-cart-plus ${hidden}" title="Add to Cart" onclick="addToCart('${i}');removeItem('${idx}');"></i>
                         </div>
                         <div class="price-heart-wrapper">
                               <div class="price-container">
@@ -89,6 +95,7 @@ function buildWishlist() {
                         </div>
                         </div> 
                         `
+                        
                   } 
             }
       }
