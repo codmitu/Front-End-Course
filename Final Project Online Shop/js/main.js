@@ -322,8 +322,8 @@ function showMenu() {
 // Hide the modal and closes the menu when clicking on modal
 modal.addEventListener('click', (event) => {
     if (event.target.classList.contains("modal")) {
-    modal.style.display = "none";
-    menu.style.display = "block";
+        modal.style.display = "none";
+        menu.style.display = "block";
     }
 });
   

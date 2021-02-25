@@ -1,6 +1,5 @@
 // Variables
 const url = "https://online-shop-424e1-default-rtdb.europe-west1.firebasedatabase.app/";
-let urlWishlist;
 let userID;
 let list = [];
 let id = decodeURI(location.search.substr(7));
@@ -40,7 +39,7 @@ async function getList() {
 
 
 
-// Get user IP address to create a new database for user wislist products
+// Get user IP address to create a new database for user wishlist products
 $.getJSON('https://jsonip.com/?callback=?', function(data) {
     userID = JSON.stringify(data.ip).replace(/"/g, "");
     userID = userID.replace(/\./g, "");
