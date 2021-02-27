@@ -4,11 +4,16 @@
       /* height: 500px; */
       -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1)75%, rgba(0,0,0,0));
       outline: none;
+      position: relative;
+      z-index: 10;
 }
 
+body > div.autoplay.slick-initialized.slick-slider {
+    position: relative;
+    z-index: 1;
+}
 
-.slick-slider
-{
+.slick-slider {
     position: relative;
     display: block;
     box-sizing: border-box;
@@ -25,8 +30,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list
-{
+.slick-list {
     position: relative;
 
     display: block;

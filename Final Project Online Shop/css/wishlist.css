@@ -197,11 +197,14 @@ i.fa-bars:active {
 }
 .responsive-menu a {
     text-decoration: none;
-    color: rgb(225, 225, 225);
+    color: white;
     font-size: large;
 }
 .responsive-menu a:hover {
     color: var(--text);
+}
+.responsive-menu .fas {
+    font-size: 12px;
 }
 
 

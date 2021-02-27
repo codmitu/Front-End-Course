@@ -219,11 +219,14 @@ i.fa-bars:active {
 }
 .responsive-menu a {
     text-decoration: none;
-    color: rgb(225, 225, 225);
+    color: white;
     font-size: large;
 }
 .responsive-menu a:hover {
     color: var(--text);
+}
+.responsive-menu .fas {
+    font-size: 12px;
 }
 
 
@@ -423,7 +426,6 @@ ul.filter-items {
 /* Main section with the items */
 main {
     position: relative;
-    z-index: 3;
     min-height: 100vh;
     max-width: 1200px;
     margin: -10% auto 0 auto;
@@ -431,7 +433,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
-    background-image: linear-gradient(to bottom, transparent, white 5cm);
+    background-color: white;
 }
 main .item {
     width: 270px;
@@ -441,7 +443,8 @@ main .item {
     transition: all .3s ease;
     background-color: white;
     margin: 0 auto;
-    
+    position: relative;
+    z-index: 2;
 }
 main .item:hover {
     box-shadow: -5px 10px 25px rgba(0, 0, 0, 0.3);
