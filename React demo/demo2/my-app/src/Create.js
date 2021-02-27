@@ -1,4 +1,6 @@
 const Create = () => {
+      const [title, setTitle] = useState('');
+
       return ( 
             <div className="create">
                   <h2>Add a new blog</h2>
@@ -7,6 +9,8 @@ const Create = () => {
                         <input 
                               type="text"
                               required
+                              value={title}
+                              onChange={() => setTitle()}
                         />
                         <label>Blog body:</label>
                         <textarea
