@@ -359,7 +359,7 @@ aside button:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33, 33, 33, 0.919);
+    background-color: rgba(2, 2, 2, 0.645);
     display: none;
     place-items: center;
     place-content: center;
@@ -367,24 +367,25 @@ aside button:active {
 }
 .message div {
     border: 1px solid rgb(80, 80, 80);
-    color: rgb(0, 92, 0);
+    color: white;
     border-radius: 20px;
     width: 300px;
     height: 200px;
     text-align: center;
     font-weight: 500;
     padding: 20px;
-    background-image: linear-gradient(45deg, lightgrey, white);
+    background-color: var(--btt);
 }
 .message button {
-    background-image: linear-gradient(145deg, var(--btt), var(--second));
+    background-color: white;
     width: 100px;
     padding: 10px;
-    color: var(--text);
+    color: var(--btt);
     cursor: pointer;
     display: block;
     outline: none;
     margin-top: -70px;
+    font-weight: bold;
 }
 
 
