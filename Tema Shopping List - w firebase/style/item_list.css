@@ -1,5 +1,5 @@
 /* Ordered List section with the items */
-section{
+section {
     width: 250px;
     max-height: 60vh;
     background-color: white;
@@ -11,10 +11,12 @@ section{
     overflow: scroll;
     border-left: 5px dashed green;
 }
-section::-webkit-scrollbar{
+
+section::-webkit-scrollbar {
     width: 0;
 }
-h2{
+
+h2 {
     font-family: 'Covered By Your Grace', cursive;
     padding: 10px 10px;
     text-align: center;
@@ -27,26 +29,31 @@ h2{
     background-color: white;
     height: 50px;
 }
-.sortDiv{
+
+.sortDiv {
     position: sticky;
     display: inline-block;
     color: green;
     font-size: 2rem;
 }
-.iconify[data-icon*="la:sort"]{
+
+.iconify[data-icon*="la:sort"] {
     cursor: pointer;
 }
-.iconify[data-icon*="la:sort"]:hover{
+
+.iconify[data-icon*="la:sort"]:hover {
     background-color: rgb(238, 238, 238);
 }
-.listDiv{
+
+.listDiv {
     display: flex;
     border-bottom: 1px solid gray;
     list-style-type: decimal;
     position: relative;
     background-color: white;
 }
-.editIcon{
+
+.editIcon {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -54,7 +61,7 @@ h2{
 }
 
 /* main item text */
-.itemText{
+.itemText {
     flex: 1;
     margin: 10px 20px 10px 0;
     cursor: default;
@@ -67,10 +74,11 @@ h2{
 }
 
 /* info text inside i (more info) */
-.listDiv > div{
+.listDiv>div {
     position: relative;
 }
-.moreInfo{
+
+.moreInfo {
     background-color: rgb(46, 130, 255);
     position: absolute;
     height: 100%;
@@ -82,16 +90,18 @@ h2{
     overflow-y: scroll;
     transition: clip-path 0.4s ease-in-out;
 }
-.moreInfo::-webkit-scrollbar{
+
+.moreInfo::-webkit-scrollbar {
     width: 0;
 }
-.moreInfo:hover{
+
+.moreInfo:hover {
     clip-path: circle(75%);
     background-color: rgb(110, 168, 255);
 }
 
 /* i (more info) */
-.infoIcon{
+.infoIcon {
     float: right;
     font-size: 0.8rem;
     color: white;
@@ -102,37 +112,42 @@ h2{
     position: sticky;
     top: 0;
 }
-.moreInfo:hover .infoIcon{
-    color: rgba(255, 255, 255, 0); 
+
+.moreInfo:hover .infoIcon {
+    color: rgba(255, 255, 255, 0);
 }
-.infoText{
-    color: rgba(255, 255, 255, 0); 
+
+.infoText {
+    color: rgba(255, 255, 255, 0);
 }
+
 .moreInfo:hover .infoText {
     color: rgb(255, 255, 255);
     word-break: break-all;
 }
-.deleteMark{
+
+.deleteMark {
     margin: auto 0;
     font-size: 1.5rem;
-    padding:2px;
+    padding: 2px;
     color: red;
     cursor: pointer;
     background: none;
 }
-.deleteMark:hover{
-    padding:0;
+
+.deleteMark:hover {
+    padding: 0;
 }
 
 
 /* JS check completed item */
-.completed{
+.completed {
     text-decoration: line-through;
     color: lightgrey;
 }
 
 /* Add Item button - displays the add form */
-.stickyBtn{
+.stickyBtn {
     width: 100%;
     background: linear-gradient(to bottom, #c2f587, #65a313);
     color: white;
@@ -145,11 +160,13 @@ h2{
     position: sticky;
     bottom: 0;
     transform: translateY(10px);
-    
+
 }
-.stickyBtn:hover{
+
+.stickyBtn:hover {
     background: linear-gradient(to bottom, #c2f587, #4f8707);
 }
-.stickyBtn:active{
+
+.stickyBtn:active {
     background: linear-gradient(to bottom, #c2f587, #65a313);
 }

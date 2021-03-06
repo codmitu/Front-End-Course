@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: none;
 }
+
 body {
     overflow: hidden;
     background-color: #aa3333;
@@ -13,7 +14,7 @@ body {
 
 
 /* Dark layer on pop-up form/ */
-.modal{
+.modal {
     position: fixed;
     z-index: 2;
     top: 0;
@@ -26,14 +27,15 @@ body {
     transition: all .5s ease;
     backdrop-filter: blur(5px);
 }
-.open{
+
+.open {
     opacity: 1;
     pointer-events: all;
 }
 
 
 /* Shopping List title */
-h1{
+h1 {
     font-family: 'Covered By Your Grace', cursive;
     position: absolute;
     bottom: 5%;
@@ -51,7 +53,7 @@ h1{
 
 
 
-main{
+main {
     max-width: 1200px;
     height: 100vh;
     margin: 0 auto;
@@ -62,12 +64,13 @@ main{
 
 
 
- /* two img svgs */
-img[src*="girl"]{
+/* two img svgs */
+img[src*="girl"] {
     width: 25%;
     align-self: flex-end;
 }
-img[src*="cart"]{
+
+img[src*="cart"] {
     width: 25%;
     align-self: flex-start;
 }
@@ -76,7 +79,7 @@ img[src*="cart"]{
 
 
 /* emoticon */
-.face{
+.face {
     position: relative;
     width: 50px;
     height: 50px;
@@ -90,7 +93,8 @@ img[src*="cart"]{
     transition: .5s;
     z-index: 1;
 }
-.face::before{
+
+.face::before {
     content: '';
     position: absolute;
     top: 35px;
@@ -101,22 +105,26 @@ img[src*="cart"]{
     border-bottom-right-radius: 50px;
     transition: 0.3s;
 }
-.face:hover::before{
+
+.face:hover::before {
     top: 35px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
-.face:hover{
+
+.face:hover {
     background-color: #ff8800;
     cursor: grabbing;
 }
-.eyes{
+
+.eyes {
     position: relative;
     top: -5px;
     display: flex;
 }
-.eyes .eye{
+
+.eyes .eye {
     position: relative;
     width: 15px;
     height: 15px;
@@ -125,7 +133,8 @@ img[src*="cart"]{
     margin: 0 4px;
     border-radius: 20px;
 }
-.eyes .eye::before{
+
+.eyes .eye::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -138,18 +147,21 @@ img[src*="cart"]{
 }
 
 @media screen and (max-width: 500px) {
-    h1{
+    h1 {
         font-size: 3rem;
         bottom: 0;
     }
-    section{
+
+    section {
         zoom: 1.3;
         max-height: 55vh;
     }
-    .itemText{
+
+    .itemText {
         padding: 0 10px;
     }
-    .deleteMark{
+
+    .deleteMark {
         margin: 10px;
     }
 }
